@@ -5,7 +5,9 @@ class USRBIN():
     """
     Class for reconstructing and handling ASCII formatted Fluka USRBIN outputs
     
-    Developed by Daniel Björkman 2016-2019, daniel.bjorkman@cern.ch
+    Python version 2.7
+    
+    Developed by Daniel Björkman 2016-2019 at CERN, dabjor@kth.ch
     
     call:
     from USRBIN import USRBIN
@@ -58,7 +60,6 @@ class USRBIN():
 #        data = np.genfromtxt(filename, skip_header= start -1, skip_footer= stop -9)
         data = np.genfromtxt(self.filename, skip_header= start -1, skip_footer= len(self.file) - stop -2)
         
-        #print data.size
         data = np.reshape(data ,(data.size,1))
     
         return data;        
@@ -168,7 +169,6 @@ class USRBIN():
     
         else:
             cube = np.reshape(data, (int(info['xbin'][0]),int(info['ybin'][0]),int(info['zbin'][0])),order='F')
-        
         
         return cube;
     

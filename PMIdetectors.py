@@ -6,13 +6,6 @@ Created on Wed Mar 21 15:00:39 2018
 """
 
 #import matplotlib.pyplot as plt
-#plt.close()
-#plt.close()
-#plt.close()
-#plt.close()
-#plt.close()
-#plt.close()
-#PMIs
 
 class PMI():
     
@@ -25,7 +18,7 @@ class PMI():
         self.origo = origo
         self.samplingpoints2017 = [29.0,33.0,35.0,40.0,43.0,46.0,55.0,48.0,60.0,63.0,106.0,119.0,129.0,136.0,142.0,145.0,151.0,153.0,158.0,162.525,168.416]              
         self.samplingpoints2018 = [343.0,343.041668,343.0833,343.18,343.208315,344.35,346.5,351.86,357.2,385.37,392.38,399.13,413.0,423.0,427.2]
-        self.xpos = [595, 1207, 1697 , 1992, 5351 , 5800,7096, 7743] #Positions of PMIs
+        self.xpos = [595, 1207, 1697 , 1992, 5351 , 5800,7096, 7743] #Positions of PMIs in machine
         self.cooldowns = [ 343.04166667,  344.25,  350.,  374.25 ,403.,  423]
         self.cooldownsText = ['1 hour' , '30h' , '1 week' , '1m + 30h ' , '2 months' , '80 days']
         self.smooth2018 = []

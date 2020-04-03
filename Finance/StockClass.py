@@ -11,8 +11,10 @@ Created on Mon Mar 30 10:56:14 2020
 import investpy
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 from datetime import datetime
-import scipy
+from scipy.interpolate import interp1d
+
 
 
 class Stock:
@@ -29,6 +31,9 @@ class Stock:
         self.currency = []
         self.compare_start = []
         self.compare_end = []
+        self.diff = []
+        self.AVGline_xes = []
+        self.AVGline_yes = []
         
     def parseDF(self):
         
@@ -63,10 +68,19 @@ class Stock:
         
     def compareDates(self, compare_start, compare_end):
         
-        f = scipy.interpolate.interp1d(self.daysSinceToday, self.closingValues)
-        diff = f(self.daysSinceOrigo(compare_end)) - f(daysSinceOrigo(compare_start))
+        f = interp1d(self.daysSinceToday, self.closingValues)
+        stop = self.daysSinceOrigo(compare_end)
+        start = self.daysSinceOrigo(compare_start)
+        diff = f(stop) - f(start)
+        
+        self.AVGline_xes = (start , stop)
+        self.AVGline_yes = (f(start) , f(stop))
+        self.compare_start = compare_start
+        self.compare_end = compare_end
+        self.diff = diff
     
         return diff
+         
         
     def loadData(self):
         from_date = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
@@ -74,7 +88,8 @@ class Stock:
         self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= from_date, to_date= to_date)
 
         self.parseDF()
-
+        if self.compare_start != [] and self.compare_end != []:
+            self.calcAverage()
 
 
     def plotMe(self):
@@ -86,6 +101,13 @@ class Stock:
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
         
+        if self.compare_start != [] and self.compare_end != []:
+            startX = self.daysSinceOrigo( self.compare_start)
+            sizeX = self.daysSinceOrigo( self.compare_end) - startX
+            rect = plt.Rectangle((startX, - 1000),
+                                  sizeX,
+                                  10000, color = 'b', alpha = 0.2 ,  linewidth=2.5)
+            plt.gca().add_patch(rect)
         
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
@@ -94,9 +116,12 @@ class Stock:
         for i in range(10):
             plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
+
+        plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'AVGline')
+
         plt.legend()
-        
-        plt.xlim(-120 , 10)
+        plt.xlim(min(self.daysSinceToday)*1.1 , 10)
+        plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         plt.show()
 

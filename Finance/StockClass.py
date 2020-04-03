@@ -5,8 +5,6 @@ Created on Mon Mar 30 10:56:14 2020
 @author: malyr
 """
 
-#historial web scraping
-
 #import sys
 #!{sys.executable} -m pip install investpy -U
 
@@ -14,53 +12,23 @@ import investpy
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
-#import datetime
-#'01/01/2015', end='01/01/2019',
-
-#df = investpy.get_stock_recent_data(stock='bbva', country='spain',  as_json=False, order='ascending')
-#
-#
-#funds_ = investpy.get_fund_historical_data(fund='bbva multiactivo conservador pp', from_date='01/01/2015', to_date='01/01/2019', as_json=False, order='ascending')
-#
-#
-#stocks = investpy.get_stocks_list()
-#
-#funds = investpy.get_funds_list()
-#
-#countries = investpy.get_fund_countries()
-##df = investpy.get_stock_historical_data(stock='bbva', country='spain', from_date='01/01/2015', to_date='01/01/2019')
-#
-##W1DOW
-#df = investpy.get_stock_historical_data(stock='TS', country= 'spain', from_date='01/01/2015', to_date='01/01/2019')
-#
-
-
-
-country = 'sweden'
-
-start_date = datetime(2019, 12, 20,)
-end_date = datetime.now()
-
-
-
-funds_df = investpy.get_funds(country=country)
-countries = investpy.get_fund_countries()
-funds_list = investpy.get_funds_list(country=country)
-# Retrieve a dictionary with all the funds and all of their information fields
-funds_dict = investpy.get_funds_dict(country=country)
-
-fund = funds_list[10]
+import scipy
 
 
 class Stock:
-    def __init__(self, name, start_date , end_date):
+    def __init__(self, name, country, start_date , end_date):
         self.name = name
+        self.country = country
         self.start_date = start_date
         self.end_date = end_date
         self.df = []
         self.dates = []
         self.closingValues = []
+        self.openingValues = []
         self.daysSinceToday = []
+        self.currency = []
+        self.compare_start = []
+        self.compare_end = []
         
     def parseDF(self):
         
@@ -68,6 +36,7 @@ class Stock:
         datetimes = []
         daysSinceToday = []
         today = datetime.now()
+        openingValues = np.zeros(len(self.df))
         closingValues = np.zeros(len(self.df))
         
         for i in range(len(self.df)):
@@ -81,20 +50,31 @@ class Stock:
             day = self.df.index[i].day
             dates.append(str(year) + "-" + str(month) + "-" + str(day))
             closingValues[i] = self.df.Close[i]
+            openingValues[i] = self.df.Open[i]
             
         self.dates = dates
         self.closingValues = closingValues
-        self.daysSinceToday = daysSinceToday    
+        self.daysSinceToday = daysSinceToday 
+        self.currency = self.df.Currency[0]
     
-        return dates, closingValues, daysSinceToday
+    def daysSinceOrigo(self, date):
+        timedifference = date - datetime.today()
+        return timedifference.total_seconds()/(60*60*24)
+        
+    def compareDates(self, compare_start, compare_end):
+        
+        f = scipy.interpolate.interp1d(self.daysSinceToday, self.closingValues)
+        diff = f(self.daysSinceOrigo(compare_end)) - f(daysSinceOrigo(compare_start))
+    
+        return diff
+        
     def loadData(self):
         from_date = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
         to_date = str(self.end_date.day) + '/' + str(self.end_date.month) + '/' + str(self.end_date.year)
-        self.df = investpy.get_fund_historical_data(fund=fund, country=country, from_date= from_date, to_date= to_date)
+        self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= from_date, to_date= to_date)
 
         self.parseDF()
 
-#dates, values , daysSinceToday = parseDF(df)
 
 
     def plotMe(self):
@@ -121,9 +101,15 @@ class Stock:
         plt.show()
 
 
-fund1 = Stock(fund, start_date , end_date)
-fund1.loadData()
-fund1.plotMe()
+
+#country = 'sweden'
+#
+#start_date = datetime(2019, 12, 20,)
+#end_date = datetime.now()
+#
+#fund1 = Stock(fund, country, start_date , end_date)
+#fund1.loadData()
+#fund1.plotMe()
 
 
 

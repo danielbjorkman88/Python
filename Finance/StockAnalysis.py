@@ -32,9 +32,18 @@ country = 'sweden'
 funds_list = investpy.get_funds_list(country=country)
 fund = funds_list[10]
 start_date = datetime(2019, 12, 20,)
-end_date = datetime.now()
 
-fund1 = Stock(fund, country, start_date , end_date)
+
+fund1 = Stock(fund, country, start_date )
 fund1.loadData()
 fund1.compareDates(datetime(2020, 1, 20,) , datetime(2020, 2, 20,))
 fund1.plotMe()
+
+
+
+
+
+
+
+
+

@@ -18,11 +18,11 @@ from scipy.interpolate import interp1d
 
 
 class Stock:
-    def __init__(self, name, country, start_date , end_date):
+    def __init__(self, name, country, start_date):
         self.name = name
         self.country = country
         self.start_date = start_date
-        self.end_date = end_date
+        self.end_date = datetime.now()
         self.df = []
         self.dates = []
         self.closingValues = []
@@ -30,7 +30,9 @@ class Stock:
         self.daysSinceToday = []
         self.currency = []
         self.compare_start = []
+        self.compare_start_str = []
         self.compare_end = []
+        self.compare_end_str = []
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
@@ -78,7 +80,17 @@ class Stock:
         self.compare_start = compare_start
         self.compare_end = compare_end
         self.diff = diff
-    
+        
+        
+        year = compare_start.year
+        month = compare_start.month
+        day = compare_start.day
+        self.compare_start_str = str(year) + "-" + str(month) + "-" + str(day)
+        
+        year = compare_end.year
+        month = compare_end.month
+        day = compare_end.day
+        self.compare_end_str = str(year) + "-" + str(month) + "-" + str(day)
         return diff
          
         
@@ -96,8 +108,8 @@ class Stock:
         plt.figure()
         
         plt.plot(self.daysSinceToday, self.closingValues, label = self.name, linewidth = 2)
-        plt.xlabel('[Days since today]')
-        plt.ylabel('[TBI]')
+        plt.xlabel('[Days since today]', fontsize = 12)
+        plt.ylabel('[TBI]' , fontsize = 12 )
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
         
@@ -108,6 +120,7 @@ class Stock:
                                   sizeX,
                                   10000, color = 'b', alpha = 0.2 ,  linewidth=2.5)
             plt.gca().add_patch(rect)
+            plt.title(self.name + ' | '+  str(self.diff) + ' | increase between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
         
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
@@ -117,11 +130,12 @@ class Stock:
             plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
 
-        plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'AVGline')
+        plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'Linear interpolation')
 
         plt.legend()
         plt.xlim(min(self.daysSinceToday)*1.1 , 10)
         plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
+        
         
         plt.show()
 

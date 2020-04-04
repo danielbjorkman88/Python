@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 from StockClass import Stock 
+from MarketClass import Market 
 #
 #country = 'sweden'
 #fund = funds_list[10]
@@ -41,7 +42,8 @@ fund1.plotMe()
 
 
 
-
+market1 = Market(names, country, start_date )
+market1.loadData()
 
 
 

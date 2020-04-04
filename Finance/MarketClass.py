@@ -16,7 +16,7 @@ from scipy.interpolate import interp1d
 class Market(Stock):
     def __init__(self, names, country, start_date):
         super().__init__(names, country, start_date)
-        self.name = names
+        self.names = names
         self.country = country
         self.start_date = start_date
         self.start_date_str = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
@@ -36,6 +36,8 @@ class Market(Stock):
         self.AVGline_xes = []
         self.AVGline_yes = []
         
+    def calc(self):
+        pass
 
     def loadData(self):
         
@@ -44,13 +46,48 @@ class Market(Stock):
             tmp.loadData()
             if self.compare_start != [] and self.compare_end != []:
                 tmp.compareDates(self.compare_start  , self.compare_end )
-            self.stock_list.apend(tmp)
-        self.parseDF()
+            self.stock_list.append(tmp)
+        
+        self.calc()
         
 
+    def plotMe(self):
+        plt.figure()
+        
+        for X in self.stock_list: 
+            plt.plot(X.daysSinceToday, X.closingValues, label = X.name, linewidth = 2)
+        
+        
+        plt.xlabel('[Days since today]', fontsize = 12)
+        plt.ylabel('[TBI]' , fontsize = 12 )
+        plt.xticks(rotation=45)
+        plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
+        
         if self.compare_start != [] and self.compare_end != []:
-            self.calcAverage()
+            startX = self.daysSinceOrigo( self.compare_start)
+            sizeX = self.daysSinceOrigo( self.compare_end) - startX
+            rect = plt.Rectangle((startX, - 1000),
+                                  sizeX,
+                                  10000, color = 'b', alpha = 0.2 ,  linewidth=2.5)
+            plt.gca().add_patch(rect)
+            plt.title(self.name + ' | '+  str(self.diff) + ' | increase between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
+        
+        newyear2019 = datetime(2019,12,31,23,59,59)
+        timedifference = datetime.today() - newyear2019
+        newyearsOrigodifference = timedifference.total_seconds()/(60*60*24)
+        plt.axvline(x= -newyearsOrigodifference, color = 'k', linestyle = '-', label = 'Year shift', linewidth = 0.5)
+        for i in range(10):
+            plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
+
+        #plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'Linear interpolation')
+
+        plt.legend()
+        plt.xlim(min(self.daysSinceToday)*1.1 , 10)
+        plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
+        
+        
+        plt.show()
 
 
 

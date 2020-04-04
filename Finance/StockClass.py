@@ -22,7 +22,9 @@ class Stock:
         self.name = name
         self.country = country
         self.start_date = start_date
+        self.start_date_str = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
         self.end_date = datetime.now()
+        self.end_date_str = str(self.end_date.day) + '/' + str(self.end_date.month) + '/' + str(self.end_date.year)
         self.df = []
         self.dates = []
         self.closingValues = []
@@ -95,10 +97,14 @@ class Stock:
          
         
     def loadData(self):
-        from_date = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
-        to_date = str(self.end_date.day) + '/' + str(self.end_date.month) + '/' + str(self.end_date.year)
-        self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= from_date, to_date= to_date)
-
+        from_date = self.start_date_str
+        to_date = self.end_date_str 
+        
+        print('Loading ' + self.name , from_date , to_date)
+        try:
+            self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= from_date, to_date= to_date)
+        except ConnectionError:
+            print('Internet connection Error')
         self.parseDF()
         if self.compare_start != [] and self.compare_end != []:
             self.calcAverage()

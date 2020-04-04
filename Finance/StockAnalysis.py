@@ -32,13 +32,13 @@ from MarketClass import Market
 country = 'sweden'
 funds_list = investpy.get_funds_list(country=country)
 fund = funds_list[10]
-start_date = datetime(2019, 12, 20,)
+start_date = datetime(2014, 12, 20,)
 
-## Stocks
-#fund1 = Stock(fund, country, start_date )
-#fund1.loadData()
-#fund1.compareDates(datetime(2020, 1, 20,) , datetime(2020, 2, 20,))
-#fund1.plotMe()
+# Stocks
+fund1 = Stock(fund, country, start_date )
+fund1.loadData()
+fund1.compareDates(datetime(2018, 1, 20,) , datetime(2020, 2, 20,))
+fund1.plotMe()
 
 names = []
 names.append( funds_list[10])
@@ -49,7 +49,7 @@ names.append( funds_list[13])
 marketName = 'Marknad1'
 market1 = Market(marketName, names, country, start_date )
 market1.loadData()
-market1.compareDates(datetime(2020, 1, 20,) , datetime(2020, 2, 20,))
+market1.compareDates(datetime(2020, 1, 20,) , datetime(2020, 2, 17,))
 market1.plotMe()
 
 

@@ -41,6 +41,12 @@ class Market(Stock):
         self.compare_start = compare_start
         self.compare_end = compare_end
         
+        slopes = []
+        for X in self.stock_list:
+            slopes.append(X.slope)
+            X.compareDates(self.compare_start, self.compare_end)
+        self.avg_slope = np.mean(slopes)
+        
         year = compare_start.year
         month = compare_start.month
         day = compare_start.day
@@ -71,8 +77,10 @@ class Market(Stock):
     def plotMe(self):
         plt.figure()
         
+        plt.subplot(211)
+        
         for X in self.stock_list: 
-            plt.plot(X.daysSinceToday, X.closingValuesNormed, label = X.name, linewidth = 2)
+            plt.plot(X.daysSinceToday, X.closingValues, label = X.name, linewidth = 2)
         
         
         plt.xlabel('[Days since today]', fontsize = 12)
@@ -87,7 +95,7 @@ class Market(Stock):
                                   sizeX,
                                   10000, color = 'b', alpha = 0.1 ,  linewidth=2.5, edgecolor = False)
             plt.gca().add_patch(rect)
-            plt.title(self.marketName + ' NORMED | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
+            plt.title(self.marketName + ' | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
         
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
@@ -103,6 +111,20 @@ class Market(Stock):
         plt.xlim(min(self.daysSinceToday)*1.1 , 10)
         #plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
+        
+        plt.subplot(212)
+        
+        spanlength = (self.compare_end - self.compare_start).total_seconds()/(60*60*24)
+        
+        for X in self.stock_list:
+            xes = (- spanlength/2 , spanlength/2 )
+            print(X.slope, xes[0], X.slope , xes[1])
+            yes = (X.slope*xes[0], X.slope*xes[1])
+            plt.plot(xes,yes , label = X.name)
+            
+        plt.legend()
+        
+        plt.xlabel('[Days of compare period]')
         
         plt.show()
 

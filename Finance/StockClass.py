@@ -39,6 +39,7 @@ class Stock:
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
+        self.function = []
         self.slope = []
         self.intercept = []
         self.r_value = []
@@ -81,8 +82,10 @@ class Stock:
     def compareDates(self, compare_start, compare_end):
         
         f = interp1d(self.daysSinceToday, self.closingValues)
+        self.function = f
         stop = self.daysSinceOrigo(compare_end)
         start = self.daysSinceOrigo(compare_start)
+        print(self.start_date_str, self.end_date_str, start , stop)
         diff = f(stop) - f(start)
         
         self.AVGline_xes = (start , stop)
@@ -94,7 +97,9 @@ class Stock:
         xes = np.arange(start,stop)
         
         self.slope, self.intercept, self.r_value, self.p_value, self.std_err = stats.linregress(xes,f(xes))
-        
+        self.AVGline_xes = (start , stop)
+        self.AVGline_yes = (self.intercept , self.intercept + self.slope*(stop - start))    
+    
         year = compare_start.year
         month = compare_start.month
         day = compare_start.day
@@ -125,8 +130,8 @@ class Stock:
         plt.figure()
         
         plt.plot(self.daysSinceToday, self.closingValues, label = self.name, linewidth = 2)
-        plt.xlabel('[Days since today]', fontsize = 12)
-        plt.ylabel('[TBI]' , fontsize = 12 )
+        plt.xlabel('[Days ago]', fontsize = 12)
+        plt.ylabel('Stock Price [TBI]' , fontsize = 12 )
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
         

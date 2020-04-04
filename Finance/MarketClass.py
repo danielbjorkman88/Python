@@ -15,11 +15,14 @@ from scipy.interpolate import interp1d
 
 class Market(Stock):
     def __init__(self, names, country, start_date):
+        super().__init__(names, country, start_date)
         self.name = names
         self.country = country
         self.start_date = start_date
+        self.start_date_str = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
         self.end_date = datetime.now()
-        self.df = []
+        self.end_date_str = str(self.end_date.day) + '/' + str(self.end_date.month) + '/' + str(self.end_date.year)
+        self.stock_list = []
         self.dates = []
         self.closingValues = []
         self.openingValues = []
@@ -33,12 +36,20 @@ class Market(Stock):
         self.AVGline_xes = []
         self.AVGline_yes = []
         
-    def daysSinceOrigo(self, date):
-        timedifference = date - datetime.today()
-        return timedifference.total_seconds()/(60*60*24)
-   
 
+    def loadData(self):
+        
+        for X in self.names:
+            tmp = Stock(X, self.country, self.start_date )
+            tmp.loadData()
+            if self.compare_start != [] and self.compare_end != []:
+                tmp.compareDates(self.compare_start  , self.compare_end )
+            self.stock_list.apend(tmp)
+        self.parseDF()
+        
 
+        if self.compare_start != [] and self.compare_end != []:
+            self.calcAverage()
 
 
 

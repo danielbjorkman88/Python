@@ -43,9 +43,13 @@ start_date = datetime(2019, 12, 20,)
 names = []
 names.append( funds_list[10])
 names.append( funds_list[11])
+names.append( funds_list[12])
+names.append( funds_list[13])
 
-market1 = Market(names, country, start_date )
+marketName = 'Marknad1'
+market1 = Market(marketName, names, country, start_date )
 market1.loadData()
+market1.compareDates(datetime(2020, 1, 20,) , datetime(2020, 2, 20,))
 market1.plotMe()
 
 

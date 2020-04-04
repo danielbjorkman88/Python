@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from datetime import datetime
 from scipy.interpolate import interp1d
-
+from scipy import stats
 
 
 class Stock:
@@ -28,6 +28,7 @@ class Stock:
         self.df = []
         self.dates = []
         self.closingValues = []
+        self.closingValuesNormed = []
         self.openingValues = []
         self.daysSinceToday = []
         self.currency = []
@@ -38,6 +39,11 @@ class Stock:
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
+        self.slope = []
+        self.intercept = []
+        self.r_value = []
+        self.p_value = []
+        self.std_err = []
         
     def parseDF(self):
         
@@ -61,8 +67,10 @@ class Stock:
             closingValues[i] = self.df.Close[i]
             openingValues[i] = self.df.Open[i]
             
+
         self.dates = dates
         self.closingValues = closingValues
+        self.closingValuesNormed = self.closingValues/max(self.closingValues)
         self.daysSinceToday = daysSinceToday 
         self.currency = self.df.Currency[0]
     
@@ -82,7 +90,10 @@ class Stock:
         self.compare_start = compare_start
         self.compare_end = compare_end
         self.diff = diff
+
+        xes = np.arange(start,stop)
         
+        self.slope, self.intercept, self.r_value, self.p_value, self.std_err = stats.linregress(xes,f(xes))
         
         year = compare_start.year
         month = compare_start.month

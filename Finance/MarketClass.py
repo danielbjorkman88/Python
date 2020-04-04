@@ -14,8 +14,9 @@ from datetime import datetime
 from scipy.interpolate import interp1d
 
 class Market(Stock):
-    def __init__(self, names, country, start_date):
+    def __init__(self, marketName, names, country, start_date):
         super().__init__(names, country, start_date)
+        self.marketName = marketName
         self.names = names
         self.country = country
         self.start_date = start_date
@@ -35,6 +36,21 @@ class Market(Stock):
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
+
+    def compareDates(self, compare_start, compare_end):
+        self.compare_start = compare_start
+        self.compare_end = compare_end
+        
+        year = compare_start.year
+        month = compare_start.month
+        day = compare_start.day
+        self.compare_start_str = str(year) + "-" + str(month) + "-" + str(day)
+        
+        year = compare_end.year
+        month = compare_end.month
+        day = compare_end.day
+        self.compare_end_str = str(year) + "-" + str(month) + "-" + str(day)
+        
         
     def calc(self):
         pass
@@ -47,6 +63,7 @@ class Market(Stock):
             if self.compare_start != [] and self.compare_end != []:
                 tmp.compareDates(self.compare_start  , self.compare_end )
             self.stock_list.append(tmp)
+            self.daysSinceToday = tmp.daysSinceToday
         
         self.calc()
         
@@ -55,7 +72,7 @@ class Market(Stock):
         plt.figure()
         
         for X in self.stock_list: 
-            plt.plot(X.daysSinceToday, X.closingValues, label = X.name, linewidth = 2)
+            plt.plot(X.daysSinceToday, X.closingValuesNormed, label = X.name, linewidth = 2)
         
         
         plt.xlabel('[Days since today]', fontsize = 12)
@@ -68,9 +85,9 @@ class Market(Stock):
             sizeX = self.daysSinceOrigo( self.compare_end) - startX
             rect = plt.Rectangle((startX, - 1000),
                                   sizeX,
-                                  10000, color = 'b', alpha = 0.2 ,  linewidth=2.5)
+                                  10000, color = 'b', alpha = 0.1 ,  linewidth=2.5, edgecolor = False)
             plt.gca().add_patch(rect)
-            plt.title(self.name + ' | '+  str(self.diff) + ' | increase between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
+            plt.title(self.marketName + ' NORMED | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
         
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
@@ -84,7 +101,7 @@ class Market(Stock):
 
         plt.legend()
         plt.xlim(min(self.daysSinceToday)*1.1 , 10)
-        plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
+        #plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         
         plt.show()

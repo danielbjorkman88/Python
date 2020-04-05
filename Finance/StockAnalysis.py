@@ -31,26 +31,36 @@ from MarketClass import Market
 
 country = 'sweden'
 funds_list = investpy.get_funds_list(country=country)
-fund = funds_list[10]
-start_date = datetime(2014, 12, 20,)
+fund1 = funds_list[10]
+fund2 = funds_list[11]
+sampling_from = datetime(2014, 12, 20,)
 
 # Stocks
-fund1 = Stock(fund, country, start_date )
+fund1 = Stock(fund1, country, sampling_from )
 fund1.loadData()
 fund1.compareDates(datetime(2018, 1, 20,) , datetime(2020, 2, 20,))
 fund1.plotMe()
+
+#fund2 = Stock(fund2, country, sampling_from )
+#fund2.loadData()
+#fund2.compareDates(datetime(2018, 1, 20,) , datetime(2020, 2, 20,))
+#fund2.plotMe()
 
 names = []
 names.append( funds_list[10])
 names.append( funds_list[11])
 names.append( funds_list[12])
-names.append( funds_list[13])
+#names.append( funds_list[13])
 
 marketName = 'Marknad1'
-market1 = Market(marketName, names, country, start_date )
-market1.loadData()
-market1.compareDates(datetime(2020, 1, 20,) , datetime(2020, 2, 17,))
-market1.plotMe()
+compare_start = datetime(2020, 1, 20,) 
+compare_end = datetime(2020, 3, 17,)
+
+
+market1 = Market(marketName, names, country, sampling_from , compare_start , compare_end)
+market1.plotMe( )
+market1.compareDates(datetime(2019, 1, 20,) , datetime(2020, 1, 20,))
+market1.plotMe( )
 
 
 

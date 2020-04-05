@@ -6,15 +6,16 @@ Created on Fri Apr  3 17:30:22 2020
 """
 
 from StockClass import Stock
-import investpy
-import numpy as np
+#import investpy
+#import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from datetime import datetime
-from scipy.interpolate import interp1d
+#from scipy.interpolate import interp1d
+#import operator
 
 class Market(Stock):
-    def __init__(self, marketName, names, country, start_date):
+    def __init__(self, marketName, names, country, start_date, compare_start , compare_end):
         super().__init__(names, country, start_date)
         self.marketName = marketName
         self.names = names
@@ -29,24 +30,22 @@ class Market(Stock):
         self.openingValues = []
         self.daysSinceToday = []
         self.currency = []
-        self.compare_start = []
-        self.compare_start_str = []
-        self.compare_end = []
-        self.compare_end_str = []
+        self.compare_start = compare_start 
+        self.compare_start_str = str(self.compare_start.year) + "-" + str(self.compare_start.month) + "-" + str(self.compare_start.day)
+        self.compare_end = compare_end
+        self.compare_end_str = str(self.compare_end.year) + "-" + str(self.compare_end.month) + "-" + str(self.compare_end.day)
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
+        
+        self.loadData()
 
     def compareDates(self, compare_start, compare_end):
         self.compare_start = compare_start
         self.compare_end = compare_end
         
-        slopes = []
-        for X in self.stock_list:
-            slopes.append(X.slope)
-            X.compareDates(self.compare_start, self.compare_end)
-        self.avg_slope = np.mean(slopes)
         
+     
         year = compare_start.year
         month = compare_start.month
         day = compare_start.day
@@ -57,30 +56,32 @@ class Market(Stock):
         day = compare_end.day
         self.compare_end_str = str(year) + "-" + str(month) + "-" + str(day)
         
+        for X in self.stock_list:
+            X.compareDates(self.compare_start  , self.compare_end )
         
-    def calc(self):
-        pass
+        self.stock_list.sort(key = lambda x: x.diff , reverse= True)
 
     def loadData(self):
         
         for X in self.names:
             tmp = Stock(X, self.country, self.start_date )
             tmp.loadData()
-            if self.compare_start != [] and self.compare_end != []:
-                tmp.compareDates(self.compare_start  , self.compare_end )
+            tmp.compareDates(self.compare_start  , self.compare_end )
             self.stock_list.append(tmp)
             self.daysSinceToday = tmp.daysSinceToday
-        
-        self.calc()
-        
+          
+
 
     def plotMe(self):
         plt.figure()
         
-        plt.subplot(211)
+        plt.subplot(111)
         
         for X in self.stock_list: 
-            plt.plot(X.daysSinceToday, X.closingValues, label = X.name, linewidth = 2)
+            try:
+                plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | '+ str(round(X.diff,2)), linewidth = 2)
+            except:
+                plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | ' , linewidth = 2)
         
         
         plt.xlabel('[Days since today]', fontsize = 12)
@@ -93,7 +94,7 @@ class Market(Stock):
             sizeX = self.daysSinceOrigo( self.compare_end) - startX
             rect = plt.Rectangle((startX, - 1000),
                                   sizeX,
-                                  10000, color = 'b', alpha = 0.1 ,  linewidth=2.5, edgecolor = False)
+                                  10000, color = 'b', alpha = 0.1 ,  linewidth=2.5)
             plt.gca().add_patch(rect)
             plt.title(self.marketName + ' | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
         
@@ -112,19 +113,19 @@ class Market(Stock):
         #plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         
-        plt.subplot(212)
-        
-        spanlength = (self.compare_end - self.compare_start).total_seconds()/(60*60*24)
-        
-        for X in self.stock_list:
-            xes = (- spanlength/2 , spanlength/2 )
-            print(X.slope, xes[0], X.slope , xes[1])
-            yes = (X.slope*xes[0], X.slope*xes[1])
-            plt.plot(xes,yes , label = X.name)
-            
-        plt.legend()
-        
-        plt.xlabel('[Days of compare period]')
+#        plt.subplot(212)
+#        
+#        spanlength = (self.compare_end - self.compare_start).total_seconds()/(60*60*24)
+#        
+#        for X in self.stock_list:
+#            xes = (- spanlength/2 , spanlength/2 )
+#            print(X.slope, xes[0], X.slope , xes[1])
+#            yes = (X.slope*xes[0], X.slope*xes[1])
+#            plt.plot(xes,yes , label = X.name)
+#            
+#        plt.legend()
+#        
+#        plt.xlabel('[Days of compare period]')
         
         plt.show()
 

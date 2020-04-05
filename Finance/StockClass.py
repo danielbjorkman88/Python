@@ -45,6 +45,7 @@ class Stock:
         self.r_value = []
         self.p_value = []
         self.std_err = []
+        self.lifespan = []
         
     def parseDF(self):
         
@@ -74,32 +75,41 @@ class Stock:
         self.closingValuesNormed = self.closingValues/max(self.closingValues)
         self.daysSinceToday = daysSinceToday 
         self.currency = self.df.Currency[0]
+        self.lifespan = abs(min(daysSinceToday))#days
     
     def daysSinceOrigo(self, date):
         timedifference = date - datetime.today()
         return timedifference.total_seconds()/(60*60*24)
         
     def compareDates(self, compare_start, compare_end):
+        self.compare_start = compare_start
+        self.compare_end = compare_end    
         
         f = interp1d(self.daysSinceToday, self.closingValues)
         self.function = f
-        stop = self.daysSinceOrigo(compare_end)
-        start = self.daysSinceOrigo(compare_start)
-        print(self.start_date_str, self.end_date_str, start , stop)
-        diff = f(stop) - f(start)
+        stop = self.daysSinceOrigo(self.compare_end)
+        start = self.daysSinceOrigo(self.compare_start)
         
-        self.AVGline_xes = (start , stop)
-        self.AVGline_yes = (f(start) , f(stop))
-        self.compare_start = compare_start
-        self.compare_end = compare_end
-        self.diff = diff
-
-        xes = np.arange(start,stop)
+        if start > min(self.daysSinceToday) and stop < max(self.daysSinceToday):
+            self.diff = f(stop) - f(start)
+        elif stop < max(self.daysSinceToday):
+            self.diff = f(stop)
+        else:
+            self.diff = 0.0
         
-        self.slope, self.intercept, self.r_value, self.p_value, self.std_err = stats.linregress(xes,f(xes))
-        self.AVGline_xes = (start , stop)
-        self.AVGline_yes = (self.intercept , self.intercept + self.slope*(stop - start))    
-    
+        
+        
+        try:
+            self.AVGline_xes = (start , stop)
+            self.AVGline_yes = (f(start) , f(stop))
+            xes = np.arange(start,stop)
+            
+            self.slope, self.intercept, self.r_value, self.p_value, self.std_err = stats.linregress(xes,f(xes))
+            self.AVGline_xes = (start , stop)
+            self.AVGline_yes = (self.intercept , self.intercept + self.slope*(stop - start))    
+        except:
+            pass
+        
         year = compare_start.year
         month = compare_start.month
         day = compare_start.day
@@ -109,7 +119,7 @@ class Stock:
         month = compare_end.month
         day = compare_end.day
         self.compare_end_str = str(year) + "-" + str(month) + "-" + str(day)
-        return diff
+
          
         
     def loadData(self):

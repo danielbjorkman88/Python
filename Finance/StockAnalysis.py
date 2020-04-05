@@ -39,7 +39,7 @@ sampling_from = datetime(2014, 12, 20,)
 fund1 = Stock(fund1, country, sampling_from )
 fund1.loadData()
 fund1.compareDates(datetime(2018, 1, 20,) , datetime(2020, 2, 20,))
-fund1.plotMe()
+#fund1.plotMe()
 
 #fund2 = Stock(fund2, country, sampling_from )
 #fund2.loadData()

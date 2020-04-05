@@ -93,9 +93,9 @@ class Stock:
         if start > min(self.daysSinceToday) and stop < max(self.daysSinceToday):
             self.diff = f(stop) - f(start)
         elif stop < max(self.daysSinceToday):
-            self.diff = f(stop)
+            self.diff = f(stop) - 0
         else:
-            self.diff = 0.0
+            self.diff = 0
         
         
         

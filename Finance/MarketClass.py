@@ -28,8 +28,7 @@ class Market(Stock):
         self.dates = []
         self.closingValues = []
         self.openingValues = []
-        self.daysSinceToday = []
-        self.currency = []
+        self.daysSinceToday = (0 , 0)
         self.compare_start = compare_start 
         self.compare_start_str = str(self.compare_start.year) + "-" + str(self.compare_start.month) + "-" + str(self.compare_start.day)
         self.compare_end = compare_end
@@ -39,6 +38,8 @@ class Market(Stock):
         self.AVGline_yes = []
         
         self.loadData()
+        self.currency = self.stock_list[0].currency
+        self.compareDates(self.compare_start, self.compare_end)
 
     def compareDates(self, compare_start, compare_end):
         self.compare_start = compare_start
@@ -58,6 +59,7 @@ class Market(Stock):
         
         for X in self.stock_list:
             X.compareDates(self.compare_start  , self.compare_end )
+            
         
         self.stock_list.sort(key = lambda x: x.diff , reverse= True)
 
@@ -68,9 +70,10 @@ class Market(Stock):
             tmp.loadData()
             tmp.compareDates(self.compare_start  , self.compare_end )
             self.stock_list.append(tmp)
-            self.daysSinceToday = tmp.daysSinceToday
+            if min(tmp.daysSinceToday) < min(self.daysSinceToday):
+                self.daysSinceToday = tmp.daysSinceToday
           
-
+        
 
     def plotMe(self):
         plt.figure()
@@ -85,7 +88,7 @@ class Market(Stock):
         
         
         plt.xlabel('[Days since today]', fontsize = 12)
-        plt.ylabel('[TBI]' , fontsize = 12 )
+        plt.ylabel('Stock Value [' + self.currency + ']' , fontsize = 12 )
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
         
@@ -109,7 +112,7 @@ class Market(Stock):
         #plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'Linear interpolation')
 
         plt.legend()
-        plt.xlim(min(self.daysSinceToday)*1.1 , 10)
+        plt.xlim(min(self.daysSinceToday)*1.02 , 10)
         #plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         

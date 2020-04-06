@@ -16,7 +16,7 @@ from datetime import datetime
 
 class Market(Stock):
     def __init__(self, marketName, names, country, start_date, compare_start , compare_end):
-        super().__init__(names, country, start_date)
+        #super().__init__(marketName, country, start_date, compare_start , compare_end)
         self.marketName = marketName
         self.names = names
         self.country = country
@@ -36,6 +36,7 @@ class Market(Stock):
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
+
         
         self.loadData()
         self.currency = self.stock_list[0].currency
@@ -65,14 +66,18 @@ class Market(Stock):
 
     def loadData(self):
         
+        print('Loading ' + self.marketName + '...')
+        
         for X in self.names:
-            tmp = Stock(X, self.country, self.start_date )
-            tmp.loadData()
-            tmp.compareDates(self.compare_start  , self.compare_end )
-            self.stock_list.append(tmp)
-            if min(tmp.daysSinceToday) < min(self.daysSinceToday):
-                self.daysSinceToday = tmp.daysSinceToday
-          
+            try:
+                tmp = Stock(X, self.country, self.start_date, self.compare_start , self.compare_end )
+                tmp.compareDates(self.compare_start  , self.compare_end )
+                self.stock_list.append(tmp)
+                if min(tmp.daysSinceToday) < min(self.daysSinceToday):
+                    self.daysSinceToday = tmp.daysSinceToday
+            except:
+                print(X + ' not loaded')
+                pass
         
 
     def plotMe(self):
@@ -92,15 +97,15 @@ class Market(Stock):
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
         
-        if self.compare_start != [] and self.compare_end != []:
-            startX = self.daysSinceOrigo( self.compare_start)
-            sizeX = self.daysSinceOrigo( self.compare_end) - startX
-            rect = plt.Rectangle((startX, - 1000),
-                                  sizeX,
-                                  10000, color = 'b', alpha = 0.1 ,  linewidth=2.5)
-            plt.gca().add_patch(rect)
-            plt.title(self.marketName + ' | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
         
+        startX = self.daysSinceOrigo( self.compare_start)
+        sizeX = self.daysSinceOrigo( self.compare_end) - startX
+        rect = plt.Rectangle((startX, - 1000),
+                              sizeX,
+                              10000, color = 'b', alpha = 0.1 ,  edgecolor = None)
+        plt.gca().add_patch(rect)
+        plt.title(self.marketName + ' | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
+    
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
         newyearsOrigodifference = timedifference.total_seconds()/(60*60*24)

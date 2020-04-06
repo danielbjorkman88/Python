@@ -18,11 +18,11 @@ from scipy import stats
 
 
 class Stock:
-    def __init__(self, name, country, start_date):
+    def __init__(self, name, country, sampling_from, compare_start , compare_end):
         self.name = name
         self.country = country
-        self.start_date = start_date
-        self.start_date_str = str(self.start_date.day) + '/' + str(self.start_date.month) + '/' + str(self.start_date.year)
+        self.sampling_from = sampling_from
+        self.sampling_from_str = str(self.sampling_from.day) + '/' + str(self.sampling_from.month) + '/' + str(self.sampling_from.year)
         self.end_date = datetime.now()
         self.end_date_str = str(self.end_date.day) + '/' + str(self.end_date.month) + '/' + str(self.end_date.year)
         self.df = []
@@ -32,10 +32,10 @@ class Stock:
         self.openingValues = []
         self.daysSinceToday = []
         self.currency = []
-        self.compare_start = []
-        self.compare_start_str = []
-        self.compare_end = []
-        self.compare_end_str = []
+        self.compare_start = compare_start 
+        self.compare_start_str = str(self.compare_start.year) + "-" + str(self.compare_start.month) + "-" + str(self.compare_start.day)
+        self.compare_end = compare_end
+        self.compare_end_str = str(self.compare_end.year) + "-" + str(self.compare_end.month) + "-" + str(self.compare_end.day)
         self.diff = []
         self.AVGline_xes = []
         self.AVGline_yes = []
@@ -46,6 +46,9 @@ class Stock:
         self.p_value = []
         self.std_err = []
         self.lifespan = []
+        
+        self.loadData()
+        self.compareDates( self.compare_start, self.compare_end)
         
     def parseDF(self):
         
@@ -82,6 +85,7 @@ class Stock:
         return timedifference.total_seconds()/(60*60*24)
         
     def compareDates(self, compare_start, compare_end):
+           
         self.compare_start = compare_start
         self.compare_end = compare_end    
         
@@ -90,25 +94,21 @@ class Stock:
         stop = self.daysSinceOrigo(self.compare_end)
         start = self.daysSinceOrigo(self.compare_start)
         
+        #print(start , stop , min(self.daysSinceToday))
+        
         if start > min(self.daysSinceToday) and stop < max(self.daysSinceToday):
             self.diff = f(stop) - f(start)
+            self.AVGline_yes = (f(start) , f(stop))
         elif stop < max(self.daysSinceToday):
             self.diff = f(stop) - 0
+            self.AVGline_yes = (f(stop) - 0 , 0)
         else:
             self.diff = 0
+            self.AVGline_yes = (0 , 0)
         
         
-        
-        try:
-            self.AVGline_xes = (start , stop)
-            self.AVGline_yes = (f(start) , f(stop))
-            xes = np.arange(start,stop)
-            
-            self.slope, self.intercept, self.r_value, self.p_value, self.std_err = stats.linregress(xes,f(xes))
-            self.AVGline_xes = (start , stop)
-            self.AVGline_yes = (self.intercept , self.intercept + self.slope*(stop - start))    
-        except:
-            pass
+        self.AVGline_xes = (start , stop)
+
         
         year = compare_start.year
         month = compare_start.month
@@ -123,37 +123,37 @@ class Stock:
          
         
     def loadData(self):
-        from_date = self.start_date_str
-        to_date = self.end_date_str 
         
-        print('Loading ' + self.name , from_date , to_date)
+        print('Loading ' , self.name , self.sampling_from_str , self.end_date_str )
         try:
-            self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= from_date, to_date= to_date)
+            self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= self.sampling_from_str, to_date= self.end_date_str )
         except ConnectionError:
             print('Internet connection Error')
+        
+            
         self.parseDF()
-        if self.compare_start != [] and self.compare_end != []:
-            self.calcAverage()
+
 
 
     def plotMe(self):
-        plt.figure()
+        fig = plt.figure()
+
         
-        plt.plot(self.daysSinceToday, self.closingValues, label = self.name, linewidth = 2)
-        plt.xlabel('[Days ago]', fontsize = 12)
-        plt.ylabel('Stock Price [TBI]' , fontsize = 12 )
+        plt.plot(self.daysSinceToday, self.closingValues, label = self.name + ' ' + str(self.diff), linewidth = 2)
+        plt.xlabel('[Days since today]', fontsize = 12)
+        plt.ylabel('Stock Value [' + self.currency + ']' , fontsize = 12 )
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
         
-        if self.compare_start != [] and self.compare_end != []:
-            startX = self.daysSinceOrigo( self.compare_start)
-            sizeX = self.daysSinceOrigo( self.compare_end) - startX
-            rect = plt.Rectangle((startX, - 1000),
-                                  sizeX,
-                                  10000, color = 'b', alpha = 0.2 ,  linewidth=2.5)
-            plt.gca().add_patch(rect)
-            plt.title(self.name + ' | '+  str(self.diff) + ' | increase between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
-        
+
+        startX = self.daysSinceOrigo( self.compare_start)
+        sizeX = self.daysSinceOrigo( self.compare_end) - startX
+        rect = plt.Rectangle((startX, - 1000),
+                              sizeX,
+                              10000, color = 'b', alpha = 0.2 ,  edgecolor = None)
+        plt.gca().add_patch(rect)
+        plt.title(self.name + ' | '+  str(self.diff) + ' | increase between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
+    
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
         newyearsOrigodifference = timedifference.total_seconds()/(60*60*24)
@@ -168,19 +168,18 @@ class Stock:
         plt.xlim(min(self.daysSinceToday)*1.1 , 10)
         plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
+        xlength = 12
+        
+        fig.set_size_inches(xlength, xlength/1.618)
+        
+        if self.AVGline_yes[1] == 0:
+            print('Warning: Compare start outside sampling range')
         
         plt.show()
 
 
 
-#country = 'sweden'
-#
-#start_date = datetime(2019, 12, 20,)
-#end_date = datetime.now()
-#
-#fund1 = Stock(fund, country, start_date , end_date)
-#fund1.loadData()
-#fund1.plotMe()
+
 
 
 

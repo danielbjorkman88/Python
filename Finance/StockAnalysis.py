@@ -8,8 +8,8 @@ Created on Fri Apr  3 11:56:35 2020
 
 
 import investpy
-import numpy as np
-import matplotlib.pyplot as plt
+#import numpy as np
+#import matplotlib.pyplot as plt
 from datetime import datetime
 from StockClass import Stock 
 from MarketClass import Market 
@@ -31,14 +31,17 @@ from MarketClass import Market
 
 country = 'sweden'
 funds_list = investpy.get_funds_list(country=country)
-fund1 = funds_list[10]
-fund2 = funds_list[11]
-sampling_from = datetime(2014, 12, 20,)
+fundName = funds_list[10]
+fundName = funds_list[11]
+sampling_from = datetime(2019, 1, 1,)
 
-# Stocks
-fund1 = Stock(fund1, country, sampling_from )
-fund1.loadData()
-fund1.compareDates(datetime(2018, 1, 20,) , datetime(2020, 2, 20,))
+compare_start = datetime(2020, 1, 20,) 
+compare_end = datetime(2020, 3, 17,)
+
+#Stocks
+#fund1 = Stock(fundName, country, sampling_from , compare_start , compare_end)
+#fund1.plotMe()
+#fund1.compareDates(datetime(2015, 1, 20,) , datetime(2020, 2, 20,))
 #fund1.plotMe()
 
 #fund2 = Stock(fund2, country, sampling_from )
@@ -47,19 +50,20 @@ fund1.compareDates(datetime(2018, 1, 20,) , datetime(2020, 2, 20,))
 #fund2.plotMe()
 
 names = []
-names.append( funds_list[10])
-names.append( funds_list[11])
-names.append( funds_list[12])
+for i in range(10,30):
+    names.append(funds_list[i])
+#names.append( funds_list[10])
+#names.append( funds_list[11])
+#names.append( funds_list[12])
 #names.append( funds_list[13])
 
 marketName = 'Marknad1'
-compare_start = datetime(2020, 1, 20,) 
-compare_end = datetime(2020, 3, 17,)
+
 
 
 market1 = Market(marketName, names, country, sampling_from , compare_start , compare_end)
 market1.plotMe( )
-market1.compareDates(datetime(2019, 1, 20,) , datetime(2020, 1, 20,))
+market1.compareDates(datetime(2019, 12, 20,) , datetime(2020, 4, 1,))
 market1.plotMe( )
 
 

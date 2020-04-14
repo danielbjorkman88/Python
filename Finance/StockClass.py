@@ -100,8 +100,8 @@ class Stock:
             self.diff = f(stop) - f(start)
             self.AVGline_yes = (f(start) , f(stop))
         elif stop < max(self.daysSinceToday):
-            self.diff = f(stop) - 0
-            self.AVGline_yes = (f(stop) - 0 , 0)
+            self.diff = f(stop) - self.closingValues[0]
+            self.AVGline_yes = (f(stop) - 0 , self.closingValues[0])
         else:
             self.diff = 0
             self.AVGline_yes = (0 , 0)
@@ -124,7 +124,7 @@ class Stock:
         
     def loadData(self):
         
-        print('Loading ' , self.name , self.sampling_from_str , self.end_date_str )
+        print('Loading ' , self.name  )
         try:
             self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= self.sampling_from_str, to_date= self.end_date_str )
         except ConnectionError:
@@ -169,7 +169,6 @@ class Stock:
         plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         xlength = 12
-        
         fig.set_size_inches(xlength, xlength/1.618)
         
         if self.AVGline_yes[1] == 0:

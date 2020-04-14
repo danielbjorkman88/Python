@@ -63,6 +63,7 @@ class Market(Stock):
             
         
         self.stock_list.sort(key = lambda x: x.diff , reverse= True)
+        self.writeMe()
 
     def loadData(self):
         
@@ -78,10 +79,17 @@ class Market(Stock):
             except:
                 print(X + ' not loaded')
                 pass
+
+    def writeMe(self):
         
+        f = open("Comparisons.txt", "w")
+        f.write("Comparing stocks between " + self.compare_start_str + " and " + self.compare_end_str + "\n")
+        for X in self.stock_list:
+            f.write(X.name + " | " + str(round(X.diff,2)) + "\n")
+        f.close()
 
     def plotMe(self):
-        plt.figure()
+        fig = plt.figure()
         
         plt.subplot(111)
         
@@ -102,7 +110,7 @@ class Market(Stock):
         sizeX = self.daysSinceOrigo( self.compare_end) - startX
         rect = plt.Rectangle((startX, - 1000),
                               sizeX,
-                              10000, color = 'b', alpha = 0.1 ,  edgecolor = None)
+                              10000000, color = 'b', alpha = 0.1 ,  edgecolor = None)
         plt.gca().add_patch(rect)
         plt.title(self.marketName + ' | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
     
@@ -116,24 +124,16 @@ class Market(Stock):
 
         #plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'Linear interpolation')
 
-        plt.legend()
+        plt.legend(loc=2)
         plt.xlim(min(self.daysSinceToday)*1.02 , 10)
-        #plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         
-#        plt.subplot(212)
-#        
-#        spanlength = (self.compare_end - self.compare_start).total_seconds()/(60*60*24)
-#        
-#        for X in self.stock_list:
-#            xes = (- spanlength/2 , spanlength/2 )
-#            print(X.slope, xes[0], X.slope , xes[1])
-#            yes = (X.slope*xes[0], X.slope*xes[1])
-#            plt.plot(xes,yes , label = X.name)
-#            
-#        plt.legend()
-#        
-#        plt.xlabel('[Days of compare period]')
+        xlength = 12
+        fig.set_size_inches(xlength, xlength/1.618)
+       
+
+        
+    
         
         plt.show()
 

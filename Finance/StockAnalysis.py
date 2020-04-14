@@ -31,16 +31,16 @@ from MarketClass import Market
 
 country = 'sweden'
 funds_list = investpy.get_funds_list(country=country)
-fundName = funds_list[10]
-fundName = funds_list[11]
-sampling_from = datetime(2019, 1, 1,)
+fundName = funds_list[20]
+#fundName = funds_list[11]
+sampling_from = datetime(2014, 1, 1,)
 
-compare_start = datetime(2020, 1, 20,) 
-compare_end = datetime(2020, 3, 17,)
+compare_start = datetime(2015, 1, 20,) 
+compare_end = datetime(2020, 2, 18,)
 
 #Stocks
-#fund1 = Stock(fundName, country, sampling_from , compare_start , compare_end)
-#fund1.plotMe()
+fund1 = Stock(fundName, country, sampling_from , compare_start , compare_end)
+fund1.plotMe()
 #fund1.compareDates(datetime(2015, 1, 20,) , datetime(2020, 2, 20,))
 #fund1.plotMe()
 
@@ -50,7 +50,7 @@ compare_end = datetime(2020, 3, 17,)
 #fund2.plotMe()
 
 names = []
-for i in range(10,30):
+for i in range(len(funds_list)):
     names.append(funds_list[i])
 #names.append( funds_list[10])
 #names.append( funds_list[11])
@@ -60,11 +60,17 @@ for i in range(10,30):
 marketName = 'Marknad1'
 
 
+#candidate = 'Handelsbanken usa index ctiteria'
+
+#names.append()
+
+
+
 
 market1 = Market(marketName, names, country, sampling_from , compare_start , compare_end)
 market1.plotMe( )
-market1.compareDates(datetime(2019, 12, 20,) , datetime(2020, 4, 1,))
-market1.plotMe( )
+#market1.compareDates(datetime(2019, 1, 15,) , datetime(2020, 1, 20,))
+#market1.plotMe( )
 
 
 

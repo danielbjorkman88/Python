@@ -84,7 +84,7 @@ class Market(Stock):
         for X in self.stock_list:
             f.write(X.name + " | " + str(round(X.slope,2)) + "\n")
         f.close()
-        print("Market written in " + filename)
+        print(self.marketName +  " written in " + filename)
 
     def plotMe(self):
         fig = plt.figure()

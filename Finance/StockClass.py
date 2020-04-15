@@ -27,20 +27,20 @@ class Stock:
         self.end_date_str = str(self.end_date.day) + '/' + str(self.end_date.month) + '/' + str(self.end_date.year)
         self.df = []
         self.dates = []
-        self.closingValues = []
-        self.closingValuesNormed = []
-        self.openingValues = []
-        self.daysSinceToday = []
-        self.currency = []
+        self.closingValues = [0]
+        self.closingValuesNormed = [0]
+        self.openingValues = [0]
+        self.daysSinceToday = [0]
+        self.currency = 'SEK' #Placeholder
         self.compare_start = compare_start 
         self.compare_start_str = str(self.compare_start.year) + "-" + str(self.compare_start.month) + "-" + str(self.compare_start.day)
         self.compare_end = compare_end
         self.compare_end_str = str(self.compare_end.year) + "-" + str(self.compare_end.month) + "-" + str(self.compare_end.day)
         self.diff = []
-        self.AVGline_xes = []
-        self.AVGline_yes = []
+        self.AVGline_xes = [0,0]
+        self.AVGline_yes = [0,0]
         self.function = []
-        self.slope = []
+        self.slope = 0
         self.intercept = []
         self.r_value = []
         self.p_value = []
@@ -48,7 +48,11 @@ class Stock:
         self.lifespan = []
         
         self.loadData()
-        self.compareDates( self.compare_start, self.compare_end)
+        
+        try:
+            self.compareDates( self.compare_start, self.compare_end)
+        except:
+            print('Unable to compare')
         
     def parseDF(self):
         
@@ -98,17 +102,21 @@ class Stock:
         
         if start > min(self.daysSinceToday) and stop < max(self.daysSinceToday):
             self.diff = f(stop) - f(start)
+            self.AVGline_xes = (start , stop)
             self.AVGline_yes = (f(start) , f(stop))
         elif stop < max(self.daysSinceToday):
             self.diff = f(stop) - self.closingValues[0]
-            self.AVGline_yes = (f(stop) - 0 , self.closingValues[0])
+            self.AVGline_xes = (min(self.daysSinceToday) , stop)
+            self.AVGline_yes = (self.closingValues[0], f(stop) - 0 )
         else:
             self.diff = 0
+            self.AVGline_xes = (0 , 0)
             self.AVGline_yes = (0 , 0)
         
-        
-        self.AVGline_xes = (start , stop)
-
+        try:
+            self.slope = ( self.AVGline_yes[1] - self.AVGline_yes[0]) / ( self.AVGline_xes[1] - self.AVGline_xes[0])
+        except:
+            self.slope = 0
         
         year = compare_start.year
         month = compare_start.month
@@ -127,11 +135,11 @@ class Stock:
         print('Loading ' , self.name  )
         try:
             self.df = investpy.get_fund_historical_data(fund=self.name, country=self.country, from_date= self.sampling_from_str, to_date= self.end_date_str )
+            self.parseDF()
         except ConnectionError:
             print('Internet connection Error')
-        
-            
-        self.parseDF()
+        except ValueError:
+            print('No data found')
 
 
 
@@ -139,7 +147,7 @@ class Stock:
         fig = plt.figure()
 
         
-        plt.plot(self.daysSinceToday, self.closingValues, label = self.name + ' ' + str(self.diff), linewidth = 2)
+        plt.plot(self.daysSinceToday, self.closingValues, label = self.name + ' | k = ' + str(round(self.slope,5)), linewidth = 2)
         plt.xlabel('[Days since today]', fontsize = 12)
         plt.ylabel('Stock Value [' + self.currency + ']' , fontsize = 12 )
         plt.xticks(rotation=45)
@@ -162,10 +170,10 @@ class Stock:
             plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
 
-        plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'Linear interpolation')
+        plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2  )
 
         plt.legend()
-        plt.xlim(min(self.daysSinceToday)*1.1 , 10)
+        plt.xlim(min(min(self.daysSinceToday)*1.1, self.daysSinceOrigo(self.compare_start))*1.1 , 10)
         plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
         
         xlength = 12

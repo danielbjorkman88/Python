@@ -6,17 +6,13 @@ Created on Fri Apr  3 17:30:22 2020
 """
 
 from StockClass import Stock
-#import investpy
-#import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
+#import matplotlib.patches as patches
 from datetime import datetime
-#from scipy.interpolate import interp1d
-#import operator
+
 
 class Market(Stock):
     def __init__(self, marketName, names, country, start_date, compare_start , compare_end):
-        #super().__init__(marketName, country, start_date, compare_start , compare_end)
         self.marketName = marketName
         self.names = names
         self.country = country
@@ -62,7 +58,7 @@ class Market(Stock):
             X.compareDates(self.compare_start  , self.compare_end )
             
         
-        self.stock_list.sort(key = lambda x: x.diff , reverse= True)
+        self.stock_list.sort(key = lambda x: x.slope , reverse= True)
         self.writeMe()
 
     def loadData(self):
@@ -82,11 +78,13 @@ class Market(Stock):
 
     def writeMe(self):
         
-        f = open("Comparisons.txt", "w")
+        filename = "Comparisons.txt"
+        f = open(filename, "w")
         f.write("Comparing stocks between " + self.compare_start_str + " and " + self.compare_end_str + "\n")
         for X in self.stock_list:
-            f.write(X.name + " | " + str(round(X.diff,2)) + "\n")
+            f.write(X.name + " | " + str(round(X.slope,2)) + "\n")
         f.close()
+        print("Market written in " + filename)
 
     def plotMe(self):
         fig = plt.figure()
@@ -95,7 +93,7 @@ class Market(Stock):
         
         for X in self.stock_list: 
             try:
-                plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | '+ str(round(X.diff,2)), linewidth = 2)
+                plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | k = '+ str(round(X.slope,4)), linewidth = 2)
             except:
                 plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | ' , linewidth = 2)
         
@@ -121,8 +119,6 @@ class Market(Stock):
         for i in range(10):
             plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
-
-        #plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 2 , label = 'Linear interpolation')
 
         plt.legend(loc=2)
         plt.xlim(min(self.daysSinceToday)*1.02 , 10)

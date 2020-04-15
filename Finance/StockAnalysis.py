@@ -5,7 +5,9 @@ Created on Fri Apr  3 11:56:35 2020
 @author: malyr
 """
 
-
+#InvestPy installation:
+#import sys
+#!{sys.executable} -m pip install investpy -U
 
 import investpy
 from datetime import datetime
@@ -26,7 +28,7 @@ fund1 = Stock(fundName, country, sampling_from , compare_start , compare_end)
 
 
 names = []
-for i in range(1,20):
+for i in range(len(funds_list)):
     names.append(funds_list[i])
 
     

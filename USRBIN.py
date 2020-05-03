@@ -1,5 +1,11 @@
 # coding=utf-8
 
+import numpy as np
+import math
+import os
+import time
+import copy
+import matplotlib.pyplot as plt
 
 class USRBIN():
     """
@@ -55,7 +61,7 @@ class USRBIN():
         
     def readRaw(self, start, stop):
 
-        import numpy as np
+        
 
 #        data = np.genfromtxt(filename, skip_header= start -1, skip_footer= stop -9)
         data = np.genfromtxt(self.filename, skip_header= start -1, skip_footer= len(self.file) - stop -2)
@@ -66,8 +72,7 @@ class USRBIN():
     
     def constructCube(self, data):
         
-        import numpy as np
-        import math
+
         
         info = self.info
 
@@ -175,9 +180,7 @@ class USRBIN():
     
     
     def read(self):
-        import os
-        import time
-        import numpy as np
+
     
         directory = self.path
         filename = self.filename
@@ -332,7 +335,6 @@ class USRBIN():
 
     def readError(self):
 
-        import numpy as np
         
         data = self.readRaw(  self.starts[1], self.stops[1])
         cube = self.constructCube(data)
@@ -351,10 +353,10 @@ class USRBIN():
     	z Axis -> Index 4
     	Default: x and z Axis
     	"""
-        import os
+
         os.chdir(self.contourpath)       
         
-    	import copy
+
     	X = []	
     	Y = []
     	Xs = []	
@@ -385,7 +387,7 @@ class USRBIN():
         self.Ys = Ys
 
     def drawGeo(self,ax):
-        import matplotlib.pyplot as plt
+
         for j in range(len(self.Xs)):
             plt.plot(self.Ys[j], self.Xs[j], 'k-',  linewidth=0.5, alpha = 0.5)
         return ax;
@@ -460,7 +462,6 @@ class USRBIN():
 
     def calc(self):
         
-        import numpy as np
         
         cube = self.cube
         self.vertical = cube[int(cube.shape[0]/2),0:,0:]       

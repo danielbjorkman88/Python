@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  6 15:29:56 2020
+
+@author: malyr
+"""
+
+#SVM
+
+import sklearn
+from sklearn import datasets
+from sklearn import svm
+
+cancer = datasets.load_breast_cancer()
+
+print(cancer.feature_name)
+print(cancer.target_names)
+
+x = cancer.data
+y = cancer.target
+
+x_train , x_test, y_train , y_test = sklearn.model_selection.train_test_split(x,y, test_size = 0.1)
+
+classes = ['Malignant', 'Benign']
+
+

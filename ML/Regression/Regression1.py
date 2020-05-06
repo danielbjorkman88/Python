@@ -58,7 +58,7 @@ for i in range(len(labelNames)):
 
 print("Intercept: \n", linear.intercept_)
 
-predictions = linear.predict(x_test)
+
 
 
 
@@ -72,6 +72,7 @@ for dimension in range(x.shape[1]):
     #plt.scatter(x_train[:,dimension], y_train, label = 'Training data')
     #plt.scatter(x_test[:,dimension], y_test, label = 'Testing data')
     plt.scatter(data[p], data[predict], label = "Data")
+    predictions = linear.predict(x_test)
     plt.scatter(x_test[:,dimension], predictions, label = 'Predicted ' + predict)
 
     plt.plot(xes , yes , label = 'Best fit', color = 'r')

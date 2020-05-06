@@ -11,11 +11,9 @@ import pandas as pd
 import numpy as np
 import sklearn
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn import linear_model , preprocessing
-from sklearn.utils import shuffle
+from sklearn import preprocessing
 import os
 import matplotlib.pyplot as plt
-import pickle
 
 path = r'C:\Users\malyr\OneDrive\Dokument\GitHub\Python\ML\Data'
 
@@ -43,51 +41,35 @@ y = list(cls)
 
 x_train , x_test, y_train , y_test = sklearn.model_selection.train_test_split(x,y, test_size = 0.1)
 
+processedTrainingData = np.zeros([len(x_test), len(labelNames)])
+for i in range(len(x_test)):
+    for j in range(len(labelNames)):
+        processedTrainingData[i,j] = x_test[i][j]
+
+
 model = KNeighborsClassifier(n_neighbors= 9)
 
 model.fit(x_train, y_train)
 acc = model.score(x_test , y_test)
 print(acc)
 
-predicted = model.predict(x_test)
+predictions = model.predict(x_test)
 
 
 names = ["unacc" , "acc" , "good", "vgood"]
 
 for x in range(len(x_test)):
-    print("Pridicted: " , names[predicted[x]], "Data: ", x_test[x], "Actual: ", names[y_test[x]])
+    print("Pridicted: " , names[predictions[x]], "Data: ", x_test[x], "Actual: ", names[y_test[x]])
 
 
 
+plt.figure()
 
-#
-#for dimension in range(x.shape[1]):
-#    p = labelNames[dimension]
-#    plt.figure()
-#    
-#    #plt.scatter(x_train[:,dimension], y_train, label = 'Training data')
-#    #plt.scatter(x_test[:,dimension], y_test, label = 'Testing data')
-#    plt.scatter(data[p], data[predict], label = "Data")
-#    predictions = linear.predict(x_test)
-#    plt.scatter(x_test[:,dimension], predictions, label = 'Predicted ' + predict)
-#
-#    plt.plot(xes , yes , label = 'Best fit', color = 'r')
-#    
-#    plt.xlabel(p)
-#    plt.ylabel('Final Grade ' + predict)
-#    plt.plot()
-#    plt.grid(linewidth = 0.3)
-#    plt.legend()
-#    plt.show()
+dimension = 0
+p = labelNames[dimension]
+plt.figure()
+plt.scatter(data[p], data[predict], label = "Data")
+plt.scatter(processedTrainingData[:,dimension], predictions, label = 'Predicted ' + predict)
 
-
-
-
-
-
-
-
-
-
-
-
+plt.legend()
+plt.show()

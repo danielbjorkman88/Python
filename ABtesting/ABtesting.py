@@ -53,7 +53,10 @@ plt.plot(x, A_posterior.pdf(x), '-', lw=2, label='A variant. Mean = ' + str(A_po
 plt.plot(x, B_posterior.pdf(x), '-', lw=2, label='B variant. Mean = ' + str(B_posterior.expect()))
 plt.legend()
 
+plt.ylabel('Density', fontsize = 18)
+plt.xlabel('Sucess rate', fontsize = 18)
 plt.title('Posterior probabilities', fontsize = 14)
+plt.grid(linewidth = 0.3)
 plt.show()
 
 

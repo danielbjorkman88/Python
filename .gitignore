@@ -7,3 +7,6 @@ Finance/__pycache__/StockClass.cpython-37.pyc
 Finance/__pycache__/StockClass.cpython-37.pyc
 ML/Data/studentGradePredictor.pickle
 ML/Data/student.txt
+*.R
+Machine Learning/Data/student.txt
+*.pickle

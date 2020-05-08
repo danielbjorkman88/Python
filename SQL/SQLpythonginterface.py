@@ -17,7 +17,7 @@ class SQLpyclass:
         #self.DBcontent = []
         self.tables = []
         
-        self.fetch_all_tables()
+        self.fetch_all_table_names()
         
     
     def execute(self, sql_command):
@@ -50,6 +50,19 @@ class SQLpyclass:
         cursor.close()
         connection.close()
 
+    def fetch_table(self, table_name):
+        connection = sqlite3.connect(self.database)
+        
+        if table_name in self.tables:
+            table = pd.read_sql_query("SELECT * from " + table_name, connection)
+            connection.close()
+            return table
+        else:
+            print("Table name not present in database")
+            connection.close()
+            return 0
+        
+        
     def fetch_column_names(self, table):
         connection = sqlite3.connect(self.database) 
         cursor = connection.cursor()
@@ -57,7 +70,7 @@ class SQLpyclass:
         column_names = [i[0] for i in cursor.description]
         return column_names
 
-    def fetch_all_tables(self):
+    def fetch_all_table_names(self):
         connection = sqlite3.connect(self.database) 
         cursor = connection.cursor() 
           
@@ -117,7 +130,7 @@ print(sql.tables)
 print(sql.fetch_column_names(sql.tables[0]))
 
 sql.dump_all_tables()
-
+table = sql.fetch_table(sql.tables[0])
 
 
 

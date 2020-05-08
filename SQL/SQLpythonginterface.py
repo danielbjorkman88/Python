@@ -90,7 +90,6 @@ class SQLpyclass:
         connection = sqlite3.connect(self.database) 
         crsr = connection.cursor() 
           
-        # execute the command to fetch all the data from the table emp 
         crsr.execute("SELECT * FROM " + table_name)  
           
         ans = crsr.fetchall()  

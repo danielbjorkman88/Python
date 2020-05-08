@@ -10,3 +10,6 @@ ML/Data/student.txt
 *.R
 Machine Learning/Data/student.txt
 *.pickle
+SQL/mytable.csv
+SQL/emp.csv
+SQL/mytable2.csv

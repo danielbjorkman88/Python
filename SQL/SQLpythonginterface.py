@@ -150,5 +150,11 @@ table = sql.fetch_table(sql.tables[0])
 newtable = sql.read_csv("example.csv")
 
 
+connection = sqlite3.connect("myTable.db") 
+cursor = connection.cursor() 
+
+newtable.to_sql('book_details', con = connection, if_exists = 'fail', chunksize = 1000)
+
+
 
   

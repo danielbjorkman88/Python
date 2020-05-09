@@ -84,19 +84,35 @@ class SQLpyclass:
         
         self.tables = tables
         return tables    
-
-    def fetch_all_entries(self, table_name):
-
+    
+    def read_csv(self, filename):
+        return pd.read_csv(filename)
+    
+    def add_table(self, table_name , filename):
+        newtable = self.read_csv(filename)
         connection = sqlite3.connect(self.database) 
-        crsr = connection.cursor() 
-          
-        crsr.execute("SELECT * FROM " + table_name)  
-          
-        ans = crsr.fetchall()  
-        connection.close() 
+        newtable.to_sql('table_name', con = connection, if_exists = 'fail', chunksize = 1000)
+        connection.close()
+    
+    def replace_table(self, table_name, table):
+        print("Needs testing")
+        connection = sqlite3.connect(self.database) 
+        cursor = connection.cursor() 
+        table.DataFrame.to_sql(name, con = cursor , if_exists = 'replace')
+        connection.close()
         
-        self.DBcontent = ans
-        return ans
+#    def fetch_all_entries(self, table_name):
+#
+#        connection = sqlite3.connect(self.database) 
+#        crsr = connection.cursor() 
+#          
+#        crsr.execute("SELECT * FROM " + table_name)  
+#          
+#        ans = crsr.fetchall()  
+#        connection.close() 
+#        
+#        self.DBcontent = ans
+#        return ans
         
     
  
@@ -119,11 +135,11 @@ sql = SQLpyclass()
 #                gender CHAR(1),  
 #                joining DATE);""")
 
-sql.execute("""INSERT INTO emp VALUES (23, "Rishabh", "Bansal", "M", "2014-03-28");""")
-sql.execute("""INSERT INTO emp VALUES (1, "Bill", "Gates", "M", "1980-10-28");""")
-
-sql.execute("""INSERT INTO mytable VALUES (3, "Hubert", "Bansai", "M", "2013-03-28");""")
-sql.execute("""INSERT INTO mytable VALUES (4, "Dark", "Pen", "M", "1960-10-28");""")
+#sql.execute("""INSERT INTO emp VALUES (23, "Rishabh", "Bansal", "M", "2014-03-28");""")
+#sql.execute("""INSERT INTO emp VALUES (1, "Bill", "Gates", "M", "1980-10-28");""")
+#
+#sql.execute("""INSERT INTO mytable VALUES (3, "Hubert", "Bansai", "M", "2013-03-28");""")
+#sql.execute("""INSERT INTO mytable VALUES (4, "Dark", "Pen", "M", "1960-10-28");""")
 
 print(sql.tables)
 print(sql.fetch_column_names(sql.tables[0]))
@@ -131,7 +147,7 @@ print(sql.fetch_column_names(sql.tables[0]))
 sql.dump_all_tables()
 table = sql.fetch_table(sql.tables[0])
 
-
+newtable = sql.read_csv("example.csv")
 
 
 

@@ -2,7 +2,7 @@
 """
 Created on Fri May  8 12:19:49 2020
 
-@author: malyr
+@author: Daniel Björkman
 """
 
 import sqlite3 
@@ -12,9 +12,8 @@ import pandas as pd
 
 
 class SQLpyclass:
-    def __init__(self, database = "myTable.db"):
+    def __init__(self, database):
         self.database = database
-        #self.DBcontent = []
         self.table_names = []
         
         self.fetch_all_table_names()
@@ -121,7 +120,7 @@ class SQLpyclass:
 
 
 
-sql = SQLpyclass()
+sql = SQLpyclass("myTable.db")
 #sql.execute("""CREATE TABLE emp (  
 #                staff_number INTEGER PRIMARY KEY,  
 #                fname VARCHAR(20),  
@@ -150,11 +149,6 @@ table = sql.fetch_table(sql.tables[0])
 
 newtable = sql.read_csv("example.csv")
 
-
-connection = sqlite3.connect("myTable.db") 
-cursor = connection.cursor() 
-
-newtable.to_sql('book_details', con = connection, if_exists = 'fail', chunksize = 1000)
 
 
 

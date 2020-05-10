@@ -2,7 +2,7 @@
 """
 Created on Thu May  7 11:04:33 2020
 
-@author: malyr
+@author: Daniel Björkman
 """
 
 #AB-testing
@@ -16,10 +16,12 @@ import matplotlib.pyplot as plt
 # Function:
 # Beta(alpha = Sucesses, beta = Failures)
 
+estimated_sucess_rate = 16 # percent
+confidence = 0.5 # Higher number -> Stronger belief
+
 # Prior Beliefs
-# Like odds, but Higher number -> Stronger belief
-param_alpha = 8
-param_beta = 42
+param_alpha = estimated_sucess_rate * confidence
+param_beta = (100 - estimated_sucess_rate) * confidence
 
 # True measured sucess rate / click rate 
 A_measured = 0.15 # 15% Click rate

@@ -15,7 +15,7 @@ class SQLpyclass:
     def __init__(self, database = "myTable.db"):
         self.database = database
         #self.DBcontent = []
-        self.tables = []
+        self.table_names = []
         
         self.fetch_all_table_names()
         
@@ -78,12 +78,12 @@ class SQLpyclass:
           
         ans = cursor.fetchall()  
         connection.close()
-        tables = []
+        table_names = []
         for table_name in ans:
-            tables.append(table_name[0])
+            table_names.append(table_name[0])
         
-        self.tables = tables
-        return tables    
+        self.tables = table_names
+        return table_names   
     
     def read_csv(self, filename):
         return pd.read_csv(filename)
@@ -91,8 +91,9 @@ class SQLpyclass:
     def add_table(self, table_name , filename):
         newtable = self.read_csv(filename)
         connection = sqlite3.connect(self.database) 
-        newtable.to_sql('table_name', con = connection, if_exists = 'fail', chunksize = 1000)
+        newtable.to_sql(table_name, con = connection, if_exists = 'fail', chunksize = 1000)
         connection.close()
+        self.fetch_all_table_names()
     
     def replace_table(self, table_name, table):
         print("Needs testing")

@@ -60,7 +60,7 @@ print(results)
 
 filename = "model.h5"
 model.save(filename)
-model = keras.models.load(filename)
+model = keras.models.load_model(filename)
 
 def review_encode(s):
 	encoded = [1]
@@ -97,7 +97,7 @@ print("Actual: " + str(test_labels[i]))
 
 
 
-
+# Source https://www.youtube.com/watch?v=Xmga_snTFBs&list=PLzMcBGfZo4-lak7tiFDec5_ZMItiIIfmj&index=8
 
 
 

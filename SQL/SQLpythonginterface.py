@@ -101,18 +101,7 @@ class SQLpyclass:
         table.DataFrame.to_sql(name, con = cursor , if_exists = 'replace')
         connection.close()
         
-#    def fetch_all_entries(self, table_name):
-#
-#        connection = sqlite3.connect(self.database) 
-#        crsr = connection.cursor() 
-#          
-#        crsr.execute("SELECT * FROM " + table_name)  
-#          
-#        ans = crsr.fetchall()  
-#        connection.close() 
-#        
-#        self.DBcontent = ans
-#        return ans
+
         
     
  

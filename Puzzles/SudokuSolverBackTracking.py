@@ -19,14 +19,15 @@ grid = np.array([[5,3,0,0,7,0,0,0,0],
                  [0,0,0,4,1,9,0,0,5],
                  [0,0,0,0,8,0,0,7,9]])
 
-guess = 1
-x = 0
-y = 2
+guess = 6
+row = 1
+col = 6
 
-def possible(col,row,guess):
+def possible(row,col,guess):
 
     global grid
-    if guess in grid[col,:]:
+    #print(grid[row,col])
+    if guess in grid[:,col]:
         return False
     if guess in grid[row,:]:
         return False
@@ -36,26 +37,27 @@ def possible(col,row,guess):
     
     for i in range(3):
         for j in range(3):
-            if grid[x0 + i, y0 + j] == guess:
+            if grid[row0 + i, col0 + j] == guess:
                 return False
     return True
 
-possible(7,8,7)
+possible(row,col,guess)
 
 def solver():
     global grid
-    for x in range(9):
-        for y in range(9):
-            if grid[x,y] == 0:
+    for row in range(9):
+        for col in range(9):
+            if grid[row,col] == 0:
                 for guess in range(1,10):
-                    if possible(x,y,guess):      
-                        grid[x,y] = guess
+                    if possible(row,col,guess):  
+                        grid[row,col] = guess
                         solver()
-                        grid[x,y] = 0
+                        grid[row,col] = 0
                 return 
+    print(np.matrix(grid))
 
 solver()
-print(np.matrix(grid))
+
         
         
         

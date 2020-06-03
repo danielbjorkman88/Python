@@ -7,4 +7,4 @@ Finance:
 Code for analysing the stock market
 
 
-![USRBIN example](https://github.com/danielbjorkman88/Python/USRBINexample.PNG)
+![USRBIN example](USRBINexample.PNG?raw=true)

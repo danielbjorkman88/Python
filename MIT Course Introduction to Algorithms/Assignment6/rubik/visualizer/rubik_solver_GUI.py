@@ -8,8 +8,15 @@
 # - Display solution in an intuitive way.
 # Notes: This is created for Linux to match the font, size, and button behavior in Tk
 
-from Tkinter import *
+try:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter 
+except ImportError:
+    # for Python3
+    from tkinter import *   ## notice lowercase 't' in tkinter here
 from RubikAbstraction import *
+import matplotlib
+matplotlib.use('Agg')
 
 class Application:
     ################# CONSTANTS ##################
@@ -377,7 +384,7 @@ class Application:
     #set a set of images to all arrows
     def set_all_arrows(self, image_set):
         if (len(image_set) < 8):
-            print "not enough arrow images"
+            print("not enough arrow images")
         else:
             self.btnUp["image"] = image_set[0]
             self.btnDown["image"] = image_set[1]
@@ -424,7 +431,7 @@ class Application:
         if (len(self.steps) == 0):
             ans = solve_puzzle(self.faces)
             if (type(ans) == type("abc")):
-                print "Warning:" + ans
+                print("Warning:" + ans)
                 self.lblInfo["text"] = ans
                 return
             
@@ -501,7 +508,7 @@ class Application:
             self.lblInfo["text"] = "This will interrupt your solving process\nplease Reset first."
 
     def show_about(self):
-        print "====================================\n Created by Anh Nguyen and Huan Liu\n MIT 6.006 - Fall 2008.\n===================================="
+        print("====================================\n Created by Anh Nguyen and Huan Liu\n MIT 6.006 - Fall 2008.\n====================================")
         self.lblInfo["text"] = "====================================\n Created by Anh Nguyen and Huan Liu\n MIT 6.006 - Fall 2008.\n===================================="
 
 ################### INIT ###################

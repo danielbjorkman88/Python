@@ -3,6 +3,7 @@ import unittest
 import solver
 import rubik
 import sys
+import time
 
 class TestSolver(unittest.TestCase):
     def testShortestPath0(self):
@@ -54,7 +55,9 @@ class TestSolver(unittest.TestCase):
         """Length 14 path."""
         start = (6, 7, 8, 20, 18, 19, 3, 4, 5, 16, 17, 15, 0, 1, 2, 14, 12, 13, 10, 11, 9, 21, 22, 23)
         end = rubik.I
+        start_time = time.time()
         ans = solver.shortest_path(start, end)
+        print("--- %s seconds for Solution ---" % (time.time() - start_time))
         self.assertEqual(len(ans), 14)
         self.assertGoodPath(start, end, ans)
 

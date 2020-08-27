@@ -195,7 +195,67 @@ class PathFinder(object):
             A tuple: (the path as a list of nodes from source to destination, 
                       the number of visited nodes)
         """
-        return NotImplemented 
+        
+        for node in nodes:
+            node.parent = None
+            node.queue_key = None
+            
+        counter = 1 
+#        visitedNodes = {}
+#        knownNodes = {}
+#        knownKeys = {}
+        queue = PriorityQueue()
+        source.queue_key = NodeDistancePair(source, 0)
+        queue.insert(source.queue_key)
+        
+        
+        
+
+        while len(queue) > 0:
+        
+        
+        #print(queue.heap)
+            counter += 1
+            node_key = queue.extract_min()
+            curr = node_key.node
+            currDistance = node_key.distance
+            
+            #print(currDistance, "curr distance")
+            #print(queue.heap)
+
+            if curr == destination:
+                break;
+           
+            for node in curr.adj:
+                
+
+                w = weight(curr,node) + currDistance
+                if node.queue_key == None:
+                    node.queue_key = NodeDistancePair(node, w)
+                    queue.insert(node.queue_key)
+                    node.parent = curr
+                    
+                elif w < node.queue_key.distance:
+                    node.queue_key.distance = w
+                    queue.decrease_key(node.queue_key)
+                    node.parent = curr
+                    
+  
+            
+            #knownKeys[w] = adj
+
+        #print(destination.parent)
+                
+        path = []
+        curr = destination
+        while curr is not None:
+            path.append(curr)
+            curr = curr.parent
+        path.reverse()
+        
+        
+        return (path, counter) 
+    
         
     @staticmethod
     def from_file(file, network):
@@ -314,7 +374,7 @@ class PathResult(object):
 # Command-line controller.
 if __name__ == '__main__':
     network = Network()
-    if os.environ.get('TRACE') == 'kml':
+    if os.environ.get('TRACE') == 'kml': 
         pf = PathFinder.from_file(sys.stdin, network)
         with open('path_flat.kml', 'w') as file:
             r = pf.shortest_path(distance)
@@ -331,5 +391,5 @@ if __name__ == '__main__':
             else:
                 r.to_file(sys.stdout)
         else:
-            print 'No path is found.'
+            print('No path is found.')
     

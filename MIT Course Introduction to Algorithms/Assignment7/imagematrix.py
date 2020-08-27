@@ -5,7 +5,7 @@ import sys
 try:
     from PIL import Image
 except:
-    print 'You do not have PIL (the Python Imaging Library) installed.'
+    print('You do not have PIL (the Python Imaging Library) installed.')
     sys.exit(1)
 
 class SeamError(Exception):

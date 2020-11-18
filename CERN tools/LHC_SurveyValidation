@@ -157,6 +157,31 @@ end = 'Dcum End S'
 
 IR1 = 0
 
+def onlyBefore(xes, ratios, addedTo, delimeter):
+    
+    for i, item in enumerate(ratios):
+        if xes[i] < delimeter:
+            addedTo.extend([item])
+    
+    return addedTo
+
+def onlyAfter(xes, ratios, addedTo, delimeter):
+    
+    for i, item in enumerate(ratios):
+        if xes[i] >= delimeter:
+            addedTo.extend([item])
+    
+    return addedTo
+
+
+innerTriplet = []
+machingSection = []
+all_datapoints = []
+ITlength = 160
+innerTriplet5 = []
+machingSection5 = []
+all_datapoints5 = []
+
 
 filenameSurvey = "Survey_UJ16_ir1_03122018.txt"
 
@@ -325,7 +350,7 @@ plt.ylim(ymin,ymax)
 plt.xlim(xmin,xmax)
 plt.grid(linewidth= 0.3)
 plt.ylabel("[uSv/h]", fontsize = 12)
-plt.title("Contact", fontsize = 16)
+plt.title("Contact with machine contour", fontsize = 16)
 
 
 ferrors = interp1d(merged.xcoordinates/100, yesContactError/100 )
@@ -337,7 +362,14 @@ plt.subplot(223)
 ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
 #plt.plot(Survey.xes, ratiosContact, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(Survey.xes, ratiosContact, yerr = ratiosContact *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = {} +- {}".format(round(mean(ratiosContactmerged), 3), round(stdev(ratiosContactmerged), 3) ), marker=".", linestyle= 'None')
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = {}".format(round(mean(ratiosContactmerged), 3) ), marker=".", linestyle= 'None')
+
+innerTriplet  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(Survey1.xes, ratiosContactmerged, all_datapoints, 1000000)
+
+
+
 
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
@@ -399,7 +431,7 @@ plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label =  "Fluka/Measurements. Avg Ratio = {} +- {}".format(round(mean(ratios1meterMerged), 3) , round(stdev(ratios1meterMerged),3)), marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label =  "Fluka/Measurements. Avg Ratio = {}".format(round(mean(ratios1meterMerged), 3) ), marker=".", linestyle= 'None')
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -412,6 +444,10 @@ plt.ylim(yratioMin, yratioMax)
 plt.xlim(xmin,xmax)
 
 allratios.extend(ratios1meterMerged)
+
+innerTriplet  = onlyBefore(newXes, ratios1meterMerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(newXes, ratios1meterMerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(newXes, ratios1meterMerged, all_datapoints, 1000000)
 
 
 
@@ -441,7 +477,7 @@ plt.subplot(221)
 xes = merged2.xcoordinates/100
 yes = yesContact
 g = interp1d(xes, yes)
-plt.plot(xes,g(xes) , label = "Fluka following machine contour")
+plt.plot(xes,g(xes) , label = "Fluka")
 plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
@@ -460,6 +496,8 @@ plt.subplot(223)
 ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
 plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratiosContactmerged), 3)), marker=".", linestyle= 'None')
 
+
+
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -470,6 +508,12 @@ plt.xlim(xmin,xmax)
 plt.ylim(yratioMin, yratioMax)
 
 allratios.extend(ratiosContactmerged)
+
+innerTriplet  = onlyBefore(Survey2.xes, ratiosContactmerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(Survey2.xes, ratiosContactmerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(Survey2.xes, ratiosContactmerged, all_datapoints, 1000000)
+
+
 
 
 # This code avoids the 'None' entries 
@@ -489,7 +533,7 @@ plt.subplot(222)
 xes = merged2.xcoordinates/100
 yes = yes40cm
 g = interp1d(xes, yes)
-plt.plot(xes, g(xes), label = "Fluka following machine contour")
+plt.plot(xes, g(xes), label = "Fluka")
 plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 #plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
 plt.legend()
@@ -500,6 +544,8 @@ plt.title("40 cm from contact with machine", fontsize = 16)
 plt.xlim(xmin,xmax)
 
 plt.ylabel("[uSv/h]", fontsize = 12)
+
+
 
 
 
@@ -526,6 +572,12 @@ plt.ylim(yratioMin, yratioMax)
 plt.xlim(xmin,xmax)
 
 allratios.extend(ratios1meterMerged)
+
+innerTriplet  = onlyBefore(newXes, ratios1meterMerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(newXes, ratios1meterMerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(newXes, ratios1meterMerged, all_datapoints, 1000000)
+
+
 
 
 plt.suptitle("IR1 Survey 8/01/2019 compared to Fluka ", fontsize = 16)
@@ -617,7 +669,7 @@ plt.ylim(ymin,ymax)
 plt.xlim(xmin,xmax)
 plt.grid(linewidth= 0.3)
 plt.ylabel("[uSv/h]", fontsize = 12)
-plt.title("Contact", fontsize = 16)
+plt.title("Contact with machine contour", fontsize = 16)
 
 
 ferrors = interp1d(merged.xcoordinates/100, yesContactError/100 )
@@ -628,6 +680,12 @@ plt.subplot(223)
 
 ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
 plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratiosContactmerged), 3)), marker=".", linestyle= 'None')
+
+innerTriplet5  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(Survey1.xes, ratiosContactmerged, all_datapoints5, 1000000)
+
+
 
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
@@ -679,6 +737,13 @@ ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(ne
 plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
 plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+
+innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(newXes, ratios1meterMerged, all_datapoints5, 1000000)
+
+
+
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -718,7 +783,7 @@ plt.subplot(221)
 xes = merged2.xcoordinates/100
 yes = yesContact
 g = interp1d(xes, yes)
-plt.plot(xes,g(xes) , label = "Fluka following machine contour")
+plt.plot(xes,g(xes) , label = "Fluka")
 plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
@@ -726,7 +791,7 @@ plt.ylim(ymin,ymax)
 plt.xlim(xmin,xmax)
 plt.grid(linewidth= 0.3)
 plt.ylabel("[uSv/h]", fontsize = 12)
-plt.title("Contact", fontsize = 16)
+plt.title("Contact with machine contour", fontsize = 16)
 
 #yeserrorSim = merged2.cubeErrors[xContactMerged, ybeamaxis, 0:]/100
 ferrors = interp1d(merged2.xcoordinates/100, yesContactError/100 )
@@ -736,6 +801,12 @@ ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Su
 plt.subplot(223)
 ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
 plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratiosContactmerged), 3)), marker=".", linestyle= 'None')
+
+innerTriplet5  = onlyBefore(Survey2.xes, ratiosContactmerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(Survey2.xes, ratiosContactmerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(Survey2.xes, ratiosContactmerged, all_datapoints5, 1000000)
+
+
 
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
@@ -791,6 +862,13 @@ ratios1meterMerged = g(newXes)/newYes
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
 plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+
+innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(newXes, ratios1meterMerged, all_datapoints5, 1000000)
+
+
+
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -818,4 +896,55 @@ except:
 print(" ")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
+
+
+fig = plt.figure()
+
+ax = plt.subplot(211)
+
+n,bins, patches =plt.hist(innerTriplet, bins=50, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
+
+plt.hist(machingSection, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection), round(mean(machingSection),3)), alpha = 0.5)
+
+
+plt.hist(all_datapoints, bins = bins, label = "Point 1 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints), round(mean(all_datapoints),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+
+#plt.xlabel("Ratio", fontsize = 16)
+plt.ylabel("Counts", fontsize = 16)
+plt.legend( prop={'size': 14})
+plt.grid(linewidth = 0.3)
+
+plt.title("Point 1", fontsize = 18)
+
+ax = plt.subplot(212)
+
+plt.hist(innerTriplet5, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet5), round(mean(innerTriplet5),3)), alpha = 0.5)
+
+plt.hist(machingSection5, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection5), round(mean(machingSection5),3)), alpha = 0.5)
+
+
+plt.hist(all_datapoints5, bins = bins, label = "Point 5 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints5), round(mean(all_datapoints5),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+
+plt.xlabel("Ratio", fontsize = 20)
+plt.ylabel("Counts", fontsize = 16)
+plt.legend( prop={'size': 14})
+plt.grid(linewidth = 0.3)
+
+plt.title("Point 5", fontsize = 18)
+
+plt.suptitle("Survey Validation Summery", fontsize = 18)
+
+xlength = 15
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("SurveyValidationSummery.pdf")
+except:
+    pass;
+
+
+
+
+
+
 

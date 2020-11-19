@@ -362,7 +362,8 @@ plt.subplot(223)
 ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
 #plt.plot(Survey.xes, ratiosContact, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(Survey.xes, ratiosContact, yerr = ratiosContact *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = {}".format(round(mean(ratiosContactmerged), 3) ), marker=".", linestyle= 'None')
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements" , marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
 
 innerTriplet  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet, ITlength)
 machingSection  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection, ITlength)
@@ -431,7 +432,8 @@ plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label =  "Fluka/Measurements. Avg Ratio = {}".format(round(mean(ratios1meterMerged), 3) ), marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label =  "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -461,6 +463,13 @@ except:
     pass;
 
 
+
+
+print(" ")
+print("First plot")
+print("Average ratio " + str(mean(allratios)))
+print("Number data points " + str(len(allratios)))
+allratios = []
 
 
 
@@ -494,8 +503,8 @@ ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Su
 
 plt.subplot(223)
 ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
-plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratiosContactmerged), 3)), marker=".", linestyle= 'None')
-
+plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
 
 
 plt.ylabel("Ratio", fontsize = 12)
@@ -559,7 +568,8 @@ plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -590,10 +600,12 @@ except:
     pass;
 
 
+
 print(" ")
+print("Second plot")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
-
+allratios = []
 
 
 
@@ -679,8 +691,8 @@ ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Su
 plt.subplot(223)
 
 ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
-plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratiosContactmerged), 3)), marker=".", linestyle= 'None')
-
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
 innerTriplet5  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection5, ITlength)
 all_datapoints5  = onlyBefore(Survey1.xes, ratiosContactmerged, all_datapoints5, 1000000)
@@ -736,7 +748,8 @@ ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(ne
 
 plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements, # data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged) , round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 
 innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
@@ -768,7 +781,11 @@ try:
 except:
     pass;
 
-
+print(" ")
+print("Third plot")
+print("Average ratio " + str(mean(allratios)))
+print("Number data points " + str(len(allratios)))
+allratios = []
 
 #------------------------------------------------------------------------
 xmin = 0
@@ -800,7 +817,9 @@ ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Su
 
 plt.subplot(223)
 ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
-plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratiosContactmerged), 3)), marker=".", linestyle= 'None')
+plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
 
 innerTriplet5  = onlyBefore(Survey2.xes, ratiosContactmerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(Survey2.xes, ratiosContactmerged, machingSection5, ITlength)
@@ -861,7 +880,8 @@ plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements. Avg Ratio = " + str(round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 
 innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
@@ -894,8 +914,10 @@ except:
 
 
 print(" ")
+print("Forth plot")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
+
 
 
 fig = plt.figure()

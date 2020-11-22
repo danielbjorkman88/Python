@@ -5,7 +5,7 @@ Created on Fri Apr  3 17:30:22 2020
 @author: malyr
 """
 
-from StockClass import Stock
+from StockClass import *
 import matplotlib.pyplot as plt
 #import matplotlib.patches as patches
 from datetime import datetime
@@ -78,7 +78,7 @@ class Market(Stock):
 
     def writeMe(self):
         
-        filename = "Comparisons.txt"
+        filename = "{}_Comparisons.txt".format(self.marketName)
         f = open(filename, "w")
         f.write("Comparing stocks between " + self.compare_start_str + " and " + self.compare_end_str + "\n")
         for X in self.stock_list:
@@ -89,7 +89,7 @@ class Market(Stock):
     def plotMe(self):
         fig = plt.figure()
         
-        plt.subplot(111)
+        ax = plt.subplot(111)
         
         for X in self.stock_list: 
             try:
@@ -102,7 +102,7 @@ class Market(Stock):
         plt.ylabel('Stock Value [' + self.currency + ']' , fontsize = 12 )
         plt.xticks(rotation=45)
         plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
-        
+        ax.set_yscale('log')
         
         startX = self.daysSinceOrigo( self.compare_start)
         sizeX = self.daysSinceOrigo( self.compare_end) - startX
@@ -110,7 +110,7 @@ class Market(Stock):
                               sizeX,
                               10000000, color = 'b', alpha = 0.1 ,  edgecolor = None)
         plt.gca().add_patch(rect)
-        plt.title(self.marketName + ' | Between ' + self.compare_start_str + ' and ' + self.compare_end_str , fontsize = 12)
+        plt.title(self.marketName + ' | analysis from ' + self.compare_start_str + ' to ' + self.compare_end_str , fontsize = 12)
     
         newyear2019 = datetime(2019,12,31,23,59,59)
         timedifference = datetime.today() - newyear2019
@@ -136,10 +136,75 @@ class Market(Stock):
 
 
 
+class CryptoMarket(Market):
+    
+    def loadData(self):
+        
+        print('Loading ' + self.marketName + '...')
+        
+        for name in self.names:
+            tmp = Crypto(name,self.country, self.start_date, self.compare_start , self.compare_end)
+        
+            #tmp = Crypto(X, self.country, self.start_date, self.compare_start , self.compare_end )
+            
+            tmp.compareDates(self.compare_start  , self.compare_end )
+            self.stock_list.append(tmp)
+            if min(tmp.daysSinceToday) < min(self.daysSinceToday):
+                self.daysSinceToday = tmp.daysSinceToday
+            try:
+                pass
+            except:
+                print(X + ' not loaded')
+                pass
 
 
 
+    def plotMe(self):
+        fig = plt.figure()
+        
+        ax = plt.subplot(111)
+        
+        for X in self.stock_list: 
+            try:
+                plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | k = '+ str(round(X.slope,4)), linewidth = 2)
+            except:
+                plt.plot(X.daysSinceToday, X.closingValues, label = X.name + ' | ' , linewidth = 2)
+        
+        
+        plt.xlabel('[Days since today]', fontsize = 12)
+        plt.ylabel('Crypto Value [' + self.currency + ']' , fontsize = 12 )
+        plt.xticks(rotation=45)
+        plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
+        ax.set_yscale('log')
+        
+        startX = self.daysSinceOrigo( self.compare_start)
+        sizeX = self.daysSinceOrigo( self.compare_end) - startX
+        rect = plt.Rectangle((startX, - 1000),
+                              sizeX,
+                              10000000, color = 'b', alpha = 0.1 ,  edgecolor = None)
+        plt.gca().add_patch(rect)
+        plt.title(self.marketName + ' | analysis from ' + self.compare_start_str + ' to ' + self.compare_end_str , fontsize = 12)
+    
+        newyear2019 = datetime(2019,12,31,23,59,59)
+        timedifference = datetime.today() - newyear2019
+        newyearsOrigodifference = timedifference.total_seconds()/(60*60*24)
+        plt.axvline(x= -newyearsOrigodifference, color = 'k', linestyle = '-', label = 'Year shift', linewidth = 0.5)
+        for i in range(10):
+            plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
+
+        plt.legend(loc=2)
+        plt.xlim(min(self.daysSinceToday)*1.02 , 10)
+        
+        
+        xlength = 12
+        fig.set_size_inches(xlength, xlength/1.618)
+       
+
+        
+    
+        
+        plt.show()
 
 
      

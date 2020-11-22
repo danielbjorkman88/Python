@@ -189,12 +189,61 @@ class Stock:
 
 
 
+class Crypto(Stock):
+    def loadData(self):
+        
+        print('Loading ' , self.name  )
+        try:
+            self.df = investpy.get_crypto_historical_data(crypto=self.name, from_date= self.sampling_from_str, to_date= self.end_date_str )
+            self.parseDF()
+        except ConnectionError:
+            print('Internet connection Error')
+        except ValueError:
+            print('No data found')
 
 
 
 
 
+    def plotMe(self):
+        fig = plt.figure()
+
+        
+        plt.plot(self.daysSinceToday, self.closingValues, label = '{} | k = {} [val/days]'.format(self.name, round(self.slope,8)), linewidth = 2)
+        plt.xlabel('[Days since today]', fontsize = 12)
+        plt.ylabel('Crypto Value [' + self.currency + ']' , fontsize = 12 )
+        plt.xticks(rotation=45)
+        plt.axvline(x=0 , label = 'Today', color = 'r', linewidth = 1)
+        
+
+        startX = self.daysSinceOrigo( self.compare_start)
+        sizeX = self.daysSinceOrigo( self.compare_end) - startX
+        rect = plt.Rectangle((startX, - 1000),
+                              sizeX,
+                              100000000, color = 'b', alpha = 0.08 ,  edgecolor = None)
+        plt.gca().add_patch(rect)
+        plt.title('{} | Diff: {} | Analysis range from {} to {}'.format(self.name, self.diff, self.compare_start_str, self.compare_end_str)   , fontsize = 12)
+    
+        newyear2019 = datetime(2019,12,31,23,59,59)
+        timedifference = datetime.today() - newyear2019
+        newyearsOrigodifference = timedifference.total_seconds()/(60*60*24)
+        plt.axvline(x= -newyearsOrigodifference, color = 'k', linestyle = '-', label = 'Year shift', linewidth = 0.5)
+        for i in range(10):
+            plt.axvline(x=-365*i - newyearsOrigodifference, color = 'k', linestyle = '--', linewidth = 0.5)
 
 
+        plt.plot(self.AVGline_xes , self.AVGline_yes , color = 'k' , linewidth = 0.5  )
+
+        plt.legend()
+        plt.xlim(min(min(self.daysSinceToday)*1.1, self.daysSinceOrigo(self.compare_start))*1.1 , 10)
+        plt.ylim(min(self.closingValues)*0.95,max(self.closingValues)*1.05)
+        
+        xlength = 12
+        fig.set_size_inches(xlength, xlength/1.618)
+        
+        if self.AVGline_yes[1] == 0:
+            print('Warning: Compare start outside sampling range')
+        
+        plt.show()
 
 

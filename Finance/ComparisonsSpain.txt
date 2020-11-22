@@ -1,0 +1,4083 @@
+Comparing stocks between 2015-1-20 and 2020-2-18
+Bankinter Ee.uu. Nasdaq 100 R Fi | 0.71
+Bankinter índice América R Fi | 0.29
+Catoc, Sicav, S.a. | 0.26
+Bankinter Dividendo Europa R Fi | 0.22
+Bankinter Eficiencia Energética Y Medioambiente R Fi | 0.22
+Cartesio Y Fi | 0.22
+Candriam Equities L Biotechnology Class C Usd Cap | 0.2
+Rural Tecnológico Renta Variable Estándar Fi | 0.18
+Ca Selección Estrategia 80 Fi | 0.18
+Bbva Bolsa Latam Fi | 0.17
+Select Global Managers Iiciicil | 0.17
+Bankinter Eurostoxx 2024 Plus Ii Garantizado Fi | 0.15
+Profit Bolsa Fi | 0.14
+Beka International Select Equities Fi | 0.13
+Bankinter Mercado Europeo Ii Fi | 0.13
+March Global A Fi | 0.12
+Rural Multifondo 75 Fi | 0.12
+Carmignac Portfolio Emerging Discovery A Eur Acc | 0.11
+Rural Renta Variable Internacional Estándar Fi | 0.11
+Bankinter índice Europeo 50 R Fi | 0.1
+Bankinter Eurobolsa Garantizado Fi | 0.1
+Bankinter Multiselección Dinámica Fi | 0.09
+Metavalor Fi | 0.09
+Bankintertecnología R Fi | 0.09
+Fonprofit Fi | 0.09
+Fibanc Pp | 0.09
+Mediolanum Cyclops Pp | 0.09
+March Cartera Decidida Fi | 0.09
+Gescooperativo Gestión Decidido Fi | 0.08
+Esfera Robotics Fi | 0.08
+Bankinter Bolsa España R Fi | 0.08
+Cartesio X Fi | 0.08
+Santander Renta Fija Cartera Fi | 0.07
+Robeco Global Fintech Equities D € | 0.07
+Santander Renta Fija S Fi | 0.07
+Morgan Stanley Investment Funds - Us Growth Fund A | 0.07
+Morgan Stanley Investment Funds - Us Growth Fund A | 0.07
+Bankinter Renta Fija Coral Garantizado Fi | 0.07
+Mediolanum Renta Fija Mixta Pp | 0.07
+Rural Emergentes Renta Variable Estándar Fi | 0.07
+Bankinter índice Japón R Fi | 0.07
+Vanguard Pacific Ex-japan Stock Index Fund Investor Eur Accumulation | 0.07
+Gescooperativo Gestión Agresivo Fi | 0.07
+Bankinter índice Europa Garantizado Fi | 0.06
+Bankinter Eurozona Garantizado Fi | 0.06
+Imantia Renta Fija Flexible Minorista Fi | 0.06
+Belgravia épsilon R Fi | 0.06
+Bankinter Renta Fija Marfil I Garantizado Fi | 0.06
+Best Manager Selection Fi | 0.06
+Cartera óptima Dinámica A Fi | 0.06
+Bankinter Cesta Selección Garantizado Fi | 0.06
+Fonvalcem A Fi | 0.06
+Mutuafondo Bolsas Emergentes A Fi | 0.06
+Pensioninvest Capital, Sicav Sa | 0.06
+Agrupación Europensión Pp | 0.06
+Bankinter Cesta Consolidación Garantizado Ii Fi | 0.06
+Agrupación Previsión Pp | 0.06
+Cs Renta Fija 0-5 B Fi | 0.06
+Gestifonsa Rf Medio Y Lp Minorista Fi | 0.05
+Mistral Cartera Equilibrada R Fi | 0.05
+Mutuafondo Tecnológico A Fi | 0.05
+Mutuafondo Tecnológico D Fi | 0.05
+Santander Renta Fija Latinoamérica Fi | 0.05
+Eurovalor Europa Del Este Fi | 0.05
+Bankinter Mixto Flexible R Fi | 0.05
+Mutuafondo Bolsas Emergentes D Fi | 0.05
+Rural Euro Renta Variable Estándar Fi | 0.05
+Bankinter Cesta Consolidación Garantizado Fi | 0.05
+Eurovalor Estados Unidos Fi | 0.05
+Mediolanum Activos Monetarios Pp | 0.04
+Trea Cajamar Patrimonio Fi | 0.04
+Santander Sostenible Acciones A Fi | 0.04
+Bankinter Euribor 2024 Ii Garantizado Fi | 0.04
+Mutuafondo Valores Small & Mid Caps A Fi | 0.04
+Cs Duración 0-2 B Fi | 0.04
+Esfera I Baelo Patrimonio Fi | 0.04
+Eurovalor Asia Fi | 0.04
+Bankia índice S&p 500 Plus Fi | 0.04
+Nb Europa 25 Fi | 0.04
+Mutuafondo Valores Small & Mid Caps D Fi | 0.04
+Bankia Small & Mid Caps España Universal Fi | 0.04
+Agrupación Futuro Pp | 0.04
+Santander Renta Fija I Fi | 0.04
+Gam Multibond - Gam Asian Income Bond Usd E | 0.04
+Pictet - Robotics Hp Eur | 0.04
+Cartera óptima Dinámica B Fi | 0.03
+Bestinver Grandes Compañías Fi | 0.03
+Liga Mobiliaria, S.a., Sicav | 0.03
+Rural Bolsa Garantía 2024 Fi | 0.03
+Egeria Coyuntura Fi | 0.03
+Vanguard Japan Stock Index Fund Investor Eur Accumulation | 0.03
+Bestinfond Fi | 0.03
+Santander Selección Rv Asia Fi | 0.03
+Santander Small Caps España A Fi | 0.03
+Mutuafondo Fondos A Fi | 0.03
+Nb Capital Plus S Fi | 0.03
+Rural Mixto Internacional 25 Fi | 0.03
+Bankoa Bolsa Fi | 0.03
+Edmond De Rothschild Fund - Big Data A Usd | 0.03
+Abanca Renta Variable Mixta Fi | 0.03
+Mutuafondo Fondos D Fi | 0.03
+Santander Indice Euro I Fi | 0.03
+Bestvalue Fi | 0.03
+Dws Concept Kaldemorgen Eur Lc | 0.03
+Mirabaud Crecimiento Pp | 0.03
+Eurovalor Iberoamérica Fi | 0.03
+Impassive Wealth Fi | 0.03
+Caixa Enginyers Premier, Fi | 0.03
+Rural Garantizado Bolsa Europea Fi | 0.03
+Liberbank Renta Fija Euro A Fi | 0.03
+Sabadell Inversión ética Y Solidaria Plus Fi | 0.03
+Multiactivo Mixto Renta Fija Fi | 0.03
+Eurovalor Ahorro Dólar Fi | 0.03
+Amundi Estrategia Global Fi | 0.03
+Santander Rf Convertibles A Fi | 0.03
+Naranja Standard & Poors 500 Pp | 0.03
+Montsiresa, S.a., Sicav | 0.03
+Magallanes Iberian Equity E Fi | 0.02
+Santander Indice Euro B Fi | 0.02
+Merchfondo Fi | 0.02
+Santander Sostenible 2 A Fi | 0.02
+Unión Inversora Patrimonial, Sicav S.a | 0.02
+Bankinter Sector Finanzas R Fi | 0.02
+Boreas Cartera Activa I Fi | 0.02
+Bankinter Mercado Español Ii Fi | 0.02
+Bankinter Renta Fija Iris Garantizado Fi | 0.02
+Santander Indice Euro Openbank Fi | 0.02
+Bankinter Sostenibilidad R Fi | 0.02
+Mutuafondo Dólar A Fi | 0.02
+Mutuafondo España A Fi | 0.02
+Corporacion De Inversiones Mobiliarias,sicavs.a. | 0.02
+Bankinter Ibex 2025 Ii Garantizado Fi | 0.02
+Rural Small Caps Euro Estándar Fi | 0.02
+Rural Europa 24 Garantía Fi | 0.02
+Eurovalor Bolsa Española Fi | 0.02
+Bankinter Pequeñas Compañías R Fi | 0.02
+Rural Garantía 2025 Fi | 0.02
+Magallanes European Equity E Fi | 0.02
+Bankia Bolsa Euro Pp | 0.02
+Rural Europa 2025 Garantía Fi | 0.02
+Gescooperativo Gestión Moderado Fi | 0.02
+Gescooperativo Renta Fija Hy Estándar Fi | 0.02
+Santander Renta Fija B Fi | 0.02
+Amundi Index Solutions - Amundi Index Msci Emerging Markets Ae-c | 0.02
+Dws Concept Kaldemorgen Eur Nc | 0.02
+Eurovalor Garantizado Acciones V Fi | 0.02
+Magallanes Value Investors Ucits European Equity R Eur | 0.02
+Eurovalor Rv Emergentes Global Fi | 0.02
+Magallanes Iberian Equity P Fi | 0.02
+Bankinter Euribor 2024 Garantizado Fi | 0.02
+Bankinter Premium Agresivo B Fi | 0.02
+Magallanes Iberian Equity M Fi | 0.02
+Morgan Stanley Investment Funds - Global Opportunity Fund Bh (eur) | 0.02
+Bbva Futuro Sostenible Isr A Fi | 0.02
+Tramontana Retorno Absoluto Audaz Fi | 0.02
+Santander Selección Rv Norteamérica Fi | 0.02
+Eurovalor Dividendo Europa Fi | 0.02
+Bankinter Indice España 2027 Garantizado Fi | 0.02
+Magallanes European Equity P Fi | 0.02
+Mistral Cartera Equilibrada I Fi | 0.02
+Mutuafondo España D Fi | 0.02
+Inversiones Arga, Sicav S.a. | 0.02
+Eurovalor Europa Fi | 0.02
+Magallanes Value Investors Ucits European Equity P Eur | 0.02
+Bankia Protegido Renta Premium Iv Pp | 0.02
+Gvc Gaesco Sostenible Isr A Fi | 0.02
+Plus Ultra Renta Variable Pp | 0.02
+Bankia Futuro Sostenible Universal Fi | 0.02
+Mutuafondo Bolsa Large Caps A Fi | 0.02
+Cartera óptima Decidida A Fi | 0.02
+Bankia Protegido Renta Premium Vi Pp | 0.02
+Kutxabank Renta Fija Largo Plazo Estándar Fi | 0.02
+Alcalá Gestión Activa Fi | 0.02
+Magallanes European Equity M Fi | 0.02
+Mutuafondo España F Fi | 0.02
+Bankinter Grandes Empresas Españolas Garantizado Fi | 0.02
+Unifond Emergentes A Fi | 0.02
+Bankia Protegido Renta Premium V Pp | 0.02
+Edm Pensiones Dos Rvi Pp | 0.02
+Bankinter Premium Dinámico B Fi | 0.02
+Profit Corto Plazo Fi | 0.02
+Esfera Iii Adarve Altea Fi | 0.02
+Bankia Protegido Renta Premium Pp | 0.01
+Barasona De Inversiones Sicav S.a. | 0.01
+Zurich Star Pp | 0.01
+Mutuafondo Bonos Convertibles Fi | 0.01
+Bankia Evolución Decidido Universal Fi | 0.01
+Plus Ultra Mixto Pp | 0.01
+Cartera óptima Flexible A Fi | 0.01
+Silvertree Capital Sicav Sa | 0.01
+Santander Renta Fija C Fi | 0.01
+Cartebanc, Sicav S.a. | 0.01
+Gvc Gaesco Emergentfond Fi | 0.01
+Mutuafondo Bolsa Large Caps D Fi | 0.01
+Bankinter Bolsa Europea 2025 Garantizado Fi | 0.01
+Santander Pb Cartera 0-90 Fi | 0.01
+Ca Bankoa Horizonte 2026 Fi | 0.01
+Santander Pb Cartera Flexible 95 Fi | 0.01
+Bankia Protegido Renta Premium Ii Pp | 0.01
+Santander Corto Plazo Dólar A Fi | 0.01
+Bankinter Bolsa Americana Garantizado Fi | 0.01
+Metavalor Internacional Fi | 0.01
+Mutuafondo Crecimiento E Fi | 0.01
+Santander Generación 3 B Fi | 0.01
+Santander Generación 3 R Fi | 0.01
+Pareturn Cartesio Equity I | 0.01
+Intermoney Variable Euro I Fi | 0.01
+Bankia Protegido Renta Premium Iii Pp | 0.01
+Santander Sostenible 1 A Fi | 0.01
+Mi Fondo Santander Decidido S Fi | 0.01
+Trea Cajamar Corto Plazo Fi | 0.01
+Vellon Investment, Sicav S.a. | 0.01
+Mutuafondo Mixto Flexible Fi | 0.01
+Santander Generación 3 A Fi | 0.01
+Ca Bankoa Objetivo 2025 Fi | 0.01
+Bankinter Cartera Privada Agresiva B Fi | 0.01
+Bankia Protegido Renta 2025 Pp | 0.01
+Bankia Garantizado Creciente 2024 Fi | 0.01
+Santander Renta Fija A Fi | 0.01
+Mi Fondo Santander Decidido A Fi | 0.01
+Bankinter Euribor 2027 Garantizado Fi | 0.01
+Bankia índice Eurostoxx Universal Fi | 0.01
+Eurovalor Emergentes Empresas Europeas Fi | 0.01
+Inversio Activa Penedes 3, S.a., Sicav | 0.01
+Bbva Bonos Duración B Fi | 0.01
+Gvc Gaesco Retorno Absoluto A Fi | 0.01
+Ibercaja Pensión Bolsa Usa Pp | 0.01
+Eurovalor Japón Fi | 0.01
+Eurovalor Bolsa Fi | 0.01
+Eurovalor Bonos Alto Rendimiento Fi | 0.01
+Cartera Pirineo, Sicav, S.a. | 0.01
+Ca Selección Estrategia 50 Fi | 0.01
+Boreas Cartera Activa R Fi | 0.01
+Esfera Yosemite Absolute Return Fi | 0.01
+Blackrock Global Funds - Global Allocation Fund E2 | 0.01
+Bankinter Euribor Rentas Iv Garantizado Fi | 0.01
+Meñaler, Sicav S.a. | 0.01
+Mutuafondo Gestión óptima Moderado E Fi | 0.01
+Bankinter Cartera Privada Dinámica B Fi | 0.01
+Bankinter Media Europea 2026 Garantizado Fi | 0.01
+Santander Small Caps Europa A Fi | 0.01
+Solventis Eos Pp | 0.01
+Gvc Gaesco Sostenible Isr R Fi | 0.01
+Bankinter Europa 2020 Fi | 0.01
+Acueducto Rv Norteamérica Pp | 0.01
+Gestifonsa Mixto 10 A Fi | 0.01
+Metavalor Global Fi | 0.01
+Caixabank Bolsa índice Euro Institucional Plus Fi | 0.01
+Fonvalcem B Fi | 0.01
+Nat-nederlanden Crecimiento Global Pp | 0.01
+Inversora De Valores Comerciales E Industriales, Sicav S.a. | 0.01
+Santander índice España I Fi | 0.01
+Santander Europa 2025 Pp | 0.01
+Bankinter Premium Moderado B Fi | 0.01
+Cartera óptima Moderada A Fi | 0.01
+Bankia índice Ibex Universal Fi | 0.01
+Popular Selección I Fi | 0.01
+Mutuafondo Crecimiento A Fi | 0.01
+Bankinter Europa 2025 Garantizado Fi | 0.01
+Cartera Mobiliaria, S.a., Sicav | 0.01
+Bankia Soy Así Dinámico Universal Fi | 0.01
+Patrimonio Global Fi | 0.01
+Vifag 2002, Sicav S.a. | 0.01
+Santander Selección Rv Emergente Fi | 0.01
+Bankia Rendimiento Garantizado 2023 Iv Fi | 0.01
+Mutuafondo Lp A Fi | 0.01
+Franklin Biotechnology Discovery Fund A(acc)usd | 0.01
+Jaramiel, Sicav S.a. | 0.01
+Eurovalor Bonos Emergentes Fi | 0.01
+Universal De Inversiones Sicav S.a. | 0.01
+Edm-inversión I Fi | 0.01
+Cartera óptima Decidida B Fi | 0.01
+Eurovalor Bolsa Europea Fi | 0.01
+Oportunidades Globales Fi | 0.01
+Amundi Fondtesoro Largo Plazo A Fi | 0.01
+Bankinter índice Europeo 2025 Garantizado Fi | 0.01
+Finen Inversiones, Sicav S.a. | 0.01
+Bankinter Eurostoxx 2024 Plus Garantizado Fi | 0.01
+Sagei, S.a., Sicav | 0.01
+Bankinter Media Europa 2024 Garantizado Fi | 0.01
+Bankia Renta Variable Global Universal Fi | 0.01
+Caser Renta Variable Norteam. Ga Pp | 0.01
+Lierde, Sicav S.a. | 0.01
+Vertiente Inversiones, Sicav S.a. | 0.01
+Fidelity Funds - India Focus Fund A-eur | 0.01
+Bestinver Bolsa Fi | 0.01
+Santander 95 Objetivo Grandes Compañías 2020 | 0.01
+Santander Generación 2 B Fi | 0.01
+Santander Generación 2 R Fi | 0.01
+Rural Mixto 15 Fi | 0.01
+Bestinver Internacional Fi | 0.01
+Bbva Telecomunicaciones Pp | 0.01
+Babuta Invest Sicav | 0.01
+Inversiones Permon, Sicav, S.a. | 0.01
+Caixabank Comunicaciones Estándar Fi | 0.01
+Eurovalor Compromiso Isr Fi | 0.01
+Gvc Gaesco Multinacional Fi | 0.01
+Cs Invm Fds 2 - Credit Suisse (lux) Security Equity Fund Bh Eur | 0.01
+Compás Equilibrado Fi | 0.01
+Ahorro Bursatil, S.a., Sicav | 0.01
+Soixa, Sicav, S.a. | 0.01
+Sabadell Estados Unidos Bolsa Cartera Fi | 0.01
+Rentabilidad 2009, Sicav, S.a. | 0.01
+Germina Invest, Sicav S.a. | 0.01
+Santander Generación 2 A Fi | 0.01
+Bbva Bolsa Tecnología Y Telecomunicaciones Fi | 0.01
+Silla Inversiones Sicav S.a. | 0.01
+Bankia Soy Así Flexible Universal Fi | 0.01
+Caixabank Bolsa índice Euro Estándar Fi | 0.01
+Santander Indice España B Fi | 0.01
+Mutuafondo Renta Fija Española A Fi | 0.01
+Trust In Itaca, Sicav, S.a. | 0.01
+Edm-inversión R Fi | 0.01
+European Quality Pp | 0.01
+Bankia Bolsa Internacional Pp | 0.01
+Mutuafondo Financiación Fil | 0.01
+Buendia De Inversiones, Sicav S.a. | 0.01
+Sabadell Estados Unidos Bolsa Pyme Fi | 0.01
+Pbp Renta Fija Flexible A Fi | 0.01
+Mutuafondo Lp D Fi | 0.01
+Bankia Garantizado Dinámico Fi | 0.01
+Santander Indice España Openbank Fi | 0.01
+Fondmapfre Bolsa Europa Fi | 0.01
+Kersio Capital Sicav, S.a. | 0.01
+Bankinter Futuro Ibex R Fi | 0.01
+Bankinter Ibex 2026 Plus Ii Garantizado Fi | 0.01
+Cs Crecimiento Futuro Pp | 0.01
+Renta 4 Acciones Pp | 0.01
+Banca Pueyo Bolsa Pp | 0.01
+Mi Fondo Santander Moderado S Fi | 0.01
+Arbarin, Sicav, S.a. | 0.01
+Cartera Naranja 90 Fi | 0.01
+Bankia Evolución Moderado Universal Fi | 0.01
+Ca Selección Estrategia 20 Fi | 0.01
+Cartera óptima Flexible B Fi | 0.01
+Polar Capital Funds Plc - Polar Capital Uk Absolute Equity Fund Class R Gbp | 0.01
+Bestinver Latam Fi | 0.01
+Mutuafondo Fortaleza E Fi | 0.01
+Patrimonio De Valores, S.a., Sicav | 0.01
+Bankinter Bonos Soberanos Largo Plazo R Fi | 0.01
+Busmondo, Sicav, S.a. | 0.01
+Berman Inversiones Financieras, Sicav S.a. | 0.01
+Tailorend Invest Sicav S.a. | 0.01
+Tempera Inversiones Sicav S.a. | 0.01
+Abanca Usa Pp | 0.01
+Bankinter Ibex 2024 Plus Garantizado Fi | 0.01
+Inpisa Dos, Sicav S.a. | 0.01
+Bestinver Plan Mixto | 0.01
+Dossau De Inversiones Sicav S.a. | 0.01
+Valibesa, Sicav S.a. | 0.01
+Magasa Valores, Sicav, S.a. | 0.01
+Ibercaja Pensión Dividendo Pp | 0.01
+Ampavic 2013,sicav,s.a. | 0.01
+Mutuafondo Gestión óptima Moderado A Fi | 0.01
+Padinver, Sicav S.a. | 0.01
+Gestifonsa Renta Variable España Minorista Fi | 0.01
+Inversions L´olivera, Sicav Sa | 0.01
+Rural Garantizado 2021 Fi | 0.01
+Rural Renta Fija 5 Estándar Fi | 0.01
+Gvc Gaesco 1k + Renta Variable I Fi | 0.01
+Bankinter Euribor 2025 Garantizado Fi | 0.01
+Bankia Garantizado Rentas 15 Fi | 0.01
+Cabk Rv Usa Pp | 0.01
+Forildos, Sicav S.a. | 0.01
+Arane Capital Sicav, S.a. | 0.01
+Renta 4 Bolsa R Fi | 0.01
+Sabadell Dólar Fijo Premier Fi | 0.01
+Gesconsult Renta Variable A Fi | 0.01
+Sabadell Dólar Fijo Cartera Fi | 0.01
+Saninverpa, Sicav S.a. | 0.01
+Bankinter Ibex 2023 Garantizado Fi | 0.01
+Inversiones Galerna, Sicav S.a. | 0.01
+Bankinter Renta Fija Amatista Garantizado Fi | 0.01
+Plancaixa Tendencias Pp | 0.01
+Sabadell Dólar Fijo Plus Fi | 0.01
+March Acciones Epsv | 0.01
+Bankinter Ibex 2028 Plus Garantizado Fi | 0.01
+Inversiones Selectivas, S.a., Sicav | 0.01
+Sabadell Bonos Emergentes Premier Fi | 0.01
+Inversiones Teide, S.a. Sicav | 0.01
+Sabadell Bonos Emergentes Cartera Fi | 0.01
+Keeper Inversiones, Sicav S.a. | 0.01
+Caser Oportunidad Plus Pp | 0.01
+Gam Multibond - Local Emerging Bond Usd E | 0.01
+Fondo Artac Fi | 0.01
+Eurovalor Garantizado Estrategia Fi | 0.01
+Bestinver Global Pp | 0.01
+Europopular Usa Pp | 0.01
+Bbva Bolsa Usa A Fi | 0.01
+Inversiones Ranza, Sicav S.a. | 0.01
+Allianz Usa Pp | 0.01
+Bankia Banca Privada Moderado Pp | 0.01
+Gesprisa Inversiones, Sicav, S.a. | 0.01
+Metavalor Pensiones Pp | 0.01
+Vallisoletana De Valores, S.a., Sicav | 0.01
+Gescooperativo Deuda Corporativa Estándar Fi | 0.01
+Edm Pensiones Uno Pp | 0.01
+Ing Direct Fondo Naranja Standard & Poor´s 500 Fi | 0.01
+Vilanova Cartera, Sicav S.a. | 0.01
+Rural Mixto Internacional 15 Fi | 0.0
+Santander Generación 1 B Fi | 0.0
+Santander Generación 1 R Fi | 0.0
+Santander Garantizado 2025 Fi | 0.0
+Sabadell Bonos Emergentes Pyme Fi | 0.0
+Bankia Banca Privada Renta Fija Euro Universal Fi | 0.0
+Cartera Tofi, Sicav, Sa | 0.0
+Eurovalor Bonos Euro Largo Plazo Fi | 0.0
+Bankia Banca Privada Renta Variable España Universal Fi | 0.0
+Mutuafondo Mixto Selección A Fi | 0.0
+Popular Selección A Fi | 0.0
+Inversiones Gumiel 2002, Sicav S.a. | 0.0
+Bankinter España 2027 Garantizado Fi | 0.0
+Inversiones Deva, Sicav, S.a. | 0.0
+Vapalsa 2002, Sicav S.a. | 0.0
+Oria-sara, Sicav, S.a. | 0.0
+Eurovalor Garantizado Rentas Fi | 0.0
+Nb Best Managers Fi | 0.0
+Fonbusa Fondos Fi | 0.0
+Zentius Inversiones Sicav, S.a. | 0.0
+Mi Fondo Santander Moderado A Fi | 0.0
+Caixabank Bolsa Selección Usa Premium Fi | 0.0
+Herprisa Inversiones, Sicav, S.a. | 0.0
+Renta 4 Latinoamérica R Fi | 0.0
+Merch-universal Fi | 0.0
+Cabk Destino 2050 Premium Pp | 0.0
+Multifondo América A Fi | 0.0
+Hercasol, S.a., Sicav | 0.0
+Grupo De Inversiones Gestion 10 Sicav, S.a. | 0.0
+Cartera óptima Prudente A Fi | 0.0
+Ronile Invest, Sicav, S.a. | 0.0
+Earpal Inversiones, Sicav, S.a. | 0.0
+Klandur, Sicav, S.a. | 0.0
+Bankia Dinámico Pp | 0.0
+Santalucía Espabolsa A Fi | 0.0
+Investigacion, Desarrollo E Implantacion, Sicav, S.a. | 0.0
+Renta 4 Global Acciones Pp | 0.0
+Inver-rent, S.a., Sicav | 0.0
+Inversiones Alexmo, Sicav, S.a. | 0.0
+Inversiones Programadas, Sicav, S.a. | 0.0
+Santander Generación 1 A Fi | 0.0
+Bankinter Euribor Rentas Ii Garantizado Fi | 0.0
+Amundi Index Solutions - Amundi Index J.p. Morgan Gbi Global Govies Ahe-c | 0.0
+Caixabank Bolsa Selección Usa Plus Fi | 0.0
+Eurovalor Global Convertibles Fi | 0.0
+Mutuafondo Renta Fija Española D Fi | 0.0
+Sabadell Estados Unidos Bolsa Premier Fi | 0.0
+Gco Acciones Fi | 0.0
+1948 Inversions, Sicav S.a. | 0.0
+Santander Selección Rv Japón Fi | 0.0
+Mutuafondo Fortaleza A Fi | 0.0
+Pentathlón Fi | 0.0
+Valentum Fi | 0.0
+Abanca Gestión Agresivo Fi | 0.0
+Pareturn Cartesio Income I | 0.0
+Bankinter Indice España 2024 Garantizado Fi | 0.0
+Kruger Selección, S.i.c.a.v., S.a. | 0.0
+Eurovalor Bonos Corporativos Fi | 0.0
+Ibercaja Sostenible Y Solidario Pp | 0.0
+Ibercaja Bolsa Usa B Fi | 0.0
+Gvc Gaesco Oportunidad Empresas Inmobiliarias R.v. A Fi | 0.0
+Inversiones Laurasia, Sicav, S.a. | 0.0
+Bankia Rendimiento Garantizado 2023 Iii Fi | 0.0
+Dp Salud A Fi | 0.0
+Ibercaja De Pensiones Bolsa Global Pp | 0.0
+Liberty Dinámico Ligero Pp | 0.0
+Sabadell Estados Unidos Bolsa Base Fi | 0.0
+Polar Renta Fija A Fi | 0.0
+Sabadell Estados Unidos Bolsa Plus Fi | 0.0
+Mus Inversiones Financieras, Sicav, S.a. | 0.0
+Silleiro De Inversion, Sicav S.a. | 0.0
+Santander 100 Valor Global 4 Fi | 0.0
+Bbva Bolsa índice Usa (cubierto) Fi | 0.0
+Cartera Naranja 75/25 Fi | 0.0
+Bankia Rendimiento Garantizado 2023 V Fi | 0.0
+Rolnik Capital, Sil | 0.0
+Inversiones Garbi, Sicav, S.a. | 0.0
+La Muza Inversiones, Sicav, S.a. | 0.0
+Indexa Mas Rentabilidad Acciones Pp | 0.0
+Bbva Bolsa Europa A Fi | 0.0
+Caixabank Bolsa Usa Estándar Fi | 0.0
+Burgos Esplendor Pp | 0.0
+Bankinter Cartera Privada Moderada B Fi | 0.0
+Tambre 2000, Sicav S.a. | 0.0
+Finizens Decidido (#4) Pp | 0.0
+Modena Capital Sicav, S.a. | 0.0
+Ibercaja Bolsa Internacional B Fi | 0.0
+Cartera óptima Moderada B Fi | 0.0
+Jenusa De Valores Mobiliarios Sicav, S.a. | 0.0
+Ibercaja Sector Inmobiliario B Fi | 0.0
+Pigmanort, Sicav, S.a. | 0.0
+Santander Renta Fija Flexible Fi | 0.0
+Gesiuris Euro Equities Fi | 0.0
+Dunas Seleccion Usa Cubierto I Fi | 0.0
+Ibercaja Pensión Solidez 2011 Pp | 0.0
+Naranja 2050 Pp | 0.0
+Bankia Moderado Pp | 0.0
+Eurobolsa Seleccion, Sicav, S.a. | 0.0
+Bankinter Premium Conservador B Fi | 0.0
+Eresma Bolsa, Sicav, S.a. | 0.0
+Global Value Pp | 0.0
+Volga De Valores Mobiliarios, Sicav, S.a. | 0.0
+Sega 2008 Sicav S.a. | 0.0
+Bbva Bolsa Indice Global Pp | 0.0
+Mutuafondo Estrategia Global A Fil | 0.0
+Caixabank Bolsa Selección Usa Estándar Fi | 0.0
+Patricompa, Sicav S.a. | 0.0
+Bagheera Capital, Sicav, S.a. | 0.0
+Patrisa Fi | 0.0
+Mutuafondo Fortaleza D Fi | 0.0
+Renta 4 Multigestión Andrómeda Value Capital Fi | 0.0
+Unifond Audaz Fi | 0.0
+Nb Patrimonio S Fi | 0.0
+Maverick Fund B Fi | 0.0
+Axa World Funds - Framlington Robotech A Capitalisation Eur Hedged | 0.0
+Ibercaja Sector Inmobiliario A Fi | 0.0
+Rural Selección Equilibrada Fi | 0.0
+Santalucía Renta Variable Internacional D Fi | 0.0
+Ibercaja Utilities B Fi | 0.0
+Mapfre América Pp | 0.0
+Bestinver Mixto Fi | 0.0
+Santalucía Espabolsa B Fi | 0.0
+Fipen G Pp | 0.0
+Financialfond Fi | 0.0
+Plancaixa Proyección 2029 Pp | 0.0
+Dipachar De Inversiones, Sicav S.a. | 0.0
+Bankia Rendimiento Gar. 2023 Ii Fi | 0.0
+Bankinter Ibex Rentas 2027 Garantizado Fi | 0.0
+Imantia Flexible Fi | 0.0
+Balema Inversiones Sicav S.a. | 0.0
+Gco Pensiones Renta Variable Pp | 0.0
+Rams Cartera 2013, Sicav, S.a | 0.0
+Inversiones Polivalente, Sicav, S.a. | 0.0
+True Value Fi | 0.0
+Invesbra 2001, Sicav S.a. | 0.0
+Sabadell Emergente Mixto Flexible Plus Fi | 0.0
+Metavalor Dividendo Fi | 0.0
+Db Talento Bolsa Global Fi | 0.0
+Mundiplan Audaz Global Pp | 0.0
+Fibiun, Sicav, S.a. | 0.0
+Hernanzar, Sicav, S.a. | 0.0
+Dunas Seleccion Europa I Fi | 0.0
+Sabadell Emergente Mixto Flexible Pyme Fi | 0.0
+Invermay, S.a., Sicav | 0.0
+Caixabank Multisalud Estandar Fi | 0.0
+Inversiónes Iberbaum Sicav Sa | 0.0
+Mira De Inversiones, S.a., Sicav | 0.0
+Naranja 2040 Pp | 0.0
+Portfolio 25, Sicav S.a. | 0.0
+Lago Erie, Sicav, S.a. | 0.0
+Fondmapfre Bolsa América Fi | 0.0
+Silobar, Sicav, S.a. | 0.0
+Bbva Bolsa Desarrollo Sostenible Isr A Fi | 0.0
+Renta 4 Valor Europa Fi | 0.0
+Plancaixa Selección Pp | 0.0
+Fondcoyuntura Fi | 0.0
+Tyrol Inversiones, Sicav, S.a. | 0.0
+Valores Del Principado, S.a., Sicav | 0.0
+Abante Bolsa Pp | 0.0
+Ibercapital Magnum Sicav, S. A. | 0.0
+Fonditel Pp | 0.0
+Priramu, Sicav, S.a. | 0.0
+Bbva Bonos Dólar Corto Plazo Fi | 0.0
+Merryhouse Inversiones, Sicav S.a. | 0.0
+Barneval Inversiones, Sicav, S.a. | 0.0
+R4 Activa Gestión Tolerante Pp | 0.0
+Caja Ingenieros Multigestión Pp | 0.0
+Inverbanser Fi | 0.0
+Profit Previsión Pp | 0.0
+Top Class Healthcare Fi | 0.0
+Bbva Bolsa Asia Mf Fi | 0.0
+Gestión Boutique Bissan Value Fund Fi | 0.0
+Multifondo Europa A Fi | 0.0
+Edm Renta Variable Internacional Fi | 0.0
+Abante Bolsa Fi | 0.0
+Ibercaja Utilities A Fi | 0.0
+Santalucía Renta Variable Internacional B Fi | 0.0
+Santander Acciones Españolas B Fi | 0.0
+Fondespaña-duero Garantizado 2022-ii Fi | 0.0
+Ibercaja Bolsa Usa A Fi | 0.0
+Ibercaja Global Brands B Fi | 0.0
+Camposena, Sicav S.a. | 0.0
+Cabk Destino 2050 Pp | 0.0
+Dinámico Epsv | 0.0
+Fon Fineco Inversión Fi | 0.0
+Círculo Renta Variable Pp | 0.0
+Bankia Rendimiento Garantizado 2023 Fi | 0.0
+Zestao De Inversiones, Sicav, S.a. | 0.0
+Basil Capital, Sicav, S.a. | 0.0
+Ahorrocapital, Sicav, S.a. | 0.0
+Plan Valor Tranquilidad 13 Pp | 0.0
+Tepic De Inversiones, Sicav S.a. | 0.0
+Tallola, Sicav S.a. | 0.0
+Elcaun 2012, Sicav, S.a. | 0.0
+Simson 2000, Sicav S.a. | 0.0
+Mirabaud Patrimonio Pp | 0.0
+Japan Deep Value Fund Fi | 0.0
+Arquiplan Prudente Pp | 0.0
+A&g Equilibrado Pp | 0.0
+Inversion Columbus 75, Sicav S.a. | 0.0
+Bk Variable América Epsv | 0.0
+Fup 99, Sicav S.a. | 0.0
+Cabk Destino 2040 Pp | 0.0
+Dobla Cartera, Sicav, S.a. | 0.0
+Valdillana Inversiones, Sicav, S.a. | 0.0
+Linker Inversiones, Sicav, S.a. | 0.0
+Temperantia A Fi | 0.0
+Mare Nostrum 121, Sicav, S.a | 0.0
+Swift Inversiones, Sicav, S.a. | 0.0
+Deutsche Bank Iii Pp | 0.0
+Bankia Flexible Pp | 0.0
+Undelun Invest Sicav S.a. | 0.0
+Ibercaja Global Brands A Fi | 0.0
+Bankia Protegido Renta 2023 Pp | 0.0
+Solventis Eos, Sicav, S.a. | 0.0
+Inversiones Echemu, Sicav, S.a. | 0.0
+Caixabank Global Invest Fi | 0.0
+Fonditel Red Activa Pp | 0.0
+Gvc Gaesco T.f.t. Fi | 0.0
+Anfe Invest 2017, Sicav, S.a. | 0.0
+Bk Variable América Pp | 0.0
+Canovas 98, Sicav S.a. | 0.0
+Guesinver, Sicav S.a. | 0.0
+Nat-nederlanden Europa Pp | 0.0
+Merchbanc Global Pp | 0.0
+Bankia Cauto Pp | 0.0
+Cabk Rv Emergente Pp | 0.0
+Cabk Destino 2030 Premium Pp | 0.0
+Caixabank Multisalud Premium Fi | 0.0
+Renta 4 Multigestión Numantia Patrimonio Global Fi | 0.0
+Gesiuris Cat Patrimonis, Sicav, S.a. | 0.0
+Lagun Inversiones Sicav S.a. | 0.0
+Contemporania D´inversions, Sicav S.a. | 0.0
+Trea Cajamar Renta Variable Internacional Fi | 0.0
+Alkarika Sicav, S.a. | 0.0
+Inversiones Toscana, Sicav, S.a. | 0.0
+Esfera Global Momentum Fi | 0.0
+Cabk Destino 2040 Premium Pp | 0.0
+Popular Income Fi | 0.0
+Acifiel, Sicav, S.a. | 0.0
+Altair European Opportunities A Fi | 0.0
+Caja Ingenieros Skyline Pp | 0.0
+Rumapal Inversiones Sicav, S.a. | 0.0
+Imantia Decidido Fi | 0.0
+Reboledo Inversiones,sicav,s.a. | 0.0
+Ibercaja All Star B Fi | 0.0
+Cabk Destino 2030 Pp | 0.0
+Blue Sea Cartera, Sicav S.a. | 0.0
+Bankinter Mixto Renta Fija R Fi | 0.0
+Santalucía Eurobolsa A Fi | 0.0
+Cartera Naranja 40/60 Fi | 0.0
+Bankia Evolución Prudente Universal Fi | 0.0
+Caixabank Multisalud Plus Fi | 0.0
+Gescooperativo Gestión Conservador Fi | 0.0
+Dux International Strategy Fi | 0.0
+Futurvalor, Sicav S.a. | 0.0
+Burgos Mercado Pp | 0.0
+Fondomutua Renta Variable Global Pp | 0.0
+Frasol 2014, Sicav, S.a. | 0.0
+Cairsa Invest Sicav S.a. | 0.0
+Nb Pharmafund Fi | 0.0
+Inversiones Aspe,sicav S.a. | 0.0
+Santalucía Renta Variable Internacional A Fi | 0.0
+Villcad Bolsa, Sicav S.a. | 0.0
+Zanisa De Inversiones, Sicav, S.a. | 0.0
+Gco Pensiones Mixto Fijo Pp | 0.0
+Liber Inversiones, Sicav S.a. | 0.0
+Eudel Inversiones, Sicav, Sa | 0.0
+Dux Renta Variable Euro Fi | 0.0
+Destino Futuro 2037 Db Pp | 0.0
+Eurovalor Garantizado Acciones Iv Fi | 0.0
+Bankinter Renta Fija Cristal Garantizado Fi | 0.0
+Caixabank Selección Tendencias Plus Fi | 0.0
+Fondespaña-duero Garantizado Rf I/2022 Fi | 0.0
+Caixabank Bolsa Selección Global Premium Fi | 0.0
+Fondespaña-duero Garantizado Rf Iv/2020 Fi | 0.0
+Inversiones Villa De Paris Ii,sicav, S.a. | 0.0
+Cabk Rv International Pp | 0.0
+Rex Royal Blue, Sicav S.a. | 0.0
+Inversora De Olarizu, Sicav S.a. | 0.0
+Levara Invest, Sicav, S.a. | 0.0
+Bona-renda Fi | 0.0
+Ibercaja All Star A Fi | 0.0
+Watt Inversiones Mobiliarias, Sicav S.a. | 0.0
+Togaest Inversiones Fi | 0.0
+Santander Pb Cartera 0-60 Fi | 0.0
+Bankinter Europa 2021 Garantizado Fi | 0.0
+Inversiones Elizondo, S.a., Sicav | 0.0
+Cnp Partners Alto Rendimiento Pp | 0.0
+Santander Renta Fija Privada A Fi | 0.0
+Blackrock Strategic Funds - Fixed Income Strategies Fund A2 Eur | 0.0
+Zubirent Investments, Sicav, S.a. | 0.0
+Fon Fineco Eurolíder Fi | 0.0
+Bankia Fondtesoro Largo Plazo Universal Fi | 0.0
+Antresma De Inversiones, Sicav S.a. | 0.0
+Nuclefón Fi | 0.0
+Selector Global Acciones Fi | 0.0
+Gvc Gaesco 300 Places Worldwide A Fi | 0.0
+Caixabank Bolsa Selección Asia Premium Fi | 0.0
+Atl Capital Dinámico Pp | 0.0
+High Rate Fi | 0.0
+Cnp Horizonte Alto Rendimiento Pp | 0.0
+Sabadell Selección épsilon Plus Fil | 0.0
+Caixabank Bolsa Selección Emergentes Premium Fi | 0.0
+Stock Area, Sicav, S.a. | 0.0
+Bbva Renta Variable Pp | 0.0
+Sanamaro Cartera, Sicav, S.a. | 0.0
+Mediolanum Renta L-a Fi | 0.0
+Catalana Occidente Bolsa Mundial Fi | 0.0
+Cleomer, Sicav, S.a. | 0.0
+Evlo Inversiones Sicav S.a. | 0.0
+Azol Futuro, Sicav, S.a. | 0.0
+Sa Nostra 2 Pp | 0.0
+Cnp Partners Gestión Dinámica Pp | 0.0
+Caixa Enginyers Emergents, Fi | 0.0
+Carfy, Sicav S.a. | 0.0
+Aladino De Inversiones, Sicav S.a. | 0.0
+Caixa Enginyers Borsa Usa, Fi | 0.0
+Teleixo Inversiones, Sicav, S.a. | 0.0
+Manan Investments, Sicav, S.a. | 0.0
+Gpm Gestión Activa Gestión Global Fi | 0.0
+Password Inversiones, Sicav, S.a. | 0.0
+Gama Bursatil, Sicav, S.a. | 0.0
+Pelayo Vida Plan Activo Pp | 0.0
+Lejona Inversiones, Sicav S.a. | 0.0
+Bbva Bolsa Usa (cubierto) Fi | 0.0
+Bankia Soy Así Cauto Universal Fi | 0.0
+Fondguissona Global Bolsa Fi | 0.0
+Planfiatc 5 Individual Pp | 0.0
+Dp Fondos Rv Global A Fi | 0.0
+Solventis Cronos Pp | 0.0
+Santander Acciones Españolas C Fi | 0.0
+Ubs Mixto Gestión Activa I Fi | 0.0
+Plancaixa Proyeccion Bolsa Pp | 0.0
+Megeve Inversiones Sicav, S.a. | 0.0
+Gescafondo Fi | 0.0
+Caser Masxnada Rv Pp | 0.0
+Ybarvi De Inversiones, Sicav, S.a. | 0.0
+Jpmorgan Funds - Europe Equity Plus Fund D (perf) (acc) - Eur | 0.0
+Gco Internacional Fi | 0.0
+Valores Tradicionales, Sicav S.a. | 0.0
+Europopular Crecimiento 100 Pp | 0.0
+Caixabank Selección Tendencias Estándar Fi | 0.0
+Laboral Kutxa Bolsa Usa Fi | 0.0
+Plancaixa Futuro 2026 Pp | 0.0
+Sabadell Bonos Emergentes Plus Fi | 0.0
+Eurofuturo Pp | 0.0
+Sabadell Bonos España Premier Fi | 0.0
+Liberty Dinámico Epsv | 0.0
+Prezanes De Inversiones, Sicav S.a. | 0.0
+Fuerfondo, Sicav, S.a. | 0.0
+Santander Acciones Latinoamericanas A Fi | 0.0
+Criscovi Inversiones, Sicav, Sa | 0.0
+Metlife 2 Pp | 0.0
+Caser Premier Mixto Pp | 0.0
+Mutuafondo High Yield A Fi | 0.0
+Testardo Inversiones, Sicav S.a. | 0.0
+Naranja Eurostoxx 50 Pp | 0.0
+Caixabank Bolsa Selección Global Plus Fi | 0.0
+Mediolanum Renta S-a Fi | 0.0
+Delquin Inversiones Sicav, Sa | 0.0
+Saliona De Inversiones, Sicav S.a. | 0.0
+If Global Management Fi | 0.0
+Caser Oportunidad Pp | 0.0
+Af Dobra, Sicav, S.a. | 0.0
+Ohana Europe Fi | 0.0
+Kowait Iv, Sicav, S.a. | 0.0
+Gestifonsa Renta Fija Corto Plazo A Fi | 0.0
+Sociedad Madrileña De Inversion Mobiliaria, S.a., Sicav | 0.0
+Eurofinatel Inversiones, Sicav, S.a. | 0.0
+Inversiones Mobiliarias Aletheia, Sicav, S.a. | 0.0
+Plan Evo Renta Variable Pp | 0.0
+Ing Direct Fondo Naranja Euro Stoxx 50 Fi | 0.0
+Pastor Renta Variable Pp | 0.0
+Santalucía Panda Prudente Pp | 0.0
+Cabk Destino 2022 Premium Pp | 0.0
+Matterhorn Investments, Sicav S.a. | 0.0
+Pomerana Inversiones, Sicav S.a. | 0.0
+Sabadell Selección épsilon Base Fil | 0.0
+Queiles Inversiones Mobiliarias, Sicav, S.a. | 0.0
+Bankinter Cartera Privada Conservadora B Fi | 0.0
+Bankoa Bolsa Pp | 0.0
+Ibercaja Sanidad B Fi | 0.0
+Koala Capital Sicav, S.a. | 0.0
+Arquiuno Dinámico 100rv B Fi | 0.0
+Inversiones Pelópidas, Sicav S.a. | 0.0
+Actium De Inversiones, Sicav S.a. | 0.0
+Cortigoso Inversiones, Sicav, S.a. | 0.0
+Flmcinco, Sicav S.a. | 0.0
+Sabadell Bonos España Plus Fi | 0.0
+Txiluagi, Sicav S.a. | 0.0
+Rita Investments Sicav S.a. | 0.0
+Renta 4 Acciones Epsv | 0.0
+Millenium Fund Fi | 0.0
+Jogami De Inversiones Sicav | 0.0
+Fondmapfre Global Fi | 0.0
+Enginyers Inversió Sostenible Pp | 0.0
+Ibercaja Bolsa Internacional A Fi | 0.0
+Sabadell Bonos España Pyme Fi | 0.0
+Lucernarium 2000, Sicav S.a. | 0.0
+Didacmania Sicav, S.a. | 0.0
+Fipen Ii Pp | 0.0
+Valores Bilbainos, Sicav, S.a. | 0.0
+Eurobirdie, Sicav S.a. | 0.0
+Competitive Investment, Sicav S.a. | 0.0
+Caser Premier 2021 Pp Acc | 0.0
+Sabadell Dinámico Pyme Fi | 0.0
+Gesiuris Patrimonial Fi | 0.0
+Sabadell Asia Emergente Bolsa Cartera Fi | 0.0
+Plancaixa Futuro 160 Pp | 0.0
+Bestinver Futuro Epsv | 0.0
+Sabadell Plan Futuro 2045 - N5 Pp | 0.0
+Caser Premier Renta Variable Pp | 0.0
+Mirasset Selector Fund Fi | 0.0
+Renta 4 Acciones Globales R Fi | 0.0
+Liberty Dinámico Pp | 0.0
+March Acciones Pp | 0.0
+Inverbela, S.a. Sicav | 0.0
+Deutsche Bank Rv Global Pp | 0.0
+Alcalá Acciones Fi | 0.0
+Plancaixa Valor En Alza 2027 Pp | 0.0
+Capitalza, Sicav, S.a. | 0.0
+Gvc Gaesco Fondo De Fondos Fi | 0.0
+Cabk Destino 2022 Pp | 0.0
+Sabadell Dinámico Plus Fi | 0.0
+Otago Inversiones, Sicav S.a. | 0.0
+Union 400, Sicav, S.a. | 0.0
+Catafim, Sicav S.a. | 0.0
+Ibercaja Gestión Audaz B Fi | 0.0
+Ibercaja Best Ideas B Fi | 0.0
+Bms Blue Chips, Sicav, S.a. | 0.0
+Svrne Jubilación Ii Pp | 0.0
+Unifond Bolsa Garantizado 2023-x Fi | 0.0
+Inversema Bolsa, Sicav S.a. | 0.0
+Guaicanamar Inversiones, Sicav, S.a. | 0.0
+Inverpamobe, S.i.c.a.v., S.a. | 0.0
+Legiox, Sil, S.a. | 0.0
+Arquiuno Dinámico 100rv A Fi | 0.0
+Inversiones Serrablo, S.a., Sicav | 0.0
+Insapi, S.a., Sicav | 0.0
+Alteralia Debt Fund C Fil | 0.0
+Ditesco Cartera, Sicav, S.a. | 0.0
+Inversiones Mobiliarias Urquiola, S.a., Sicav | 0.0
+Sogaza De Inversiones, Sicav S.a. | 0.0
+Rg 27, Sicav S.a. | 0.0
+Ginvest Multiactivo Flexible Sicav Sa | 0.0
+Zurich Dinámico Pp | 0.0
+Esfera Yellowstone Fi | 0.0
+Dp Fonglobal Fi | 0.0
+Meridional De Titulos, Sicav S.a. | 0.0
+A&g Conservador Pp | 0.0
+Barcapital Sicav S.a. | 0.0
+Sabadell Dinámico Base Fi | 0.0
+Torrevalores, S.a., Sicav | 0.0
+Quality Mejores Ideas Fi | 0.0
+Mediolanum Mercados Emergentes L-a Fi | 0.0
+Spb Mutuactivos Pp | 0.0
+Manaslu Inversiones, Sicav, S.a. | 0.0
+Ficos De Inversion, Sicav, S.a. | 0.0
+Top Class Global Allocation, Sicav, S.a. | 0.0
+Natbry Inversiones Sicav S.a. | 0.0
+Oportunidad Bursatil, S.a., Sicav | 0.0
+Senurmo, Sicav, S.a. | 0.0
+Montmartre De Inversiones, Sicav S.a. | 0.0
+Palsori Inversiones, Sicav S.a. | 0.0
+Bms Cartera, S.a., Sicav | 0.0
+Bankia Bolsa Usa Universal Fi | 0.0
+Euroarradi Siglo Xxi, Sicav S.a. | 0.0
+Jiminy Cricket, Sicav, Sa | 0.0
+Atl Capital Cartera Renta Variable A Fi | 0.0
+Mi Fondo Santander Patrimonio S Fi | 0.0
+Alteralia Debt Fund B Fil | 0.0
+Inversiones Rush, Sicav S.a. | 0.0
+Actimaaf Acciones Iberica, S.a., Sicav | 0.0
+Mutuafondo Inversión & Cooperación Fi | 0.0
+March Pensiones Protección Pp | 0.0
+Inversiones Veral, S.a., Sicav | 0.0
+Ubs Mixto Gestión Activa P Fi | 0.0
+Caixabank Destino 2050 Plus Fi | 0.0
+Bankinter Euribor Rentas Iii Garantizado Fi | 0.0
+Best Manager Conservador Fi | 0.0
+Inversiones Financieras Pepes, Sicav, S.a. | 0.0
+ávila Renta Mixta Pp | 0.0
+Caixabank Bolsa Small Caps Euro Prem Fi | 0.0
+Caixabank Bolsa Selección Global Estándar Fi | 0.0
+Microbank Fondo Ecológico Fi | 0.0
+Fontibrefondo Fi | 0.0
+Bk índice Revalorización Pp | 0.0
+Haya Inversiones, Sicav,sa | 0.0
+Horizonte Global Fi | 0.0
+Algar Global Fund Fi | 0.0
+Iapetus Investments, Sicav, S.a. | 0.0
+Cartera Naranja 50/50 Fi | 0.0
+Unifond Emprendedor Fi | 0.0
+Guntín De Inversiones Sicav, S.a. | 0.0
+Ibercaja Dólar B Fi | 0.0
+Beleña Inversiones, Sicav S.a. | 0.0
+Laboral Kutxa Futur Fi | 0.0
+Ruban Inversiones Sicav, S.a. | 0.0
+Caixabank Bolsa Usa Divisa Cubierta Estándar Fi | 0.0
+Alteralia Debt Fund A Fil | 0.0
+Caixabank Bolsa Selección Asia Plus Fi | 0.0
+Rioja 2 Pp | 0.0
+Moro 2, Sicav, S.a. | 0.0
+Caixabank Bolsa Gestión Euro Premium Fi | 0.0
+Ibercaja Sanidad A Fi | 0.0
+Mutuafondo High Yield D Fi | 0.0
+Santalucía Eurobolsa C Fi | 0.0
+Caixabank Gestión 50 Suprainstitucional Fi | 0.0
+Pbp Gran Selección A Fi | 0.0
+Inversiones Marco Aurelio Sicav Sa | 0.0
+Naranja Ibex 35 Pp | 0.0
+Brunara, S.a., Sicav | 0.0
+Santalucía Espabolsa D Fi | 0.0
+Sabadell Bonos Emergentes Base Fi | 0.0
+Aurum Renta Variable Fi | 0.0
+Renta 4 Wertefinder Fi | 0.0
+Ibercaja Emergentes B Fi | 0.0
+Inversiones Campea, S.a., Sicav | 0.0
+Caixabank Destino 2050 Estándar Fi | 0.0
+Coro Patrimonio, Sicav S.a. | 0.0
+Patribond Fi | 0.0
+Bbva Bolsa Emergentes Mf Fi | 0.0
+Bankia Emergentes Universal Fi | 0.0
+Inveroc Financiera, Sicav, S.a. | 0.0
+Ibercaja Nuevas Oportunidades A Fi | 0.0
+Siroco Expectations, Sicav, S.a. | 0.0
+Investblue Activos, Sicav S.a. | 0.0
+Adriza Neutral Fi | 0.0
+Inverplus Actius Mobiliaris, Sicav, S.a. | 0.0
+Santander Acciones Españolas D Fi | 0.0
+Eqmc C Fil | 0.0
+Corella Patrimonio, Sicav S.a. | 0.0
+Almavial De Inversiones Sicav S.a. | 0.0
+Duende Xxi, Sicav, S.a. | 0.0
+Fon Fineco Patrimonio Global X Fi | 0.0
+Vasanva, S.a., Sicav | 0.0
+Caixabank Bolsa Gestión Euro Estándar Fi | 0.0
+Caixabank Destino 2030 Plus Fi | 0.0
+Deutsche Dzp-3 Pp | 0.0
+Electra De Inversiones, Sicav, S.a. | 0.0
+Sabadell Euro Yield Cartera Fi | 0.0
+Bluenote Global Equity Fi | 0.0
+Abanca Seguridad Activa 2031 Pp | 0.0
+Mediolanum Mercados Emergentes S-a Fi | 0.0
+Guadalquivir Cartera De Inversiones, Sicav, S.a. | 0.0
+Annualcycles Strategies Fi | 0.0
+Bbva Bolsa Plan Dividendo Europa Fi | 0.0
+Abante Asesores Global Fi | 0.0
+Plencia De Inversiones, Sicav, S.a. | 0.0
+Caixa Enginyers Global, Fi | 0.0
+Multi-rem, Sicav, Sa | 0.0
+March Premier Renta Fija Corto Plazo A Fi | 0.0
+Caixabank Gestión 50 Platinum Fi | 0.0
+Peñasanta De Valores, Sicav, S.a. | 0.0
+Sabadell Euro Yield Plus Fi | 0.0
+Apus Investment, Sicav, S.a. | 0.0
+Sabadell España 5 Valores Plus Fil | 0.0
+Penedès Pensió Rv Internacional Pp | 0.0
+Marco Finance, Sicav, S.a. | 0.0
+Enginyers Mixt Pp Asociado | 0.0
+Gesconsult León Valores Mixto Flexible B Fi | 0.0
+Bruno 2000 De Inversiones Sicav S.a. | 0.0
+Kutxabank Bolsa Nueva Economía Estándar Fi | 0.0
+Fonditel Lince B Fi | 0.0
+Dolyce Gestion Patrimonial Sicav S.a. | 0.0
+Irving Invest Sicav S.a. | 0.0
+Dux Mixto Variable Fi | 0.0
+Girola Performance Sicav, S.a. | 0.0
+Ibercaja Dólar A Fi | 0.0
+Ibida, Sicav, S.a. | 0.0
+Morinvest, Sicav, S.a. | 0.0
+Sabadell Euro Yield Premier Fi | 0.0
+Santander Pb Cartera Flexible 30 Fi | 0.0
+Saycan-2001, Sicav, S.a. | 0.0
+Pbp Bolsa España A Fi | 0.0
+Ontinyent Nuevas Oportunidades Pp | 0.0
+Fon Fineco Patrimonio Global I Fi | 0.0
+Currelos De Inversiones Sicav, S.a. | 0.0
+Caixabank Destino 2030 Estándar Fi | 0.0
+Caixabank Destino 2040 Plus Fi | 0.0
+Avantage Fund Fi | 0.0
+Ibercaja Emergentes A Fi | 0.0
+Ibercaja Gestión Crecimiento Pp | 0.0
+Catalana Occidente Bolsa Española Fi | 0.0
+Sabadell Bonos Alto Interés Pyme Fi | 0.0
+Digit Inversiones, Sicav, S.a. | 0.0
+Inversiones Berezal, Sicav S.a. | 0.0
+Equiva, Sicav, S.a. | 0.0
+Arkadia Finanzas,sicav,s.a. | 0.0
+Cima Global Value Sicav Sa | 0.0
+Sammar, S.a., Sicav | 0.0
+Foncar De Inversiones, Sicav, S.a. | 0.0
+Almaro, S.a., Sicav | 0.0
+Deutsche Wealth Crecimiento B Fi | 0.0
+Marland Capital Sicav, S.a. | 0.0
+Kutxabank Bolsa Eeuu Estándar Fi | 0.0
+Tressis Cartera Crecimiento Pp | 0.0
+Caixabank Bolsa Small Caps Euro Estánd Fi | 0.0
+Polo Capital, Sicav, S.a. | 0.0
+Sabadell España 5 Valores Base Fil | 0.0
+Sabadell Emergente Mixto Flexible Base Fi | 0.0
+Diale Inversiones Financieras, Sicav, S.a. | 0.0
+Sabadell Plan Futuro 2040 - N5 Pp | 0.0
+Isaga 2001, Sicav, S.a. | 0.0
+Liberty Equilibrado 3 Pp | 0.0
+Espierre Inversiones, Sicav, S.a. | 0.0
+Oregon 2000, Sicav S.a. | 0.0
+Liberty Equilibrado Ligero Pp | 0.0
+Maralti Invest, Sicav, S.a. | 0.0
+Cartera Sertorio, Sicav S.a. | 0.0
+Santander Renta Variable Global Pp | 0.0
+Mm 4437 Inversiones Sicav S.a. | 0.0
+Generali Plan 75 Pensiones Pp | 0.0
+Sabadell Dinámico Fi Premier | 0.0
+Astanes Inversiones, Sicav, S.a. | 0.0
+Barbarisa Capital Sicav, S.a. | 0.0
+Rodavi Capital, Sicav, S.a. | 0.0
+Santander Acciones Españolas A Fi | 0.0
+Merch-oportunidades Fi | 0.0
+Imantia Ibex 35 Fi | 0.0
+Bankia Dividendo España Universal Fi | 0.0
+Icles Investments, Sicav, S.a. | 0.0
+Fegon Inversiones, Sicav, S.a. | 0.0
+Inversabadell 70 Plus Fi | 0.0
+Sabadell Asia Emergente Bolsa Base Fi | 0.0
+Ibercaja Europa Star B Fi | 0.0
+Delzapeg, Sicav S.a. | 0.0
+Kutxabank Bolsa Internacional Estándar Fi | 0.0
+Privandalus Inversiones I, Sicav, Sa | 0.0
+Valvalsa 2005, Sicav, S.a. | 0.0
+Agium Investium, Sicav S.a. | 0.0
+Pelamios Capital Sicav, S.a. | 0.0
+Rebeco-98, Sicav, S.a. | 0.0
+Cabk Oportunidad Pp | 0.0
+Budulaque Aldama, Sicav S.a. | 0.0
+Caixabank Destino 2040 Estándar Fi | 0.0
+Fon Fineco Patrimonio Global A Fi | 0.0
+Bk Mixto 75 Bolsa Pp | 0.0
+Covirán Pensiones Pp | 0.0
+Speculum Global, S.a., Sicav | 0.0
+Generali Renta Variable Epsv | 0.0
+Sabadell Euro Yield Base Fi | 0.0
+Gavijosa Finanzas, Sicav, S.a. | 0.0
+Noviembres Inversiones, Sicav, Sa | 0.0
+Plancaixa Futuro 170 Pp | 0.0
+Caixabank Bolsa Selección Asia Estándar Fi | 0.0
+Fib Arca Futura, S.a., Sicav | 0.0
+Imantia Global Moderado Fi | 0.0
+Invertres Fondo I Fi | 0.0
+Promocinver, S.a., Sicav | 0.0
+Rosmi 10 Sicav Sa | 0.0
+Cabk Rv Euro Pp | 0.0
+Allianz Crecimiento 100 Pp | 0.0
+Jumarlu Inversiones, Sicav S.a. | 0.0
+Kontact Exchange, S.a., Sicav | 0.0
+Efficient Asset Allocation Investments, Sicav S.a. | 0.0
+Lluipupi, Sicav, S.a. | 0.0
+Orfeo Fi | 0.0
+Santander Tándem 20-60 Fi | 0.0
+Europopular Horizonte 75 Pp | 0.0
+Allocation, Sicav, S.a. | 0.0
+Sant Bernat De Inversiones, Sicav S.a. | 0.0
+Caixabank Bolsa Selección Emergentes Plus Fi | 0.0
+Garadasa, Sicav S.a | 0.0
+Oleiros De Inversiones, Sicav S.a. | 0.0
+Mundiplan Equilibrado Pp | 0.0
+Tressis Cartera Equilibrada Pp | 0.0
+Urdane Sicav S.a. | 0.0
+Sabadell Euro Yield Empresa Fi | 0.0
+Nb Crecimiento Pp | 0.0
+Lobo 3.000, Sicav, S.a. | 0.0
+Bbva Horizonte Pp | 0.0
+Principium P Fi | 0.0
+Aqualata Inversiones Sicav, S.a. | 0.0
+March Ahorro Pp | 0.0
+Sabadell Bonos España Cartera Fi | 0.0
+Caser Masxnada Rv75 Pp | 0.0
+Chart Inversiones, Sicav, S.a. | 0.0
+Deutsche Wealth Crecimiento A Fi | 0.0
+Tietar Finanzas, Sicav, S.a. | 0.0
+Mediolanum Mercados Emergentes E-a Fi | 0.0
+Inversions Poble Nou, Sicav, S.a. | 0.0
+Renta 4 Renta Fija Euro Fi | 0.0
+Bbva Revalorización Europa 25 Pp | 0.0
+Caelu Investment Sicav S.a. | 0.0
+Atl Capital Best Managers Mixto Fi | 0.0
+Pbp Biogen Fi | 0.0
+Vertical Inversiones, Sicav, S.a. | 0.0
+Kutxabank Bolsa Small & Mid Caps Euro Estándar Fi | 0.0
+Bbva Bolsa índice Euro Fi | 0.0
+Inversiones Chapesa, Sicav, S.a. | 0.0
+Hidrogen 2004, S.i.c.a.v, S.a | 0.0
+Mundiplan Audaz Europa Pp | 0.0
+Fondmapfre Bolsa Mixto Fi | 0.0
+Caixabank Bolsa Gestión España Estándar Fi | 0.0
+Venturewell, Sicav, S.a. | 0.0
+Gvc Gaesco Small Caps A Fi | 0.0
+Nb Renta Fija Largo Fi | 0.0
+Terde Inversiones, Sicav, S.a. | 0.0
+Sabadell Asia Emergente Bolsa Premier Fi | 0.0
+Syrah Capital, Sicav S.a. | 0.0
+Ibercaja Gestión Audaz A Fi | 0.0
+Koopmans Inversiones, Sicav S.a. | 0.0
+Bbva Bolsa índice Fi | 0.0
+Ebesoj, Sicav, S.a. | 0.0
+Pelayo Vida Renta Fija Pp | 0.0
+Caser Variable Pp | 0.0
+Unifond 2021-ix Fi | 0.0
+Abante Selección Fi | 0.0
+Nashira Capital, Sicav S.a. | 0.0
+Caixabank Bolsa Selección Europa Premium Fi | 0.0
+Fonditel Lince C Fi | 0.0
+Rga-renta Variable Global Pp | 0.0
+Bankal Inversiones 98, Sicav, S.a. | 0.0
+Liendo De Inversiones, Sicav, S.a. | 0.0
+Ing Direct Fondo Naranja Dinámico Fi | 0.0
+Cabk Crecimiento Pp | 0.0
+Sabadell Bonos España Base Fi | 0.0
+Savir 2000 De Inversiones Sicav | 0.0
+Ibercaja Europa Star A Fi | 0.0
+Caixabank Oportunidad Plus Fi | 0.0
+Europa Rv Pp | 0.0
+Evo Fondo Inteligente Ibex 35 Fi | 0.0
+Sabadell Euro Yield Pyme Fi | 0.0
+Inversiones Moura, Sicav, S.a. | 0.0
+Inversiones Mobiliarias Grupo Adan, S.a., Sicav | 0.0
+Arminza De Inversiones, Sicav, S.a. | 0.0
+Deer Buttons Sicav S.a. | 0.0
+Finlovest, Sicav, S.a. | 0.0
+Bono Alagon, Sicav, Sa | 0.0
+Ballymore, Sicav, S.a. | 0.0
+Caixabank Bolsa Gestión Euro Plus Fi | 0.0
+Sc Mercados Globales Inversiones, Sicav, S.a. | 0.0
+Bbva Individual Pp | 0.0
+Naranja 2030 Pp | 0.0
+Alhaja Inversiones Rv Mixto Fi | 0.0
+Arquiuno Equilibrado 60rv B Fi | 0.0
+Santalucía Eurobolsa B Fi | 0.0
+Cat Previsió Pp | 0.0
+Guissona Bolsa Pp | 0.0
+Liberty Euro Stock Market Fi | 0.0
+Pebble Invest, Sicav, S.a | 0.0
+Destino Futuro 2023 Db Pp | 0.0
+Dunas Valor Prudente I Fi | 0.0
+Fonditel Lince A Fi | 0.0
+Ibercaja Small Caps A Fi | 0.0
+Plan Cr Renta Variable Pp | 0.0
+Círculo Acciones Pp | 0.0
+Gesconsult León Valores Mixto Flexible A Fi | 0.0
+Ondarreta Zurriola De Inversiones, Sicav, Sa | 0.0
+Anjoma 2013, Sicav, S.a. | 0.0
+Rga-mixto 75 Pp | 0.0
+Santalucía Fonvalor Euro A Fi | 0.0
+Deutsche Bank Dinámico Pp | 0.0
+Blacksmith Inversiones Sicav, S.a | 0.0
+Fondespaña-duero Garantizado Bolsa I/2022 Fi | 0.0
+Carisa Inversiones, Sicav S.a. | 0.0
+Caixabank Bolsa Dividendo Europa Premium Fi | 0.0
+Generali Renta Variable Pp | 0.0
+Inversiones Retama, Sicav S.a. | 0.0
+Compass Inversiones, Sicav S.a. | 0.0
+Caixabank Bolsa Small Caps Euro Plus Fi | 0.0
+Bk Mercado Europeo 2026 Pp | 0.0
+Mi Fondo Santander Patrimonio A Fi | 0.0
+Deutsche Db Vida Individual Pp | 0.0
+Ibercaja Tecnológico B Fi | 0.0
+Plan Evo Renta Fija Mixta Pp | 0.0
+Abante Variable Pp | 0.0
+Bankia Protegido Renta 2022 Pp | 0.0
+Caser Tranquilidad Pp | 0.0
+Arcano European Income Fund A1 Fil | 0.0
+Arcano European Income Fund D1 Fil | 0.0
+Sabadell Plan Futuro 2030 - N5 Pp | 0.0
+Audaz Europa Epsv | 0.0
+Sabadell Bonos Alto Interés Base Fi | 0.0
+Caixabank Oportunidad Estándar Fi | 0.0
+Qualified Investor, Sicav, S.a. | 0.0
+Delfi Bolsa, Sicav Sa | 0.0
+Clavijo Inversiones, Sicav, S.a. | 0.0
+Alfa Inversiones Bursatiles, Sicav S.a. | 0.0
+Portfoli Gt, Sicav, S.a. | 0.0
+Granja Malvehy Sicav Sa | 0.0
+Sabadell Dólar Fijo Base Fi | 0.0
+Bbva Previsión Pp | 0.0
+Ibercaja Petroquímico B Fi | 0.0
+Judbem De Inversiones, Sicav S.a. | 0.0
+Addition, Sicav, S.a. | 0.0
+Renta 4 Valor Relativo R Fi | 0.0
+Mirnova Investment Sicav S.a. | 0.0
+Tautira Inversiones, Sicav, S.,a. | 0.0
+Caixabank Bolsa Selección Japón Premium Fi | 0.0
+Santos Nuevos, Sicav S.a. | 0.0
+Plan Valor Ambición Pp | 0.0
+Fimbrobolsa, Sicav., S.a. | 0.0
+Quality Inversión Decidida Fi | 0.0
+Bs Renta Variable Plus 1 Pp | 0.0
+Arquiplan Pp | 0.0
+Sabadell Emergente Mixto Flexible Cartera Fi | 0.0
+Inresa Finanzas, Sicav S.a. | 0.0
+Kginves105, Sicav, S.a. | 0.0
+Arquiplan Estabilidad 3 Pp | 0.0
+Copey Investment, Sicav S.a. | 0.0
+Polo Valor S.i.c.a.v., S.a. | 0.0
+Caser Dinamismo Pp | 0.0
+Nordea 1 - Stable Return Fund E Eur | 0.0
+Bnp Paribas Caap Dinámico A Fi | 0.0
+Split Inversiones, Sicav S.a. | 0.0
+Fonmaster 1 Fi | 0.0
+Altais Invest, Sicav, S.a. | 0.0
+Caixa Enginyers Gestió Dinàmica, Fi | 0.0
+Ibercaja De Pensiones Gestión Audaz Pp | 0.0
+Inversiones Julgab, Sicav, S.a. | 0.0
+Manoa Financiera Sicav, S.a. | 0.0
+Ibercaja Japón B Fi | 0.0
+Sabadell Bonos Internacional Premier Fi | 0.0
+Sabadell Euroacción Base Fi | 0.0
+Sabadell Plan Futuro 2035 - N5 Pp | 0.0
+Montbore Sicav Sa | 0.0
+Patrival Fi | 0.0
+Sergrobe De Inversiones, Sicav, S.a. | 0.0
+Arizcun, Sicav, S.a. | 0.0
+Bankinter Multiselección Conservador Fi | 0.0
+Europopular Futuro Pp | 0.0
+Welzia Global Opportunities Fi | 0.0
+Ursus-3c Valor, Sil | 0.0
+Sabadell Asia Emergente Bolsa Plus Fi | 0.0
+Sabadell Equilibrado Premier Fi | 0.0
+Plancaixa Superación Pp | 0.0
+Abando Equities Fi | 0.0
+Sabadell Bonos Alto Interés Cartera Fi | 0.0
+Templeton Asian Growth Fund A(acc)usd | 0.0
+Caixabank Destino 2022 Estándar Fi | 0.0
+Becrigo, Sicav S.a. | 0.0
+Antoka De Patrimonios, Sicav, S.a. | 0.0
+Mosel Finance, S.a., Sicav | 0.0
+Caixabank Seleccion Futuro Sostenible Premium Fi | 0.0
+Laboral Kutxa Bolsa Universal Fi | 0.0
+Ontinyent Renta Variable Pp | 0.0
+Bestinver Patrimonio Fi | 0.0
+Boysep Investment Sicav S.a. | 0.0
+Kutxabank Bolsa Emergentes Estándar Fi | 0.0
+Bbva Renta Variable Europa Pp | 0.0
+Sabadell Dólar Fijo Pyme Fi | 0.0
+Triolet Inversiones Sicav S.a. | 0.0
+Surarival Inversiones, Sicav, S.a. | 0.0
+Gestión Boutique Cl Flexible Fi | 0.0
+Gestión Boutique Ginvest Smart Fi | 0.0
+Cnp Partners Gf Golden Plus Pp | 0.0
+Valcorona Inversiones, Sicav S.a. | 0.0
+Seleccion Diversificada, Sicav, S.a. | 0.0
+Ruisanjol, Sicav, S.a. | 0.0
+Bnp Paribas Bolsa Española Fi | 0.0
+Caser Renta Variable Mixta 70 Pp | 0.0
+Caixabank Bolsa Dividendo Europa Plus Fi | 0.0
+Ratevin Valores, Sicav S.a. | 0.0
+Bs Rendimiento Europa Pp | 0.0
+Sabadell Equilibrado Pyme Fi | 0.0
+Sabadell Bonos Alto Interés Premier Fi | 0.0
+Caixa Enginyers Renda, Fi | 0.0
+Xaela Inversions, Sicav S.a. | 0.0
+Ibercaja Tecnológico A Fi | 0.0
+Gestión Boutique Ii Acción Global Fi | 0.0
+Edm Valores Uno Fi | 0.0
+Urko Capital, Sicav, S.a. | 0.0
+Susak Inversiones Sicav Sa | 0.0
+Kutxabank Bolsa Global Pp | 0.0
+Novafillola Sicav S.a. | 0.0
+Novarex Actius Mobiliaris, Sicav, Sa | 0.0
+Caminos Uno Pp | 0.0
+Bbva Mejores Ideas (cubierto) Mf Fi | 0.0
+Grupo Inversor Falla, Sicav, S.a. | 0.0
+Ibercaja Japón A Fi | 0.0
+Inelema Inversiones Sicav S.a. | 0.0
+Milenio Patrimonio Sicav, S.a. | 0.0
+Fondonorte Eurobolsa Fi | 0.0
+Gvc Gaesco Renta Valor A Fi | 0.0
+Inversiones Ababol, Sicav S.a. | 0.0
+Bnp Paribas Global Dinver Fi | 0.0
+Ing Direct Fondo Naranja Ibex 35 Fi | 0.0
+Bs Renta Variable Plus 2 Pp | 0.0
+Privat Bank Plusfondo Pp | 0.0
+Bbva Bonos Euskofondo Fi | 0.0
+Kokoro World Trends Sicav | 0.0
+Plan Cr Mixto Renta Variable Pp | 0.0
+Acf Plan Rv Euro Pp | 0.0
+Intervalor Bolsa Mixto Fi | 0.0
+Parfides, Sicav S.a. | 0.0
+Sherry Finanzas, Sicav, S.a. | 0.0
+Bucle Inversor, Sicav, S.a. | 0.0
+Ibercaja Petroquímico A Fi | 0.0
+Caser Masxnada Rvm 50 Pp | 0.0
+Sextante Capital, Sicav, S.a. | 0.0
+Europopular Iberplan I Pp | 0.0
+Dunas Valor Flexible I Fi | 0.0
+Punin Do Cabo, Sicav, S.a. | 0.0
+Inversiones Corfinan, Sicav, S.a. | 0.0
+Tamaraliuga, Sicav, S.a. | 0.0
+Kalyani, Sicav, S.a. | 0.0
+Allianz Vida Pp | 0.0
+Peñalara De Inversiones, S.a., Sicav | 0.0
+Laboral Kuxta Bolsas Europeas Fi | 0.0
+Caixabank Bolsa Selección Emergente Estándar Fi | 0.0
+Avondale, Sicav S.a. | 0.0
+Mirasset Gestion,sicav,sa | 0.0
+Miletus Inversiones, Sicav, S.a. | 0.0
+Echo De Inversiones, Sicav, S.a. | 0.0
+Baleo De Valores, Sicav, S.a. | 0.0
+Sanity Pp | 0.0
+Sabadell Europa Emergente Bolsa Premier Fi | 0.0
+Robust Renta Variable Mixta Internacional Fi | 0.0
+Sabadell Equilibrado Plus Fi | 0.0
+Inversiones Y Analisis Estrategicos, Sicav, S.a. | 0.0
+Lealtad Pp | 0.0
+Bnp Paribas Caap Equilibrado A Fi | 0.0
+Lyndon Inversiones, Sicav, S.a. | 0.0
+Sabadell Bonos Internacional Plus Fi | 0.0
+Liberbank Cartera Dinámica A Fi | 0.0
+Gualestri Cartera, Sicav S.a. | 0.0
+Costa Rica Inversiones, Sicav S.a. | 0.0
+Deutsche Dzp-2 Pp | 0.0
+Arcano European Income Fund A2 Fil | 0.0
+Inversabadell 50 Plus Fi | 0.0
+Kutxabank Gestión Activa Inversión Estándar Fi | 0.0
+Encañizada, Sicav, S.a. | 0.0
+Unicorp Selección Dinámico Fi | 0.0
+Inversiones Eriste, Sicav S.a. | 0.0
+Riberas Del Sor Investment, Sicav S.a. | 0.0
+Mapfre Europa Pp | 0.0
+Bbva Rendimiento España Ii Fi | 0.0
+Chanteiro Inversiones, Sicav, S.a. | 0.0
+Aljamis 98, Sicav, S.a. | 0.0
+Setoba De Inversiones, Sicav S.a. | 0.0
+Cartera De Inversiones Valdeplana, Sicav, S.a. | 0.0
+Bbva Bolsa Japón Fi | 0.0
+Sabadell Bonos Euro Cartera Fi | 0.0
+Caixabank Bolsa Selección Europa Plus Fi | 0.0
+Sallierca, Sicav S.a. | 0.0
+Gureeskun, Sicav S.a. | 0.0
+Moterfin, Sicav, S.a. | 0.0
+Eurojucar 2002, Sicav, S.a. | 0.0
+Ecologia Viva, Sicav, S.a. | 0.0
+Bbva Futuro Pensiones Pp | 0.0
+Bbva Rendimiento Europa Positivo Ii Fi | 0.0
+Zurich Moderado Pp | 0.0
+Caixabank Destino 2022 Plus Fi | 0.0
+Europopular Consolidado Xiii Pp | 0.0
+Inverzeta, Sicav, S.a. | 0.0
+Lloyds Pp | 0.0
+Inversabadell 70 Base Fi | 0.0
+Mutuafondo Dividendo A Fil | 0.0
+Castevarri Sicav, S.a. | 0.0
+Valores Mobiliarios Del Ebro, Sicav, S.a. | 0.0
+Caser Mixto 50 Pp | 0.0
+Mediolanum Renta E-a Fi | 0.0
+Caixabank Seleccion Futuro Sostenible Estándar Fi | 0.0
+Welzia World Equity Fi | 0.0
+Sabadell Bonos Euro Premier Fi | 0.0
+Unifond Selección Bolsa A Fi | 0.0
+Bs Renta Variable Pp | 0.0
+Gesconsult Renta Variable B Fi | 0.0
+Liguria Inversiones, Sicav, S.a. | 0.0
+Esnali, Sicav, S.a. | 0.0
+Esfera Renta Fija Mixta Global Fi | 0.0
+Sabadell Garantía Extra 23 Fi | 0.0
+Rasec Inversiones, S.a., Sicav | 0.0
+Kutxabank Plus 7 Pp | 0.0
+Alcalá Futuro Uno Pp | 0.0
+Tomir Inversions 2012, Sicav, S.a. | 0.0
+Cauce Inversiones Mobiliarias Sicav S.a. | 0.0
+Plancaixa Agrario Castilla Y León Pp | 0.0
+Sabadell Equilibrado Base Fi | 0.0
+Sabadell Bonos Alto Interés Plus Fi | 0.0
+Profit Inversiones, Sicav, S.a. | 0.0
+Solrac Inversiones 2000 Sicav S.a. | 0.0
+Plan De Pensiones De Los Ingenieros Pp | 0.0
+Liberty Equilibrado Epsv | 0.0
+Europopular Consolidado Xv Pp | 0.0
+Eurovalor Mixto-50 Fi | 0.0
+Bbva Gestión Decidida Fi | 0.0
+Inversiones Montllor, Sicav, S.a. | 0.0
+Inversiones Realtta, Sicav, S.a. | 0.0
+Almolda Inversiones, Sicav, S.a. | 0.0
+Caixabank Bolsa Selección Japón Plus Fi | 0.0
+Gripa, Sicav,s.a. | 0.0
+Caixabank Seleccion Futuro Sostenible Plus Fi | 0.0
+Goprinves, Sicav, S.a. | 0.0
+Af Renta Alfa Indices, Sicav, S.a. | 0.0
+Racafer Inversiones Sicav S.a. | 0.0
+Bk Mixto 50 Bolsa Pp | 0.0
+Fondmapfre Elección Decidida Fi | 0.0
+Cx Europa 2026 Pp | 0.0
+Plan Capitalización Pp | 0.0
+Arquiuno Equilibrado 60rv A Fi | 0.0
+Santander Inverplus Rfm A Pp | 0.0
+Alar 2000, Sicav S.a. | 0.0
+Caixa Enginyers Borsa Euro Plus, Fi | 0.0
+Kutxabank Bolsa Sectorial Estándar Fi | 0.0
+Liberbank Oportunidad Pp | 0.0
+Barigua, Sicav, S.a. | 0.0
+Trescapital Inversiones Sicav S.a. | 0.0
+Arcabi 3.000 Sicav S.a. | 0.0
+Bnp Paribas Global Asset Allocation Fi | 0.0
+Gvc Gaesco Japón Fi | 0.0
+Heclasan, Sicav, S.a. | 0.0
+Aegón Ii Pp | 0.0
+Santander Acciones Euro Cartera Fi | 0.0
+Yolicocam, Sicav, S.a. | 0.0
+Eko Investment Capital Sicav Sa | 0.0
+Gesdivisa Fi | 0.0
+Suja 12, Sicav, S.a. | 0.0
+Abduit 2002, Sicav S.a. | 0.0
+Destino Futuro 2030 Db Pp | 0.0
+Sabadell Europa Emergente Bolsa Plus Fi | 0.0
+Spqla De Valores, Sicav, S.a. | 0.0
+Aracha, Sicav, S.a. | 0.0
+Amaurota Capital Sicav,s.a. | 0.0
+Gonmoni Sicav, S.a. | 0.0
+Plaza De Colon Inversiones, S.i.c.a.v., S.a. | 0.0
+Lingus Inversiones, Sicav, S.a. | 0.0
+Bbva Mi Inversión Bolsa Acumulación Fi | 0.0
+Fender Capital Sicav, S.a. | 0.0
+Gco Global 50 Fi | 0.0
+Eolo Capital Sicav, S.a. | 0.0
+Strescb Investments, Sicav, S.a. | 0.0
+Enginyers Borsa Pp Asociado | 0.0
+Match Ten Inversiones, Sicav, S.a. | 0.0
+Bankia Euro Top Ideas Universal Fi | 0.0
+Grazalema Inversiones, Sicav, S.a. | 0.0
+Uxama Inversiones, Sicav, S.a. | 0.0
+Edm-ahorro R Fi | 0.0
+Kutxabank Gestión Activa Rendimiento Estándar Fi | 0.0
+Shilling Inversions, Sicav, S.a. | 0.0
+Aldara Gestion, Sicav, S.a. | 0.0
+Lugra De Inversiones, Sicav S.a. | 0.0
+Bbva Catalana Cartera, Sicav, S.a. | 0.0
+Ubs España Gestión Activa P Fi | 0.0
+Ibercaja Dividendo B Fi | 0.0
+Credit Suisse Equity Yield Fi | 0.0
+Goalcia 2001, Sicav, S.a. | 0.0
+Credit Agricole Mercaeuropa Euro Fi | 0.0
+Ibercaja Gestión Equilibrada Pp | 0.0
+Kasilda Inversiones, Sicav, S.a. | 0.0
+Abisal 72, Sicav, Sa | 0.0
+Medea Inversiones, Sicav, S.a. | 0.0
+El Picacho Inversiones, Sicav, S.a. | 0.0
+Caja Ingenieros Climate Sustainability Isr Pp | 0.0
+Sine Quo Num, Sicav S.a. | 0.0
+Novafondisa Fi | 0.0
+Inversabadell 50 Pyme Fi | 0.0
+Terra Blava Inversions, Sicav, S.a. | 0.0
+Europopular Vida Pp | 0.0
+Laboral Kutxa Selek Extraplus Fi | 0.0
+Catalana Occidente Patrimonio Fi | 0.0
+Cronos Previsión Renta Variable Pp | 0.0
+Santander Dividendo Europa B Fi | 0.0
+Gesiuris Urc Patrimonis, Sicav S.a. | 0.0
+Sabadell Europa Emergente Bolsa Base Fi | 0.0
+Sabadell Europa Valor Premier Fi | 0.0
+Atl Capital Best Managers Dinámico A Fi | 0.0
+Sabadell Europa Emergente Bolsa Pyme Fi | 0.0
+Crevafam, Sicav, S.a. | 0.0
+Pluscapital, Sicav, S.a. | 0.0
+Gahervi, Sicav S.a. | 0.0
+Vicolo Inversiones, Sicav, S.a. | 0.0
+Santalucía Fonvalor Euro B Fi | 0.0
+Atl Capital Best Managers Táctico A Fi | 0.0
+Titulos Bilbao, S.a., Sicav | 0.0
+Fonmarch A Fi | 0.0
+Inversiones Herrero, S.a.sicav | 0.0
+Ibercaja Gestión Crecimiento Fi | 0.0
+Santander 100 Valor Global Fi | 0.0
+Liberty Equilibrado Pp | 0.0
+Cai Pensiones Horizonte 6-2013 Pp | 0.0
+Deutsche Bank Correos I Pp | 0.0
+Santalucía Renta Fija A Fi | 0.0
+Bolinver, Sicav, S.a. | 0.0
+Jarba 2000, Sicav S.a. | 0.0
+Alclano De La Luz Sicav, S.a. | 0.0
+Renta 4 Emergentes Global Fi | 0.0
+Lenvomen Capital, Sicav, S.a. | 0.0
+Plus Ultra Renta Fija Mixta Pp | 0.0
+Gestión Boutique Ii Awa Flexible Fi | 0.0
+Anatol Inversiones, Sicav, S.a. | 0.0
+Sabadell 90 Capital Bolsa Euro 1 Fi | 0.0
+Adriza Global R Fi | 0.0
+Multicartera, Sicav S.a. | 0.0
+Sabadell Europa Emergente Bolsa Cartera Fi | 0.0
+Bnp Paribas Portfolio Max 65 A Fi | 0.0
+Unnim Pensions G13 Pp | 0.0
+Income Inversiones, Sicav S.a. | 0.0
+Vipozo Inversiones Sicav, S.a. | 0.0
+Caixabank Renta Fija Subordinada Platinum Fi | 0.0
+Ibercaja 2025 Garantizado Fi | 0.0
+Exacta Capital, Sicav, S.a. | 0.0
+Mediolanum Real Estate Global E-a Fi | 0.0
+1962 Capital, Sicav, Sa | 0.0
+Magestic Inversiones Financieras, Sil, S.a. | 0.0
+Sabadell Garantía Extra 30 Fi | 0.0
+Renta 4 Activos Globales I Fi | 0.0
+Sabadell Bonos Internacional Base Fi | 0.0
+Liberbank Megatendencias A Fi | 0.0
+Bankinter Premium Defensivo B Fi | 0.0
+Invercienta De Inversiones, Sicav, S.a. | 0.0
+Bombay Investment Office, S.a., Sicav | 0.0
+Bbva Bolsa índice Japón (cubierto) Fi | 0.0
+Gvc Gaesco 300 Places Worldwide P Fi | 0.0
+Renta 4 Usa Fi | 0.0
+Vikinvest,sicavs.a. | 0.0
+Arquiuno Prudente 30rv B Fi | 0.0
+Proincrea Investment Sicav S.a. | 0.0
+Fondespaña-duero Garantizado Rf Impulso Fi | 0.0
+Sabadell Europa Bolsa Plus Fi | 0.0
+Atl Capital Best Managers Conservador Fi | 0.0
+Merch-fontemar Fi | 0.0
+Xamia Gestion Patrimonial Sicav S.a. | 0.0
+Igvf Fi | 0.0
+Argalan Inversiones, S.a., Sicav | 0.0
+Norcafix, S.a., Sicav | 0.0
+Andbank Rv Global Pp | 0.0
+Bbva Rendimiento Europa Positivo Fi | 0.0
+Ibercaja 2025 Garantizado 2 Fi | 0.0
+Inversiones Lloner, Sicav S.a. | 0.0
+Bestinver Renta Fi | 0.0
+19.40 Inversions Sicav, S.a. | 0.0
+Avalle Ahorro, Sicav, S.a. | 0.0
+Allianz Horizonte 75 Pp | 0.0
+Ibercaja Dividendo A Fi | 0.0
+Wealth Rendite, Sicav, Sa | 0.0
+Herzen Invest Sicav S.a. | 0.0
+Psn Renta Fija Confianza Pp | 0.0
+Alcalá Global Fi | 0.0
+Caixabank Bolsa Selección Japón Estándar Fi | 0.0
+Caixa Enginyers Iberian Equity, Fi | 0.0
+Grattarola Inversiones, Sicav S.a. | 0.0
+Bankia Jubilación Pp | 0.0
+Nomentana Inversiones, Sicav S.a. | 0.0
+Inversiones Aguaviva I, Sicav S.a. | 0.0
+Sabadell Europa Bolsa Pyme Fi | 0.0
+N.sarasate Valores, Sicav, S.a. | 0.0
+Liberbank Dinámico Pp | 0.0
+Aldersun Inversiones, Sicav, S.a. | 0.0
+Lacerta Inversiones, S.a., Sicav | 0.0
+Esiri Inversiones, Sicav, S.a. | 0.0
+Santa Lucia De Viana, Sicav, S.a. | 0.0
+Mutuafondo A Fi | 0.0
+Bmn Garantizado Selección Xii Fi | 0.0
+Gco Eurobolsa Fi | 0.0
+Jb Inversiones Fi | 0.0
+Merch-eurounión Fi | 0.0
+Gesrioja Fi | 0.0
+Mitica Inversiones, Sicav, S.a. | 0.0
+Sabadell Europa Valor Base Fi | 0.0
+Sabadell Urquijo Patrimonio Privado 5 Fi | 0.0
+Cx Tranquilidad 10 Pp | 0.0
+Alpha Proteccion Sicav Sa | 0.0
+Kutxabank Dividendo Estándar Fi | 0.0
+Bankia Garantizado Rentas 14 Fi | 0.0
+Bbva Bolsa Euro Fi | 0.0
+Financiera Tolinver, Sicav, S.a. | 0.0
+Inlex De Inversion, Sicav S.a. | 0.0
+Invest Valor, Sicav Sa | 0.0
+Trea Renta Fija Selección A Fi | 0.0
+Extremadura 2000 Pp | 0.0
+Mapfre Mixto Pp | 0.0
+Deep Value International Fi | 0.0
+Eurovalor Garantizado Acciones Iii Fi | 0.0
+Souk-el- Arba, Sicav, S.a. | 0.0
+Global Sagos, Sicav, S.a. | 0.0
+Tuca Valores, Sicav, S.a. | 0.0
+Bedinver Internacional, Sicav S.a. | 0.0
+Ancora Condal, Sicav, S.a. | 0.0
+Kginves100, Sicav, S.a. | 0.0
+Zurich Destino 2030 Pp | 0.0
+Sabadell Urquijo Patrimonio Privado 2 Fi | 0.0
+Bbva Estrategia 0-50 Fi | 0.0
+Renta 4 Multigestión 2 Yeste Value Selection Fi | 0.0
+Santander Agrario Castilla León Pp | 0.0
+Inversiones Vigumar 2015 Sicav,s.a. | 0.0
+Ibercaja Pensión Emergentes Pp | 0.0
+Jupiter Inversiones, Sicav, Sa | 0.0
+Generali Plan 30 Pensiones Pp | 0.0
+Planfiatc 6 Solid Pp | 0.0
+Bankia Gestión De Autor Universal Fi | 0.0
+Mediolanum Crecimiento L-a Fi | 0.0
+Kahacha Money Invest, Sicav, S.a. | 0.0
+Generali Mixto Renta Variable Pp | 0.0
+Gesiuris Iurisfond Fi | 0.0
+Perigord Cartera, Sicav S.a. | 0.0
+Epsilon Wealth Management, Sicav, S.a. | 0.0
+Kiora Inversiones, Sicav S.a. | 0.0
+Bs Plan 60 Pp | 0.0
+Bbva Industrial Pp | 0.0
+Caminos Bolsa Pp | 0.0
+Plus Ultra Renta Fija Pp | 0.0
+Pronusero, Sicav, S.a. | 0.0
+Psj Index Gestion, Sicav S.a. | 0.0
+Valor Xxi, Sicav, S.a. | 0.0
+Caixabank Bolsa índice España Institucional Plus Fi | 0.0
+Allianz Futuro Pp | 0.0
+Millennial Fund Fi | 0.0
+Lluc Valores, Sicav, S.a. | 0.0
+Santander Dividendo Europa D Fi | 0.0
+Bankia Banca Privada Selección Fi | 0.0
+Velaboit, Sicav S.a. | 0.0
+Sa Nostra 6 Pp | 0.0
+Unifond Renta Variable Euro A Fi | 0.0
+Bk Jubilación 2040 Pp | 0.0
+Generali Renta Variable Mixta Epsv | 0.0
+Bendler Investment Sicav S.a. | 0.0
+Santander Dividendo Europa A Fi | 0.0
+Europopular España Pp | 0.0
+Santalucía Ibérico Acciones A Fi | 0.0
+Mawi´s Remember Inversiones Sicav S.a. | 0.0
+Fincapital, Sicav, S.a. | 0.0
+Kutxabank Bolsa Europa Pp | 0.0
+Renta 4 Nexus Fi | 0.0
+Laboral Kutxa Konpromiso Fi | 0.0
+Boom Capital, Sicav S.a. | 0.0
+Rosilnu, Sicav S.a. | 0.0
+Bejuvial, Sicav, S.a. | 0.0
+Caixabank Bolsa Selección Europa Estándar Fi | 0.0
+Aurrikuspena Osasunbolsa Epsv | 0.0
+Caser Nuevas Oportunidades Pp | 0.0
+Lonchivar, Sicav, S.a. | 0.0
+Laboral Kutxa Bolsa Japón Fi | 0.0
+Caixabank Valor 90/75 Eurostoxx 2 Fi | 0.0
+Global Managers Funds Fi | 0.0
+Result Inversiones, Sicav S.a. | 0.0
+Quality Inversión Moderada Fi | 0.0
+Trea Cajamar Renta Fija Fi | 0.0
+Cs Europe Small & Mid Cap A Fi | 0.0
+Kutxabank Garantizado Bolsa 3 Fi | 0.0
+Cynara De Inversiones, Sicav S.a. | 0.0
+Trea Renta Fija Flexible, S. I. C. A. V., S. A. | 0.0
+Vivar Inversiones, S.a., Sicav | 0.0
+Cnp Partners Gestión Mixta Pp | 0.0
+Kginves5 Sicav S.a. | 0.0
+R4 Activa Gestión Dinámica Pp | 0.0
+Ingaes Inversiones, Sicav, S.a. | 0.0
+Bizcochero Inversiones, Sicav S.a. | 0.0
+Gloval Procesos Bolsa, Sicav S.a. | 0.0
+Donados 2000 Sicav S.a. | 0.0
+Indexa Mas Rentabilidad Bonos Pp | 0.0
+Seboruco, Sicav S.a. | 0.0
+Quantop Investments, Sicav, S.a. | 0.0
+Acf Plan Mixto Euro Pp | 0.0
+Bk Solidez Pp | 0.0
+Inversabadell 25 Premier Fi | 0.0
+Inversabadell 50 Base Fi | 0.0
+Merch Selección De Fondos Fi | 0.0
+Jesmaluz Inversiones Financieras, Sicav, S.a. | 0.0
+World Investment Opportunities Sicav S.a. | 0.0
+Amesapa, Sicav, S.a. | 0.0
+Obis Inversiones Sicav S.a. | 0.0
+Multiadvisor Gestión Kuan Renta Fija Mixta Internacional Fi | 0.0
+Inversiones Financieras Jupedal, Sicav, Sa | 0.0
+Onegin Capital Sicav S.a. | 0.0
+Bbva Bonos 2024 Fi | 0.0
+Privat Bank Global Pp | 0.0
+Korynto Financiera, Sicav, S.a. | 0.0
+Db Talento Gestión Flexible Fi | 0.0
+Cartera óptima Prudente B Fi | 0.0
+Plan De Pensiones Westinghouse Pp | 0.0
+Value Inversiones Sicav, S.a. | 0.0
+Laboral Kutxa Crecimiento Fi | 0.0
+Marmire Inversions, S.a., Sicav | 0.0
+Plancaixa Bolsa Nacional Pp | 0.0
+Ibercaja Bolsa Europa B Fi | 0.0
+Sabadell Garantía Fija 16 Fi | 0.0
+Caixa Popular Pp | 0.0
+Gabedu Inver Sicav, Sa | 0.0
+Gordi 1916 Sicav, S.a. | 0.0
+Long Term Investments, Sicav S.a. | 0.0
+Mapfre Crecimiento Pp | 0.0
+Gestión Boutique Ii Aspain 11 Equilibrado Fi | 0.0
+Deutsche Bank I Pp | 0.0
+Albus Platinum Fi | 0.0
+March Pensión 80/20 Pp | 0.0
+Sasac Investments, Sicav, S.a. | 0.0
+Deutsche Wealth Conservador A Fi | 0.0
+El Dorado Inversiones, S.a., Sicav | 0.0
+Arquiuno Bolsa Fi | 0.0
+Panda Agriculture & Water Fund Fi | 0.0
+Ibercaja Megatrends B Fi | 0.0
+Loreto óptima Pp | 0.0
+Arquiuno Renta Variable Mixta Fi | 0.0
+Ahorro Colonia Pp | 0.0
+Ubs Capital 2 Plus Fi | 0.0
+Fonsvila-real Fi | 0.0
+Psn Asociado Pp | 0.0
+Zanzibar Inversiones Sicav S.a. | 0.0
+Gvc Gaesco Patrimonialista P Fi | 0.0
+Ing Direct Fondo Naranja Moderado Fi | 0.0
+Ibercaja Bolsa España B Fi | 0.0
+Csn Crecimiento Y Rendimiento Sicav,sa | 0.0
+Global Best Selection Fi | 0.0
+Key Rate Inversiones, Sicav, S.a. | 0.0
+Lumbtin, Sicav S.a. | 0.0
+Caixabank Valor 95/65 Eurostoxx Fi | 0.0
+Laboral Kutxa Aktibo Fi | 0.0
+Cartera 30, Sicav, S.a. | 0.0
+Chogüi Inversiones, Sicav Sa | 0.0
+Deutsche Dzp-1 Pp | 0.0
+Acf Plan Rf Mixto Pp | 0.0
+Bbva Mi Inversión Bolsa Fi | 0.0
+Smart-ish Fondo De Gestores Fi | 0.0
+Bk Variable Internacional Pp | 0.0
+Europopular Gestión Total Pp | 0.0
+Inversiones Robinia, S.a., Sicav | 0.0
+Herbro Capital Financiera Sicav, S.a. | 0.0
+Dita Inversiones Sicav, S.a. | 0.0
+Plancaixa Proyección 2024 Pp | 0.0
+Ace Global, Sicav, Sa | 0.0
+Deleg Pp | 0.0
+Enginyers Prudent Pp | 0.0
+Kutxabank Rf Horizonte 2 Fi | 0.0
+Legacy Pp | 0.0
+Canide Investments, Sicav, S.a. | 0.0
+El Capitan Inversiones Sicav, S.a. | 0.0
+Inversiones Cauzar, Sicav S.a. | 0.0
+Db Multiestrellas Fi | 0.0
+Caja Laboral 2040 Pp | 0.0
+Fot Valor, Sicav, S.a. | 0.0
+Shareholder Inversiones, Sicav, S.a. | 0.0
+Canarias Renta Mixta Pp | 0.0
+Bbva Rendimiento España Positivo Fi | 0.0
+Nb Global Flexible 0-100 Fi | 0.0
+Prefelicity, Sicav, S.a. | 0.0
+Privandalus Inversiones Ii, Sicav, S.a. | 0.0
+Mapfre Crecimiento Responsable Epsv | 0.0
+Gascona Inversiones, S.a., Sicav | 0.0
+Cañabara Inversiones, Sicav, S.a | 0.0
+Atlas Valores, Sicav S.a. | 0.0
+Sabadell Garantía Extra 26 Fi | 0.0
+Bbva Protección 2035 Pp | 0.0
+Valrrubio Sicav S.a. | 0.0
+Invervulcano, Sicav, S.a. | 0.0
+Europopular Ahorro I Pp | 0.0
+Caixabank Valor 97/50 Eurostoxx 2 Fi | 0.0
+Moonrise Investment Sicav S.a. | 0.0
+Santcarles Capital Sicav S.a. | 0.0
+Plancaixa Futuro 2024 Pp | 0.0
+Caixabank Renta Fija Subordinada Plus Fi | 0.0
+Futurespaña Estabilidad Pp | 0.0
+Mistral Cartera Sociedad De Inversion De Capital Variable, S.a. | 0.0
+Ruralcoop Sur Pp | 0.0
+Caixabank Bolsa Dividendo Europa Estándar Fi | 0.0
+Sabadell Garantía Extra 24 Fi | 0.0
+Planfiatc 1 Pp | 0.0
+Mundiplan Audaz España Pp | 0.0
+Rga-mixto 20 Ii Pp | 0.0
+J.s. Waner 2000, Sicav S.a. | 0.0
+Unifond Bolsa Internacional A Fi | 0.0
+Santalucía Renta Fija Dinámica C Fi | 0.0
+Alcala Gestión Flexible Sostenible Fi | 0.0
+Inversiones Financieras Ferrinvest, Sicav, S.a. | 0.0
+Liberbank Rendimiento Garantizado Ii Fi | 0.0
+Prudente Epsv | 0.0
+Rga-renta Variable Española Pp | 0.0
+Orseven, S.a., Sicav | 0.0
+Inversabadell 25 Plus Fi | 0.0
+Bbva Rendimiento España Fi | 0.0
+Kutxabank Bolsa Eurozona Estándar Fi | 0.0
+Etorpensión Renta Mixta Epsv | 0.0
+Mediolanum Real Estate Global L-a Fi | 0.0
+Fararu Inver 2005 Sicav S.a. | 0.0
+Ibercaja Bolsa Europa A Fi | 0.0
+Bestinver Consolidación Epsv | 0.0
+Fonditel Red Básica Pp | 0.0
+Pbp Fondos De Autor Selección Global A Fi | 0.0
+Deutsche Bank I Plus Pp | 0.0
+Cx Evolució Europa 2 Fi | 0.0
+Papego Inversiones Sicav S.a. | 0.0
+Gestifonsa Mixto 30 A Fi | 0.0
+Laboral Kutxa Selek Plus Fi | 0.0
+Izaga De Inversiones, Sicav, S.a. | 0.0
+Dioramax Inversiones, Sicav S.a. | 0.0
+Gestión Boutique Ii Lourido Internacional Fi | 0.0
+Inversiones Fidesa 2015 Sicav, S.a. | 0.0
+Merchbanc Sicav Renta Fija Flexible P Cap | 0.0
+Cs Director Growth Fi | 0.0
+Zurich Destino 2023 Pp | 0.0
+Bs Plan 60 Plus 1 Pp | 0.0
+Pbp Alpes Equilibrado Fi | 0.0
+Inversabadell 25 Empresa Fi | 0.0
+Ibercaja Megatrends A Fi | 0.0
+Kutxabank Horizonte Europa Plus Fi | 0.0
+Pbp Renta Multiactivo Fi | 0.0
+Fidentiis Tordesillas Fil | 0.0
+Azimut 360, Sicav Sa | 0.0
+Corona Australis Investment, Sicav S.a. | 0.0
+Dibico Inversiones, Sicav S.a. | 0.0
+Bestinver Plan Renta | 0.0
+Gesconsult 30-75 Pp | 0.0
+Acent Europa Inversiones, Sicav S.a. | 0.0
+Liberbank Rendimiento Garantizado Iii Fi | 0.0
+Ibercaja Renta Fija 2024 Fi | 0.0
+Ibercaja 2024 Garantizado-3 Fi | 0.0
+Caser Renta Variable Global Em. G Pp | 0.0
+Zanett Inversiones, Sicav, S.a. | 0.0
+Fon Fineco Gestión Fi | 0.0
+Gesconsult Crecimiento Eurozona Fi | 0.0
+Arquiuno Fi | 0.0
+Caser Renta Fija Mixta 30 Pp | 0.0
+Deutsche Wealth Conservador B Fi | 0.0
+Plancaixa 10 Renta Fija Mixta Pp | 0.0
+Microbank Fondo ético Estándar Fi | 0.0
+Casermed Protección 11 Pp | 0.0
+Inversiones Diema, Sicav, S.a. | 0.0
+Cnp Partners Decidido Pp | 0.0
+Enginyers Associatiu Pp Asociado | 0.0
+Gestifonsa Renta Variable Euro Minorista Fi | 0.0
+Caixabank Crecimiento Plus Fi | 0.0
+Ccm Renta Variable Pp | 0.0
+Kutxabank Plus 9 Pp | 0.0
+Liberbank Cartera Moderada A Fi | 0.0
+Mediolanum Excellent Fi | 0.0
+March Pensión 50/50 Pp | 0.0
+Fondmapfre Elección Moderada Fi | 0.0
+Caixabank Bolsa Gestión España Plus Fi | 0.0
+Pulso Actual Inversiones, Sicav S.a. | 0.0
+Wolysen Inversiones, Sicav S.a. | 0.0
+Layard Investment, Sicav, S.a | 0.0
+Dux Multigestión Moderado Fi | 0.0
+Kenita Investment Sicav S.a. | 0.0
+Welzia Global Financials Fi | 0.0
+Mar-set Inversions Sicav S.a | 0.0
+Arquiuno Prudente 30rv A Fi | 0.0
+Bbva Mi Objetivo 2031 Fi | 0.0
+Bbva Oportunidad Acciones Vi Fi | 0.0
+Asefarma Conservador Pp | 0.0
+Cs Global Market Trends A Fi | 0.0
+Bucefalia Inversiones, Sicav, S.a. | 0.0
+Kutxabank Renta Variable Mixto 60 Pp | 0.0
+Plan Familiar Pp | 0.0
+Ibercaja Gestión Evolución Pp | 0.0
+Caser Masxnada Nuevas Oportunidades Pp | 0.0
+Inversiones Mobiliarias Alicante, Sicav S.a. | 0.0
+Fon Fineco Valor Fi | 0.0
+Anitram Cartera De Valores Sicav,s.a. | 0.0
+Cma Global Investments, Sicav S.a. | 0.0
+Liberbank Rendimiento Garantizado Iv Fi | 0.0
+Pbp Dolar Premium, Sicav | 0.0
+Cs Global Fondos Gestión Activa Fi | 0.0
+Gestión Boutique C2 Dinámico Fi | 0.0
+Catalana Occidente Emergentes Fi | 0.0
+Fonditel Albatros B Fi | 0.0
+Didime Inversiones, Sicav, S.a. | 0.0
+Bichar De Inversiones Financieras, Sicav, S.a. | 0.0
+Inversiones Torcal, Sicav S.a. | 0.0
+Bk Pensión Dividendo Pp | 0.0
+Caser Tranquilidad Plus Pp | 0.0
+Inversiones Financor, Sicav, Sa | 0.0
+Sabadell Japón Bolsa Plus Fi | 0.0
+Casermed Protección 3 Pp | 0.0
+Indices Bursatiles Sicav S.a. | 0.0
+Cnp Vida Horizonte Decidido Pp | 0.0
+Bs Plan 60 Plus 2 Pp | 0.0
+Santander Inverplus Rv Internacional Pp | 0.0
+Kutxabank Bolsa Japón Estándar Fi | 0.0
+Albus Extra Fi | 0.0
+Pecamian, Sicav, S.a. | 0.0
+Sequoia Valores Sicav S.a. | 0.0
+Caser Oportunidad única Plus Pp | 0.0
+Fondomutua Dinámico Pp | 0.0
+Caser Gestión Directa Pp | 0.0
+Fcs Gestión Flexible Fi | 0.0
+Kutxabank Renta Global Estándar Fi | 0.0
+Lubia De Inversiones, Sicav, S.a. | 0.0
+Bbva Consolidación 85 Fi | 0.0
+Ccm Pp | 0.0
+Dardami Invest Sicav Sa | 0.0
+Conoma Inversiones, Sicav S.a. | 0.0
+Caser Masxnada Rfm Pp | 0.0
+Cabk Equilibrio Pp | 0.0
+Azvalor Value Selection, Sicav, S.a. | 0.0
+Renta 4 Renta Fija Mixto Fi | 0.0
+Renta 4 Pegasus R Fi | 0.0
+Carivega De Inversiones, Sicav, S.a. | 0.0
+Eurocostergo De Inversiones, Sicav, S.a. | 0.0
+Costa Lago Investment, Sicav, S.a. | 0.0
+Mediolanum Activo E-a Fi | 0.0
+Formentor Xxi, Sicav, S.a. | 0.0
+Inveral Inversiones, Sicav, S.a. | 0.0
+Bankia Dividendo Europa Universal Fi | 0.0
+Bankoa-ahorro Fondo Fi | 0.0
+Af Crecimiento I, Sicav S.a. | 0.0
+Argicuit Sicav S.a. | 0.0
+Fongrum Renta Fija Mixta Fi | 0.0
+Santalucía Renta Fija C Fi | 0.0
+Bankoa Crecimiento Pp | 0.0
+Cx Evolució Europa Fi | 0.0
+Kutxabank Renta Fija Mixto 15 Pp | 0.0
+Gestión Boutique Ginvest Mediterráneo Ahorro Fi | 0.0
+Santander Acciones Españolas Cartera Fi | 0.0
+Sabadell Europa Bolsa Base Fi | 0.0
+Mungere Inversiones Financieras, Sicav, S.a. | 0.0
+Laxmi Inversiones, Sicav Sa | 0.0
+Gestión Boutique Ii Sassola Base Fi | 0.0
+Caixabank Gestión 50 Plus Fi | 0.0
+Finanbela, S.a., Sicav | 0.0
+Alfa Inversiones, Sicav, S.a. | 0.0
+Gvc Gaesco Bolsalíder I Fi | 0.0
+Rga-mixto 40 Pp | 0.0
+Psn Individual Pp | 0.0
+Santalucía Renta Fija B Fi | 0.0
+Bankia Indice Japon Cubierto Universal Fi | 0.0
+Cartera Bellver, Sicav, S.a. | 0.0
+Ibercaja Emerging Bonds B Fi | 0.0
+Arquiplan Inversión Pp | 0.0
+Cs Rendimiento Futuro Pp | 0.0
+Ontinyent Socialmente Responsable Pp | 0.0
+Ibercaja Flexible Europa 50-80 Fi | 0.0
+Invervalor, Sicav, S.a. | 0.0
+Fusopar, Sicav, S.a. | 0.0
+Ibercaja 2024 Garantizado Fi | 0.0
+Fae Inversiones 2012, Sicav, S.a. | 0.0
+Auriga Investment, Sicav, Sa | 0.0
+Bbva Gestión Moderada Fi | 0.0
+Acacia Renta Dinámica Fi | 0.0
+Mediolanum Activo L-a Fi | 0.0
+Diagonal Mixto Flexible Fi | 0.0
+Sabadell Garantía Extra 25 Fi | 0.0
+Caixabank Valor 95/30 Eurostoxx Fi | 0.0
+Renta 4 Renta Fija R Fi | 0.0
+Continental Del Mar, Sicav S.a. | 0.0
+Ubs Corto Plazo P Fi | 0.0
+Pbp Bolsa Europa A Fi | 0.0
+Caja Ingenieros Euromarket Rv 75 Pp | 0.0
+Mediolanum Real Estate Global S-a Fi | 0.0
+Arquiplan Crecimiento Pp | 0.0
+Santander Acciones Euro A Fi | 0.0
+Ibercaja Gestión Evolución Fi | 0.0
+Balinco De Inversiones, Sicav S.a. | 0.0
+Cosimin, Sicav, S.a. | 0.0
+Caixabank Dp Inflación 2024 Fi | 0.0
+Generali Mixto Renta Fija Pp | 0.0
+Portside Inversiones, Sicav S.a. | 0.0
+Ibersecurities Pentapensión Pp | 0.0
+Inversiones Labrador, S.a., Sicav | 0.0
+Sabadell Bonos Euro Pyme Fi | 0.0
+Rga-renta Fija Pp | 0.0
+Eurovalor Mixto-15 Fi | 0.0
+Caser Oportunidad Unica Pp | 0.0
+Cross Roads Inversiones, Sicav S.a. | 0.0
+C.r. Navarra Pp | 0.0
+Bbva Mi Inversión Mixta Fi | 0.0
+Kaiondo 2010, Sicav, S.a. | 0.0
+Caixabank Renta Fija Corporativa Premium Fi | 0.0
+Inversabadell 25 Pyme Fi | 0.0
+Metrópolis Renta Fi | 0.0
+Rusina Inversiones, Sicav, S.a. | 0.0
+Abanca Gestión Decidido Fi | 0.0
+Gestión Boutique B4a Cartera Decidida Fi | 0.0
+Secal 2010 Sicav Sa | 0.0
+Sical Plus Sicav, S.a. | 0.0
+Bemasa Inversiones, S.a., Sicav | 0.0
+Sabadell Prudente Premier Fi | 0.0
+La Previsora Pp | 0.0
+Almabeni Financiera, Sicav, S.a. | 0.0
+Gamma Pp | 0.0
+Bnp Paribas Portfolio Max 45 A Fi | 0.0
+Sabadell Japón Bolsa Base Fi | 0.0
+Capital P.a.v., Sicav,s.a. | 0.0
+Santalucía Renta Fija Dinámica B Fi | 0.0
+Magnus International Allocation Fi | 0.0
+Laboral Kutxa Renta Fija Garantiza Xi Fi | 0.0
+Caixabank Crecimiento Estándar Fi | 0.0
+Fon Fineco Interés I Fi | 0.0
+Sabadell América Latina Bolsa Cartera Fi | 0.0
+Renta 4 Delta R Fi | 0.0
+Ibercaja Bolsa España A Fi | 0.0
+Flims Invest, Sicav, S.a | 0.0
+Jycarte, Inversiones, Sicav S.a. | 0.0
+Dws Foncreativo Fi | 0.0
+Mujer Xxi Pp | 0.0
+Ahorro 6000 Pp | 0.0
+Inversiones Hiflor, Sicav Sa | 0.0
+Norpensión Protección 2030 Epsv | 0.0
+Core Assets,sicav,s.a. | 0.0
+Sabadell Commodities Cartera Fi | 0.0
+Plan Valor Crecimiento Pp | 0.0
+Inversiones Pomet, Sicav S.a. | 0.0
+Bankia Mixto Renta Variable 50 Universa Fi | 0.0
+Caixabank Valor 97/25 Eurostoxx Fi | 0.0
+Ceres Inversiones, S.a., Sicav | 0.0
+Mapfre Mixto Epsv | 0.0
+Bankia Bonos Internacional Universal Fi | 0.0
+Mobinver, Sicav, S.a. | 0.0
+Fuerfin, Sicav, S.a. | 0.0
+Laboral Kutxa Mercados Emergentes Fi | 0.0
+Cronos Previsión Renta Fija Pp | 0.0
+Bk Variable Asia Pp | 0.0
+Dp Renta Fija A Fi | 0.0
+Colonya Sr Pp | 0.0
+Kutxabank Garantizado Bolsa 2 Fi | 0.0
+Moensa, S.a., Sicav | 0.0
+Inverfinit De Valores, Sicav, S.a. | 0.0
+Santander Rendimiento S Fi | 0.0
+Cx Evoluciò Rendes 5 Fi | 0.0
+Murano Patrimonio B Fi | 0.0
+Quality Selección Emergentes Fi | 0.0
+Círculo Mixto Pp | 0.0
+Caixabank Bolsa Gestión Europa Premium Fi | 0.0
+Montesancha De Inversiones, Sicav S.a. | 0.0
+Inversiones Virloba Sicav S.a. | 0.0
+Cartera Tabla Azul Sicav Sa | 0.0
+Sabadell América Latina Bolsa Premier Fi | 0.0
+Bbva Protección 2030 Pp | 0.0
+Laboral Kutxa Bolsa Garantizado Vi Fi | 0.0
+Avance Global A Fi | 0.0
+Juniperus Sabina Inversiones, Sicav, S.a. | 0.0
+Bp2 Valores Sicav, S.a. | 0.0
+Calainvest-98, Sicav, S.a. | 0.0
+Bacesa De Inversiones, Sicav S.a. | 0.0
+R4 Activa Gestión Moderada Pp | 0.0
+Triodos Renta Mixta Pp | 0.0
+Bankia Mixto Renta Variable 75 Universal Fi | 0.0
+Visifm, Sicav, S.a. | 0.0
+Pbp Gestión Flexible A Fi | 0.0
+Ixeya 2010 S.i.c.a.v., S.a. | 0.0
+Junlas Inversiones 99, Sicav, S.a. | 0.0
+Kappa Sounion Cartera, Sicav, S.a. | 0.0
+Proyecto Cinco M Inversiones Capital Financiera, Sicav, Sa | 0.0
+Mediolanum Activo S-a Fi | 0.0
+Foras Inversiones Sicav, S.a. | 0.0
+Kutxabank Bolsa Estándar Fi | 0.0
+Telaia Invest, Sicav, S.a. | 0.0
+Ibercaja Emerging Bonds A Fi | 0.0
+Caixabank Bolsa índice España Estándar Fi | 0.0
+Patrimonio Bursatil Sicav, S.a. | 0.0
+Allianz Avance 50 Pp | 0.0
+Bbva Mi Objetivo 2026 Fi | 0.0
+Laboral Kutxa Renta Fija Garantizado Xiii Fi | 0.0
+Subaida Financiera, S.a., Sicav | 0.0
+Duero Tranquilidad Iii Pp | 0.0
+Dazia Invest, Sicav S.a. | 0.0
+Santander Renta Variable Usa Pp | 0.0
+Mediolanum Crecimiento S-a Fi | 0.0
+Naranja 2020 Pp | 0.0
+Abanca 3 Valores Garantizado 2023 Fi | 0.0
+Caixabank Valor 95/50 Eurostoxx Fi | 0.0
+Cajamar Renta Fija Pp | 0.0
+Eurovalor Mixto-30 Fi | 0.0
+Fineco De Valores Mobiliarios, Sicav, S.a. | 0.0
+Magescq 2000, Sicav, Sa | 0.0
+Sevidon, Sicav, S.a. | 0.0
+Arquiplan Bolsa Pp | 0.0
+Alialia, Sicav S.a. | 0.0
+Fonradar Internacional Fi | 0.0
+Okitsu Invest, Sicav, Sa | 0.0
+Zurich Destino 2037 Pp | 0.0
+Sabadell Urquijo Global 1, Sicav, S.a. | 0.0
+Caixabank Valor 97/50 Eurostoxx Fi | 0.0
+Bnp Paribas Gestión Moderada A Fi | 0.0
+Mutuafondo D Fi | 0.0
+Global Diversification Fund Fi | 0.0
+Uniplan Protección 2024 Ii | 0.0
+Pbp Cartera Flexible, Sicav S.a. | 0.0
+Ibercaja Financiero B Fi | 0.0
+Generali Plan 5 Pensiones Pp | 0.0
+Duero Agrario Pp | 0.0
+Caixabank Valor 100/45 Eurostoxx Fi | 0.0
+Bny Mellon Us Opportunities Fund Euro Accumulation | 0.0
+Ubs Renta Gestión Activa P Fi | 0.0
+Erdac Inversiones, Sicav S.a. | 0.0
+Patkanga Sicav Sa | 0.0
+March Moderado Epsv | 0.0
+N.ibañeta Ahorro, Sicav S.a. | 0.0
+Global Allocation Fi | 0.0
+Salvora Inversiones, Sicav, S.a. | 0.0
+Arribola Inversiones, Sicav, S.a. | 0.0
+Euroduero 2002, Sicav, S.a. | 0.0
+Profitalia, Sicav, S.a. | 0.0
+Unicorp Selección Moderado Fi | 0.0
+Ibis Portfolio, Sicav, S.a. | 0.0
+Euronarcea 2002, Sicav, S.a. | 0.0
+Brasilito Sicav S.a. | 0.0
+Unifond Moderado Fi | 0.0
+Nb Bolsa Plus Pp | 0.0
+Abante Bolsa Absoluta I Fi | 0.0
+Alcaravan Capital, Sicav, S.a. | 0.0
+Kutxabank Plus 8 Pp | 0.0
+Mediolanum Crecimiento E-a Fi | 0.0
+Sabadell Japón Bolsa Premier Fi | 0.0
+Allianz Renta Fija Largo Plazo Pp | 0.0
+Caixabank Estrategia Flexible Platinum Fi | 0.0
+Bordonal Inversiones, Sicav, Sa | 0.0
+Uniplan Protección 2024 Iii Pp | 0.0
+Dalmatian Fi | 0.0
+Patrimonialista Pp | 0.0
+Gvc Gaesco Patrimonialista A Fi | 0.0
+Ith Bolsa Sicav, S.a. | 0.0
+Stamvalor Inversiones, Sicav Sa | 0.0
+Garez Inversiones, Sicav S.a. | 0.0
+Ubs Retorno Activo P Fi | 0.0
+Inversabadell 25 Base Fi | 0.0
+Sabadell Europa Bolsa Premier Fi | 0.0
+Lallo Inversiones, Sicav, S.a. | 0.0
+Villamateo 2008, Sicav, S.a. | 0.0
+Cartera Maen, Sicav, S.a. | 0.0
+Enginyers Tresor Pp Asociado | 0.0
+Jfm 2001 Cartera Sicav S.a. | 0.0
+Bbva Protección Futuro 5/10 C Pp | 0.0
+Caixabank Valor 95/50 Eurostoxx 3 Fi | 0.0
+Intervalor Fondos Fi | 0.0
+Caser 2014 Plus Pp | 0.0
+Laboral Kutxa Euribor Garantizado Iii Fi | 0.0
+Ibercaja Crecimiento Dinámico B Fi | 0.0
+Sabadell Prudente Empresa Fi | 0.0
+Yueseus, Sicav S.a. | 0.0
+Bk Jubilación 2030 Pp | 0.0
+Fubronc Investment Sicav S.a. | 0.0
+Laboral Kutxa Renta Fija Garantizado V Fi | 0.0
+Sabadell Prudente Plus Fi | 0.0
+Bbva Protección Futuro 5/10 Pp | 0.0
+Caser Alligator Pp | 0.0
+Laboral Kutxa Euribor Garantizado Ii Fi | 0.0
+Vivero De Inversiones Sicav S.a. | 0.0
+Istiña, Sicav, S.a. | 0.0
+Liberbank Rendimiento Garantizado Fi | 0.0
+Caja Laboral Variable Pp | 0.0
+Oker Inversiones, Sicav S.a. | 0.0
+Bbva Creciente Fi | 0.0
+Credit Agricole Mercapatrimonio Fi | 0.0
+Nb Equilibrio Rv Epsv | 0.0
+Gestión Boutique Ii Aspain 11 Patrimonio Fi | 0.0
+Goldony Investment, Sicav, S.a. | 0.0
+Fondguissona Fi | 0.0
+Generali Plan 5 Pensiones Nh Pp | 0.0
+R4 Activa Gestión Conservadora Pp | 0.0
+Futurespaña Estabilidad Ix Pp | 0.0
+Burgos Afianza Pp | 0.0
+Euler Investments, Sicav, Sa | 0.0
+Bs Plan 15 Plus 1 Pp | 0.0
+Vazabi Gestion Sicav S.a. | 0.0
+Sabadell Japón Bolsa Cartera Fi | 0.0
+Futurespaña Estabilidad X Pp | 0.0
+Caixa Enginyers 2019 Borsa Europa garantit, Fi | 0.0
+Infanzon De Bergua Sicav Sa | 0.0
+Equilibrado Epsv | 0.0
+Ibercaja Horizonte Fi | 0.0
+Borjuni Capital, Sicav, S.a. | 0.0
+Indalia Finanzas,sicav,s.a. | 0.0
+Miste Inversiones, Sicav S.a. | 0.0
+Santander Eurocrédito Fi | 0.0
+Unifond Mixto Renta Variable A Fi | 0.0
+Asaja España Moderado Pp | 0.0
+Amolap Inversiones, Sicav, S.a. | 0.0
+Satrapa Sicav S.a. | 0.0
+Bbva Protección Futuro 5/10 B Pp | 0.0
+Círculo Pp | 0.0
+Dragon De Aragon Sicav Sa | 0.0
+Optima Renta Fija Flexible Fi | 0.0
+Kutxabank Renta Fija Pp | 0.0
+Caser 2015 Alfa Pp | 0.0
+Caser Premier Pp | 0.0
+Caser Renta Variable Asiapac. Ga Pp | 0.0
+Casermed Protección 12 Pp | 0.0
+Cd 2014 Pp | 0.0
+Elvis Investment, Sicav, S.a. | 0.0
+Caixabank Renta Fija Corporativa Estándar Fi | 0.0
+Pbp Cartera Activa 70 A Fi | 0.0
+Invercarrasca 2014, Sicav, S.a. | 0.0
+Inversiones Moonlight, Sicav, S.a. | 0.0
+Nocedal Inversiones 2002, Sicav S.a. | 0.0
+Drive Investments, Sicav, S.a. | 0.0
+Sa Nostra Nuevas Oportunidades Pp | 0.0
+Ing Direct Fondo Naranja Renta Fija Fi | 0.0
+Alfamar Inversiones, Sicav S.a. | 0.0
+Penedès Pensió Euroborsa 100 Pp | 0.0
+Caixabank Valor 97/20 Eurostoxx Fi | 0.0
+Caser Enero 2018 Pp | 0.0
+Ibercaja Selección Renta Fija Fi | 0.0
+Bbva Bonos Patrimonio Xviii Fi | 0.0
+Ibercaja Capital Garantizado Fi | 0.0
+Unifond Europa Dividendos A Fi | 0.0
+Rga Protegido 2025 Pp | 0.0
+Laboral Kutxa Renta Fija Garantizado Xix Fi | 0.0
+Value Tree Defensivo Pp | 0.0
+Pastor Mixto Pp | 0.0
+Sabadell Prudente Pyme Fi | 0.0
+Zabima Inversiones Financieras, Sicav, S.a. | 0.0
+Inversiones Bargue, Sicav S.a. | 0.0
+Aracab Inversiones, Sicav, S.a. | 0.0
+Penta Inversión A Fi | 0.0
+Tugo Inversiones, Sicav S.a. | 0.0
+Caixabank Renta Fija Selección Global Premium Fi | 0.0
+Caser Enero 2015 Pp | 0.0
+Global Value Selection Fi | 0.0
+Fonditel Albatros A Fi | 0.0
+Fon Fineco Interés A Fi | 0.0
+Abante Valor Fi | 0.0
+Laboral Kutxa Selek Balance Fi | 0.0
+Araluz Inversiones, Sicav S.a. | 0.0
+Dunas Valor Equilibrio I Fi | 0.0
+Sabadell Europa Bolsa Cartera Fi | 0.0
+Delcastro Inversiones, Sicav S.a. | 0.0
+Central De Valores, Sicav S.a. | 0.0
+Emsala, Sicav, S.a. | 0.0
+Caixabank Renta Fija Corporativa Duracion Cubierta Premium Fi | 0.0
+Spb Emergente Pp | 0.0
+Laboral Kutxa Renta Fija Garantizado Iii Fi | 0.0
+Saboco Inversiones, Sicav S.a. | 0.0
+Renta 4 Dédalo Epsv | 0.0
+Penedès Pensió Borsa Pp | 0.0
+Cimbalaria, S.a., Sicav | 0.0
+Deutsche Bank Crecimiento Conservador Db Pp | 0.0
+Notifix, Sicav S.a. | 0.0
+Sabadell Bonos Inflación Euro Base Fi | 0.0
+Caixabank Gestión Total Platinum Fi | 0.0
+Bbva Gestión Protección 2020 Bp Fi | 0.0
+Europopular Consolidado Xvii Pp | 0.0
+Elorzabas De Inversiones, Sicav S.a. | 0.0
+Casfeb Inversiones Y Valores, Sicav, S.a. | 0.0
+Mopani Inversiones, Sicav, S.a. | 0.0
+Fon Fineco Renta Fija Plus Fi | 0.0
+Finlar Inversion, Sicav S.a. | 0.0
+Caixabank Estrategia Flexible Extra Fi | 0.0
+Nemo Capital Sicav, S.a. | 0.0
+Nieva De Inversiones Mobiliarias Sicav Sa | 0.0
+Ubs Selección Dinámico Pp | 0.0
+Rolavi Inversiones, Sicav S.a. | 0.0
+Kutxabank Garantizado Bolsa 2021 Fi | 0.0
+Anara Inversiones, Sicav, S.a. | 0.0
+Manenspa Inversiones, Sicav, S.a. | 0.0
+Fonengin Isr, Fi | 0.0
+Bbva Bonos España Largo Plazo Fi | 0.0
+Inversiones Avanti, Sicav, S.a. | 0.0
+Finances De Ponent, Sicav S.a. | 0.0
+Caixa Global, Sicav S.a. | 0.0
+Rentabilidad Objetivo As 2021 Pp | 0.0
+Cs Global Afi Fi | 0.0
+Financiera Las Moreras, Sicav, S.a. | 0.0
+Plan Finecopensión Renta Fija Epsv | 0.0
+Caixabank Selección Alternativa Plus Fi | 0.0
+Sabadell Prudente Base Fi | 0.0
+Acacia Premium Fi | 0.0
+Santander Inverplus Rvm C Pp | 0.0
+Europopular Consolidado X Pp | 0.0
+Unifond Crecimiento 2025-iv Fi | 0.0
+Inversabadell 10 Premier Fi | 0.0
+Renta 4 Retorno Activo Pp | 0.0
+Santander Renta Variable Global Epsv | 0.0
+Fondaneto Fi | 0.0
+Sabadell Urquijo Cartera Fondos Internacionales, Sicav, S.a. | 0.0
+Foncess Flexible Fi | 0.0
+Landsa Financiera, Sicav S.a. | 0.0
+Omicron Inversiones, Sicav, S.a. | 0.0
+Caja Laboral Bolsa Garantizado Xvi Fi | 0.0
+Fonsglobal Renta Fi | 0.0
+Gco Ahorro Fi | 0.0
+Set Costa Brava 97, Sicav, S.a. | 0.0
+Inverxeresa De Inversiones, Sicav, S.a. | 0.0
+Mediolanum Mercados Emergentes L-b Fi | 0.0
+Mutuafondo Corto Plazo A Fi | 0.0
+Rossi Y Bertoni Inversiones, Sicav S.a. | 0.0
+Europopular Proyección 30 Pp | 0.0
+Bbva Bonos Corporativos Largo Plazo Fi | 0.0
+Caixabank Valor 95/50 Eurostoxx 2 Fi | 0.0
+Nb Plan 65 Conservador Pp | 0.0
+Sabadell Garantia Extra 32 Fi | 0.0
+Abanca Asia-pácifico Pp | 0.0
+Fineco Acciones, Sicav, S.a. | 0.0
+March Cartera Moderada Fi | 0.0
+Plancaixa Objetivo Pp | 0.0
+Ibercaja Sostenible Y Solidario Fi | 0.0
+Gesconsult Equilibrado Pensiones Pp | 0.0
+Invercharro, Sicav S.a. | 0.0
+Uniplan Horizonte 100 Pp | 0.0
+Bbva Multiactivo Conservador Pp | 0.0
+Tuliacan, Sicav, S.a. | 0.0
+Eurovalor Mixto-70 Fi | 0.0
+Nubaranes Capital, Sicav, S.a. | 0.0
+Abuvilla Inversiones, Sicav S.a. | 0.0
+Nb Equilibrio Rf Epsv | 0.0
+Inversiones Neon Cma, Sicav, S.a. | 0.0
+Europopular Renta Fija Lp Pp | 0.0
+Kutxabank Horizonte Europa 2021 Fi | 0.0
+Caixabank Renta Fija Flexible Platinum Fi | 0.0
+Futurespaña 60 Pp | 0.0
+Tarfondo Fi | 0.0
+Santalucía Ibérico Acciones B Fi | 0.0
+Caixabank Estrategia Flexible Plus Fi | 0.0
+Rank Inversiones, S.a., Sicav | 0.0
+Renta 4 Multigestión Quality Capital Global Fi | 0.0
+Sabadell América Latina Bolsa Plus Fi | 0.0
+Ibercaja High Yield B Fi | 0.0
+Hasmine Investment Sicav, S.a | 0.0
+Caixabank Gestión Total Plus Fi | 0.0
+Sjj Valores Corolypso S.a., Sicav | 0.0
+Sabadell Rentas Fi | 0.0
+Bk Bolsa Europa Epsv | 0.0
+Bbva Plan Jubilación 2040 Pp | 0.0
+Pbp Cartera Activa 50 A Fi | 0.0
+Brent Inversiones, Sicav, S.a. | 0.0
+Cartera Dragonera Sicav S.a. | 0.0
+Dp Flexible Global Fi | 0.0
+Anta Gestion Patrimonial, Sicav, S.a. | 0.0
+R4 Activa Agua I Fi | 0.0
+Caixabank Renta Fija Flexible Cartera Fi | 0.0
+Helvetia Pp | 0.0
+Gesnorte Pp | 0.0
+Futurespaña Eurobolsa Pp | 0.0
+Medigestion 02, Sicav, S.a. | 0.0
+Rampri, Sicav, S.a. | 0.0
+Sabadell Commodities Plus Fi | 0.0
+Laboral Kutxa Renta Fija Garantizado Xx Fi | 0.0
+Caracola Finanzas, Sicav, S.a. | 0.0
+Unifond 2024-iv Fi | 0.0
+Caixabank Renta Fija Selección Global Plus Fi | 0.0
+Ibercaja Financiero A Fi | 0.0
+Mi Proyecto Santander Smart Pp | 0.0
+Cueto Calero, Sicav, S.a. | 0.0
+Unifond 2021-i Fi | 0.0
+Manglar Inversiones Sicav S.a. | 0.0
+Fondonorte Fi | 0.0
+Laboral Kutxa Euribor Garantizado Fi | 0.0
+Caja Laboral Renta Fija Garantizado X Fi | 0.0
+Invercansevi, Sicav, S.a. | 0.0
+Banca Pueyo I Pp | 0.0
+Casermed Protección 2 Pp | 0.0
+Uniplan Global Pp | 0.0
+Bachimaña 2007 Inversiones Sicav, S.a. | 0.0
+Futurespaña Bolsa Global Pp | 0.0
+Renta 4 Renta Fija Pp | 0.0
+Inversiones Naira, Sicav, S.a. | 0.0
+Ondarzas E Inversiones, Sicav S.a. | 0.0
+Plancaixa Ambición Pp | 0.0
+Allianz Desarrollo 15 Pp | 0.0
+Unicorp Selección Prudente Fi | 0.0
+Fonditel Albatros C Fi | 0.0
+Sabadell España Dividendo Base Fi | 0.0
+Enginyers Gestió Rf Pp | 0.0
+Sabadell Garantía Extra 15 Fi | 0.0
+Paugoga 2010 Inversiones Sicav Sa | 0.0
+Gratil Invest, Sicav Sa | 0.0
+Abanca Renta Fija Flexible Pp | 0.0
+Kutxabank Renta Fija Mixto 30 Pp | 0.0
+Bargues Bros, Sicav, S.a. | 0.0
+Allianz Proyección 30 Pp | 0.0
+Europopular Avance 50 Pp | 0.0
+Investkey Global, Sicav, S.a. | 0.0
+Caja Ingenieros Global Sustainability Isr Pp | 0.0
+Norpensión Renta Variable Epsv | 0.0
+Nb Tranquilidad Pp | 0.0
+Sabadell Bonos Euro Plus Fi | 0.0
+Banca Pueyo Pp | 0.0
+Mpp Futuro Seguro Iii Pp | 0.0
+Abante Patrimonio Global A Fi | 0.0
+Plan Valor Solidez Pp | 0.0
+Ditraes Inversiones, Sicav, S.a. | 0.0
+Abanca Renta Fija Mixta Fi | 0.0
+Gaminco Inversiones Sicav, S.a. | 0.0
+Abante Bolsa Absoluta A Fi | 0.0
+Ibercaja Mixto Flexible 15 B Fi | 0.0
+Capital Five Opportunities, Sicav, S.a. | 0.0
+Edm Cartera Fi | 0.0
+Bankinter Multiestrategia R Fi | 0.0
+Sabuc Inversiones Sicav S.a. | 0.0
+Plan Finecopensión Plus Epsv | 0.0
+Fermat 2006, Sicav, S.a. | 0.0
+Santander Universidades Rv Mixta Pp | 0.0
+Cx Evoluciò 6 Fi | 0.0
+Sabadell Bonos Euro Base Fi | 0.0
+Webster Inversiones, Sicav, S.a. | 0.0
+Manila Inversiones Globales, Sicav S.a. | 0.0
+Santander Dividendo Epsv | 0.0
+Laboral Kutxa Bolsa Garantizado Xviii Fi | 0.0
+Mapfre Capital Responsable Fp | 0.0
+Kutxabank Garantizado Bolsa Fi | 0.0
+Laboral Kutxa Avant Fi | 0.0
+Inversabadell 10 Empresa Fi | 0.0
+Mediolanum Mercados Emergentes S-b Fi | 0.0
+Santander Inverplus Rvm A Pp | 0.0
+Inversabadell 10 Plus Fi | 0.0
+Norpensión Horizonte 2025 Epsv | 0.0
+Murano Patrimonio A Fi | 0.0
+Alpha Investments Fi | 0.0
+Manhattan Cmb Global, Sicav, S.a. | 0.0
+Cartera Kefren, Sicav, S.a. | 0.0
+Caixabank Renta Fija Flexible Premium Fi | 0.0
+Caixabank Renta Fija Flexible Patrimonio Fi | 0.0
+Inversiones Laberter, Sicav, S.a. | 0.0
+Naranja Renta Fija Corto Plazo Pp | 0.0
+Gestión Boutique Adaia Mixto Renta Variable Fi | 0.0
+Ibercaja Pensión Ahorro Dinámico Pp | 0.0
+Caixabank Bolsa Gestión España Premium Fi | 0.0
+Inversiones Financieras Personales, Sicav S.a. | 0.0
+Bh Europa Flexible, Sicav, S.a. | 0.0
+Caser Deuda Pública Pp | 0.0
+Platinium Investment, Sicav S.a. | 0.0
+Bk Renta Fija Largo Plazo Pp | 0.0
+Sabadell América Latina Bolsa Pyme Fi | 0.0
+Nb Bonos Pp | 0.0
+Lucky Star Investment Sicav S.a. | 0.0
+Atl Capital Cartera Patrimonio A Fi | 0.0
+Investor Vm40, Sicav, S.a. | 0.0
+Abanca Renta Fija Flexible Fi | 0.0
+Unifond 2020-ii Fi | 0.0
+Mediolanum Europa R.v. L Fi | 0.0
+Ibercaja Flexible Europa 10-40 Fi | 0.0
+Nb Global Flexible 0-35 Fi | 0.0
+Caja Laboral 2030 Pp | 0.0
+Agropecuaria De Guissona Pp | 0.0
+Cx Evolució Rendes Creixent Fi | 0.0
+Ibercaja Renta Fija 2021 Fi | 0.0
+Madrigal De Inversiones, Sicav, S.a. | 0.0
+Lance Inversiones Sicav S.a. | 0.0
+Caixabank Valor 100/30 Eurostoxx Fi | 0.0
+Bs Pentapensión Pp | 0.0
+Fon Fineco Renta Fija Internacional I Fi | 0.0
+Norpensión Dinámico Epsv | 0.0
+Bbva Revalorización Europa Positivo B Pp | 0.0
+Laboral Kutxa Renta Fija Garantizado Vii Fi | 0.0
+Inversiones Financieras Vitasa Sicav, S.a. | 0.0
+Futurespaña Ahorro Previsión Pp | 0.0
+Bnp Paribas Renta Fija Mixta Global Fi | 0.0
+Mediolanum Renta S-b Fi | 0.0
+Mediolanum Renta L-b Fi | 0.0
+Bbva Rendimiento Múltiple 21 Fi | 0.0
+Compromiso Mediolanum Fi | 0.0
+Butal Inversiones, Sicav, S.a. | 0.0
+Mi Proyecto Santander 2040 Pp | 0.0
+Imantia Rv Zona Euro Fi | 0.0
+Bbva Protección 2025 Pp | 0.0
+Mi Plan Santander Decidido Pp | 0.0
+Norpensión Protección 2025 Epsv | 0.0
+Egeria Global A Fi | 0.0
+Inversiones Baca, Sicav, S.a. | 0.0
+Unifond 2021-ii Fi | 0.0
+Bbva Plan 30 Pp | 0.0
+Credit Suisse Bolsa B Fi | 0.0
+Bbva Rendimiento Múltiple 21 Ii Fi | 0.0
+Carcanti, Sicav S.a. | 0.0
+Fondmapfre Elección Prudente Fi | 0.0
+Cs Global Market Trends B Fi | 0.0
+Abanca Gestión Moderado Fi | 0.0
+Gesiuris Balanced Euro Fi | 0.0
+Gestifonsa Renta Fija A Fi | 0.0
+Eurovalor Renta Fija Corto Fi | 0.0
+Grupo Zurich Pp | 0.0
+Imantia Global Conservador Fi | 0.0
+Generali Renta Fija Mixta Epsv | 0.0
+Ibercaja Oportunidad Renta Fija B Fi | 0.0
+Dp Ahorro A Fi | 0.0
+Agalia Patrimonio, Sicav S.a. | 0.0
+Gamar Xiii Sicav S.a. | 0.0
+Inverblava Inversions, Sicav S.a. | 0.0
+Unifond 2020-ix Fi | 0.0
+Ibercaja Crecimiento Dinámico A Fi | 0.0
+Duero Protección Total Ix Pp | 0.0
+Ruralcoop Toledo Pp | 0.0
+Noski Kapital Sicav, S.a. | 0.0
+Mediolanum Mercados Emergentes E-b Fi | 0.0
+Fomento De Ahorros E Inversiones, Sicav, S.a. | 0.0
+Europopular Desarrollo 15 Pp | 0.0
+Ing Direct Fondo Naranja Conservador Fi | 0.0
+Rfmi Multigestión Fi | 0.0
+Plan Rendimiento Fijo 25 | 0.0
+Acacia Reinverplus Europa Fi | 0.0
+Bankia Mixto Renta Fija 30 Universal Fi | 0.0
+Titulos Guetaria Sicav, Sa | 0.0
+Fondmapfre Rentadólar Fi | 0.0
+Ruralcoop Asturias Pp | 0.0
+Abae Valores, Sicav, S.a. | 0.0
+Gestión Boutique C2 Equilibrado Fi | 0.0
+Intermoney Attitude Fi | 0.0
+Caja Laboral Renta Fija Garantizado Xii Fi | 0.0
+Alcalá Institucional Fi | 0.0
+Deutsche Renta Fija Premium 2022 Pp | 0.0
+Abanca Renta Variable Europa Fi | 0.0
+Ibercaja High Yield A Fi | 0.0
+Agro Círculo Pp | 0.0
+Cartera Coso 29 Sicav, S.a | 0.0
+Uniplan Pp | 0.0
+Caixabank Renta Fija Corporativa Duracion Cubierta Plus Fi | 0.0
+Dp Fonselección Fi | 0.0
+Renta 4 Multigestión Ohana Global Markets Fi | 0.0
+Bbva Multiplan Pp | 0.0
+Tawarzar 2 S-1, Sicav S.a. | 0.0
+Duero Estabilidad Pp | 0.0
+Ibercaja Pensión Iii Pp | 0.0
+Laboral Kutxa Aktibo Hego Fi | 0.0
+Bk Revalorización Europa 2022 Pp | 0.0
+Liberbank Renta Variable Euro A Fi | 0.0
+Belotiron 1960, Sicav, Sa | 0.0
+Kutxabank Plus 6 Pp | 0.0
+Caixabank Bolsa Gestión Europa Plus Fi | 0.0
+Cx Europa 2022 Pp | 0.0
+Euroler Inversores, Sicav, S.a. | 0.0
+Usategi Inversiones, Sicav S.a. | 0.0
+Guanabacoba, Sicav, S.a. | 0.0
+Passeig De La Pietat 2 Sicav, S.a. | 0.0
+Nuevos Valores, S.a., Sicav | 0.0
+Atl Capital Cartera Táctica A Fi | 0.0
+Cx Evoluciò Rendes Maig 2020 Fi | 0.0
+Laboral Kutxa Bolsa Garantizado Xxii Fi | 0.0
+Santander Mi Plan Decidido Epsv | 0.0
+Acacia Globalmix 60-90 Plata Fi | 0.0
+Quercus Ilex Inversiones, Sicav, S.a. | 0.0
+Norpensión Tranquilidad 26 B Epsv | 0.0
+Barbiguera Inversiones Sicav, S.a. | 0.0
+Bbva Protección Futuro 2/10 C Pp | 0.0
+Vega De Lo Conca Cartera De Inversion, Sicav, S.a. | 0.0
+Fon Fineco Renta Fija Internacional A Fi | 0.0
+Abante Patrimonio Global I Fi | 0.0
+Norpensión Tranquilidad 26 Epsv | 0.0
+Bnp Paribas Caap Moderado A Fi | 0.0
+Titulos Igueldo, Sicav S.a. | 0.0
+Plan De Vida Futuro 155 Pp | 0.0
+Bankoa Patrimonio Pp | 0.0
+Laboral Kutxa Selek Base Fi | 0.0
+Caixabank Interes 4 Fi | 0.0
+Bh Renta Fija Europa, Sicav, S.a. | 0.0
+Caixabank Bolsa España 150 Estándar Fi | 0.0
+Eurovalor Garantizado Europa Ii Fi | 0.0
+Orizava Capital Sil | 0.0
+Unifond Rentas Garantizado 2024-x Fi | 0.0
+Fondmapfre Renta Largo Fi | 0.0
+Merchbanc Mixto Pp | 0.0
+Las Callejas 2000, Sicav S.a. | 0.0
+Caixabank Rentas Abril 2021 Extra Fi | 0.0
+Radar Inversión A Fi | 0.0
+Abante Renta Pp | 0.0
+Bbva Bonos Corporativos Flexible Fi | 0.0
+Segurfondo Inversión Fii | 0.0
+Futura Capital, S.i.c.a.v., S.a. | 0.0
+Egeria Ahorro Fi | 0.0
+Futurespaña 40 Pp | 0.0
+Dunmore Assets Sicav Sa | 0.0
+Adabar Inversiones, Sicav, S.a. | 0.0
+Torrenova De Inversiones, S.a., Sicav | 0.0
+Bbva Bonos Patrimonio Xvii Fi | 0.0
+Bbva Tranquilidad 26 Pp | 0.0
+Sabadell Europa Valor Cartera Fi | 0.0
+Gredos Bolsa Internacional Fi | 0.0
+Fernanflor De Inversiones Sicav, S.a. | 0.0
+Bnp Paribas Portfolio Moderado A Fi | 0.0
+Attitude Opportunities Fi | 0.0
+Caja De Jaén Pp | 0.0
+Ruralcoop Granada Pp | 0.0
+Sabadell Garantía Extra 19 Fi | 0.0
+Caixabank Renta Fija Alta Calidad Crediticia Estánder Fi | 0.0
+Titulos Balboa, Sicav S.a. | 0.0
+Invest Stella, Sicav, S.a. | 0.0
+Bbva Oportunidad Europa 24 Pp | 0.0
+Quality Inversión Conservadora Fi | 0.0
+Caser Masxnada Responsable Pp | 0.0
+Fon Fineco Best Fi | 0.0
+Soriela Inversiones, Sicav S.a. | 0.0
+Horida, Sicav, S.a. | 0.0
+Elite Renta Fija 2 Sicav Sa | 0.0
+Bbva Protección Futuro 2/10 B Pp | 0.0
+Cooperativa Cerealista Conil Pp | 0.0
+Generali Mixto Renta Variable 2 Pp | 0.0
+Bbva Bonos Patrimonio Rentas Vi Fi | 0.0
+Laboral Kutxa Renta Fija Garantizado Xxi Fi | 0.0
+Bbva Protección Futuro 2-10 Pp | 0.0
+Cx Evolució Borsa 3 Fi | 0.0
+Gestión Boutique Ii C.c. Montblanc Fi | 0.0
+Abanca Gestión Conservador Fi | 0.0
+Bbva Plan Multiactivo Decidido Pp | 0.0
+Bsg Prometeo Pp | 0.0
+Jrat 15 Inversiones Sicav, S.a. | 0.0
+Gamma Capital Gestion Sicav, S.a. | 0.0
+Caja Ingenieros Eurobond Rf 100 Pp | 0.0
+March Cartera Conservadora Fi | 0.0
+Spb Rf Ahorro I Fi | 0.0
+Ibercaja Oportunidad Renta Fija A Fi | 0.0
+Acacia Globalmix 60-90 Platino Fi | 0.0
+Privaclar, Sicav S.a. | 0.0
+Uniplan Renta Variable Pp | 0.0
+Mi Proyecto Santander 2035 Pp | 0.0
+Abanca Renta Variable Mixto Decidido Pp | 0.0
+Inversiones Olaberria, Sicav, S.a. | 0.0
+Sequia Inversions Sicav S.a. | 0.0
+Inversiones Albarelo, Sicav S.a. | 0.0
+Maral Macro Fi | 0.0
+Azorin Inversiones, Sicav, S.a. | 0.0
+Security Analysis Investments, Sicav S.a. | 0.0
+Caser Renta Fija Largo Pp | 0.0
+Caixabank Rentas Euribor Fi | 0.0
+Bbva Revalorización Europa Positivo Pp | 0.0
+Urrizalqui De Inversiones, Sicav, S.a. | 0.0
+Pbp Cartera Premium Sicav Sa | 0.0
+Ribesergro Inversiones, Sicav, S.a. | 0.0
+Inversion Global 9876, Sicav, S.a. | 0.0
+Bbva Horizonte 2025 Pp | 0.0
+Santander Dividendo Pp | 0.0
+Kutxabank Fondo Solidario Fi | 0.0
+Cabdal Inversiones, Sicav Sa | 0.0
+Penedès Pensió Protecció 2 Pp | 0.0
+Caja Laboral Bolsa Garantizado Xvii Fi | 0.0
+Bbva Crédito Europa Fi | 0.0
+Ga Patrimonio Seleccion, Sicav | 0.0
+Cajaluna Inversiones, Sicav,s.a. | 0.0
+Vuit-norantanou, Sicav S.a. | 0.0
+Caixabank Evolución Premium Fi | 0.0
+Ibercaja Pensión Solidez 50 Pp | 0.0
+Caixabank Renta Fija Corporativa Duracion Cubierta Estándar Fi | 0.0
+Fonditel Renta Fija Mixta Internacional B Fi | 0.0
+Help Inversiones, Sicav, S.a. | 0.0
+Fondmapfre Bolsa Iberia Fi | 0.0
+Ardeblau Inversiones, Sicav S.a. | 0.0
+Uniplan Protección 2025 Ii Pp | 0.0
+Caja Laboral Mixto Pp | 0.0
+Mediolanum Crecimiento E-b Fi | 0.0
+Miraflor Financiera, Sicav S.a. | 0.0
+Bbva Rendimiento Europa Viii Fi | 0.0
+Bbva Plan Jubilación 2030 Pp | 0.0
+Bbva Revalorización Europa Iv Pp | 0.0
+Albar2014 Finance, Sicav, S.a. | 0.0
+Inversiones Gelma, Sicav S.a. | 0.0
+Dux Rentinver Renta Fija Fi | 0.0
+Liberbank Rendimiento Garantizado V Fi | 0.0
+Avance Global B Fi | 0.0
+Value Tree Blue Sicav Sa | 0.0
+Liberbank Equilibrado Pp | 0.0
+Norpensión Tranquilidad 25 Epsv | 0.0
+Nb Bolsa Selección Fi | 0.0
+Dorneda De Inversiones 2002, Sicav S.a. | 0.0
+Daymio Investments, Sicav, S.a. | 0.0
+Soandres De Activos Sicav, S.a. | 0.0
+Caixabank España Renta Fija 2022 Fi | 0.0
+Cs Director Income Fi | 0.0
+Santander Pb Cartera 0-40 Fi | 0.0
+Bk Mixto 20 Bolsa Pp | 0.0
+Gestifonsa Dynamic Strategies Minorista Fi | 0.0
+Alanje Inversiones Sicav S.a. | 0.0
+Ibercaja Pensión Pp | 0.0
+Aidt Corporate Sicav Sa | 0.0
+Ventura 2010 Sicav, S.a. | 0.0
+Bbva Tranquilidad 26 B Pp | 0.0
+Santalucía Renta Fija 0-2 C Fi | 0.0
+Laboral Kutxa Renta Fija Garantizado Xvi Fi | 0.0
+Cs Director Bond Focus Fi | 0.0
+Eurovalor Garantizado Acciones Ii Fi | 0.0
+Marjami 2, Sicav S.a. | 0.0
+Ibercaja Mixto Flexible 15 A Fi | 0.0
+Fav-arquitectos Fi | 0.0
+Cs Corto Plazo B Fi | 0.0
+Middle Young, Sicav S.a. | 0.0
+Norpensión Equilibrado Epsv | 0.0
+Farmacéuticos De Soria Pp | 0.0
+Santalucía Renta Fija 0-2 A Fi | 0.0
+Eqmc A Fil | 0.0
+Openbank Renta Variable Europa Pp | 0.0
+Bbva Bonos 2021 Fi | 0.0
+C2 Seleccion Equilibrada, S.i.c.a.v., S.a. | 0.0
+Cs Family Business Fi | 0.0
+Gco Mixto Fi | 0.0
+Elite Renta Fija 1 Sicav Sa | 0.0
+Dixion Investments Sicav, S.a. | 0.0
+Bs Plan Renta Fija Pp | 0.0
+Tambre Value, Sicav, S.a. | 0.0
+Caja Laboral Renta Fija Garantizado I Fi | 0.0
+R.a.m. Investments, Sicav, S.a. | 0.0
+Edumone, Sicav, S.a. | 0.0
+Norpensión Tranquilidad 24 B Epsv | 0.0
+Rucandio Inversiones, Sicav, S.a. | 0.0
+Bbva Tranquilidad 24 C Pp | 0.0
+Laboral Kutxa Renta Fija Garantizado Xv Fi | 0.0
+Caixabank Rentas Euribor 2 Fi | 0.0
+Bbva Plan 40 Pp | 0.0
+Plan Valor Confianza Pp | 0.0
+Iceberg Asset Management, Sicav, S.a. | 0.0
+Infimar Inversiones Financieras, Sil, S.a. | 0.0
+Daimon Inversiones, Sicav, S.a. | 0.0
+Nb Cesta Acciones 2021 Fi | 0.0
+Best Jp Morgan Am Fi | 0.0
+Inversiones Vicedo, Sicav, S.a. | 0.0
+Teyamar Investments Xxi Sicav, Sa | 0.0
+Santalucía Vida Empleados Renta Variable Pp | 0.0
+Pbp Cartera Activa 30 A Fi | 0.0
+Profundiza Investment, Sicav, S.a. | 0.0
+Eurotalave 2002, Sicav S.a. | 0.0
+Norpensión Ii Epsv | 0.0
+Uniplan Protección 2025 Pp | 0.0
+Bbva Rentaplan Pp | 0.0
+Astmer Invest, Sicav, S.a. | 0.0
+Bbva Tranquilidad 26 C Pp | 0.0
+Fueribex Sicav, S.a. | 0.0
+Gil Agueda Inversiones, Sicav S.a. | 0.0
+Titulos Xalkarra, Sicav, S.a. | 0.0
+Siangui Inversiones 2016, Sicav Sa | 0.0
+Avalo Cartera, Sicav S.a. | 0.0
+Inversabadell 10 Pyme Fi | 0.0
+Futurespaña Tesorería I Pp | 0.0
+Cx Evoluciò Borsa 2 Fi | 0.0
+Petres 2002, Sicav S.a. | 0.0
+Lucsar Inversiones Financieras, Sicav, S.a. | 0.0
+Gesiuris Fixed Income Fi | 0.0
+Kiluva 2015 Sicav, S.a. | 0.0
+Gestión Boutique Gcapital Total Market Fi | 0.0
+Rostand Finance, Sicav, S.a. | 0.0
+Bbva Plan Multiactivo Moderado Pp | 0.0
+Hexastar, Sicav S.a. | 0.0
+Basasim Inversiones, Sicav S.a. | 0.0
+Liberty Conservador Epsv | 0.0
+Leiru Inversiones, Sicav S.a. | 0.0
+Reales De Galicia, Sicav, S.a. | 0.0
+Caser Global Pp | 0.0
+Metrovalor, Sicav, S.a. | 0.0
+Ahorro Personal Pp | 0.0
+Musandam Sicav, S.a. | 0.0
+Abanca Renta Fija Mixta Moderado Pp | 0.0
+Mirta De Inversiones, Sicav S.a. | 0.0
+Pbp Alpes Conservador Fi | 0.0
+Mi Plan Santander Moderado Pp | 0.0
+Quemora Valores, Sicav, S.a | 0.0
+Gestión Boutique Ii Sassola Dinámico Fi | 0.0
+Majadas Altas Inversiones, Sicav S.a. | 0.0
+Pelayo Vida Plan Estable Pp | 0.0
+Gg Horizone, Sicav, S.a. | 0.0
+Gaminiz Inversiones, Sicav, S.a. | 0.0
+Kutxabank Rentas Enero 2022 Fi | 0.0
+Best Morgan Stanley Fi | 0.0
+Enginyers Fonsgestió Pp | 0.0
+Inversiones 1965, Sicav, S.a. | 0.0
+Asaja Futurespaña Pp | 0.0
+Sanchiri Inversiones, Sicav, S.a. | 0.0
+Evelsa J.p. Inversiones, Sicav, S.a. | 0.0
+Palatina De Inversiones, Sicav, S.a. | 0.0
+Santander Renta Fija Pp | 0.0
+Sinama Inversiones, Sicav S.a. | 0.0
+Acacia Invermix 30-60 Platino Fi | 0.0
+Mapfre Jubilación Activa Pp | 0.0
+Mediolanum Renta E-b Fi | 0.0
+Caixabank Valor 100/30 Eurostoxx 2 Fi | 0.0
+Acacia Globalmix 60-90 Oro Fi | 0.0
+Asaja España Medio Pp | 0.0
+Endurance Investments Sicav, S.a. | 0.0
+Bbva Tranquilidad 24 B Pp | 0.0
+Openbank Renta Fija Pp | 0.0
+Rutema De Inversiones, Sicav, S.a. | 0.0
+Mediolanum Europa R.v. S Fi | 0.0
+Head To Wind, Sicav, Sa | 0.0
+Santander Mi Plan Moderado Epsv | 0.0
+Fon Fineco Top Renta Fija I Fi | 0.0
+Olabode Inversiones, Sicav, S.a. | 0.0
+Orbañanos Inversiones, Sicav, S.a. | 0.0
+Spb Zurriola Crecimiento Epsv | 0.0
+Rangali & Atol Inversiones, Sicav, S.a. | 0.0
+Fondmapfre Renta Mixto Fi | 0.0
+Uniplan Protección 2024 Pp | 0.0
+Ibercaja Plus A Fi | 0.0
+Sabadell Europa Valor Plus Fi | 0.0
+Platino Financiera Sicav S.a. | 0.0
+Acacia Invermix 30-60 Oro Fi | 0.0
+Sabadell Garantía Extra 17 Fi | 0.0
+Santalucía Vida Empleados Renta Fija Pp | 0.0
+Inversiones Carlinga, Sicav S.a. | 0.0
+Renta 4 Dédalo Pp | 0.0
+Med 2001 Inversiones, Sicav S.a. | 0.0
+Intermoney Gestión Flexible I Fi | 0.0
+Openbank Renta Mixta Pp | 0.0
+Gef Alborán Global Fi | 0.0
+Sabadell América Latina Bolsa Base Fi | 0.0
+Gvc Gaesco Europa Fi | 0.0
+Fon Fineco I Fi | 0.0
+Arbitrage Capital, Sicav, S.a. | 0.0
+Bankia Mixto Renta Fija 15 Universal Fi | 0.0
+Fonditel Renta Fija Mixta Internacional A Fi | 0.0
+Liberbank Renta Fija Flexible A Fi | 0.0
+Sabadell España Bolsa Pyme Fi | 0.0
+Suneo Capital, Sicav, S.a. | 0.0
+Inversiones Baniar Sicav, S.a. | 0.0
+Balaitus Inversiones, Sicav, Sa | 0.0
+Bnp Paribas Flexible Max 30 A Fi | 0.0
+Acacia Invermix 30-60 Plata Fi | 0.0
+Generali Mixto Renta Fija 2 Pp | 0.0
+Laboral Kutxa Bolsa Garantizado Xxiii Fi | 0.0
+Inversiones Joscelocarte, Sicav S.a. | 0.0
+Jm Kapital Kairos Sicav | 0.0
+Bbva Revalorización España Positivo Pp | 0.0
+Quixote Capital Investment Sicav, S.a. | 0.0
+Colonya Plaètic I Solidari Pp | 0.0
+Castalia Ahorro, Sicav S.a. | 0.0
+Sticliat Sicav S.a. | 0.0
+Fondomutua Pp | 0.0
+Salat Organization Sicav Sa | 0.0
+Tronet 136, Sicav, S.a. | 0.0
+Aresta De Valores, Sicav, S.a. | 0.0
+Tiebas De Inversiones, Sicav, S.a. | 0.0
+Cajamar Mixto I Pp | 0.0
+Abanca Renta Fija Mixta Conservador Pp | 0.0
+Mussara Cartera Sicav, S.a. | 0.0
+Caser Responsabilidad Plus Pp | 0.0
+Bk Variable Europa Pp | 0.0
+Compañia General De Inversiones Sicav Sa | 0.0
+Santander Universidades Rf Mixta Pp | 0.0
+Bbva Revalorización Europa 25 B Pp | 0.0
+Cx Evoluciò Borsa Fi | 0.0
+Sauce Valores, Sicav, S.a. | 0.0
+Sabadell Horizonte 2021 Fi | 0.0
+Arquiplan Monetario Pp | 0.0
+Trea Cajamar Renta Variable España Fi | 0.0
+Bbva Rentas 2024 Pp | 0.0
+Aurrikuspena Osasunrenta Epsv | 0.0
+Azkaran Inversiones, Sicav, S.a. | 0.0
+Tambel Inversiones, S.i.c.a.v., S.a. | 0.0
+Plancaixa Invest 12 Pp | 0.0
+Inversabadell 10 Base Fi | 0.0
+Abanca Renta Variable Mixta Dinámico Pp | 0.0
+Fondibas Fi | 0.0
+Altair Inversiones Ii A Fi | 0.0
+Gco Renta Fija Fi | 0.0
+Terton Inversiones, Sicav, S.a. | 0.0
+Santalucía Vp Renta Fija Pp | 0.0
+Santander Renta Variable Europa Pp | 0.0
+ávila Responsabilidad Plus Pp | 0.0
+Global Value Opportunities Fi | 0.0
+Laemar Inversiones, Sicav S.a. | 0.0
+Compromiso Fondo ético Fi | 0.0
+Bbva Plan Jubilación 2025 Pp | 0.0
+Bbva Revalorización España Positivo B Pp | 0.0
+Alianza Flexible Fi | 0.0
+Evalexana, Sicav, S.a. | 0.0
+Bbva Tranquilidad 24 Pp | 0.0
+Tojabi Inversiones, Sicav S.a. | 0.0
+Muvi Financiera, Sicav S.a. | 0.0
+Sequefondo Fi | 0.0
+Excel Equities Sicav, S.a. | 0.0
+Atl Capital Best Managers Flexible A Fi | 0.0
+Gestifonsa Renta Fija Flexible Base Fi | 0.0
+Bh Valores Sicav Sa | 0.0
+Nemosa Inversiones, Sicav S.a. | 0.0
+Mi Proyecto Santander 2030 Pp | 0.0
+Cibran Inversiones, Sicav, S.a. | 0.0
+Inversions Garbet, Sicav, S.a. | 0.0
+Unifond Mixto Equilibrado A Fi | 0.0
+Monvi Investments, Sicav, S.a. | 0.0
+Caixabank Evolución Plus Fi | 0.0
+ábaco Renta Fija Mixta Global I Fi | 0.0
+Euroarradi, Sicav S.a. | 0.0
+Liberty Conservador Ligero Pp | 0.0
+Tusak Inversam, Sicav S.a. | 0.0
+Sabadell Interés Euro Premier Fi | 0.0
+Osdabal Finance, Sicav, S.a. | 0.0
+Caixabank Renta Fija Flexible Plus Fi | 0.0
+Dedicated To Investments 2010 Sicav Sa | 0.0
+Titulos Alcala, Sicav S.a. | 0.0
+R4 Activa Tierra I Fi | 0.0
+Mi Proyecto Santander 2025 Pp | 0.0
+Corso Iniciatives Financeres,sicav,s.a. | 0.0
+Best Carmignac Fi | 0.0
+Abante Renta Fi | 0.0
+Solma Inversiones, Sicav, S.a. | 0.0
+Gestión Boutique B4a Cartera Equilibrada Fi | 0.0
+Bbva Mi Objetivo 2021 Fi | 0.0
+Penedès Pensió Variable Mixt Pp | 0.0
+Noa Patrimonio Sicav S.a. | 0.0
+Norpensión Bonos 3 Epsv | 0.0
+Laboral Kutxa Renta Fija Garantizado Xiv Fi | 0.0
+Ibercaja Capital Garantizado 5 Fi | 0.0
+Mediolanum Fondcuenta E Fi | 0.0
+Santalucía Vp Renta Variable Europa Pp | 0.0
+Pointer Long Term Equities, Sicav, S.a. | 0.0
+Abanca Renta Fija Corto Plazo Fi | 0.0
+Bnp Paribas Euro Fi | 0.0
+Afapna Pp | 0.0
+Lenda De Inversiones, S.a., Sicav | 0.0
+Dragonwyck Sicav Sa | 0.0
+Gredos Bolsa Euro Fi | 0.0
+Felicia Inversiones, Sicav S.a. | 0.0
+Santander Renta Fija Epsv | 0.0
+Renta 4 Multigestión 2 Atria Valor Rv Mixto Fi | 0.0
+Gvc Gaesco Bolsalíder A Fi | 0.0
+Rga Protegido 2024 Pp | 0.0
+Laboral Kutxa Bolsa Garantizado Xxi Fi | 0.0
+Mediolanum Activo E-b Fi | 0.0
+Altair Patrimonio Ii A Fi | 0.0
+Daen Investment, Sicav, S.a. | 0.0
+Santander Multiactivos Fi | 0.0
+Sa Nostra 5 Plus Pp | 0.0
+Aquarium Finanzas, Sicav | 0.0
+Casermed Protección 1 Pp | 0.0
+Liberbank Cartera Conservadora A Fi | 0.0
+Bbva Rf Internacional Flexible Pp | 0.0
+Bbva Gestión Conservadora Fi | 0.0
+Casermed Protección 6 Pp | 0.0
+Casermed Protección 7 Pp | 0.0
+Ursus Pensión Flexible Global Pp | 0.0
+Caser Premier Renta Fija Pp | 0.0
+Kirites De Inversiones, Sicav, S.a. | 0.0
+Bbva Tranquilidad 22 D Pp | 0.0
+Casermed Protección 8 Pp | 0.0
+Imantia Renta Fija Duración 0-2 Institucional Fi | 0.0
+Casermed Protección Pp | 0.0
+Arqueta Inversiones Sicav Sa | 0.0
+Ibercaja Protección 2014 Pp | 0.0
+Wagner Capital, Sicav, S.a. | 0.0
+Madriu All Cap Equity Sicav, Sa | 0.0
+Mediolanum Small & Mid Caps España L Fi | 0.0
+Liberbank Bonos Global A Fi | 0.0
+Duero Tranquilidad Ii Pp | 0.0
+Norpensión Tranquilidad 24 Epsv | 0.0
+Casermed Protección 9 Pp | 0.0
+Santander Renta Fija Ahorro I Fi | 0.0
+Renta 4 Renta Fija 6 Meses Fi | 0.0
+Casermed Protección 4 Pp | 0.0
+Nippy Train, Sicav, S.a. | 0.0
+El Galgo Investment Sicav, S.a. | 0.0
+Liberty Conservador Pp | 0.0
+Casermed Protección 5 Pp | 0.0
+Aragonyfas, Sicav, S.a. | 0.0
+Bbva Bonos Internacional Flexible Fi | 0.0
+Bankia Gobiernos Euro Largo Plazo Universal Fi | 0.0
+Bbva Plan 50 Pp | 0.0
+Kutxabank Rf Horizonte Fi | 0.0
+Nb Global Patrimonio Fi | 0.0
+Kawab Investment, Sicav S.a. | 0.0
+Ibercaja Bp Renta Fija B Fi | 0.0
+Gredos Moderado Fi | 0.0
+Norpensión Prudente Epsv | 0.0
+Atl Capital Renta Fija A Fi | 0.0
+Bs Rendimiento Fijo 13 Pp | 0.0
+Caser 129 Renta Fija Pp | 0.0
+Penedès Pensió Mixt Pp | 0.0
+Alcalá Multigestiión Ahorro Fi | 0.0
+New Garment, Sicav S.a. | 0.0
+Mediolanum Activo L-b Fi | 0.0
+Santander Cumbre 2023 Pp | 0.0
+Caixabank Bolsa Gestión Europa Estándar Fi | 0.0
+Gassolans Inversiones,sicav,s.a. | 0.0
+Openbank Renta Variable España Pp | 0.0
+Laurus Patrimonial, Sicav Sa | 0.0
+Caser Enero 2009 Pp | 0.0
+Envilu Inversiones, Sicav S.a. | 0.0
+Mi Plan Santander Prudente Pp | 0.0
+Caixabank Renta Fija Dólar Estánder Fi | 0.0
+Im 93 Renta Fi | 0.0
+A&g Variable Pp | 0.0
+Bbva Plan Oportunidad Multiple 22 Pp | 0.0
+Bbva Horizonte 2020 Pp | 0.0
+Unifond 2020-iii Fi | 0.0
+Mediolanum Activo S-b Fi | 0.0
+Penta Inversión B Fi | 0.0
+Norpensión Horizonte 2020 Epsv | 0.0
+Invergraciano 2007, Sicav, S.a. | 0.0
+Kutxabank Rf Enero 2022 Fi | 0.0
+Sabadell Interés Euro Cartera Fi | 0.0
+Intervalor Acciones Internacional Fi | 0.0
+Juneli Investment, Sicav, S.a. | 0.0
+Santander Mi Plan Prudente Epsv | 0.0
+Caixabank Rentas Abril 2021 Extra Fidelidad Fi | 0.0
+Gvc Gaesco Renta Fija Fi | 0.0
+Spb Rf Ahorro A Fi | 0.0
+Gestión Talento Value Fi | 0.0
+Bbva Colectivos Renta Fija Pp | 0.0
+Mediolanum Europa R.v. E Fi | 0.0
+Etorpensión Renta Fija Epsv | 0.0
+Ibercaja Bp Renta Fija A Fi | 0.0
+Pbp Diversificación Global A Fi | 0.0
+Ernes Investment, Sicav S.a. | 0.0
+Laboral Kutxa Bolsa Garantizado Xx Fi | 0.0
+Fambar De Inversiones, Sicav, S.a. | 0.0
+Caixabank Rentas Abril 2021 Ii Extra Fi | 0.0
+Solventis Atenea, S.i.c.a.v., S.a. | 0.0
+Bbva Revalorización Europa 21 Pp | 0.0
+Allianz Renta Pp | 0.0
+Santander Inverplus Rf Pp | 0.0
+Acacia Bonomix Plata Fi | 0.0
+Sabadell Interés Euro Base Fi | 0.0
+Eurovalor Conservador Dinámico A Fi | 0.0
+Siansancav Inversiones, Sicav, Sa | 0.0
+Bbva Tranquilidad 22 E Pp | 0.0
+Sabadell Rendimiento Premier Fi | 0.0
+Breixo Inversiones Iiciicil | 0.0
+Bankia Dólar Universal Fi | 0.0
+Anteli Inversiones Sicav, S.a. | 0.0
+Génesis Pp | 0.0
+Asefarma Variable Pp | 0.0
+Bbva Plan Oportunidad Multiple 21 Pp | 0.0
+Cuculata, Sicav Sa | 0.0
+Caixabank Fondos Global Selección Fi | 0.0
+Caixabank Iter Platinum Fi | 0.0
+Growth Inversiones, Sicav, S.a. | 0.0
+Gestión Multiperfil Inversión Fi | 0
+Liberbank Mercado Neutral A Fi | 0
+Gestifonsa Retorno Absoluto Fi | 0
+Pbp Mercados Globales Fi | 0
+Gestión Multiperfil Equilibrado Fi | 0
+Gestión Multiperfil Moderado Fi | 0
+Db Talento Gestión Conservadora Fi | 0
+Mutuafondo Unnefar Fi | 0
+Nb 10 Fi | 0
+Sabadell Renta Fija Mixta España Plus Fi | 0
+Sabadell Renta Fija Mixta España Premier Fi | 0
+Sabadell Renta Fija Mixta España Base Fi | 0
+Sabadell Renta Fija Mixta España Pyme Fi | 0
+Catalana Occidente Previsión Epsv | 0
+Bnp Paribas Renta Fija Mixta Plus Pp | 0
+Banco Crédito Local (individual) Pp | 0
+Bm Excellence Pp | 0
+Bnp Paribas Renta Fija Pp | 0
+Bnp Paribas Renta Fija Mixta Pp | 0
+Mundiplan Dinámico Pp | 0
+Mundiplan Prudente Pp | 0
+Altair Inversiones Fi | 0
+Privary Fi | 0
+Gesbolsa Inversiones, Sicav S.a. | 0
+Caixabank Gestión Alfa Plus Fi | 0
+Caixabank Gestión Alfa Extra Fi | 0
+Caixabank Gestión Alfa Platinum Fi | 0
+Adriza International Opportunities Fund Fi | 0
+Inverluma De Valores Sicav S.a. | 0
+Bnp Paribas Newflex A Fi | 0
+Argos Capital Fi | 0
+Bankia Diversificación Universal Fi | 0
+Am68, Sicav, S.a. | 0
+Kebeka 2002, Sicav, S.a. | 0
+Cininver Finanzas, Sicav S.a. | 0
+Kursaal 2000, Sicav, S.a. | 0
+Tosqueta Inversiones, S.i.c.a.v., S.a. | 0
+Gestión Multiperfil Dinámico Fi | 0
+Sabadell Renta Variable Mixta España Plus Fi | 0
+Sabadell Renta Variable Mixta España Base Fi | 0
+Unifond Cartera Decidida Fi | 0
+Adriza Activos Fi | 0
+Gestión Multiperfil Agresivo Fi | 0
+Argentaria Ahorro Pensiones Pp | 0
+Dws Mixta B Fi | 0
+Dws Mixta A Fi | 0
+Fonalcalá Fi | 0
+Alcalá Bolsa Mixto Fi | 0
+Renta 4 Multigestión Investment Global Fund Fi | 0
+Plancaixa Plus 2005 Pp | 0
+Plancaixa Plus 40 Pp | 0
+Plancaixa Fidelidad Pp | 0
+Plancaixa Protección 3 Pp | 0
+Plancaixa Plus 2009 Pp | 0
+Plancaixa Protección 7 Pp | 0
+Plancaixa Protección 8 Pp | 0
+Caja Murcia Protección 1 Pp | 0
+Catalana Occidente Previsión Renta Variable Epsv | 0
+Cx Plus 25 Ii Pp | 0
+Plancaixa 4 Plus Iii Pp | 0
+Futurespaña Estabilidad Vi Pp | 0
+Cai Pensiones Horizonte 7-2011 Pp | 0
+Banif G Tipo Fijo Pp | 0
+Santander 100 Por 100 8 Epsv | 0
+Duero Protección Total Iii Pp | 0
+Abanca Seguridad 2013 Pp | 0
+Abanca Plus Seguridad 2012 Pp | 0
+Caja Murcia Protección 2018 Pp | 0
+Plancaixa Invest 18 Pp | 0
+Abanca Seguridad 2012 Pp | 0
+Abanca Plus Seguridad 2012 Iii Pp | 0
+Plancaixa Invest 7 Pp | 0
+Plancaixa Futuro 2018 Pp | 0
+Plancaixa Objetivo 125 Pp | 0
+Bg Pensiones Seguridad 2020 Pp | 0
+Plancaixa Afianza Pp | 0
+Cabk Plus Pp | 0
+Plancaixa Afianza Protección Pp | 0
+Cajagranada Protección 2018 Pp | 0
+Banif Rv Consolidación Pp | 0
+Bbva Tranquilidad 19 D Pp | 0
+Norpensión Tranquilidad 20 C Epsv | 0
+Uniplan Protección 2019 Pp | 0
+Plancaixa Efecto 5 Pp | 0
+Caja Ingenieros Plan Protect 2019 Pp | 0
+Santander Objetivo Rendimiento Europa Fi | 0
+Santander Grandes Compañías 2019 2 Fi | 0
+Santander Bolsa Europa 2018 Fi | 0
+Caixabank Valor Bolsa Euro Fi | 0
+Santander Bolsa Europa 2019 2 Fi | 0
+Ing Direct Fondo Naranja Euro25 Fi | 0
+Fondo 3 Acciones Fi | 0
+Nb Cesta Acciones 2019 Fi | 0
+Nb Europa 50 Fi | 0
+Cx Evoluciò Index Borsa Fi | 0
+Nb Europa 70 Fi | 0
+Santander 95 Valor Creciente Plus Fi | 0
+Santander Indices Creciente Fi | 0
+Caixabank Valor 100/50 Eurostoxx Fi | 0
+Santander Grandes Compañías 2019 Fi | 0
+Caixabank Bolsa España 2019 Fi | 0
+Caixabank Valor Bolsa Euro 2 Fi | 0
+Santander Objetivo Rendimiento Europa Iii Fi | 0
+Bbva Rendimiento Europa V Fi | 0
+Plancaixa Futuro 115 Pp | 0
+Plancaixa Proyección 2019 Pp | 0
+Mpp Futuro Seguro Ii Pp | 0
+Cx Evolución Octubre 2019 Pp | 0
+Norpensión Bonos 2 Epsv | 0
+Brightgate Absolute Return F Fil | 0
+Acf Plan Rv Usa Pp | 0
+Unifond Global Macro Fi | 0
+Renta 4 Multigestión ítaca Global Macro Fi | 0
+Mediolanum Alpha Plus S-a Fi | 0
+Unifond Valor Relativo A Fi | 0
+Bankinter Kilimanjaro Fi | 0
+Renta 4 Minerva Fil | 0
+Santander Inversion Corto Plazo 15 Fi | 0
+Caixabank Diversificado Conservador Estándar Fi | 0
+Alphaville Fil | 0
+Mediolanum Alpha Plus E-b Fi | 0
+Mediolanum Alpha Plus L-a Fi | 0
+Mediolanum Alpha Plus S-b Fi | 0
+Mediolanum Alpha Plus L-b Fi | 0
+Mediolanum Alpha Plus E-a Fi | 0
+Unifond Cartera Dinámica Fi | 0
+Laredo Inversión Libre Fil | 0
+Rga-seguridad 2019 Pp | 0
+Bnp Paribas Renta Variable Pp | 0
+Ruralsegur Cuatro Pp | 0
+Santander 100 Valor Global 3 Fi | 0
+Sabadell Garantía Extra 21 Fi | 0
+Sabadell Garantía Extra 20 Fi | 0
+Sabadell Garantía Extra 16 Fi | 0
+Bnp Paribas Bolsa Pp | 0
+Santander 100 Valor Creciente Fi | 0
+Sabadell Garantía Extra 18 Fi | 0
+Acf Plan Patrimonio Pp | 0
+Bnp Paribas Conservador Pp | 0
+Burgos Responsable Pp | 0
+Bbva Renta Plus Pp | 0
+Altair Crecimiento Pensiones Pp | 0
+Bnp Paribas Renta Variable Mixta Pp | 0
+Eurovalor Garantizado Cesta Plus A Fi | 0
+Santander 100 Por 100 Pensiones Epsv | 0
+Bankinter Mercado Español Fi | 0
+Kutxabank Garantizado Bolsa Europa Fi | 0
+Santander 100 Por 100 5 Pp | 0
+Bk Protección Pp | 0
+Bankinter 90 índice Europeo 2019 Fi | 0
+Caja Laboral Rendimiento Fijo Ii Pp | 0
+Plancaixa 5 Ya Pp | 0
+Norpensión Tranquilidad 20 B Epsv | 0
+Bankia Protegido Renta 2019 Pp | 0
+Europopular Recompensa Plus 3 Pp | 0
+Cai Pensiones Horizonte 7-2012 Pp | 0
+Bs Rendimiento Fijo 23 Pp | 0
+Santander 2018 Europa Pp | 0
+Kutxa 2019 Pp | 0
+Rga Seguridad 2019 Ii Pp | 0
+Europopular Recompensa Plus 4 Pp | 0
+Norpensión Tranquilidad 20 Epsv | 0
+Bbva Tranquilidad 19 Pp | 0
+Santander 100 Por 100 7 Pp | 0
+Plancaixa Invest 8 Pp | 0
+Protegido Renta As 07/2019 Pp | 0
+Plancaixa 5 Ya Ii Pp | 0
+Plancaixa Invest 4 Pp | 0
+Mapfre Puente Garantía 4 Fi | 0
+Rural Garantizado 9,70 Fi | 0
+Unifond 2019-i Fi | 0
+Laboral Kutxa Bolsa Garantizado Xix Fi | 0
+Bmn Interés Garantizado 11 Fi | 0
+Eurovalor Garantizado Energía Fi | 0
+Kutxabank Garantizado Bolsa Europa 3 Fi | 0
+Rural Rentas Garantizado Fi | 0
+Santander 95 Grandes Compañías 2 Fi | 0
+Santander 95 Dólar Fi | 0
+Bmn Interés Garantizado 10 Fi | 0
+Bankinter Mercado Europeo Fi | 0
+Kutxabank Garantizado Bolsa Europa 2 Fi | 0
+Unifond Bolsa Garantizado 2019-ii Fi | 0
+Eurovalor Garantizado Cesta Plus B Fi | 0
+Kutxabank Rentas Octubre 2019 Fi | 0
+Caixabank Rentas Julio 2019 Extra Fi | 0
+Caixabank Rentas Julio 2019 Plus Fidelidad Fi | 0
+Caixabank Rentas Julio 2019 Plus Fi | 0
+Caixabank Rentas Julio 2019 Estándar Fi | 0
+Caixabank Rentas Julio 2019 Extra Fidelidad Fi | 0
+Santander Cumbre 2019 Plus B Fi | 0
+Santander Cumbre 2019 Plus C Fi | 0
+Santander Cumbre 2019 Plus Tb Fi | 0
+Santander Cumbre 2019 Plus Tc Fi | 0
+Santander Cumbre 2019 Plus A Fi | 0
+Bbva Bonos Patrimonio Viii Fi | 0
+Santander Cumbre 2019 Plus 2 A Fi | 0
+Santander Cumbre 2019 Plus 2 B Fi | 0
+Santander Cumbre 2019 Plus 2 C Fi | 0
+Santander Cumbre 2019 Plus 2 Tb Fi | 0
+Caixabank Rentas Julio 2019 Estándar Fidelidad Fi | 0
+Santander Cumbre 2019 Plus 2 Tc Fi | 0
+Caixabank Rentas Octubre 2018 Extra Fi | 0
+Caixabank Rentas Octubre 2018 Extra Fidelidad Fi | 0
+Caixabank Rentas Octubre 2018 Plus Fi | 0
+Caixabank Rentas Octubre 2018 Plus Fidelidad Fi | 0
+Caixabank Rentas Octubre 2018 Estándar Fidelidad Fi | 0
+Caixabank Rentas Octubre 2018 Estándar Fi | 0
+Eurovalor Ahorro Top 2019 A Fi | 0
+Bankinter Renta Fija Roble 2019 Fi | 0
+Nb Euro/dólar 80 Fi | 0
+Eurovalor Ahorro Top 2019 B Fi | 0
+Fondespaña-duero Horizonte 2019 Fi | 0
+Bbva Bonos Patrimonio Xvi Fi | 0
+Caixabank España Renta Fija 2019 Fi | 0
+Bbva Bonos Patrimonio Rentas V Fi | 0
+Bbva Bonos Rentas Ii Fi | 0
+Bankia Objetivo 2019 I Fi | 0
+Bbva Bonos Plazo Ii Fi | 0
+Bbva Bonos Patrimonio Ix Fi | 0
+Bbva Bonos Rentas Vii Fi | 0
+Bbva Bonos Plazo Viii Fi | 0
+Gpm Gestión Activa Growth Capital Fi | 0
+Qmc Ii Iberian Capital C Fil | 0
+Qmc Ii Iberian Capital B Fil | 0
+Qmc Ii Iberian Capital A Fil | 0
+Dws Acciones Españolas A Fi | 0
+Qmc Ii Iberian Capital D Fil | 0
+Mediolanum España R.v. L Fi | 0
+Mediolanum España R.v. S Fi | 0
+Catalana Occidente Previsión Renta Fija Epsv | 0
+Caixabank Interés 3 Fi | 0
+Fondo 3 Renta Fija Fi | 0
+Fondo 3 Depósito Fi | 0
+Ccm Fondepósito Fi | 0
+Caixabank Multidivisa Estánder Fi | 0
+Luxor Valor Fi | 0
+Ibercaja Plus C Fi | 0.0
+Plan Del Campo Pp | 0
+Cajamar Renta Fija 2 Pp | 0
+Mundiplan F-100 Pp | 0
+Caixabank Renta Fija Selección Emergentes Premium Fi | 0
+Caixabank Renta Fija Selección Emergentes Estándar Fi | 0
+Caixabank Renta Fija Selección Emergentes Plus Fi | 0
+Trea Rentas Emergentes Fi | 0
+Iberian Private Debt Fund I Fil | 0
+Iberian Private Debt Fund Bp Fil | 0
+Bankia Fondtesoro Corto Plazo Universal Fi | 0
+Kutxabank Monetario Fi | 0
+Mediolanum Premier S Fi | 0
+Mediolanum Premier E Fi | 0
+Fixed Income Asset Allocation Fund Fi | 0
+La Abadia Inversiones, Sicav, S.a. | 0
+K2 2006, Sicav, S.a. | 0
+Jmq Estudios Financieros 2011, Sicav, S.a. | 0
+Nasecad Inversiones, Sicav S.a. | 0
+Alkeh 2000 Sicav S.a. | 0
+Kerad 3 Invest Sicav S.a. | 0
+Geiser Inversiones 2000, Sicav S.a. | 0
+Narogiv, Sicav S.a. | 0
+Chersa 2001, Sicav, S.a. | 0
+Global Stock Picking, Sicav, S.a. | 0
+Sigma Activa, Sicav, S.a. | 0
+Cartera Viladecans Sicav S.a. | 0
+Cartera Universal Fi | 0
+Benamira Inversiones, Sicav, S.a. | 0
+Iceam Inversiones, Sicav, S.a. | 0
+Ilercavonia Inversiones, Sicav, S.a. | 0
+Nb Arima Equity Fi | 0
+Elitia Invest, Sicav, Sa. | 0
+Serantes Cartera, Sicav, S.a. | 0
+Fidentiis Spanish Banking Opportunities A Fil | 0
+Gestio Plus 2000, S.i.c.a.v., S.a. | 0
+Nadima Invest, Sicav, S.a. | 0
+Romercapital, Sicav S.a. | -0.0
+Caja Laboral Rendimiento Fijo Viii Pp | -0.0
+Bbva Revalorización Europa Iii Pp | -0.0
+Ballesteros Finanzas, Sicav S.a. | -0.0
+Openbank Ahorro Fi | -0.0
+Bbva Rf Internacional Flexible 0-3 Pp | -0.0
+Santalucía Vp Renta Fija Epsv | -0.0
+Bordolique, Sicav S.a. | -0.0
+Gstaad Inversiones, Sicav S.a. | -0.0
+Strip Inversiones, Sicav, S.a. | -0.0
+Omega Global Fund Ii Fi | -0.0
+Bbva Tranquilidad 22 C Pp | -0.0
+Ascendo Inversiones, Sicav, S.a. | -0.0
+Rosalber Capital, Sicav, S.a. | -0.0
+Bbva Rentas 2022 Pp | -0.0
+Santander Cumbre 2023 Epsv | -0.0
+Santalucía Vp Mixto Pruddente Pp | -0.0
+Dinerahorro, Sicav, S.a | -0.0
+March Patrimonio Corto Plazo A Fi | -0.0
+Imantia Renta Fija Duración 0-2 Minorista Fi | -0.0
+Gvc Gaesco Constantfons Fi | -0.0
+Caixabank Rentas Abril 2021 Plus Fididelidad Fi | -0.0
+Caser Seguridad Plus Pp | -0.0
+Pelayo Vida Plan Espabolsa Pp | -0.0
+Bk Inversión Mixta Epsv | -0.0
+Bk Mixto10 Pp | -0.0
+Caser Seguridad Pp | -0.0
+Euroagentes Universal Fi | -0.0
+Unifond Bolsa Garantizado 2020-iv Fi | -0.0
+Bbva Tranquilidad 22 B Pp | -0.0
+Bbva Tranquilidad 21 B Pp | -0.0
+Norpensión Protección 2020 Epsv | -0.0
+Welzia Corto Plazo Fi | -0.0
+Ibercaja Conservador Premium Fi | -0.0
+Sabadell Rendimiento Canalizador Fi | -0.0
+Sabadell Rendimiento Cartera Fi | -0.0
+Sabadell Interés Euro Plus Fi | -0.0
+Bbva Rentas 2020 E Pp | -0.0
+Sabadell Interés Euro Empresa Fi | -0.0
+Ibercaja Conservador A Fi | -0.0
+Kutxabank Rentas Abril 2021 Fi | -0.0
+Bbva Protección 2020 Pp | -0.0
+Santander Bolsa Inflación 1 Epsv | -0.0
+Fon Fineco Top Renta Fija A Fi | -0.0
+Cx Plus 30 Pp | -0.0
+Bbva Plan Rentabilidad 2020 Pp | -0.0
+Bbva Rentas 2020 D Pp | -0.0
+Castrillon Anleo, Sicav, S.a. | -0.0
+Anateco Inversiones, Sicav S.a. | -0.0
+Bankia Renta Fija Largo Plazo Universal Fi | -0.0
+Banesto G. Acumulación Pp | -0.0
+Bbva Tranquilidad 22 Pp | -0.0
+Bbva Mercado Monetario Pp | -0.0
+Uniplan Renta Fija Pp | -0.0
+Bankia Bonos Duración Flexible Universal Fi | -0.0
+Bbva Rentas 2021 Pp | -0.0
+Cartera Torre De Abraham, Sicav, S.a. | -0.0
+Gesconsult Renta Fija Flexible B Fi | -0.0
+Sabadell Rendimiento Base Fi | -0.0
+Bbva Tranquilidad 20 D Pp | -0.0
+Santander Monetario 2 Epsv | -0.0
+Bankoa Monetario Pp | -0.0
+Fon Fineco Gestión Ii Fi | -0.0
+Pastor Monetario Pp | -0.0
+Norpensión Renta Fija Epsv | -0.0
+Santalucía Vp Espabolsa Pp | -0.0
+Fonemporium Fi | -0.0
+Santander Renta Variable España Pp | -0.0
+Santander 100 Por 100 9 Pp | -0.0
+Caixabank Monetario Rendimiento Cartera Fi | -0.0
+Santander Monetario 2 Pp | -0.0
+Gco Pensiones Renta Fija Pp | -0.0
+Santalucía Vp Retorno Absoluto Pp | -0.0
+Bbva Revalorización Europa Ii Pp | -0.0
+Caixabank Rentas Abril 2021 Ii Plus Fi | -0.0
+Santander Renta Fija Ahorro A Fi | -0.0
+Santander Monetario Epsv | -0.0
+Santander Monetario Pp | -0.0
+Inveractivo Confianza Fi | -0.0
+A&g Renta Fija Corto Plazo Fi | -0.0
+Caser Masxnada Ard Pp | -0.0
+Bankia Duración Flexible 0-2 Universal Fi | -0.0
+Santalucía Renta Fija 0-2 B Fi | -0.0
+Mobilinversion Sicav S.a. | -0.0
+Caixabank Rentas Abril 2021 Estándar Fidelidad Fi | -0.0
+Openbank Monetario Pp | -0.0
+Welzia Flexible 10 Fi | -0.0
+Bankia Bonos 24 Meses Universal Fi | -0.0
+Solainainvest, Sicav S.a. | -0.0
+Cep-1 Pp | -0.0
+Futurespaña 50 Pp | -0.0
+Norpensión Mercado Monetario Epsv | -0.0
+Gesconsult Renta Fija Flexible A Fi | -0.0
+Casermed Protección 10 Pp | -0.0
+Kutxabank Rf Octubre 2020 Fi | -0.0
+Cgp Capital Investment, Sicav, S.a. | -0.0
+Credit Agricole Selección Fi | -0.0
+Renta 4 Nexus Pp | -0.0
+Gesconsult 0-30 Pp | -0.0
+Bmn Horizonte 2020 Fi | -0.0
+Conecta Gap 2013 Sicav, Sa | -0.0
+Ibercaja Gestión Garantizado 6 Fi | -0.0
+Kaizen Capital, Sicav, S.a. | -0.0
+Arquero Capital Sicav Sa | -0.0
+Caixa Enginyers Gestió Alternativa, Fi | -0.0
+Santander 100 Por 100 10 Pp | -0.0
+Ars Valores, Sicav, S.a. | -0.0
+Amistra Global Fi | -0.0
+Caixabank Renta Fija Flexible Estándar Fi | -0.0
+R4 Activa Aire I Fi | -0.0
+Caixabank Rentas Abril 2021 Plus Fi | -0.0
+Caixabank Monetario Rendimiento Premium Fi | -0.0
+Caixabank Monetario Rendimiento Institucional Fi | -0.0
+Bs Plan ético Solidario Pp | -0.0
+Ibercaja Gestión Garantizado 5 Fi | -0.0
+Bbva Renta Fija Pp | -0.0
+Inversiones Gcu, Sicav, S.a. | -0.0
+Sandalos 2001, Sicav, S.a. | -0.0
+Bs Plan Monetario Plus 1 Pp | -0.0
+Caixabank Ahorro Institucional Fi | -0.0
+Spb Zurriola Conservador Epsv | -0.0
+Imantia Fondepósito Institucional Fi | -0.0
+Metodo Capital Invest Sicav Sa | -0.0
+Bbva Tranquilidad 21 Pp | -0.0
+Caser Masxnada Protegido Pp | -0.0
+C&s Pamel Inversiones, Sicav S.a. | -0.0
+Eurovalor Renta Fija Fi | -0.0
+Ubs Bonos Gestión Activa P Fi | -0.0
+Bbva Revalorización Europa Pp | -0.0
+Oxina Investments Sicav, S.a. | -0.0
+Renta 4 Multigestión Total Opportunity Fi | -0.0
+Bbva Ahorro Empresas Fi | -0.0
+Santander Bolsa Inflación 1 Pp | -0.0
+Maripla Investments Sicav Sa | -0.0
+Kutxabank Gestión Activa Patrimonio Estándar Fi | -0.0
+Bs Plan 15 Plus 2 Pp | -0.0
+Harmatan Cartera Conservadora Fi | -0.0
+Enigma Capital, Sicav, S.a. | -0.0
+Caja Laboral Clásico Pp | -0.0
+Tortuga 2014, Sicav, S.a. | -0.0
+Caixabank Iter Extra Fi | -0.0
+Kutxabank Renta Fija Empresas Fi | -0.0
+Liberbank Rentas A Fi | -0.0
+Dws Fondepósito Plus B Fi | -0.0
+Santander 2020 Europa Pp | -0.0
+Caminos Dinero Pp | -0.0
+Caixabank Selección Retorno Absoluto Cartera Fi | -0.0
+Bbva Tranquilidad 20 C Pp | -0.0
+Santander 100 Por 100 6 Epsv | -0.0
+Mixed Conservative Fi | -0.0
+Lempira, Sicav, S.a. | -0.0
+Imantia Fondepósito Institucional Premium Fi | -0.0
+Caixabank Rentas Abril 2021 Ii Estándar Fi | -0.0
+ábaco Global Value Opportunities I Fi | -0.0
+Liberbank Ahorro A Fi | -0.0
+Seci Selección Gestoras Pp | -0.0
+Asefarma Equilibrado Pp | -0.0
+Bbva Mi Inversión Rf Mixta Fi | -0.0
+Kutxabank Rf Abril 2020 Fi | -0.0
+Allianz Capital Pp | -0.0
+Mapfre Fondtesoro Plus Fi | -0.0
+Santander 100 Por 100 6 Pp | -0.0
+Peña Cabra, Sicav, S.a. | -0.0
+Caser Horizonte 2013 Pp | -0.0
+Canarias Renta Protegida Pp | -0.0
+Renta Insular Canaria, S.a., Sicav | -0.0
+Plan Reparto 2010 Pp | -0.0
+Santander 100 Por 100 8 Pp | -0.0
+Caixabank Rentas Abril 2021 Estándar Fi | -0.0
+Sabadell Rendimiento Empresa Fi | -0.0
+Sabadell Rendimiento Plus Fi | -0.0
+Swinberg Inversiones, Sicav S.a. | -0.0
+Nb Valor Europa Fi | -0.0
+Bbva Rentas 2020 Pp | -0.0
+Bbva Rendimiento Europa Vii Fi | -0.0
+Cd 2009 Pp | -0.0
+Arzalejos, Sicav S.a. | -0.0
+Caser Ard Pp | -0.0
+Caixabank Rentas Abril 2020 Extra Fidelidad Fi | -0.0
+Caixabank Monetario Rendimiento Estándar Fi | -0.0
+Caixabank Monetario Rendimiento Plus Fi | -0.0
+Kutxabank Rf Carteras Fi | -0.0
+Bbva Rentas 2020 C Pp | -0.0
+Caixabank Monetario Rendimiento Platinum Fi | -0.0
+Bbva Tranquilidad 20 B Pp | -0.0
+Ibercaja Conservador C Fi | -0.0
+Santander 100 Por 100 Pensiones Pp | -0.0
+Bbva Tranquilidad 20 Pp | -0.0
+Sabadell Rendimiento Pyme Fi | -0.0
+Bankia Mixto Dividendos Plus Fi | -0.0
+Bbva Rentas 2020 B Pp | -0.0
+Fonditel Monetario Pp | -0.0
+Caser 2009 Plus Pp | -0.0
+Trea Cajamar Flexible Fi | -0.0
+Dws Fondepósito Plus A Fi | -0.0
+Ibercaja Plus D Fi | -0.0
+Unnim Pensions G10 Pp | -0.0
+Banesto G Renta Fija 3% Epsv | -0.0
+Fonbusa Mixto Fi | -0.0
+Kutxabank Garantizado Bolsa 2020 Fi | -0.0
+Banesto G Renta Fija 3% Pp | -0.0
+Caixabank Dp Abril 2021 Extra Fi | -0.0
+Caixabank Diversificado Dinámico Estándar Fi | -0.0
+Bk Confianza Pp | -0.0
+Banesto Gar. Renta Fija 2020 Pp | -0.0
+Bk Renta Fija Epsv | -0.0
+Antat Inversiones 2000, Sicav S.a. | -0.0
+Atlantis I Pp | -0.0
+Inversiones Verdes Sicav S.a. | -0.0
+Círculo Renta Fija Pp | -0.0
+Caser Renta Fija Pp | -0.0
+Inversiones Camino 21, Sicav S.a. | -0.0
+Europopular Fenixpensión Pp | -0.0
+Fonditel Renta Fija Corto Plazo Fi | -0.0
+Metlife 1 Pp | -0.0
+Europopular Futuro Agrario Pp | -0.0
+Sabadell Interés Euro Pyme Fi | -0.0
+Fondmapfre Renta Medio Fi | -0.0
+Fondibas Mixto Fi | -0.0
+Caixabank Rentas Abril 2020 Plus Fidelidad Fi | -0.0
+Sa Nostra Estabilidad Pp | -0.0
+Caja Murcia Protección 2022 Pp | -0.0
+Inversiones Ipson, Sicav S.a. | -0.0
+Caser 2011 Beta Pp | -0.0
+Mutuavalor I, Sicav, S.a. | -0.0
+Europopular Consolidado Ii Pp | -0.0
+Caser Renta 10 Pp | -0.0
+Caixabank Renta Fija Selección Global Estándar Fi | -0.0
+Caser Renta Variable España Ga Pp | -0.0
+Mirabaud Short Term España Fi | -0.0
+Sabadell Fondtesoro Largo Plazo Fi | -0.0
+Pastor Fijo Pp | -0.0
+Dar, Sicav, S.a. | -0.0
+Sabadell Commodities Pyme Fi | -0.0
+Quinto Real Management, Sicav, S.a. | -0.0
+Caixabank Rentas Abril 2020 Extra Fi | -0.0
+Bbva Fusión Corto Plazo Vii Fi | -0.0
+Bsg Prometeo Fi | -0.0
+Asaja España Dinámico Pp | -0.0
+Acueducto Rentabilidad Plus Pp | -0.0
+Caser Depósitos 35 Pp | -0.0
+Unifond Renta Fija Corto Plazo A Fi | -0.0
+Mediolanum Small & Mid Caps España S Fi | -0.0
+Sentani De Valores Mobiliarios, Sicav, S.a. | -0.0
+Caja Segovia Enero 2013 Pp | -0.0
+Bbva Rendimiento Europa Vi Fi | -0.0
+Alcestis Investment, Sicav, S.a. | -0.0
+Plan Evo Renta Fija Cp Pp | -0.0
+Caixabank Rentas Abril 2020 Estándar Fidelidad Fi | -0.0
+Pbp Ahorro Corto Plazo A Fi | -0.0
+Mapfre Renta Epsv | -0.0
+Kutxabank Garantizado Bolsa 2021 (2) Fi | -0.0
+Kutxabank Rentas Octubre 2020 Fi | -0.0
+Abanca Renta Fija Corto Plazo Pp | -0.0
+Kutxabank Renta Fija Corto Fi | -0.0
+Bs Plan 15 Pp | -0.0
+Unifond Renta Fija Largo Plazo A Fi | -0.0
+Pbp Bonos Flotantes A Fi | -0.0
+Bbva Bonos Internacional Flexible 0-3 A Fi | -0.0
+Bk Variable España Pp | -0.0
+Anymian Capital, Sicav, S.a. | -0.0
+Bancorreos Pp | -0.0
+Anter 99, Sicav S.a. | -0.0
+Mundiplan Moderado Pp | -0.0
+Uniplan Iv Pp | -0.0
+Ubs Valor P Fi | -0.0
+Caixabank Rentas Abril 2020 Plus Fi | -0.0
+Acueducto Alta Rentabilidad Uno Pp | -0.0
+Caser Enero 2013 Pp | -0.0
+Unifond Bolsa Garantizado 2020-i Fi | -0.0
+Ibercaja Pensión Solidez 40 Pp | -0.0
+Monetario Epsv | -0.0
+Fongrum Valor Fi | -0.0
+Mapfre Renta Pp | -0.0
+Lafayette Global Fixed Income,sicav,s.a. | -0.0
+Bbva Fusión Corto Plazo Fi | -0.0
+Caser Ard Premier Pp | -0.0
+Bankia Mixto Dividendos Universal Fi | -0.0
+Imantia Fondepósito D Fi | -0.0
+Acueducto Capital Protegido Pp | -0.0
+Caser Futuro Protegido Pp | -0.0
+Eurovalor Patrimonio Fi | -0.0
+March Rendimiento Fi | -0.0
+Caser Capital Protegido Pp | -0.0
+Kutxabank Plus 5 Pp | -0.0
+Plan Pensión Creciente Pp | -0.0
+Caser 2010 Alfa Pp | -0.0
+Caser 5-ibex Pp | -0.0
+Mediolanum Real Estate Global E-b Fi | -0.0
+Bs Plan Monetario Plus 2 Pp | -0.0
+Allianz Gestión Total Pp | -0.0
+Caixabank Rentas Abril 2020 Estándar Fi | -0.0
+Kutxabank Monetario Pp | -0.0
+Pando 2000 Sicav Sa | -0.0
+Multiadvisor Gestión Cfg 1855 Renta Fija Mixta Internacional Fi | -0.0
+Atl Capital Corto Plazo A Fi | -0.0
+Mundiplan óptimo Pp | -0.0
+Mundiplan Monetario Pp | -0.0
+Sabadell Selección Alternativa Cartera Fi | -0.0
+Positive Returns, Sicav, S.a. | -0.0
+Cajaca Inversiones, Sicav, S.a. | -0.0
+Fineco 5 Pp | -0.0
+Mediolanum Crecimiento L-b Fi | -0.0
+Caser Julio 2013 Pp | -0.0
+Caixabank Selección Retorno Absoluto Platinum Fi | -0.0
+Caser 330 Renta Fija Pp | -0.0
+Bs Rendimiento Fijo 29 Pp | -0.0
+Bbva Bonos Gobiernos Fi | -0.0
+Caser 3x3 Pp | -0.0
+Caixabank Dp Abril 2021 Estándar Fi | -0.0
+Bbva Fusión Corto Plazo V Fi | -0.0
+Kutxabank Bono Estándar Fi | -0.0
+Bbva Fusión Corto Plazo Iii Fi | -0.0
+Ameinon Renta Fija Fi | -0.0
+Imantia Fondepósito Minorista Fi | -0.0
+Edm Renta Fi | -0.0
+Cajagranada Protección 2022 Pp | -0.0
+Bbva Renta Variable Ibex Pp | -0.0
+Burgos Bonificado Pp | -0.0
+Valdarbi Invest, Sicav, Sa | -0.0
+Inversalinas, Sicav S.a. | -0.0
+Caja Laboral Monetario Pp | -0.0
+Bs Rendimiento Fijo 17 Pp | -0.0
+Caser Masxnada Valor En Alza Pp | -0.0
+Sabadell Euroacción Cartera Fi | -0.0
+Caixabank Gestión 25 Platinum Fi | -0.0
+Bbva Oportunidad Acciones Iv Fi | -0.0
+Caser 2012 Pp | -0.0
+Seci Renta Fija Pp | -0.0
+Cx Oportunitat Borsa Fi | -0.0
+Sabadell Garantía Extra 22 Fi | -0.0
+Unifond Cartera Defensiva Fi | -0.0
+Agroupa Pp | -0.0
+March New Emerging World Fi | -0.0
+Amex Pensiones I Pp | -0.0
+March Pensión Renta Fija Pp | -0.0
+Gesconsult Ahorro Pensiones Pp | -0.0
+Rga-seguridad 2009 Pp | -0.0
+Kutxabank Tránsito Fi | -0.0
+Liberbank Renta Variable España A Fi | -0.0
+Eneas Alta Rentabilidad Depósito Pp | -0.0
+Db Protección Flexible 85 Pp | -0.0
+Europopular Renta Pp | -0.0
+Welzia Ahorro 5 Fi | -0.0
+Burgos Fuerza Pp | -0.0
+Banca Pueyo Deuda Pública Pp | -0.0
+Caixabank Evolución Estándar Fi | -0.0
+Renta 4 Deuda Pública Pp | -0.0
+Universum Capital, Sicav S.a. | -0.0
+Quadriga Global Allocation Sicav, S.a. | -0.0
+Generali Renta Fija Pp | -0.0
+Cartera Smart Gestion Sicav,s.a. | -0.0
+Bbva Retorno Absoluto Fi | -0.0
+Ibercaja Capital Garantizado 3 Fi | -0.0
+Rioja Plan De Depósito Pp | -0.0
+Abante Renta Fija Corto Plazo Fi | -0.0
+Sa Nostra Rf Corto Plazo Pp | -0.0
+Generali Renta Fija Corto Plazo Pp | -0.0
+Plancaixa Invest 16 Pp | -0.0
+Caser Ard Alfa Pp | -0.0
+Mundiplan Renta Fija Pp | -0.0
+Bankia Garantizado Bolsa 5 Fi | -0.0
+Egeria Global Y Fi | -0.0
+Duero Protección Total X Pp | -0.0
+Dp Bolsa Española A Fi | -0.0
+Círculo 2021 Pp | -0.0
+Naranja Renta Fija Europea Pp | -0.0
+Cotrel Pp | -0.0
+Caser Protección 2013 Pp | -0.0
+Catalana Occidente Renta Fija Cp Fi | -0.0
+Norpensión Renta Variable Ibex Epsv | -0.0
+Omega Global Fund I Fi | -0.0
+Círculo Tranquilidad Pp | -0.0
+Caixabank Valor 100/50 Ibex Fi | -0.0
+Futurespaña Pp | -0.0
+Europopular Capital Pp | -0.0
+Santander 100 Valor Global 2 Fi | -0.0
+Bs Rendimiento Fijo 31 Pp | -0.0
+Plancaixa Efecto 10 Pp | -0.0
+Fondmapfre Renta Corto Fi | -0.0
+Laboral Kutxa Ahorro Fi | -0.0
+Caixabank Ahorro Premium Fi | -0.0
+Liberbank Tranquilidad Pp | -0.0
+Bbva Bonos Cp Fi | -0.0
+Kutxabank Plus 3 Pp | -0.0
+Bs Rendimiento Fijo 28 Pp | -0.0
+Aegón Inversión Mv Fi | -0.0
+March Europa A Fi | -0.0
+Futurespaña Estabilidad Xi Pp | -0.0
+Unnim Pensions G9 Pp | -0.0
+Bbva Bonos Corporativos Duración Cubierta Fi | -0.0
+Blue Note, Sicav S.a. | -0.0
+Rga-dinero Pp | -0.0
+Duero Acción Europa Pp | -0.0
+Generali Renta Fija Corto Plazo Epsv | -0.0
+Sabadell Euroacción Premier Fi | -0.0
+Bs Rendimiento Fijo 24 Pp | -0.0
+Plan Rendimiento Fijo 1001 Pp | -0.0
+F-100 Epsv | -0.0
+Bbva Fusión Corto Plazo Vi Fi | -0.0
+Bs Rendimiento Fijo 30 Pp | -0.0
+Caixabank Ahorro Plus Fi | -0.0
+Futurespaña Estabilidad Viii Pp | -0.0
+Caixabank Selección Retorno Absoluto Plus Fi | -0.0
+Azsevi Inversiones, Sicav S.a. | -0.0
+Bs Plan Monetario Pp | -0.0
+Duero Tranquilidad Pp | -0.0
+Plancaixa Proyección 2021 Pp | -0.0
+Ibercaja Pensión Ii Pp | -0.0
+Caixabank Gestión 25 Plus Fi | -0.0
+Mercor Global Sicav S.a. | -0.0
+Caixabank Selección Retorno Absoluto Estándar Fi | -0.0
+Bbva Oportunidad Acciones V Fi | -0.0
+Renta 4 Multigestión Atlántida Renta Fija Mixta Internacional Fi | -0.0
+Rga-seguridad 2010 Pp | -0.0
+Caser Valor En Alza 2027 Pp | -0.0
+Sabadell Selección Alternativa Pyme Fi | -0.0
+Europopular Ahorro Consolidado Pp | -0.0
+Eurovalor Garantizado Acciones Fi | -0.0
+Caser 2020 Pp | -0.0
+Fondomutua Moderado Pp | -0.0
+Liberbank Multi Manager A Fi | -0.0
+Cajamar Dinero Pp | -0.0
+Sabadell Selección Alternativa Plus Fi | -0.0
+Caixabank Ahorro Estándar Fi | -0.0
+Rga Seguridad 7 Pp | -0.0
+Santalucía Vp Mixto Prudente Epsv | -0.0
+Bobby Jean Sicav Sa | -0.0
+Santander Responsabilidad Solidario A Fi | -0.0
+Cajamar Mixto Ii Pp | -0.0
+Ibercaja Pensión Bolsa Euro Pp | -0.0
+Bbva Bonos Core Bp Fi | -0.0
+Ccm Renta Fija Pp | -0.0
+Bk Dinero Epsv | -0.0
+Rga Seguridad 2022 Pp | -0.0
+Plan Rendimiento Fijo Mv7 Pp | -0.0
+Fineco Euro Cartera, Sicav, S.a. | -0.0
+March Patrimonio Defensivo Fi | -0.0
+Plancaixa Protección 10 Pp | -0.0
+Eqmc B Fil | -0.0
+Bankia Renta Fija 18 Meses Universal Fi | -0.0
+Duero Protección Total V Pp | -0.0
+Renta 4 Prosper Epsv | -0.0
+Bs Rendimiento Fijo 26 Pp | -0.0
+Sa Nostra Protección 2 Pp | -0.0
+Europopular Ahorro 2020 Pp | -0.0
+Plancaixa Privada Monetario Pp | -0.0
+Europopular Recompensa Plus 10 Pp | -0.0
+Fonditel Smart Beta B Fi | -0.0
+Deutsche Bank Money Market Pp | -0.0
+Bk Renta Fija Corto Plazo Pp | -0.0
+Aegón Inversión Mf Fi | -0.0
+Plancaixa Protección 11 Pp | -0.0
+Ariete Patrimonial, Sicav, S.a. | -0.0
+Bs Rendimiento Fijo 15 Pp | -0.0
+Fondemar De Inversiones Fi | -0.0
+Atl Capital Cartera Dinámica I Fi | -0.0
+Unfargui Financiera, Sociedad De Inversion Capital Variable, S.a. | -0.0
+Liberbank Global A Fi | -0.0
+Salmon Mundi Capital Sicav Sa | -0.0
+Liberbank Estabilidad Pp | -0.0
+Evo Fondo Inteligente Renta Fija Corto Plazo Fi | -0.0
+Abanca Variable Pp | -0.0
+Santalucía Vp Gestión Decidido Epsv | -0.0
+Futurespaña Renta Variable Pp | -0.0
+Eurovalor Particulares Volumen I Fi | -0.0
+Unnim Pensions G6 Pp | -0.0
+Sabadell Selección Alternativa Base Fi | -0.0
+Bbva Bonos Internacional Flexible Euro Fi | -0.0
+Duero Protección Total Ii Pp | -0.0
+Mediolanum Crecimiento S-b Fi | -0.0
+Penedès Pensió Creixent Pp | -0.0
+Rga-seguridad 2021 Iii Pp | -0.0
+Value Tree Black Sicav Sa | -0.0
+Striker Capital Sicav Sa | -0.0
+Tb Siglo Xxi Inversiones, Sicav S.a. | -0.0
+Eurovalor Estabilidad Fi | -0.0
+Unifond Bolsa 2020-v Fi | -0.0
+Agroespaña Pp | -0.0
+Bbva Bonos Valor Relativo Fi | -0.0
+Penedès Pensió Creixent 10 (vi) Pp | -0.0
+Nb Promoción I Pp | -0.0
+Gestión Boutique Yeste Patrimonial Fi | -0.0
+Altair Crecimiento Pensiones Ii Pp | -0.0
+Cabk Ambición Corto Plazo Pp | -0.0
+Bbva Ahorro Garantía Fi | -0.0
+Sierra & Carriles Inversiones Sicav S.a. | -0.0
+Noria Investment&management, Sicav, S.a. | -0.0
+Gpm Gestión Activa Mixto Internacional Fi | -0.0
+Plancaixa Futuro 124 Pp | -0.0
+Caser Confianza 2021 | -0.0
+Círculo Confianza 2021 Pp | -0.0
+Europopular Recompensa Plus 9 Pp | -0.0
+Ingercover, S.a. Sicav | -0.0
+Liberbank Mix-renta Fija A Fi | -0.0
+Nervion Invest, S.a., Sicav | -0.0
+Deutsche Individual Cupón Premium Db Pp | -0.0
+Duero Pp | -0.0
+New Deal Inversiones, Sicav S.a. | -0.0
+Duero Acción Global Pp | -0.0
+Mediolanum Small & Mid Caps España E Fi | -0.0
+Unifond Mixto Renta Fija A Fi | -0.0
+March Pensión 2016 Protegido Pp | -0.0
+Bk Bolsa Epsv | -0.0
+Fonditel Smart Beta C Fi | -0.0
+Uniplan Protección 2021 Pp | -0.0
+Bankinter Gestión Abierta R Fi | -0.0
+Caser Ganador 2021 Pp | -0.0
+Bk Inversión Monetario Pp | -0.0
+Rga-seguridad 2021 Pp | -0.0
+Sidiclear Sicav Sa | -0.0
+Mediolanum Real Estate Global L-b Fi | -0.0
+Europopular Recompensa Plus 8 Pp | -0.0
+Caja Laboral Patrimonio Fi | -0.0
+Liberty Euro Renta Fi | -0.0
+Plancaixa 5 Plus Pp | -0.0
+Santander Rendimiento Cartera Fi | -0.0
+Caixa Tarragona Garantía 2020 Pp | -0.0
+Sa Nostra Protección 3 Pp | -0.0
+Cx Oportunitat Borsa 2 Fi | -0.0
+Belona Inversiones Financieras, Sil | -0.0
+Gpm Gestión Activa International Capital Fi | -0.0
+Caja Laboral Rendimiento Fijo V Pp | -0.0
+Fondomutua Conservador Pp | -0.0
+Duero Agrario Castilla León Pp | -0.0
+Duero Protección Total Iv Pp | -0.0
+Bbva Bonos Plus Fi | -0.0
+Abante Rentabilidad Absoluta A Fi | -0.0
+3 Pir Director Pp | -0.0
+Espinosa Partners Inversiones Fi | -0.0
+Profesionales De Sanitas Pp | -0.0
+Rga-gestión Activa Pp | -0.0
+Cai Pensiones Protección 6-2014 Pp | -0.0
+Santalucía Retorno Absoluto B Fi | -0.0
+Rsr Global Fi | -0.0
+Inversiones Focalizadas, Sicav, S.a. | -0.0
+Sabadell Euroacción Plus Fi | -0.0
+Fonditel Smart Beta A Fi | -0.0
+Caser Estabilidad 2021 Pp | -0.0
+Santander Pb Cartera 0-20 Fi | -0.0
+Unifond 2021-x Fi | -0.0
+Cs Director Flexible Fi | -0.0
+Kalahari Fi | -0.0
+Unifond Conservador Fi | -0.0
+Brinvolnuk Tyro, Sicav, S.a. | -0.0
+Agropecuario Castilla Y León Pp | -0.0
+Trea Cajamar Renta Variable Europa Fi | -0.0
+Merchbanc Pp | -0.0
+Tempus 30-75 Pp | -0.0
+Salimar Investments, Sicav, S.a. | -0.0
+Juferuca Sicav S.a. | -0.0
+Gestión Value A Fi | -0.0
+Atl Capital Cartera Dinámica A Fi | -0.0
+Allianz España Pp | -0.0
+Plan Cr Mixto Fijo Pp | -0.0
+Mediolanum Real Estate Global S-b Fi | -0.0
+Bora Capital, Sicav S.a. | -0.0
+Durbana I, Sicav S.a. | -0.0
+Euripides, Sicav, S.a. | -0.0
+Okavango Pp | -0.0
+Cobas Value, Sicav Sa | -0.0
+Uniplan Iii Pp | -0.0
+Arquiplan Conservador Pp | -0.0
+Merian Global Equity Absolute Return Fund A Eur Hedged Acc | -0.0
+Protegido Renta Cr 2017 Pp | -0.0
+Abante Rentabilidad Absoluta I Fi | -0.0
+Relko Inversiones, Sicav, S.a. | -0.0
+Inversiones Gem 2000, Sicav, S.a. | -0.0
+Sabadell España Dividendo Cartera Fi | -0.0
+Adler Fil | -0.0
+Ursus-3c Opportunities Growth, Sicav, S.a. | -0.0
+Penedès Pensió Protecció 2022 Pp | -0.0
+Sabadell Euroacción Pyme Fi | -0.0
+Ibercaja Protección 2013 Pp | -0.0
+Dorma Valores, Sicav, S.a. | -0.0
+Bankinter Cartera Privada Defensiva B Fi | -0.0
+Fortaleza Pp | -0.0
+Fondgeskoa Fi | -0.0
+Renta 4 Multigestión Quality Capital Selection Fund Fi | -0.0
+Gvc Gaesco Renta Valor B Fi | -0.0
+Caja Murcia Protección 2021 Ii Pp | -0.0
+Caja Murcia Protección 2021 Pp | -0.0
+Renta 4 Multigestión Atlántida Global Fi | -0.0
+Caser 130-2021 Pp | -0.0
+Seci Bolsa Activo Pp | -0.0
+Uniplan Protección 2020 Pp | -0.0
+Plan Cr Corto Plazo Pp | -0.0
+Caser Julio 2021 Pp Acc | -0.0
+Novaplan 33 Pp | -0.0
+Santander 100 Valor Creciente 2 Fi | -0.0
+Merchrenta Fi | -0.0
+Canariplan 30% Pp | -0.0
+Bancajapensión Protegido 04/2021 Pp | -0.0
+Nr Fondo 1 Fi | -0.0
+Ibercaja Pensión Protección 2012 Pp | -0.0
+Plancaixa Doble Opción Pp | -0.0
+Ibercaja Pensión Solidez 2012 Pp | -0.0
+I2 Desarrollo Sostenible Isr Fi | -0.0
+Nb Fondtesoro Largo Plazo Fi | -0.0
+Kutxabank 0/100 Carteras Fi | -0.0
+Unnim Tranquilitat 20 Pp | -0.0
+Abanca Renta Variable España Fi | -0.0
+Attitude Global Fil | -0.0
+Laboral Kutxa Bolsa Fi | -0.0
+Valor Global Fi | -0.0
+Plus Ultra Dinámico Pp | -0.0
+C.r. Torrent Pp | -0.0
+Plancaixa 5 Flash Pp | -0.0
+Zurich Suiza Pp | -0.0
+Bk Variable Asia Epsv | -0.0
+Lora De Inversiones, Sicav, S.a. | -0.0
+Bankia Bonos Pp | -0.0
+Fondo Gre Fil | -0.0
+Aralar De Inversiones, S.a., Sicav | -0.0
+Quality Commodities Fi | -0.0
+Gvc Pp | -0.0
+Ubs Selección Conservador Pp | -0.0
+Nb Bolsa Indice 65 Fi | -0.0
+Sofercan Inversiones, Sicav, S.a. | -0.0
+Sabadell Selección Hedge Top Iiciicil | -0.0
+Pelayo Vida Plan Evolución Pp | -0.0
+Plancaixa 4 Plus Pp | -0.0
+Plancaixa 4 Plus Ii Pp | -0.0
+Okavango Delta A Fi | -0.0
+Mutuafondo Corto Plazo D Fi | -0.0
+Estudios Financieros De Valores, Sicav S.a. | -0.0
+Bankia Renta Plus Pp | -0.0
+ábaco Renta Fija Mixta Global R Fi | -0.0
+Mutuafondo Dinero A Fi | -0.0
+Aberdeen Standard Sicav I - Emerging Markets Smaller Companies Fund A Acc Usd | -0.0
+Galdo 1924, Sicav, S.a. | -0.0
+Duero Equilibrio Pp | -0.0
+Santander Rendimiento C Fi | -0.0
+Bankinter Capital 4 Fi | -0.0
+Sabadell España Dividendo Plus Fi | -0.0
+Caixabank Bolsa All Caps España Esándar Fi | -0.0
+Adaia Inversiones, Sicav S.a. | -0.0
+Caser Magallanes Pp | -0.0
+Bankinter Renta Variable Euro R Fi | -0.0
+Magallanes Acciones Europeas Pp | -0.0
+Seci Pensiones Pp | -0.0
+Caser Gestión Valor Pp | -0.0
+Imantia Rv Iberia Fi | -0.0
+Syriane Capital Sicav, Sa | -0.0
+Okavango Delta I Fi | -0.0
+Euro 21 De Inversiones, Sicav, S.a. | -0.0
+Cajamar Renta Variable Pp | -0.0
+Altair Renta Fija Defensiva A Fi | -0.0
+Aegón I Pp | -0.0
+Futurespaña 30 Pp | -0.0
+Plancaixa 130 Pp | -0.0
+Rsr Rv Internacional Fi | -0.0
+Rural Seleccion Conservadora Fi | -0.0
+Santander Deuda Corto Plazo I Fi | -0.0
+Multiadvisor Gestión Smart Gestión Estrategia Global Fi | -0.0
+Gpm Gestión Activa Retorno Abosluto Fi | -0.0
+Bankinter Renta Fija Largo Plazo R Fi | -0.0
+Unifond Fondtesoro Largo Plazo A Fi | -0.0
+Sabadell Commodities Base Fi | -0.0
+Rentabilidad Objetivo Cr 2017 Pp | -0.0
+Santalucía Polar Equilibrado Pp | -0.0
+Atl Capital Quant 5 Fi | -0.0
+Sa Nostra Magallanes Rv Europa Pp | -0.0
+Santalucía Vp Gestión Decidido Pp | -0.0
+Amade Valores, Sicav S.a. | -0.0
+Gesconsult Corto Plazo Fi | -0.0
+Annapurna Fi | -0.0
+Santalucía Fonvalor Euro C Fi | -0.0
+Classic World Financial Solutions, Sicav, S.a. | -0.0
+Fintech Income,sicav,s.a. | -0.0
+Santander Inversión Corto Plazo Fi | -0.0
+Plan Valor Tranquilidad Pp | -0.0
+ábaco Global Value Opportunities R Fi | -0.0
+Eurovalor Conservador Dinámico B Fi | -0.0
+Ibercaja Alpha B Fi | -0.0
+Bankia Renta Fija Euro Cp Universal Fi | -0.0
+Agave Attenuata De Inversiones Sicav S.a. | -0.0
+Bankinter España 2021 Fi | -0.0
+Renta 4 Fondtesoro Corto Plazo Fi | -0.0
+Rentabilidad Objetivo Cr 2021 Pp | -0.0
+Renta 4 Multigestión Fractal Global Fi | -0.0
+Santander Rendimiento B Fi | -0.0
+Madrid Plaza Inversiones Sicav, S.a. | -0.0
+Eurovalor Particulares Volumen A Fi | -0.0
+ábaco Global Value Opportunities B Fi | -0.0
+Ibercaja Alpha A Fi | -0.0
+Bankia Bolsa Española Pp | -0.0
+1 Kessler Global Fi | -0.0
+Smart Social, Sicav, S.a. | -0.0
+Sabadell España Bolsa Base Fi | -0.0
+March Bonos Pp | -0.0
+Santander Renta Fija 0-3 Pp | -0.0
+Rural Mixto 25 Fi | -0.0
+Mutuafondo Dinero D Fi | -0.0
+Eurovalor Fondepósito Plus Fi | -0.0
+Esfera Darwin Fi | -0.0
+Belgravia Delta Fi | -0.0
+Santander Deuda Corto Plazo C Fi | -0.0
+Santander Rendimiento A Fi | -0.0
+Equity International Fi | -0.0
+Fondespaña-duero Garantizado Bolsa Iv/2020 Fi | -0.0
+Camera Capital, Sicav S.a. | -0.0
+Bbva Bolsa Fi | -0.0
+Gvc Gaesco Fondo Fondtesoro Corto Plazo Fi | -0.0
+Trea Cajamar Crecimiento Fi | -0.0
+Dip - Spanish Equities Fund A1 | -0.0
+Eurovalor Empresas Volumen Fi | -0.0
+Sabadell España Bolsa Cartera Fi | -0.0
+Arlanza Inversiones, Sicav, S.a. | -0.0
+Atl Capital Quant 25 Fi | -0.0
+Ibercaja Small Caps B Fi | -0.0
+Sabadell España Bolsa Premier Fi | -0.0
+Intermoney Renta Fija Corto Plazo Fi | -0.0
+Sabadell España Bolsa Plus Fi | -0.0
+Bnp Paribas Renta Fija A Fi | -0.0
+Smart Gestión Flexible Fi | -0.0
+Sabadell España Dividendo Premier Fi | -0.0
+Masira Inversion, Sicav Sa | -0.0
+Santander Deuda Corto Plazo B Fi | -0.0
+Santander Inversión Flexible C Fi | -0.0
+Talentia Inversiones Integrales Sicav Sa | -0.0
+Cs Europe Small & Mid Cap B Fi | -0.0
+Equilibria Investments, Sil, Sa | -0.0
+Bankia Rentabilidad Objetivo Largo Plazo Fi | -0.0
+Santalucía Pardo Decidido Pp | -0.0
+Sabadell España Dividendo Pyme Fi | -0.0
+Elcano Special Situations, Sicav, S. A. | -0.0
+Santander 95 Valor Creciente Plus 2 Fi | -0.0
+Hosife 2002, Sicav S.a. | -0.0
+Bankia Protegido Renta 2021 Pp | -0.0
+Rho Investments, Sil, S.a. | -0.0
+Santander Inversión Flexible A Fi | -0.0
+Gvc Gaesco 1k + Renta Variable A Fi | -0.0
+Rural Renta Fija 3 Estandar Fi | -0.0
+Iberian Value Fi | -0.0
+Romero Inversiones Mobiliarias, Sicav S.a. | -0.0
+Unifond Renta Variable España A Fi | -0.0
+Santander Deuda Corto Plazo A Fi | -0.0
+Munda Valor Investments, Sicav, S.a. | -0.0
+Cultura Economica Sicav, S.a. | -0.0
+Duero Inversión Pp | -0.0
+Santander Retorno Absoluto Fi | -0.0
+Fidentiis Spanish Banking Opportunities B Fil | -0.0
+Rural Renta Fija Internacional Fi | -0.0
+Rural Mixto 20 Fi | -0.0
+Santander Mi Plan Ahorro Epsv | -0.0
+Santander Pb Inversión Global Fi | -0.0
+Rural Garantizado Europa 20 Fi | -0.01
+Santander Mi Plan Ahorro Pp | -0.01
+Marzal Inversiones, Sicav S.a. | -0.01
+Bankia Protegido Renta 2020 Pp | -0.01
+Bbva Bonos Duración Flexible Fi | -0.01
+Azvalor Managers Fi | -0.01
+Mutuafondo Mixto Tendencias A Fi | -0.01
+Gescooperativo Multiestrategias Alternativas Fi | -0.01
+Rural Mixto 50 Fi | -0.01
+Financiera Ponferrada, S.a., Sicav | -0.01
+Bankinter Eurostoxx Inverso Fi | -0.01
+Bankinter 95 Multisector 2020 Fi | -0.01
+Bestinver Hedge Value Fund Fil | -0.01
+Cobas Renta Fi | -0.01
+Azvalor Capital Fi | -0.01
+Gam Multistock - Absolute Return Europe Equity Eur E | -0.01
+Bankinter Renta Fija Corto Plazo R Fi | -0.01
+Bbva Rentabilidad Ahorro Corto Plazo Fi | -0.01
+Fonbusa Fi | -0.01
+Bankinter Renta Variable Española Garantizado Fi | -0.01
+Anoia Futur Pp | -0.01
+Asturiana De Valores, S.a., Sicav | -0.01
+Trea Iberia Equity A Fi | -0.01
+Morgan Stanley Investment Funds - Emerging Markets Small Cap Equity Fund A | -0.01
+Morgan Stanley Investment Funds - Emerging Markets Small Cap Equity Fund A | -0.01
+Rural Mixto 75 Fi | -0.01
+Caixa Enginyers Fondtesoro Curt Termini, Fi | -0.01
+Bankinter Capital 3 Fi | -0.01
+Rural Bonos 2 Años Estándar Fi | -0.01
+Fon Fineco Base Fi | -0.01
+Mediolanum Fondcuenta S Fi | -0.01
+Intervalor, S.a., Sicav | -0.01
+Bankinter Ahorro Activos Euro R Fi | -0.01
+Dws Ahorro Fi | -0.01
+Gescooperativo Deuda Soberana Euro Fi | -0.01
+Unifond Renta Fija Euro A Fi | -0.01
+Horos Value Internacional Fi | -0.01
+Santander Multiestrategia Iiciicil | -0.01
+Rural Renta Fija 1 Estandar Fi | -0.01
+Bankinter Capital 1 Fi | -0.02
+Bankinter Capital 2 Fi | -0.02
+Rural Renta Variable España Estándar Fi | -0.02
+Santander Small Caps España Cartera Fi | -0.02
+Ejecutivos Globalfond Fi | -0.02
+Eikon 99, Sicav S.a. | -0.02
+Bbva Fondtesoro Corto Plazo Fi | -0.02
+Magallanes Value Investors Ucits Iberian Equity R | -0.02
+Horos Value Iberia Fi | -0.02
+Azvalor Internacional Fi | -0.02
+Pbp Patrimonio Corto Plazo Fi | -0.02
+Azvalor Global Value Pp | -0.02
+Bbva Bolsa Europa Finanzas Fi | -0.02
+Bankinter España 2020 Ii Garantizado Fi | -0.02
+Vontobel Fund - Emerging Markets Equity H (hedged) Eur | -0.02
+Merchbanc Fondtesoro Corto Plazo Fi | -0.03
+Eurovalor Ahorro Euro B Fi | -0.03
+Eurovalor Ahorro Euro A Fi | -0.03
+Azvalor Consolidación Pp | -0.03
+Bankia Bolsa Española Universal Fi | -0.03
+Ibercaja Fondtesoro Corto Plazo Fi | -0.03
+Quality Global Fi | -0.03
+Cobas Global Pp | -0.03
+Bankia Fonduxo Universal Fi | -0.03
+Mg Lierde Plan De Pensiones Bolsa Pp | -0.03
+Azvalor Iberia Fi | -0.03
+Cobas Iberia Fi | -0.03
+Cobas Selección Fi | -0.03
+Esfera Team Trading Fi | -0.03
+Fidefondo Plus Fi | -0.03
+Bankinter España 2020 Garantizado Fi | -0.04
+Fidefondo Base Fi | -0.04
+Bankinter Capital Plus Fi | -0.04
+Rural Ahorro Plus Estandar Fi | -0.04
+Bbva Bolsa Plus Fi | -0.04
+Cobas Internacional Fi | -0.05
+Cobas Grandes Compañías Fi | -0.05
+Amundi Corto Plazo Fi | -0.05
+Cobas Concentrados Fil | -0.06
+Rural Rendimiento Fi | -0.06
+Brightgate Absolute Return I Fil | -0.08
+Brightgate Absolute Return A Fil | -0.1
+Mediolanum Renta Variable Pp | -0.18
+Equinox Fil | -4.94

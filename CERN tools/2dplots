@@ -1,0 +1,771 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 15 15:14:19 2020
+
+@author: dbjorkma
+"""
+
+import matplotlib.pyplot as plt
+from USRBIN import USRBIN
+from matplotlib.colors import LogNorm
+import numpy as np
+from matplotlib import cm
+import matplotlib.gridspec as gridspec
+import math
+
+path = r"\\cernbox-smb.cern.ch\eos\user\d\dbjorkma\Documents\2dplots"
+
+#files = ["ir1_1h", "ir1_1d", "ir1_1w", "ir1_1m", "ir1_2m" , "ir1_4m", "ir1_6m", "ir1_1y", "ir1_1p5y"]
+
+points = ["ir1", "ir5"]
+#points = ["ir1"]
+cooldowns = ["1h" , "1d", "1w", "1m", "2m" , "4m", "6m", "1y", "1.5y"]
+cooldownLabels = ["1 hour", "1 day", "1 week", "1 month", "2 months", "4 months", "6 months", "1 year", "1.5 year"]
+
+#cooldowns = ["4m"]
+beamaxis = 15
+x1meter = 20
+
+
+
+cmap = cm.get_cmap('jet', 21)   
+
+#xticks = [5000,10000,15000,20000, 25000]
+xticks = list(range(0, 26000 + 10000,1000))
+xlabels = [str(item/100)[:-2] for item in xticks]
+
+yticks = list(range(-300, 300,100))
+ylabels = [str(item/100)[:-2] for item in yticks]
+
+allYes1 = []
+allYes2 = []
+
+vmin = 1E-3
+vmax = 1E4
+
+xmin = 2090
+xmax = 26890
+
+ymin = -290
+ymax = 220
+
+gs = gridspec.GridSpec(8, 1)
+
+for point in points:
+    for i, cd in enumerate(cooldowns):
+        name = point + "_" + cd
+
+            
+        fluka = USRBIN(name, path, 0.0036)
+        fluka.loadGeometryFile( "horizontal.dat")
+        
+        
+        fig = plt.figure()
+        ax = plt.subplot(gs[0:5, 0])
+
+        #ax = plt.subplot(111)
+        
+        image = fluka.cube[0:,beamaxis, 0:]
+        plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.6, 1)
+        
+        #cbar = plt.colorbar()
+        #cbar.set_label('Dose rate [uSv/h]', fontsize = 16)
+    
+        #plt.ylim(fluka.info["xmin"][0] + fluka.info["xwidth"][0],210)
+
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("x [m from machine axis]", fontsize = 14)
+        plt.xlabel("z [m from IP]", fontsize = 22)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+
+
+        yes = fluka.cube[x1meter, beamaxis, 0:]
+        
+        if point == "ir1":
+            allYes1.append(yes)
+        else:
+            allYes2.append(yes)
+        
+ 
+        plt.title("LHC Point {} for {} cool down after Run 3".format(point[2], cooldownLabels[i] ), fontsize = 24)
+        plt.gcf().subplots_adjust(bottom=0.1)
+        
+        ax = plt.subplot(gs[7, 0])
+        
+        img = plt.pcolor(fluka.X, fluka.Y,image,  shading='auto' ,norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        img.set_visible(False)
+        plt.colorbar(orientation="horizontal", cax=ax)
+        #cbar = plt.colorbar()
+        #cbar.set_label('Dose rate [uSv/h]', fontsize = 16)
+        plt.gcf().subplots_adjust(bottom=0.3)
+        plt.xlabel('Residual ambient dose equivalent rates [uSv/h]', fontsize = 16)
+        plt.xticks(fontsize=20)        
+        
+
+        
+        #plt.gcf().subplots_adjust(bottom=0.2)
+        xlength = 25
+        fig.set_size_inches(xlength, xlength/6)
+        plt.show()
+        try:
+            plt.savefig(name + ".pdf",  bbox_inches = 'tight', pad_inches = 0.1)
+        except:
+            pass;
+    #plt.close('all')
+
+
+
+
+
+colormap = cm.rainbow(np.linspace(0, 1, len(allYes1)))
+
+for point in points:
+    
+    if point == "ir1":
+        allYes = allYes1
+    else:
+        allYes = allYes2
+    
+    fig = plt.figure()
+    
+    ax = plt.subplot(111)
+    
+    for i, yes in enumerate(allYes):
+        plt.plot(fluka.xcoordinates, yes, label = cooldownLabels[i] , color = colormap[len(colormap) - 1 - i])
+    
+    plt.legend(prop={'size': 16})
+    ax.set_yscale('log')
+    
+    plt.xlabel("z [cm from IP]", fontsize = 18)
+    plt.ylabel("Residual ambient dose equivalent rate [uSv/h]", fontsize = 16)
+    
+    plt.grid(linewidth = 0.3)
+    plt.title("Point {} residual Dose Rates at 1 meter from machine axis".format(point[2]), fontsize = 18 )
+    
+    plt.ylim(0.1, max(allYes[0])*1.2)
+    
+    xlength = 16
+    fig.set_size_inches(xlength, xlength/1.618)
+    plt.show()
+    try:
+        plt.savefig("{}_DoseRateSummery.pdf".format(point))
+    except:
+        pass;
+
+
+
+
+
+
+
+
+point1 =  USRBIN("ir1_1w", path, 0.0036)
+point1.loadGeometryFile( "horizontal.dat")
+
+point5 =  USRBIN("ir5_1w", path, 0.0036)
+#point5.loadGeometryFile( "horizontal.dat")
+
+yes1 = point1.cube[x1meter, beamaxis, 0:]
+yes2 = point5.cube[x1meter, beamaxis, 0:]
+
+
+minval = 1
+maxval = max(max(yes1), max(yes2))*1.1
+
+
+
+
+gs = gridspec.GridSpec(8, 1)
+fig = plt.figure()
+
+ax = plt.subplot(gs[0:5, 0])
+
+
+ax2 = ax.twinx()
+
+ax2 = point1.drawGeo(ax2,0.5,0.4)
+ax2.set_ylim(-200,200)
+
+ax.plot(point1.xcoordinates, yes1, label = "Point 1", linewidth = 3)
+ax.plot(point5.xcoordinates, yes2, label = "Point 5", linewidth = 3)
+#fluka.drawGeo(ax, 0.6, 1)
+
+
+# legend.get_frame().set_alpha(None)
+# legend.get_frame().set_facecolor((1, 1, 1, 1))
+#rcParams["legend.framealpha"] = 0.8
+#plt.yscale("log")
+ax.grid(linewidth = 0.1)
+ax.set_xticks(xticks)
+ax.set_xticklabels(xlabels)
+# ax.set_yticks(yticks)
+# ax.set_yticklabels(ylabels)
+ax.set_ylabel("Residual ambient dose equivalent rate [uSv/h]", fontsize = 14)
+ax2.set_ylabel("x [m from machine axis]", fontsize = 14)
+#plt.xlabel("z [m from IP]", fontsize = 22)
+ax.set_xlim(xmin,xmax)
+ax.set_ylim(minval,maxval)
+plt.title("Dose rate comparison at 1 meter from machine axis after 1 week cool down", fontsize = 18)
+ax.set_xlim(xmin,xmax)
+ax.tick_params(labelbottom=False)    
+ax2.tick_params(labelbottom=False)    
+
+legend = ax.legend(prop={'size': 20}, facecolor='white' )
+legend.get_frame().set_alpha(1)
+
+# lines_1, labels_1 = ax.get_legend_handles_labels()
+# lines_2, labels_2 = ax2.get_legend_handles_labels()
+# lines = lines_1 + lines_2
+# labels = labels_1 + labels_2
+# legend = ax.legend(lines, labels,  prop={'size': 18}, facecolor='white')
+# legend.get_frame().set_alpha(None)
+# legend.get_frame().set_facecolor((1, 1, 1, 1))
+
+
+# legend.BoxFace.ColorType='truecoloralpha'
+# legend.BoxFace.ColorData= [1, 1, 1, 1]
+
+ax = plt.subplot(gs[5:, 0])
+plt.plot(point1.xcoordinates, yes1/yes2, label = "Point 1/Point 5")
+plt.grid(linewidth = 0.3)
+plt.ylabel("Ratio", fontsize = 18)
+plt.xlabel("z [m from IP]", fontsize = 22)
+ax.set_xticks(xticks)
+ax.set_xticklabels(xlabels)
+plt.axhline(y=1, color='k', linestyle='-')
+plt.ylim(0.1, 6)
+plt.xlim(xmin,xmax)
+plt.legend(prop={'size': 16})
+
+
+
+
+xlength = 16
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("DoseRateComparison.pdf")
+except:
+    pass;
+
+
+
+
+
+
+
+
+cooldowns = ["6m", "1y"]
+zCut = int(15255/10) - 100
+
+for point in points:
+    for cd in cooldowns:
+        ref = USRBIN(point + "_" + cd, path, 0.0036)
+        ref.loadGeometryFile( "horizontal.dat")
+        vac = USRBIN(point + "_vm_" + cd, path, 0.0036)
+      
+        gs = gridspec.GridSpec(8, 1)
+        fig = plt.figure()
+        ax = plt.subplot(gs[0:5, 0])
+        
+        image = np.zeros([ref.cube.shape[0],ref.cube.shape[2]])
+        image[0:, zCut:] = ref.cube[0:,beamaxis, zCut:]
+        image[0:, :zCut] = vac.cube[0:,beamaxis, :zCut]
+        
+        
+        #yes = image[x1meter, 0:]
+        
+        plt.pcolor(ref.X, ref.Y,image, norm=LogNorm(vmin=0.01, vmax=vmax) ,cmap = cmap)
+        ref.drawGeo(ax, 0.6, 1)
+        plt.title("Point {} QRL dismantling configuration after {} cool down".format(point[2],cd), fontsize = 16)
+        
+        # cbar = plt.colorbar()
+        # cbar.set_label('Dose rate [uSv/h]', fontsize = 16)
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("x [m from machine axis]", fontsize = 10)
+        plt.xlabel("z [m from IP]", fontsize = 14)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+
+
+
+        ax = plt.subplot(gs[7, 0])
+        
+        img = plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        img.set_visible(False)
+        plt.colorbar(orientation="horizontal", cax=ax)
+        plt.gcf().subplots_adjust(bottom=0.3)
+        plt.xlabel('Residual ambient dose equivalent rates [uSv/h]', fontsize = 16)
+        plt.xticks(fontsize=20)           
+
+
+        xlength = 25
+        fig.set_size_inches(xlength, xlength/8)
+        plt.show()
+        try:
+            plt.savefig("{}_DismantledStage1_{}.pdf".format(point,cd))
+        except:
+            pass;
+    
+
+cooldowns = ["1y"]
+zCut = int(15255/10) - 100
+
+for point in points:
+    for cd in cooldowns:
+        ref = USRBIN(point + "_" + cd, path, 0.0036)
+        ref.loadGeometryFile( "horizontal.dat")
+        vac = USRBIN(point + "_hl_" + cd, path, 0.0036)
+      
+        gs = gridspec.GridSpec(8, 1)
+        fig = plt.figure()
+        ax = plt.subplot(gs[0:5, 0])
+        
+
+        image = np.zeros([ref.cube.shape[0],ref.cube.shape[2]])
+        image[0:, zCut:] = ref.cube[0:,beamaxis, zCut:]
+        image[0:, :zCut] = vac.cube[0:,beamaxis, :zCut]
+        
+        
+        plt.pcolor(ref.X, ref.Y,image, norm=LogNorm(vmin=0.01, vmax=vmax) ,cmap = cmap)
+        ref.drawGeo(ax, 0.6, 1)
+        plt.title("Point {} High Lumi installation configuration after {} cool down".format(point[2],cd), fontsize = 18)
+                
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("x [m from machine axis]", fontsize = 10)
+        plt.xlabel("z [m from IP]", fontsize = 14)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+
+
+
+        ax = plt.subplot(gs[7, 0])
+        
+        img = plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        img.set_visible(False)
+        plt.colorbar(orientation="horizontal", cax=ax)
+        plt.gcf().subplots_adjust(bottom=0.3)
+        plt.xlabel('Residual ambient dose equivalent rates [uSv/h]', fontsize = 16)
+        plt.xticks(fontsize=20)  
+
+
+        xlength = 25
+        fig.set_size_inches(xlength, xlength/8)
+        plt.show()
+        try:
+            plt.savefig("{}_HLdismantledStage2_{}.pdf".format(point,cd))
+        except:
+            pass;
+    
+
+
+#------------------------------------------------
+#LL Estimate --------------------------------------------------
+#------------------------------------------------
+
+
+
+
+cooldowns = ["6m" , "1y"]
+vmin = 0.1
+vmax = 1000000
+cmap = cm.get_cmap('jet', math.floor(math.log(vmax/vmin, 10))*3)  
+
+for point in points:
+    for cd in cooldowns:
+        name = point + "_LL_SS_" + cd
+
+        
+        fluka = USRBIN(name, path, 1)
+        fluka.loadGeometryFile( "horizontal.dat")
+        
+        
+        gs = gridspec.GridSpec(8, 1)
+        fig = plt.figure()
+        ax = plt.subplot(gs[0:5, 0])
+        
+        image = fluka.cube[0:,beamaxis, 0:]
+        
+        plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.6, 1)
+        plt.title("LHC Point {} LL estimate for {} cool down after Run 3".format(point[2], cd), fontsize = 18)
+
+    
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("x [m from machine axis]", fontsize = 10)
+        plt.xlabel("z [m from IP]", fontsize = 14)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+            
+        ax = plt.subplot(gs[7, 0])
+        
+        img = plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        img.set_visible(False)
+        plt.colorbar(orientation="horizontal", cax=ax)
+        plt.gcf().subplots_adjust(bottom=0.3)
+        plt.xlabel('Multiples of LL in SS', fontsize = 20)
+        plt.xticks(fontsize=20)          
+        
+
+        xlength = 25
+        fig.set_size_inches(xlength, xlength/8)
+        plt.show()
+        try:
+            plt.savefig(name + ".pdf")
+        except:
+            pass;
+     
+        
+     
+        
+#SA Estimate --------------------------------------------------
+
+files = ["ir1_SA_SS_Co60_3m", "ir1_SA_SS_Co60_1y"]
+cooldowns = ["3m", "1y"]
+vmin = 0.01
+vmax = 10000
+cmap = cm.get_cmap('jet', math.floor(math.log(vmax/vmin, 10))*3) 
+
+for point in points:
+    for cd in cooldowns:
+
+
+        
+        name = point + "_SA_SS_Co60_" + cd
+                    
+        fluka = USRBIN(name, path, 1)
+        fluka.loadGeometryFile( "horizontal.dat")
+        
+        
+        gs = gridspec.GridSpec(8, 1)
+        fig = plt.figure()
+        ax = plt.subplot(gs[0:5, 0])
+        
+        image = fluka.cube[0:,beamaxis, 0:]
+        
+        plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.6, 1)
+        plt.title("LHC Point {} Co-60 SA estimate for {} cool down after Run 3".format(point[2], cd), fontsize = 18)
+
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("x [m from machine axis]", fontsize = 10)
+        plt.xlabel("z [m from IP]", fontsize = 14)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+            
+        ax = plt.subplot(gs[7, 0])
+        
+        img = plt.pcolor(fluka.X, fluka.Y,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        img.set_visible(False)
+        plt.colorbar(orientation="horizontal", cax=ax)
+        plt.gcf().subplots_adjust(bottom=0.3)
+        plt.xlabel('Specific activity in SS [Bq/g]', fontsize = 16)
+        plt.xticks(fontsize=20)     
+        
+
+        xlength = 25
+        fig.set_size_inches(xlength, xlength/8)
+        plt.show()
+        try:
+            plt.savefig(name + ".pdf")
+        except:
+            pass;
+
+
+
+
+
+# #------------------------------------------------
+
+
+def cmtobin(pos):
+    zStart = 2090
+    return int((pos-zStart)/10)
+
+
+
+#files = ["ir1_4m", "ir1_6m", "ir1_1y"]
+Q1 = 2929 #cm
+Q3 = 4690
+D1 = 5.98E3
+TAN = 14160
+tcl4 = 15005
+tcl6 = 21888
+tcl6_ir5 = 22140
+
+q1bin = cmtobin(Q1)
+q3bin = cmtobin(Q3)
+d1bin = cmtobin(D1)
+TANbin = cmtobin(TAN)
+tcl4bin = cmtobin(tcl4)
+tcl6bin = cmtobin(tcl6)
+tcl6_ir5bin = cmtobin(tcl6_ir5)
+
+# fluka4m = USRBIN("ir1_4m", path, 1)
+# fluka4m_ir5 = USRBIN("ir5_4m", path, 1)
+
+# fig = plt.figure()
+# yes = np.zeros(len(fluka4m.depthdeposition))
+# yesFluka = fluka4m.depthdeposition
+
+# val = 1e8
+
+# yes[q1bin] = val
+# yes[q3bin] = val
+# yes[d1bin] = val
+# yes[TANbin] = val
+# yes[tcl4bin] = val
+# yes[tcl6bin] = val
+# yes[tcl6_ir5bin] = val
+
+# plt.plot(fluka4m.xcoordinates, yesFluka, label = "Fluka integrated ir1")
+# plt.plot(fluka4m.xcoordinates, fluka4m_ir5.depthdeposition, label = "Fluka integrated ir5")
+# plt.plot(fluka4m.xcoordinates, yes, label = "Sample points")
+# plt.legend()
+# plt.xlabel("z [cm from IP]", fontsize = 16)
+# plt.show()
+
+
+
+# xmin, xmax = fluka.info["xmin"][0] , fluka.info["xmax"][0] - fluka.info["xwidth"][0]
+# ymin, ymax = fluka.info["ymin"][0] , fluka.info["ymax"][0] - fluka.info["ywidth"][0]
+
+
+
+
+
+
+
+#files = ['ir1_4m','ir1_6m', 'ir1_1y',]
+
+cooldowns = ["4m", "6m", "1y"]
+
+
+geo1 = ["verticalQ1.dat",  "verticalQ3.dat", "verticalD1.dat", "verticalTAN.dat", "verticalTCL4.dat", "verticalTCL6.dat"]
+
+geo2 = ["verticalQ1.dat",  "verticalQ3.dat", "verticalD1.dat", "verticalTAN.dat", "verticalTCL4.dat", "verticalTCL6.dat"]
+
+
+xticks = list(range(-300, 200,100))
+xlabels = [str(item/100)[:-2] for item in xticks]
+
+yticks = list(range(-150, 250,50))
+ylabels = [str(item/100) for item in yticks]
+
+cmap = cm.get_cmap('jet', 21)   
+vmin = 1E-3
+vmax = 1E4
+
+
+for point in points:
+    
+    if point == "ir1":
+        geo = geo1
+    else:
+        geo = geo2
+    
+    for cd in cooldowns:
+        
+        name = point + "_" + cd
+
+
+        fluka = USRBIN(name, path, 0.0036)
+        
+        xmin, xmax = fluka.info["xmin"][0] , fluka.info["xmax"][0] - fluka.info["xwidth"][0]
+        ymin, ymax = fluka.info["ymin"][0] , fluka.info["ymax"][0] - fluka.info["ywidth"][0]
+
+
+        
+        
+        gs = gridspec.GridSpec(2, 7)
+        
+        fig = plt.figure()
+        
+        
+        ax = plt.subplot(gs[0, 0:2])
+        
+        image = fluka.cube[0:,0:, q1bin]
+        
+        fluka.loadGeometryFile( geo[0], 3, 2)
+        plt.pcolor(fluka.Xreal, fluka.Yreal,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        #cbar = plt.colorbar()
+        #cbar.set_label('Dose rate [uSv/h]', fontsize = 16)
+        fluka.drawGeo(ax, 0.4, 0.3)
+        #plt.xlabel("x [cm from IP]", fontsize = 16)
+        #plt.ylabel("y [cm from IP]", fontsize = 15)
+        plt.title("Q1", fontsize = 16)
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("y [m from machine axis]", fontsize = 12)
+        #plt.xlabel("x [m from machine axis]", fontsize = 12)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+        
+        
+        
+        
+        ax = plt.subplot(gs[0, 2:4])
+        
+        image = fluka.cube[0:,0:, q3bin]
+        fluka.loadGeometryFile( geo[1], 3, 2)
+        plt.pcolor(fluka.Xreal, fluka.Yreal,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.4, 0.3)
+        #plt.xlabel("x [cm from IP]", fontsize = 16)
+        #plt.ylabel("y [cm from IP]", fontsize = 16)
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        #plt.ylabel("y [m from machine axis]", fontsize = 12)
+        #plt.xlabel("x [m from machine axis]", fontsize = 12)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+        
+        ax.get_yaxis().set_visible(False)
+        plt.title("Q3", fontsize = 16)
+        
+        ax = plt.subplot(gs[0, 4:6])
+        
+        image = fluka.cube[0:,0:, d1bin]
+        fluka.loadGeometryFile( geo[2], 3, 2)
+        plt.pcolor(fluka.Xreal, fluka.Yreal,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.4, 0.3)
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        #plt.ylabel("y [m from machine axis]", fontsize = 12)
+        #plt.xlabel("x [m from machine axis]", fontsize = 12)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+        
+        
+        ax.get_yaxis().set_visible(False)
+        plt.title("D1", fontsize = 16)
+        
+        #---------
+        ax = plt.subplot(gs[1, 0:2])
+        
+        image = fluka.cube[0:,0:, TANbin]
+        
+        fluka.loadGeometryFile( geo[3], 3, 2)
+        plt.pcolor(fluka.Xreal, fluka.Yreal,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.4, 0.3)
+
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        plt.ylabel("y [m from machine axis]", fontsize = 12)
+        plt.xlabel("x [m from machine axis]", fontsize = 12)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+        plt.title("TAN", fontsize = 16)
+        
+        
+        
+        ax = plt.subplot(gs[1, 2:4])
+        
+        image = fluka.cube[0:,0:, tcl4bin]
+        fluka.loadGeometryFile( geo[4], 3, 2)
+        plt.pcolor(fluka.Xreal, fluka.Yreal,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.4, 0.3)
+        plt.xlabel("x [cm from IP]", fontsize = 14)
+        #plt.ylabel("y [cm from IP]", fontsize = 16)
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        #plt.ylabel("y [m from machine axis]", fontsize = 12)
+        plt.xlabel("x [m from machine axis]", fontsize = 12)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+        ax.get_yaxis().set_visible(False)
+        plt.title("TCL4", fontsize = 16)
+        
+        
+        ax = plt.subplot(gs[1, 4:6])
+        
+        if point == "ir1":
+            image = fluka.cube[0:,0:, tcl6bin]
+        else:
+            image = fluka.cube[0:,0:, tcl6_ir5bin]
+            
+        
+        fluka.loadGeometryFile( geo[5], 3, 2)
+        plt.pcolor(fluka.Xreal, fluka.Yreal,image, norm=LogNorm(vmin=vmin, vmax=vmax) ,cmap = cmap)
+        fluka.drawGeo(ax, 0.4, 0.3)
+        
+        ax.set_xticks(xticks)
+        ax.set_xticklabels(xlabels)
+        ax.set_yticks(yticks)
+        ax.set_yticklabels(ylabels)
+        #plt.ylabel("y [m from machine axis]", fontsize = 12)
+        plt.xlabel("x [m from machine axis]", fontsize = 12)
+        plt.xlim(xmin,xmax)
+        plt.ylim(ymin,ymax)
+        ax.get_yaxis().set_visible(False)
+        plt.title("TCL6", fontsize = 16)
+        
+        plt.suptitle("LHC Point {} for {} cool down after Run 3".format(point[2], cd), fontsize = 18)
+        
+        # subplot for colorbar
+        ax = ax = plt.subplot(gs[0:, 6])
+        ax.axis('off')
+        cbar = plt.colorbar(ax=ax, fraction=0.9)
+        cbar.set_label('Residual ambient dose equivalent rate [uSv/h]', fontsize = 16)
+        xlength = 14
+        fig.set_size_inches(xlength, xlength/1.618)
+        plt.show()
+        try:
+            plt.savefig("{}_vertical_{}.pdf".format(point, cd))
+        except:
+            pass;
+
+
+##------------------------------------------------
+
+
+
+
+
+print("Done")
+
+#plt.close('all')
+
+
+
+
+
+
+
+
+
+
+
+

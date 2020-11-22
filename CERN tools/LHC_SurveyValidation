@@ -1,0 +1,972 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep 24 14:01:33 2020
+
+@author: dbjorkma
+"""
+
+import glob, os
+import pandas as pd
+import matplotlib.pyplot as plt
+from USRBIN import USRBIN
+from scipy.interpolate import interp1d
+import numpy as np
+import math
+from statistics import mean, stdev
+
+
+
+class Survey():
+    
+    def __init__(self, filenameSurvey, path, origo):
+        self.filename = filenameSurvey
+        self.path = path
+        self.origo = origo
+        self.elementDict = {}
+        self.surveyElements = []
+        self.surveyElementsCount = {}
+        self.doseRateContact = {}
+        self.doseRate1meter = {}
+        self.xes = []
+        self.yesContact = []
+        self.yes1meter = []
+
+        self.readElements()
+        self.readSurvey()
+        self.printMissing()
+        self.constructPlotInput()
+
+    def readSurvey(self):
+        f = open(self.filename, 'r').readlines()
+        fileformat = "normal"
+        if f[0].split()[0] == "DCUM":
+            fileformat = "alternative"
+            
+        if fileformat == "normal":  
+            f = f[7:-8]
+            idx = [0,1,2]
+        elif fileformat == "alternative":
+            f = f[7:]
+            idx = [1,2,3]
+        
+        for item  in f:
+            name = item.split()[idx[0]]
+            doserateContact = float(item.split()[idx[1]])
+            try:
+                doserate1meter = float(item.split()[idx[2]])
+            except:
+                doserate1meter = None        
+                                
+            if name not in self.surveyElements:
+                if name != "Chambre.":
+                    self.surveyElements.append(name)
+                    self.surveyElementsCount[name] = 1
+                    self.doseRateContact[name] = [doserateContact]
+                    self.doseRate1meter[name] = [doserate1meter]
+
+            else:
+                self.surveyElementsCount[name] += 1
+                self.doseRateContact[name].append(doserateContact)
+                self.doseRate1meter[name].append(doserate1meter)    
+
+    def constructPlotInput(self):
+        for item in self.surveyElements:
+    
+            info = self.elementDict[item]
+            if float(info[mid]) - self.origo < 260: #Fluka geo restriction
+                if self.surveyElementsCount[item] == 1:
+                    self.xes.append(float(info[mid]) - self.origo)
+                    self.yesContact.append(self.doseRateContact[item][0])
+                    self.yes1meter.append(self.doseRate1meter[item][0])
+                elif self.surveyElementsCount[item] == 2:
+                    self.xes.append(float(info[start]) - self.origo)
+                    self.yesContact.append(self.doseRateContact[item][0])
+                    self.yes1meter.append(self.doseRate1meter[item][0])
+            
+                    self.xes.append(float(info[end]) - self.origo)
+                    self.yesContact.append(self.doseRateContact[item][1])
+                    self.yes1meter.append(self.doseRate1meter[item][1])        
+                    
+                elif self.surveyElementsCount[item] == 3:
+                    self.xes.append(float(info[start]) - self.origo)
+                    self.yesContact.append(self.doseRateContact[item][0])
+                    self.yes1meter.append(self.doseRate1meter[item][0])
+            
+                    self.xes.append(float(info[mid]) - self.origo)
+                    self.yesContact.append(self.doseRateContact[item][1])
+                    self.yes1meter.append(self.doseRate1meter[item][1])
+                    
+                    self.xes.append(float(info[end]) - self.origo)
+                    self.yesContact.append(self.doseRateContact[item][2])
+                    self.yes1meter.append(self.doseRate1meter[item][2])        
+                else:
+                    print("ERROR", item)
+        
+    def printElement(self, element):
+        print(element,  self.elementDict[element][start] ,  self.elementDict[element][mid],  self.elementDict[element][end])
+
+
+    def printMissing(self):
+        missingElements = []
+        for i, item in enumerate(self.surveyElements):
+            name = item.split()[0]
+            if name not in self.elementDict:
+                missingElements.append(name)   
+        if len(missingElements) > 0:
+            print("Missing:")
+            print(missingElements)
+
+    
+    def readElements(self):
+        os.chdir(self.path)
+        for filenameCSV in glob.glob("*.csv"):
+        #filenameCSV = "all.csv"
+            df = pd.read_csv(filenameCSV, encoding = "ISO-8859-1", index_col ="Name")
+            #df.rename(columns={"Dcum Start S": "start", "Dcum Mid S": "mid", "Dcum End S": "end"})
+            for name, row in df.iterrows():
+                try:    
+                        
+                        if not row["Dcum Start S"] == row["Dcum Mid S"] == row["Dcum End S"] == "---":
+                    
+                            self.elementDict[name] = row         
+                            
+                            
+                            if name[-2:] == 'B1' or name[-2:] == 'B2':
+                                if name[-3:] not in self.elementDict:
+                                    self.elementDict[name[:-3]] = row
+                      
+                                
+                                
+                            if name[:2] == "VA":
+                                if name[6] == "A":
+                                    self.elementDict[name[:6] + name[7:]] = row
+                                    
+                                if  name[5] == "A" and name[7] == "A":
+                                    self.elementDict[name[:5] + "." + name[8:]] = row                    
+                except:
+                    pass
+
+
+
+
+
+
+start = 'Dcum Start S'
+mid = 'Dcum Mid S'
+end = 'Dcum End S' 
+
+IR1 = 0
+
+def onlyBefore(xes, ratios, addedTo, delimeter):
+    
+    for i, item in enumerate(ratios):
+        if xes[i] < delimeter:
+            addedTo.extend([item])
+    
+    return addedTo
+
+def onlyAfter(xes, ratios, addedTo, delimeter):
+    
+    for i, item in enumerate(ratios):
+        if xes[i] >= delimeter:
+            addedTo.extend([item])
+    
+    return addedTo
+
+
+innerTriplet = []
+machingSection = []
+all_datapoints = []
+ITlength = 160
+innerTriplet5 = []
+machingSection5 = []
+all_datapoints5 = []
+
+
+filenameSurvey = "Survey_UJ16_ir1_03122018.txt"
+
+#filenameUSRBIN = "USRBIN_03122018"
+
+path = '\\\\cernbox-smb.cern.ch\\eos\\user\\d\\dbjorkma\\Documents\\Validation'
+path2 = r'\\cernbox-smb.cern.ch\eos\user\d\dbjorkma\Documents\Validation\backup'
+#path3 = r'\\cernbox-smb.cern.ch\eos\user\d\dbjorkma\Documents\Validation\test'
+Survey1 = Survey(filenameSurvey, path, IR1)
+
+Survey2 = Survey("Survey_UJ16_ir1_08012019.txt", path, IR1)
+
+#fluka = USRBIN(filenameUSRBIN, path, 0.0036)
+#fluka.readError()
+
+fluka2017 = USRBIN("USRBIN_3122018_2017cont", path, 0.0036)
+fluka2018 = USRBIN("USRBIN_3122018_2018cont", path, 0.0036)
+fluka2017b = USRBIN("USRBIN_3122018_2017cont", path2, 0.0036)
+fluka2018b = USRBIN("USRBIN_3122018_2018cont", path2, 0.0036)
+#fluka2018test = USRBIN("USRBIN_3122018_2018cont", path3, 0.0036)
+fluka2017.readError()
+fluka2018.readError()
+
+merged = fluka2017
+merged.cube = fluka2017.cube + fluka2018.cube
+
+
+fluka2017_2 = USRBIN("USRBIN_08012019_2017cont", path, 0.0036)
+fluka2018_2 = USRBIN("USRBIN_08012019_2018cont", path, 0.0036)
+fluka2017_2.readError()
+fluka2018_2.readError()
+
+merged2 = fluka2017_2
+merged2.cube = fluka2017_2.cube + fluka2018_2.cube
+
+
+
+
+fig = plt.figure()
+
+plt.plot(fluka2017.xcoordinates, fluka2017.depthdeposition, label = "To be analyzed 2017")
+plt.plot(fluka2017b.xcoordinates, fluka2017b.depthdeposition, label = "Old 2017")
+
+plt.plot(fluka2018.xcoordinates, fluka2018.depthdeposition, label = "To be analyzed 2018")
+plt.plot(fluka2018b.xcoordinates, fluka2018b.depthdeposition, label = "Old 2018")
+#plt.plot(fluka2018test.xcoordinates, fluka2018test.depthdeposition, label = "Old 2018 in test")
+
+plt.legend()
+plt.yscale("log")
+plt.show()
+
+
+
+
+
+
+
+
+
+for i in range(fluka2017.cube.shape[0]):
+    for j in range(fluka2017.cube.shape[1]):
+        for k in range(fluka2017.cube.shape[2]):
+            merged.cubeErrors[i,j,k] = math.sqrt(fluka2017.cubeErrors[i,j,k]**2 + fluka2018.cubeErrors[i,j,k]**2)
+            merged2.cubeErrors[i,j,k] = math.sqrt(fluka2017_2.cubeErrors[i,j,k]**2 + fluka2018_2.cubeErrors[i,j,k]**2)
+
+
+allratios = []
+
+
+
+xContactMerged = 104
+x40Merged = xContactMerged - 40
+
+
+
+AD6absError = 0.2
+
+
+
+mypath = []
+# (start, binnumber, end)
+mypath.append((0,104, 5490))
+mypath.append((5490,145,5940))
+mypath.append((5940,109,8460))
+mypath.append((8460,138,14024))
+mypath.append((14024,94,14450 ))
+mypath.append((14450,136,15255 ))
+mypath.append((15255,104, 17230))
+mypath.append((17230,135, 18600))
+mypath.append((18600,96, 19090))
+mypath.append((19090,135, 19260))
+mypath.append((19260,104, 20000))
+mypath.append((20000,135, 22455))
+mypath.append((22455,104, 23180))
+mypath.append((23180,135, 25880))
+mypath.append((25880,104, 100000))
+
+
+
+def valuesofpath(fluka, mypath):
+    yesContact = np.zeros(fluka.cube.shape[2])
+    yesContactError = np.zeros(fluka.cube.shape[2])
+    yes40cm = np.zeros(fluka.cube.shape[2])
+    yes40cmError = np.zeros(fluka.cube.shape[2])
+    pathValue = 400000
+    zStart = 2090
+    idx = 0
+    for z in range(fluka.cube.shape[2]):
+        #print(mypath[idx][1],0,z)
+        yesContact[z] = fluka.cube[mypath[idx][1],0,z]
+        yesContactError[z] = fluka.cubeErrors[mypath[idx][1],0,z]
+        yes40cm[z] = fluka.cube[mypath[idx][1] - 40 ,0,z]
+        yes40cmError[z] = fluka.cubeErrors[mypath[idx][1] - 40 ,0,z]
+        
+        fluka.cube[mypath[idx][1],0,z] = pathValue
+        if z*10 + zStart > mypath[idx][2]:
+            idx += 1
+        
+    return yesContact, yes40cm, yesContactError, yes40cmError
+
+
+
+yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged, mypath)
+
+
+
+
+
+
+
+
+
+xmin = 0
+xmax = 250
+ymin = 1E-1
+ymax = 4E3
+
+yratioMin = 0.03
+yratioMax = 4
+
+ybeamaxis = 0
+xContact = 24
+x1meter = 20
+
+yErrorsAD6 = AD6absError*np.ones(len(Survey1.xes))
+
+
+
+fig = plt.figure()
+plt.subplot(221)
+#plt.plot(Survey.xes, Survey.yesContact, label = "Survey 3/12/2018",linestyle="",marker="o")
+
+# xes = fluka.xcoordinates/100
+# yes = fluka.cube[xContact, ybeamaxis, 0:]
+# f = interp1d(xes, yes)
+# plt.plot(xes, f(xes), label = "Fluka 2018 only")
+xes = merged.xcoordinates/100
+#yes = merged.cube[xContactMerged, 0, 0:]
+
+g = interp1d(xes, yesContact)
+plt.plot(xes,g(xes) , label = "Fluka")
+plt.errorbar(Survey1.xes, Survey1.yesContact, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+plt.legend()
+plt.yscale("log")
+plt.ylim(ymin,ymax)
+plt.xlim(xmin,xmax)
+plt.grid(linewidth= 0.3)
+plt.ylabel("[uSv/h]", fontsize = 12)
+plt.title("Contact with machine contour", fontsize = 16)
+
+
+ferrors = interp1d(merged.xcoordinates/100, yesContactError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey1.xes)))
+
+
+plt.subplot(223)
+#ratiosContact = f(Survey.xes)/Survey.yesContact
+ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
+#plt.plot(Survey.xes, ratiosContact, label = "Fluka/Measurements",linestyle="",marker="o")
+#plt.errorbar(Survey.xes, ratiosContact, yerr = ratiosContact *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements" , marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+innerTriplet  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(Survey1.xes, ratiosContactmerged, all_datapoints, 1000000)
+
+
+
+
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.ylim(yratioMin, yratioMax)
+
+
+allratios.extend(ratiosContactmerged)
+
+
+# This code avoids the 'None' entries 
+newXes = []
+newYes = []
+for i in range(len(Survey1.xes)):
+    if Survey1.yes1meter[i] != None:
+        newXes.append(Survey1.xes[i])
+        newYes.append(Survey1.yes1meter[i])
+
+
+yErrorsAD6 = AD6absError*np.ones(len(newXes))
+
+plt.subplot(222)
+#plt.plot(Survey.xes, Survey.yes1meter, label = "Survey 3/12/2018",linestyle="",marker="o")
+
+# xes = fluka.xcoordinates/100
+# yes = fluka.cube[x1meter, ybeamaxis, 0:]
+# f = interp1d(xes, yes)
+# plt.plot(xes, f(xes), label = "Fluka 2018 only")
+
+xes = merged.xcoordinates/100
+#yes = merged.cube[x40Merged, 0, 0:]
+yes = yes40cm
+g = interp1d(xes, yes)
+plt.plot(xes, g(xes), label = "Fluka")
+plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+#plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
+plt.legend()
+plt.yscale("log")
+plt.grid(linewidth= 0.3)
+plt.ylim(ymin,ymax)
+plt.title("40 cm from contact with machine", fontsize = 16)
+plt.xlim(xmin,xmax)
+
+plt.ylabel("[uSv/h]", fontsize = 12)
+
+
+#yeserrorSim = fluka.cubeErrors[x1meter, ybeamaxis, 0:]/100
+#yeserrorSim = merged.cubeErrors[x40Merged, 0, 0:]/100
+ferrors = interp1d(merged.xcoordinates/100, yes40cmError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+
+
+plt.subplot(224)
+#ratios1meter = f(newXes)/newYes
+ratios1meterMerged = g(newXes)/newYes
+#plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
+#plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label =  "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.ylim(yratioMin, yratioMax)
+plt.xlim(xmin,xmax)
+
+allratios.extend(ratios1meterMerged)
+
+innerTriplet  = onlyBefore(newXes, ratios1meterMerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(newXes, ratios1meterMerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(newXes, ratios1meterMerged, all_datapoints, 1000000)
+
+
+
+plt.suptitle("IR1 Survey 3/12/2018 compared to Fluka ", fontsize = 16)
+xlength = 12
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("SurveyValidation03122018_IR1.pdf")
+except:
+    pass;
+
+
+
+
+print(" ")
+print("First plot")
+print("Average ratio " + str(mean(allratios)))
+print("Number data points " + str(len(allratios)))
+allratios = []
+
+
+
+#------------------------------------------------------------------------
+xmin = 0
+xmax = 250
+yErrorsAD6 = AD6absError*np.ones(len(Survey2.xes))
+
+yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged2, mypath)
+
+
+fig = plt.figure()
+plt.subplot(221)
+xes = merged2.xcoordinates/100
+yes = yesContact
+g = interp1d(xes, yes)
+plt.plot(xes,g(xes) , label = "Fluka")
+plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+plt.legend()
+plt.yscale("log")
+plt.ylim(ymin,ymax)
+plt.xlim(xmin,xmax)
+plt.grid(linewidth= 0.3)
+plt.ylabel("[uSv/h]", fontsize = 12)
+plt.title("Contact", fontsize = 16)
+
+#yeserrorSim = merged2.cubeErrors[xContactMerged, ybeamaxis, 0:]/100
+ferrors = interp1d(merged2.xcoordinates/100, yesContactError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey2.xes)))
+
+
+plt.subplot(223)
+ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
+plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.ylim(yratioMin, yratioMax)
+
+allratios.extend(ratiosContactmerged)
+
+innerTriplet  = onlyBefore(Survey2.xes, ratiosContactmerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(Survey2.xes, ratiosContactmerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(Survey2.xes, ratiosContactmerged, all_datapoints, 1000000)
+
+
+
+
+# This code avoids the 'None' entries 
+newXes = []
+newYes = []
+for i in range(len(Survey2.xes)):
+    if Survey2.yes1meter[i] != None:
+        newXes.append(Survey2.xes[i])
+        newYes.append(Survey2.yes1meter[i])
+
+
+yErrorsAD6 = AD6absError*np.ones(len(newXes))
+
+plt.subplot(222)
+
+
+xes = merged2.xcoordinates/100
+yes = yes40cm
+g = interp1d(xes, yes)
+plt.plot(xes, g(xes), label = "Fluka")
+plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+#plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
+plt.legend()
+plt.yscale("log")
+plt.grid(linewidth= 0.3)
+plt.ylim(ymin,ymax)
+plt.title("40 cm from contact with machine", fontsize = 16)
+plt.xlim(xmin,xmax)
+
+plt.ylabel("[uSv/h]", fontsize = 12)
+
+
+
+
+
+#yeserrorSim = merged2.cubeErrors[x40Merged, 0, 0:]/100
+ferrors = interp1d(merged2.xcoordinates/100, yes40cmError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+
+
+plt.subplot(224)
+#ratios1meter = f(newXes)/newYes
+ratios1meterMerged = g(newXes)/newYes
+#plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
+#plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.ylim(yratioMin, yratioMax)
+plt.xlim(xmin,xmax)
+
+allratios.extend(ratios1meterMerged)
+
+innerTriplet  = onlyBefore(newXes, ratios1meterMerged, innerTriplet, ITlength)
+machingSection  = onlyAfter(newXes, ratios1meterMerged, machingSection, ITlength)
+all_datapoints  = onlyBefore(newXes, ratios1meterMerged, all_datapoints, 1000000)
+
+
+
+
+plt.suptitle("IR1 Survey 8/01/2019 compared to Fluka ", fontsize = 16)
+xlength = 12
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("SurveyValidation08012019_IR1.pdf")
+except:
+    pass;
+
+
+
+print(" ")
+print("Second plot")
+print("Average ratio " + str(mean(allratios)))
+print("Number data points " + str(len(allratios)))
+allratios = []
+
+
+
+#-----------------------------------------------------------------------
+#
+#
+#
+#
+#-----------------------------------------------------------------------
+
+IR5 = 13349.5066 - 20.012
+#IR5_2 = 13355.8356 - 26.15
+#IR5_3 = 13366.9166 - 38.019
+
+xmax = 260
+
+
+
+path = '\\\\cernbox-smb.cern.ch\\eos\\user\\d\\dbjorkma\\Documents\\Validation\\IR5'
+
+Survey1 = Survey("Survey_ir5_03122018.txt", path, IR5)
+
+Survey2 = Survey("Survey_ir5_08122019.txt", path, IR5)
+
+
+
+fluka2017 = USRBIN("ir5_3122018_2017cont", path, 0.0036)
+fluka2018 = USRBIN("ir5_3122018_2018cont", path, 0.0036)
+fluka2017.readError()
+fluka2018.readError()
+
+merged = fluka2017
+merged.cube = fluka2017.cube + fluka2018.cube
+
+
+fluka2017_2 = USRBIN("ir5_08012019_2017cont", path, 0.0036)
+fluka2018_2 = USRBIN("ir5_08012019_2018cont", path, 0.0036)
+fluka2017_2.readError()
+fluka2018_2.readError()
+
+merged2 = fluka2017_2
+merged2.cube = fluka2017_2.cube + fluka2018_2.cube
+
+
+
+for i in range(fluka2017.cube.shape[0]):
+    for j in range(fluka2017.cube.shape[1]):
+        for k in range(fluka2017.cube.shape[2]):
+            merged.cubeErrors[i,j,k] = math.sqrt(fluka2017.cubeErrors[i,j,k]**2 + fluka2018.cubeErrors[i,j,k]**2)
+            merged2.cubeErrors[i,j,k] = math.sqrt(fluka2017_2.cubeErrors[i,j,k]**2 + fluka2018_2.cubeErrors[i,j,k]**2)
+
+
+allratios = []
+
+yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged, mypath)
+
+
+
+yErrorsAD6 = AD6absError*np.ones(len(Survey1.xes))
+
+
+
+fig = plt.figure()
+plt.subplot(221)
+xes = merged.xcoordinates/100
+
+g = interp1d(xes, yesContact)
+plt.plot(xes,g(xes) , label = "Fluka")
+plt.errorbar(Survey1.xes, Survey1.yesContact, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+plt.legend()
+plt.yscale("log")
+plt.ylim(ymin,ymax)
+plt.xlim(xmin,xmax)
+plt.grid(linewidth= 0.3)
+plt.ylabel("[uSv/h]", fontsize = 12)
+plt.title("Contact with machine contour", fontsize = 16)
+
+
+ferrors = interp1d(merged.xcoordinates/100, yesContactError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey1.xes)))
+
+
+plt.subplot(223)
+
+ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+innerTriplet5  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(Survey1.xes, ratiosContactmerged, all_datapoints5, 1000000)
+
+
+
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.ylim(yratioMin, yratioMax)
+
+
+allratios.extend(ratiosContactmerged)
+
+
+# This code avoids the 'None' entries 
+newXes = []
+newYes = []
+for i in range(len(Survey1.xes)):
+    if Survey1.yes1meter[i] != None:
+        newXes.append(Survey1.xes[i])
+        newYes.append(Survey1.yes1meter[i])
+
+
+yErrorsAD6 = AD6absError*np.ones(len(newXes))
+
+plt.subplot(222)
+
+xes = merged.xcoordinates/100
+
+yes = yes40cm
+g = interp1d(xes, yes)
+plt.plot(xes, g(xes), label = "Fluka")
+plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+plt.legend()
+plt.yscale("log")
+plt.grid(linewidth= 0.3)
+plt.ylim(ymin,ymax)
+plt.title("40 cm from contact with machine", fontsize = 16)
+plt.xlim(xmin,xmax)
+
+plt.ylabel("[uSv/h]", fontsize = 12)
+
+
+
+ferrors = interp1d(merged.xcoordinates/100, yes40cmError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+
+
+plt.subplot(224)
+ratios1meterMerged = g(newXes)/newYes
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements, # data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged) , round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+
+innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(newXes, ratios1meterMerged, all_datapoints5, 1000000)
+
+
+
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.ylim(yratioMin, yratioMax)
+plt.xlim(xmin,xmax)
+
+allratios.extend(ratios1meterMerged)
+
+
+
+plt.suptitle("IR5 Survey 3/12/2018 compared to Fluka ", fontsize = 16)
+xlength = 12
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("SurveyValidation03122018_IR5.pdf")
+except:
+    pass;
+
+print(" ")
+print("Third plot")
+print("Average ratio " + str(mean(allratios)))
+print("Number data points " + str(len(allratios)))
+allratios = []
+
+#------------------------------------------------------------------------
+xmin = 0
+xmax = 250
+yErrorsAD6 = AD6absError*np.ones(len(Survey2.xes))
+
+yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged2, mypath)
+
+
+fig = plt.figure()
+plt.subplot(221)
+xes = merged2.xcoordinates/100
+yes = yesContact
+g = interp1d(xes, yes)
+plt.plot(xes,g(xes) , label = "Fluka")
+plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+plt.legend()
+plt.yscale("log")
+plt.ylim(ymin,ymax)
+plt.xlim(xmin,xmax)
+plt.grid(linewidth= 0.3)
+plt.ylabel("[uSv/h]", fontsize = 12)
+plt.title("Contact with machine contour", fontsize = 16)
+
+#yeserrorSim = merged2.cubeErrors[xContactMerged, ybeamaxis, 0:]/100
+ferrors = interp1d(merged2.xcoordinates/100, yesContactError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey2.xes)))
+
+
+plt.subplot(223)
+ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
+plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+
+innerTriplet5  = onlyBefore(Survey2.xes, ratiosContactmerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(Survey2.xes, ratiosContactmerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(Survey2.xes, ratiosContactmerged, all_datapoints5, 1000000)
+
+
+
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.ylim(yratioMin, yratioMax)
+
+allratios.extend(ratiosContactmerged)
+
+
+# This code avoids the 'None' entries 
+newXes = []
+newYes = []
+for i in range(len(Survey2.xes)):
+    if Survey2.yes1meter[i] != None:
+        newXes.append(Survey2.xes[i])
+        newYes.append(Survey2.yes1meter[i])
+
+
+yErrorsAD6 = AD6absError*np.ones(len(newXes))
+
+plt.subplot(222)
+
+
+xes = merged2.xcoordinates/100
+yes = yes40cm
+g = interp1d(xes, yes)
+plt.plot(xes, g(xes), label = "Fluka following machine contour")
+plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+#plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
+plt.legend()
+plt.yscale("log")
+plt.grid(linewidth= 0.3)
+plt.ylim(ymin,ymax)
+plt.title("40 cm from contact with machine", fontsize = 16)
+plt.xlim(xmin,xmax)
+
+plt.ylabel("[uSv/h]", fontsize = 12)
+
+
+
+#yeserrorSim = merged2.cubeErrors[x40Merged, 0, 0:]/100
+ferrors = interp1d(merged2.xcoordinates/100, yes40cmError/100 )
+ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+
+
+plt.subplot(224)
+#ratios1meter = f(newXes)/newYes
+ratios1meterMerged = g(newXes)/newYes
+#plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
+#plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+
+innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
+machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
+all_datapoints5  = onlyBefore(newXes, ratios1meterMerged, all_datapoints5, 1000000)
+
+
+
+plt.ylabel("Ratio", fontsize = 12)
+plt.grid(linewidth= 0.3)
+plt.legend()
+plt.axhline(y=1, color='k', linestyle='-')
+plt.yscale("log")
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.xlim(xmin,xmax)
+plt.xlabel("z [m from IP]", fontsize = 16)
+plt.ylim(yratioMin, yratioMax)
+plt.xlim(xmin,xmax)
+
+allratios.extend(ratios1meterMerged)
+
+
+plt.suptitle("IR5 Survey 8/01/2019 compared to Fluka ", fontsize = 16)
+xlength = 12
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("SurveyValidation08012019_IR5.pdf")
+except:
+    pass;
+
+
+print(" ")
+print("Forth plot")
+print("Average ratio " + str(mean(allratios)))
+print("Number data points " + str(len(allratios)))
+
+
+
+fig = plt.figure()
+
+ax = plt.subplot(211)
+
+n,bins, patches =plt.hist(innerTriplet, bins=50, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
+
+plt.hist(machingSection, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection), round(mean(machingSection),3)), alpha = 0.5)
+
+
+plt.hist(all_datapoints, bins = bins, label = "Point 1 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints), round(mean(all_datapoints),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+
+#plt.xlabel("Ratio", fontsize = 16)
+plt.ylabel("Counts", fontsize = 16)
+plt.legend( prop={'size': 14})
+plt.grid(linewidth = 0.3)
+
+plt.title("Point 1", fontsize = 18)
+
+ax = plt.subplot(212)
+
+plt.hist(innerTriplet5, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet5), round(mean(innerTriplet5),3)), alpha = 0.5)
+
+plt.hist(machingSection5, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection5), round(mean(machingSection5),3)), alpha = 0.5)
+
+
+plt.hist(all_datapoints5, bins = bins, label = "Point 5 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints5), round(mean(all_datapoints5),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+
+plt.xlabel("Ratio", fontsize = 20)
+plt.ylabel("Counts", fontsize = 16)
+plt.legend( prop={'size': 14})
+plt.grid(linewidth = 0.3)
+
+plt.title("Point 5", fontsize = 18)
+
+plt.suptitle("Survey Validation Summery", fontsize = 18)
+
+xlength = 15
+fig.set_size_inches(xlength, xlength/1.618)
+plt.show()
+try:
+    plt.savefig("SurveyValidationSummery.pdf")
+except:
+    pass;
+
+
+
+
+
+
+

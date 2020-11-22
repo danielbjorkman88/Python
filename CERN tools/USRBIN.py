@@ -11,16 +11,14 @@ class USRBIN():
     """
     Class for reconstructing and handling ASCII formatted Fluka USRBIN outputs
     
-    Python version 2.7
+    Python version 3.8
     
-    Developed by Daniel Björkman 2016-2019 at CERN, dabjor@kth.ch
+    Developed by Daniel Björkman 2016-2020 at CERN, dabjor@kth.ch
     
     call:
     from USRBIN import USRBIN
-    x = USRBIN(filename, path, normfactor)
-    x.read()
-    x.calc()
-    x.plot()
+    instance = USRBIN(filename, path, normfactor)
+    instance.plot()
     
     """
     def __init__(self, filename, path, normfactor = 1):
@@ -40,8 +38,8 @@ class USRBIN():
         self.widthX = []
         self.X = []
         self.Y = []
-        self.max = []
-        self.min = []
+        self.vmax = []
+        self.vmin = []
         self.normfactor = normfactor
         self.binningtype = []
         self.below = [] 
@@ -58,6 +56,11 @@ class USRBIN():
         self.contourfilename = []
         self.contourpath = []
         self.title = []
+        self.Xreal = []
+        self.Yreal = []
+        
+        self.read()
+        self.calc()
         
     def readRaw(self, start, stop):
 
@@ -183,8 +186,7 @@ class USRBIN():
 
     
         directory = self.path
-        filename = self.filename
-        print "Loading " + filename
+        print("Loading " + self.filename)
         
         startTime = time.time()
         os.chdir(directory)
@@ -273,14 +275,21 @@ class USRBIN():
 
         
         if CAR:
-            #for horizontal image, ie Z as x-axis and X as y-axis
+            
             minX = self.info['xmin'][0]
             maxX = self.info['xmax'][0]
             widthX = self.info['xwidth'][0]
+            minY = self.info['ymin'][0]
+            maxY = self.info['ymax'][0]
+            widthY = self.info['ywidth'][0] 
             minZ = self.info['zmin'][0]
             maxZ = self.info['zmax'][0]
             widthZ = self.info['zwidth'][0]*1.0001
-            self.X, self.Y = np.meshgrid(np.arange(minZ,maxZ, widthZ),np.arange(minX,maxX, widthX))
+            
+            #for horizontal image, ie Z as x-axis and X as y-axis
+            self.X, self.Y = np.meshgrid(np.arange(minZ,maxZ, widthZ),np.arange(minX + widthX,maxX + widthX, widthX))
+
+            self.Yreal, self.Xreal = np.meshgrid(np.arange(minY,maxY, widthY), np.arange(minX,maxX, widthX))
         elif (RZ or RPZ):
             #For ATLAS fluka model
             maxY = int(self.info['rmax'][0])
@@ -326,8 +335,7 @@ class USRBIN():
                 
         end = time.time()
         print("Cube reconstructed in " + str(round(end - startTime,2)) + " seconds")
-        print ' '
-    
+        print(' ')    
         self.cube = cube * self.normfactor
         self.max = np.amax(cube)
         self.min = np.amin(cube)
@@ -339,7 +347,7 @@ class USRBIN():
         data = self.readRaw(  self.starts[1], self.stops[1])
         cube = self.constructCube(data)
         
-        print 'Error values reconstructed'
+        print('Error values reconstructed')
         
         self.cubeErrors = cube;
 
@@ -347,49 +355,48 @@ class USRBIN():
     
     def loadGeometryFile(self, filename, firstIndex = 2, lastIndex = 4):
     
-    	""" Reads in a geometry file from FLUKA 
-    	x Axis -> Index 2
-    	y Axis -> Index 3
-    	z Axis -> Index 4
-    	Default: x and z Axis
-    	"""
+#    	""" 
+#        Reads in a geometry file from FLUKA 
+#    	x Axis -> Index 2
+#    	y Axis -> Index 3
+#    	z Axis -> Index 4
+#    	Default: x and z Axis
+#    	""" 
 
-        os.chdir(self.contourpath)       
-        
-
-    	X = []	
-    	Y = []
-    	Xs = []	
-    	Ys = []
-    	for line in file(filename):
-    		if line[0] == "#":
-    			continue
-    		if line.strip() == "":
-    			if X:
-    				Xs.append(copy.copy(X))
-    				Ys.append(copy.copy(Y))				
-    
-    				X = []	
-    				Y = []
-    		else:
-    			splitted = map(float, line.split())
-    			X.append(splitted[firstIndex])
-    			Y.append(splitted[lastIndex])
-            
-    
-    	if X:
-    		Xs.append(copy.copy(X))
-    		Ys.append(copy.copy(Y))				
-    		X = []	
-    		Y = []
+       	X = []	
+       	Y = []
+       	Xs = []	
+       	Ys = []
+       	for line in open(filename,"r+").readlines():
+           # print(line)
+       		if line[0] == "#":
+       			continue
+       		if line.strip() == "":
+       			if X:
+       				Xs.append(copy.copy(X))
+       				Ys.append(copy.copy(Y))				
+       
+       				X = []	
+       				Y = []
+       		else:
+       			splitted = list(map(float, line.split()))               
+       			X.append(splitted[firstIndex])
+       			Y.append(splitted[lastIndex])
+       
+   
+        if X:
+             Xs.append(copy.copy(X))
+             Ys.append(copy.copy(Y))				
+             X = []	
+             Y = []
     
         self.Xs = Xs
         self.Ys = Ys
 
-    def drawGeo(self,ax):
-
+    def drawGeo(self,ax , linewidth = 0.5, alpha = 1):
+        
         for j in range(len(self.Xs)):
-            plt.plot(self.Ys[j], self.Xs[j], 'k-',  linewidth=0.5, alpha = 0.5)
+            plt.plot(self.Ys[j], self.Xs[j], 'k-',  linewidth=linewidth, alpha = alpha)
         return ax;
     
     
@@ -410,6 +417,9 @@ class USRBIN():
         #Conditional color scaling     
         vmax = cube.max()
         vmin = np.min(cube[np.nonzero(cube)])
+        self.vmin = vmin
+        self.vmax = vmax
+        
         if int(math.log10(vmax)) - int(math.log10(vmin)) > 14 :
             vmin = vmax * math.pow(10,-14)
 
@@ -494,6 +504,12 @@ class USRBIN():
                 side[r] = val/bins
             except:
                 pass
+            
+
+        self.vmin = np.min(cube[np.nonzero(cube)])
+        self.vmax = cube.max()           
+            
+            
         self.depthdeposition = integration
         self.below = below
         self.side = side
@@ -504,10 +520,9 @@ class USRBIN():
         self.centre = centre
         
         if self.binningtype == 'CAR':
-            self.xcoodinates = np.arange(int(self.info['zmin'][0]),int(self.info['zmax'][0]),self.info['zwidth'][0]*1.0001)
+            self.xcoordinates = np.arange(int(self.info['zmin'][0]),int(self.info['zmax'][0]),self.info['zwidth'][0]*1.0001)
             self.realxcoodinates = np.arange(int(self.info['xmin'][0]),int(self.info['xmax'][0]),self.info['xwidth'][0]*1.0001)
         
-
 
 
 

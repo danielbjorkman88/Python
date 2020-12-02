@@ -10,6 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from USRBIN import USRBIN
 from scipy.interpolate import interp1d
+import matplotlib.patches as patches
 import numpy as np
 import math
 from statistics import mean, stdev
@@ -147,7 +148,57 @@ class Survey():
                     pass
 
 
+    def weightedMean(self, ratios, relative_prop_errors):
+        """
+        Parameters
+        ----------
+        ratios : list
+            vector of ratios.
+        relative_prop_errors : list
+            vector of relative propagating errors. Matching ratios by index.
 
+        Returns
+        -------
+        weightedMean : float
+            weighted mean of ratios.
+        sd : float
+            weighted standard deviation of ratios.
+
+        """
+
+        # removes zero entries
+        nonZeroRatios = []
+        nonZero_relative_prop_errors = []
+        for i in range(len(ratios)):
+            if ratios[i] != 0:
+                nonZeroRatios.append(ratios[i])
+                nonZero_relative_prop_errors.append(relative_prop_errors[i])
+        ratios = nonZeroRatios
+        relative_prop_errors = nonZero_relative_prop_errors
+        
+        if len(ratios) == 1:
+            return ratios[0], relative_prop_errors[0]
+
+        numerator = 0
+        denominator= 0
+        for i in range(len(ratios)):
+            weight = (1/relative_prop_errors[i])**2
+            numerator += ratios[i]* weight
+            denominator += weight
+        weightedMean = numerator / denominator
+        
+        
+        for i in range(len(ratios)):
+            weight = (1/relative_prop_errors[i])**2
+            numerator += weight* (ratios[i] - weightedMean)**2
+            denominator += weight
+
+        n = len(ratios)
+        variance = numerator / denominator * n / (n - 1)
+        sd = math.sqrt(variance/n)
+   
+        
+        return weightedMean, sd
 
 
 
@@ -172,23 +223,31 @@ def onlyAfter(xes, ratios, addedTo, delimeter):
             addedTo.extend([item])
     
     return addedTo
-
+ITlength = 160
 
 innerTriplet = []
 machingSection = []
 all_datapoints = []
-ITlength = 160
+
 innerTriplet5 = []
 machingSection5 = []
 all_datapoints5 = []
 
 
+IT = []
+MS = []
+AD = []
+
 filenameSurvey = "Survey_UJ16_ir1_03122018.txt"
 
 #filenameUSRBIN = "USRBIN_03122018"
 
-path = '\\\\cernbox-smb.cern.ch\\eos\\user\\d\\dbjorkma\\Documents\\Validation'
-path2 = r'\\cernbox-smb.cern.ch\eos\user\d\dbjorkma\Documents\Validation\backup'
+# path = '\\\\cernbox-smb.cern.ch\\eos\\user\\d\\dbjorkma\\Documents\\Validation'
+# path2 = r'\\cernbox-smb.cern.ch\eos\user\d\dbjorkma\Documents\Validation\backup'
+
+
+path = r'C:\Validation'
+path2 = r'C:\Validation\backup'
 #path3 = r'\\cernbox-smb.cern.ch\eos\user\d\dbjorkma\Documents\Validation\test'
 Survey1 = Survey(filenameSurvey, path, IR1)
 
@@ -326,24 +385,20 @@ ybeamaxis = 0
 xContact = 24
 x1meter = 20
 
-yErrorsAD6 = AD6absError*np.ones(len(Survey1.xes))
+AD6_abs_error = AD6absError*np.ones(len(Survey1.xes))
 
 
 
 fig = plt.figure()
 plt.subplot(221)
-#plt.plot(Survey.xes, Survey.yesContact, label = "Survey 3/12/2018",linestyle="",marker="o")
 
-# xes = fluka.xcoordinates/100
-# yes = fluka.cube[xContact, ybeamaxis, 0:]
-# f = interp1d(xes, yes)
-# plt.plot(xes, f(xes), label = "Fluka 2018 only")
 xes = merged.xcoordinates/100
-#yes = merged.cube[xContactMerged, 0, 0:]
+
 
 g = interp1d(xes, yesContact)
 plt.plot(xes,g(xes) , label = "Fluka")
-plt.errorbar(Survey1.xes, Survey1.yesContact, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+
+plt.errorbar(Survey1.xes, Survey1.yesContact, yerr = AD6_abs_error , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
 plt.ylim(ymin,ymax)
@@ -354,16 +409,26 @@ plt.title("Contact with machine contour", fontsize = 16)
 
 
 ferrors = interp1d(merged.xcoordinates/100, yesContactError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey1.xes)))
+rel_ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/Survey1.yesContact, ferrors(Survey1.xes)))
 
 
 plt.subplot(223)
-#ratiosContact = f(Survey.xes)/Survey.yesContact
+
 ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
-#plt.plot(Survey.xes, ratiosContact, label = "Fluka/Measurements",linestyle="",marker="o")
-#plt.errorbar(Survey.xes, ratiosContact, yerr = ratiosContact *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements" , marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+weightedMean, sd = Survey1.weightedMean(ratiosContactmerged , rel_ratioerrors)
+
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *rel_ratioerrors , label = "Fluka/Measurements" , marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratiosContactmerged) ), fontsize = 12)
+
+
+
 
 innerTriplet  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet, ITlength)
 machingSection  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection, ITlength)
@@ -394,7 +459,9 @@ for i in range(len(Survey1.xes)):
         newYes.append(Survey1.yes1meter[i])
 
 
-yErrorsAD6 = AD6absError*np.ones(len(newXes))
+#yErrorsAD6 = AD6absError*np.ones(len(newXes))
+AD6_abs_error = AD6absError*np.ones(len(newXes))
+
 
 plt.subplot(222)
 #plt.plot(Survey.xes, Survey.yes1meter, label = "Survey 3/12/2018",linestyle="",marker="o")
@@ -409,7 +476,7 @@ xes = merged.xcoordinates/100
 yes = yes40cm
 g = interp1d(xes, yes)
 plt.plot(xes, g(xes), label = "Fluka")
-plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+plt.errorbar(newXes, newYes, yerr = AD6_abs_error , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
 #plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
 plt.legend()
 plt.yscale("log")
@@ -424,16 +491,34 @@ plt.ylabel("[uSv/h]", fontsize = 12)
 #yeserrorSim = fluka.cubeErrors[x1meter, ybeamaxis, 0:]/100
 #yeserrorSim = merged.cubeErrors[x40Merged, 0, 0:]/100
 ferrors = interp1d(merged.xcoordinates/100, yes40cmError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+rel_ratioerrors= list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/newYes, ferrors(newXes)))
 
 
 plt.subplot(224)
 #ratios1meter = f(newXes)/newYes
 ratios1meterMerged = g(newXes)/newYes
+
+weightedMean, sd = Survey1.weightedMean(ratios1meterMerged , rel_ratioerrors)
+
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label =  "Fluka/Measurements", marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *rel_ratioerrors , label =  "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratios1meterMerged) ), fontsize = 12)
+
+
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+
+
+
+
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -469,14 +554,27 @@ print(" ")
 print("First plot")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
+
+IT.append(innerTriplet)
+MS.append(machingSection)
+AD.append(all_datapoints)
+innerTriplet = []
+machingSection = []
+all_datapoints = []
+
 allratios = []
 
 
 
+# innerTriplet5 = []
+# machingSection5 = []
+# all_datapoints5 = []
+
 #------------------------------------------------------------------------
 xmin = 0
 xmax = 250
-yErrorsAD6 = AD6absError*np.ones(len(Survey2.xes))
+#yErrorsAD6 = AD6absError*np.ones(len(Survey2.xes))
+AD6_abs_error = AD6absError*np.ones(len(Survey2.xes))
 
 yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged2, mypath)
 
@@ -487,24 +585,40 @@ xes = merged2.xcoordinates/100
 yes = yesContact
 g = interp1d(xes, yes)
 plt.plot(xes,g(xes) , label = "Fluka")
-plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = AD6_abs_error  , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
 plt.ylim(ymin,ymax)
 plt.xlim(xmin,xmax)
 plt.grid(linewidth= 0.3)
 plt.ylabel("[uSv/h]", fontsize = 12)
-plt.title("Contact", fontsize = 16)
+plt.title("Contact with machine contour", fontsize = 16)
 
 #yeserrorSim = merged2.cubeErrors[xContactMerged, ybeamaxis, 0:]/100
 ferrors = interp1d(merged2.xcoordinates/100, yesContactError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey2.xes)))
+# ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey2.xes)))
+rel_ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/Survey2.yesContact, ferrors(Survey2.xes)))
+
 
 
 plt.subplot(223)
 ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
-plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+weightedMean, sd = Survey1.weightedMean(ratiosContactmerged , rel_ratioerrors)
+
+
+plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *rel_ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratiosContactmerged) ), fontsize = 12)
+
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
 
 
 plt.ylabel("Ratio", fontsize = 12)
@@ -534,7 +648,9 @@ for i in range(len(Survey2.xes)):
         newYes.append(Survey2.yes1meter[i])
 
 
-yErrorsAD6 = AD6absError*np.ones(len(newXes))
+#yErrorsAD6 = AD6absError*np.ones(len(newXes))
+AD6_abs_error = AD6absError*np.ones(len(newXes))
+
 
 plt.subplot(222)
 
@@ -543,7 +659,7 @@ xes = merged2.xcoordinates/100
 yes = yes40cm
 g = interp1d(xes, yes)
 plt.plot(xes, g(xes), label = "Fluka")
-plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+plt.errorbar(newXes, newYes, yerr = AD6_abs_error , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 #plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
 plt.legend()
 plt.yscale("log")
@@ -560,16 +676,28 @@ plt.ylabel("[uSv/h]", fontsize = 12)
 
 #yeserrorSim = merged2.cubeErrors[x40Merged, 0, 0:]/100
 ferrors = interp1d(merged2.xcoordinates/100, yes40cmError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+#ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+rel_ratioerrors= list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/newYes, ferrors(newXes)))
 
 
 plt.subplot(224)
 #ratios1meter = f(newXes)/newYes
 ratios1meterMerged = g(newXes)/newYes
+weightedMean, sd = Survey1.weightedMean(ratios1meterMerged , rel_ratioerrors)
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *rel_ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratios1meterMerged) ), fontsize = 12)
+
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 plt.ylabel("Ratio", fontsize = 12)
 plt.grid(linewidth= 0.3)
 plt.legend()
@@ -605,6 +733,15 @@ print(" ")
 print("Second plot")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
+
+
+IT.append(innerTriplet)
+MS.append(machingSection)
+AD.append(all_datapoints)
+innerTriplet = []
+machingSection = []
+all_datapoints = []
+
 allratios = []
 
 
@@ -624,7 +761,10 @@ xmax = 260
 
 
 
-path = '\\\\cernbox-smb.cern.ch\\eos\\user\\d\\dbjorkma\\Documents\\Validation\\IR5'
+#path = '\\\\cernbox-smb.cern.ch\\eos\\user\\d\\dbjorkma\\Documents\\Validation\\IR5'
+
+path = 'C:\Validation\IR5'
+
 
 Survey1 = Survey("Survey_ir5_03122018.txt", path, IR5)
 
@@ -664,8 +804,8 @@ yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged, mypath
 
 
 
-yErrorsAD6 = AD6absError*np.ones(len(Survey1.xes))
-
+# yErrorsAD6 = AD6absError*np.ones(len(Survey1.xes))
+AD6_abs_error = AD6absError*np.ones(len(Survey1.xes))
 
 
 fig = plt.figure()
@@ -674,7 +814,7 @@ xes = merged.xcoordinates/100
 
 g = interp1d(xes, yesContact)
 plt.plot(xes,g(xes) , label = "Fluka")
-plt.errorbar(Survey1.xes, Survey1.yesContact, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+plt.errorbar(Survey1.xes, Survey1.yesContact, yerr = AD6_abs_error , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
 plt.ylim(ymin,ymax)
@@ -685,14 +825,30 @@ plt.title("Contact with machine contour", fontsize = 16)
 
 
 ferrors = interp1d(merged.xcoordinates/100, yesContactError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey1.xes)))
-
+#ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey1.xes)))
+rel_ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/Survey1.yesContact, ferrors(Survey1.xes)))
 
 plt.subplot(223)
 
 ratiosContactmerged = g(Survey1.xes)/Survey1.yesContact
-plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+weightedMean, sd = Survey1.weightedMean(ratiosContactmerged , rel_ratioerrors)
+
+
+
+plt.errorbar(Survey1.xes, ratiosContactmerged, yerr = ratiosContactmerged *rel_ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratiosContactmerged) ), fontsize = 12)
+
+
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
 innerTriplet5  = onlyBefore(Survey1.xes, ratiosContactmerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(Survey1.xes, ratiosContactmerged, machingSection5, ITlength)
 all_datapoints5  = onlyBefore(Survey1.xes, ratiosContactmerged, all_datapoints5, 1000000)
@@ -721,7 +877,10 @@ for i in range(len(Survey1.xes)):
         newYes.append(Survey1.yes1meter[i])
 
 
-yErrorsAD6 = AD6absError*np.ones(len(newXes))
+# yErrorsAD6 = AD6absError*np.ones(len(newXes))
+# yErrorsAD6 = AD6absError*np.ones(len(newXes))
+AD6_abs_error = AD6absError*np.ones(len(newXes))
+
 
 plt.subplot(222)
 
@@ -730,7 +889,7 @@ xes = merged.xcoordinates/100
 yes = yes40cm
 g = interp1d(xes, yes)
 plt.plot(xes, g(xes), label = "Fluka")
-plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
+plt.errorbar(newXes, newYes, yerr = AD6_abs_error , label = "Survey 3/12/2018", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
 plt.grid(linewidth= 0.3)
@@ -743,13 +902,25 @@ plt.ylabel("[uSv/h]", fontsize = 12)
 
 
 ferrors = interp1d(merged.xcoordinates/100, yes40cmError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+#ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+rel_ratioerrors= list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/newYes, ferrors(newXes)))
 
 
 plt.subplot(224)
 ratios1meterMerged = g(newXes)/newYes
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements, # data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged) , round(mean(ratios1meterMerged), 3)), marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+weightedMean, sd = Survey1.weightedMean(ratios1meterMerged , rel_ratioerrors)
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *rel_ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratios1meterMerged) ), fontsize = 12)
+
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 
 innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
@@ -785,12 +956,31 @@ print(" ")
 print("Third plot")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
+
+IT.append(innerTriplet5)
+MS.append(machingSection5)
+AD.append(all_datapoints5)
+innerTriplet5 = []
+machingSection5 = []
+all_datapoints5 = []
+
+
+
 allratios = []
+
+
+
+
+
+
+
+
 
 #------------------------------------------------------------------------
 xmin = 0
 xmax = 250
-yErrorsAD6 = AD6absError*np.ones(len(Survey2.xes))
+#yErrorsAD6 = AD6absError*np.ones(len(Survey2.xes))
+AD6_abs_error = AD6absError*np.ones(len(Survey2.xes))
 
 yesContact, yes40cm, yesContactError, yes40cmError = valuesofpath(merged2, mypath)
 
@@ -801,7 +991,7 @@ xes = merged2.xcoordinates/100
 yes = yesContact
 g = interp1d(xes, yes)
 plt.plot(xes,g(xes) , label = "Fluka")
-plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+plt.errorbar(Survey2.xes, Survey2.yesContact, yerr = AD6_abs_error , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 plt.legend()
 plt.yscale("log")
 plt.ylim(ymin,ymax)
@@ -812,13 +1002,28 @@ plt.title("Contact with machine contour", fontsize = 16)
 
 #yeserrorSim = merged2.cubeErrors[xContactMerged, ybeamaxis, 0:]/100
 ferrors = interp1d(merged2.xcoordinates/100, yesContactError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey2.xes)))
-
+#ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(Survey2.xes)))
+rel_ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/Survey2.yesContact, ferrors(Survey2.xes)))
 
 plt.subplot(223)
+
 ratiosContactmerged = g(Survey2.xes)/Survey2.yesContact
-plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
+
+weightedMean, sd = Survey1.weightedMean(ratiosContactmerged , rel_ratioerrors)
+
+
+plt.errorbar(Survey2.xes, ratiosContactmerged, yerr = ratiosContactmerged *rel_ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratiosContactmerged) ), fontsize = 12)
+
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratiosContactmerged), round(mean(ratiosContactmerged), 3)), fontsize = 12)
 
 
 innerTriplet5  = onlyBefore(Survey2.xes, ratiosContactmerged, innerTriplet5, ITlength)
@@ -848,7 +1053,9 @@ for i in range(len(Survey2.xes)):
         newYes.append(Survey2.yes1meter[i])
 
 
-yErrorsAD6 = AD6absError*np.ones(len(newXes))
+#yErrorsAD6 = AD6absError*np.ones(len(newXes))
+AD6_abs_error = AD6absError*np.ones(len(newXes))
+
 
 plt.subplot(222)
 
@@ -856,8 +1063,8 @@ plt.subplot(222)
 xes = merged2.xcoordinates/100
 yes = yes40cm
 g = interp1d(xes, yes)
-plt.plot(xes, g(xes), label = "Fluka following machine contour")
-plt.errorbar(newXes, newYes, yerr = yErrorsAD6 , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
+plt.plot(xes, g(xes), label = "Fluka")
+plt.errorbar(newXes, newYes, yerr = AD6_abs_error , label = "Survey 8/01/2019", marker=".", linestyle= 'None')
 #plt.plot(fluka.xcoordinates/100, fluka.cube[x1meter, ybeamaxis, 0:], label = "Fluka")
 plt.legend()
 plt.yscale("log")
@@ -872,16 +1079,27 @@ plt.ylabel("[uSv/h]", fontsize = 12)
 
 #yeserrorSim = merged2.cubeErrors[x40Merged, 0, 0:]/100
 ferrors = interp1d(merged2.xcoordinates/100, yes40cmError/100 )
-ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+#ratioerrors = list(map(lambda x,y: math.sqrt(x*x + y*y ), yErrorsAD6, ferrors(newXes)))
+rel_ratioerrors= list(map(lambda x,y: math.sqrt(x*x + y*y ), AD6_abs_error/newYes, ferrors(newXes)))
 
 
 plt.subplot(224)
 #ratios1meter = f(newXes)/newYes
 ratios1meterMerged = g(newXes)/newYes
+weightedMean, sd = Survey1.weightedMean(ratios1meterMerged , rel_ratioerrors)
 #plt.plot(newXes, ratios1meter, label = "Fluka/Measurements",linestyle="",marker="o")
 #plt.errorbar(newXes, ratios1meter, yerr = ratios1meter *ratioerrors , label = "Fluka 2018/Measurements", marker=".", linestyle= 'None')
-plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
-plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
+plt.errorbar(newXes, ratios1meterMerged , yerr = ratios1meterMerged *rel_ratioerrors , label = "Fluka/Measurements", marker=".", linestyle= 'None')
+plt.axhline(y=weightedMean, color='C1', linestyle='-', linewidth = 2, label =  "Weighted mean of ratios = {} \u00B1 {}".format( round(weightedMean,3), round(sd,4) ) )
+rect = plt.Rectangle((-1000, weightedMean - 1*sd),
+      2000,
+      2*sd, color = 'b', alpha = 0.1 ,  edgecolor = None, label = "1 standard deviation")
+plt.gca().add_patch(rect)
+
+plt.title("# data points = {}".format(len(ratios1meterMerged) ), fontsize = 12)
+
+
+#plt.title("# data points = {}, AVG Ratio = {}".format(len(ratios1meterMerged), round(mean(ratios1meterMerged), 3)), fontsize = 12)
 
 innerTriplet5  = onlyBefore(newXes, ratios1meterMerged, innerTriplet5, ITlength)
 machingSection5  = onlyAfter(newXes, ratios1meterMerged, machingSection5, ITlength)
@@ -918,41 +1136,93 @@ print("Forth plot")
 print("Average ratio " + str(mean(allratios)))
 print("Number data points " + str(len(allratios)))
 
+IT.append(innerTriplet5)
+MS.append(machingSection5)
+AD.append(all_datapoints5)
 
+minBin = 1000000000000
+maxBin = 0
+
+for vec in AD:
+    if min(vec) < minBin:
+        minBin = min(vec)
+    if max(vec) > maxBin:
+        maxBin = max(vec)
+        
+#bins = list(range(math.floor(minBin), math.ceil(maxBin),0.25))
+x1 = math.floor(minBin)
+x2 = math.ceil(maxBin)
+increment = 0.25
+bins = [x*increment for x in range(int(x1/increment), int((x2)/increment)   )]
 
 fig = plt.figure()
 
-ax = plt.subplot(211)
-
-n,bins, patches =plt.hist(innerTriplet, bins=50, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
-
+ax = plt.subplot(221)
+innerTriplet = IT[0]
+machingSection = MS[0]
+all_datapoints = AD[0]
+plt.hist(innerTriplet, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
 plt.hist(machingSection, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection), round(mean(machingSection),3)), alpha = 0.5)
-
-
 plt.hist(all_datapoints, bins = bins, label = "Point 1 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints), round(mean(all_datapoints),3)), fc='none', histtype='step', color = "k", linewidth = 1)
 
 #plt.xlabel("Ratio", fontsize = 16)
-plt.ylabel("Counts", fontsize = 16)
-plt.legend( prop={'size': 14})
+plt.ylabel("# data points", fontsize = 16)
+plt.legend( prop={'size': 10})
 plt.grid(linewidth = 0.3)
 
 plt.title("Point 1", fontsize = 18)
 
-ax = plt.subplot(212)
-
-plt.hist(innerTriplet5, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet5), round(mean(innerTriplet5),3)), alpha = 0.5)
-
-plt.hist(machingSection5, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection5), round(mean(machingSection5),3)), alpha = 0.5)
 
 
-plt.hist(all_datapoints5, bins = bins, label = "Point 5 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints5), round(mean(all_datapoints5),3)), fc='none', histtype='step', color = "k", linewidth = 1)
-
-plt.xlabel("Ratio", fontsize = 20)
-plt.ylabel("Counts", fontsize = 16)
-plt.legend( prop={'size': 14})
+ax = plt.subplot(222)
+innerTriplet = IT[1]
+machingSection = MS[1]
+all_datapoints = AD[1]
+plt.hist(innerTriplet, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
+plt.hist(machingSection, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection), round(mean(machingSection),3)), alpha = 0.5)
+plt.hist(all_datapoints, bins = bins, label = "Point 1 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints), round(mean(all_datapoints),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+#plt.xlabel("Ratio", fontsize = 20)
+#plt.xlabel("Ratio", fontsize = 16)
+plt.ylabel("# data points", fontsize = 16)
+plt.legend( prop={'size': 10})
 plt.grid(linewidth = 0.3)
 
+
+
+ax = plt.subplot(223)
+innerTriplet = IT[2]
+machingSection = MS[2]
+all_datapoints = AD[2]
+plt.hist(innerTriplet, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
+plt.hist(machingSection, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection), round(mean(machingSection),3)), alpha = 0.5)
+plt.hist(all_datapoints, bins = bins, label = "Point 5 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints), round(mean(all_datapoints),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+
+plt.xlabel("Ratio", fontsize = 20)
+plt.ylabel("# data points", fontsize = 16)
+plt.legend( prop={'size': 10})
+plt.grid(linewidth = 0.3)
+
+#plt.title("Point 5", fontsize = 18)
+
 plt.title("Point 5", fontsize = 18)
+
+ax = plt.subplot(224)
+innerTriplet = IT[3]
+machingSection = MS[3]
+all_datapoints = AD[3]
+plt.hist(innerTriplet, bins=bins, label = "Inner Triplet, # data points = {}, AVG ratio = {}".format(len(innerTriplet), round(mean(innerTriplet),3)), alpha = 0.5)
+plt.hist(machingSection, bins = bins, label = "Matching Section, # data points = {}, AVG ratio = {}".format(len(machingSection), round(mean(machingSection),3)), alpha = 0.5)
+plt.hist(all_datapoints, bins = bins, label = "Point 5 data points, # data points = {}, AVG ratio = {}".format(len(all_datapoints), round(mean(all_datapoints),3)), fc='none', histtype='step', color = "k", linewidth = 1)
+
+plt.xlabel("Ratio", fontsize = 20)
+plt.ylabel("# data points", fontsize = 16)
+plt.legend( prop={'size': 10})
+plt.grid(linewidth = 0.3)
+
+
+
+
+
 
 plt.suptitle("Survey Validation Summery", fontsize = 18)
 

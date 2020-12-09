@@ -13,7 +13,7 @@ class USRBIN():
     
     Python version 3.8
     
-    Developed by Daniel Björkman 2016-2020 at CERN, dabjor@kth.ch
+    Developed by Daniel Björkman 2016-2020 at CERN, dabjor@kth.ch, daniel.bjorkman@cern.ch
     
     call:
     from USRBIN import USRBIN
@@ -21,7 +21,7 @@ class USRBIN():
     instance.plot()
     
     """
-    def __init__(self, filename, path, normfactor = 1):
+    def __init__(self, filename, path = os.getcwd() , normfactor = 1):
         self.filename = filename
         self.path = path
         self.cube = []

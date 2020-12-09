@@ -21,7 +21,7 @@ class USRBIN():
     instance.plot()
     
     """
-    def __init__(self, filename, path = os.getcwd() , normfactor = 1):
+    def __init__(self, filename, path = os.getcwd(), normfactor = 1):
         self.filename = filename
         self.path = path
         self.cube = []
@@ -523,10 +523,3 @@ class USRBIN():
             self.xcoordinates = np.arange(int(self.info['zmin'][0]),int(self.info['zmax'][0]),self.info['zwidth'][0]*1.0001)
             self.realxcoodinates = np.arange(int(self.info['xmin'][0]),int(self.info['xmax'][0]),self.info['xwidth'][0]*1.0001)
         
-
-
-
-
-
-
-

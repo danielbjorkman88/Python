@@ -13,7 +13,7 @@ class USRBIN():
     
     Python version 3.8
     
-    Developed by Daniel Björkman 2016-2020 at CERN, dabjor@kth.ch, daniel.bjorkman@cern.ch
+    Developed by Daniel Björkman 2016-2021 at CERN, dabjor@kth.ch, daniel.bjorkman@cern.ch
     
     call:
     from USRBIN import USRBIN
@@ -64,9 +64,6 @@ class USRBIN():
         
     def readRaw(self, start, stop):
 
-        
-
-#        data = np.genfromtxt(filename, skip_header= start -1, skip_footer= stop -9)
         data = np.genfromtxt(self.filename, skip_header= start -1, skip_footer= len(self.file) - stop -2)
         
         data = np.reshape(data ,(data.size,1))
@@ -523,3 +520,49 @@ class USRBIN():
             self.xcoordinates = np.arange(int(self.info['zmin'][0]),int(self.info['zmax'][0]),self.info['zwidth'][0]*1.0001)
             self.realxcoodinates = np.arange(int(self.info['xmin'][0]),int(self.info['xmax'][0]),self.info['xwidth'][0]*1.0001)
         
+    
+    
+    def drawGeo_outside_of(self, ax , yCut, zCut, linewidth = 0.5, alpha = 1):
+
+        for j in range(len(self.Xs)):
+    
+            xes = []
+            yes = []        
+    
+            xesPre = self.Ys[j]
+            yesPre = self.Xs[j]
+            for i in range(len(xesPre)):
+                if abs(yesPre[i]) < yCut and xesPre[i] < zCut:
+                    pass
+                else:
+                    xes.append(xesPre[i])
+                    yes.append(yesPre[i])
+    
+            plt.plot(xes,yes, 'k-',  linewidth=linewidth, alpha = alpha)
+        return ax;
+    
+    
+    def drawGeo_inside_of(self, ax , yCut, zCut , linewidth = 0.5, alpha = 1):
+        
+        for j in range(len(self.Xs)):
+    
+            xes = []
+            yes = []        
+    
+            xesPre = self.Ys[j]
+            yesPre = self.Xs[j]
+            for i in range(len(xesPre)):
+                if abs(yesPre[i]) < yCut and xesPre[i] < zCut:
+                    xes.append(xesPre[i])
+                    yes.append(yesPre[i])
+                else:
+                    pass
+    
+            plt.plot(xes,yes, 'k-',  linewidth=linewidth, alpha = alpha)
+        return ax;
+
+
+
+
+
+

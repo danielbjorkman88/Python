@@ -6,6 +6,7 @@ import os
 import time
 import copy
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 
 class USRBIN():
     """
@@ -64,6 +65,9 @@ class USRBIN():
         
     def readRaw(self, start, stop):
 
+        
+
+#        data = np.genfromtxt(filename, skip_header= start -1, skip_footer= stop -9)
         data = np.genfromtxt(self.filename, skip_header= start -1, skip_footer= len(self.file) - stop -2)
         
         data = np.reshape(data ,(data.size,1))
@@ -522,15 +526,15 @@ class USRBIN():
         
     
     
-    def drawGeo_outside_of(self, ax , yCut, zCut, linewidth = 0.5, alpha = 1):
+    def drawGeo_outside_of(self, ax , yCut, zCut, factor = 1 ,linewidth = 0.5, alpha = 1):
 
         for j in range(len(self.Xs)):
     
             xes = []
             yes = []        
     
-            xesPre = self.Ys[j]
-            yesPre = self.Xs[j]
+            xesPre = np.array(self.Ys[j])/factor
+            yesPre = np.array(self.Xs[j])/factor
             for i in range(len(xesPre)):
                 if abs(yesPre[i]) < yCut and xesPre[i] < zCut:
                     pass
@@ -542,15 +546,15 @@ class USRBIN():
         return ax;
     
     
-    def drawGeo_inside_of(self, ax , yCut, zCut , linewidth = 0.5, alpha = 1):
+    def drawGeo_inside_of(self, ax , yCut, zCut , factor = 1 ,linewidth = 0.5, alpha = 1):
         
         for j in range(len(self.Xs)):
     
             xes = []
             yes = []        
     
-            xesPre = self.Ys[j]
-            yesPre = self.Xs[j]
+            xesPre = np.array(self.Ys[j])/factor
+            yesPre = np.array(self.Xs[j])/factor
             for i in range(len(xesPre)):
                 if abs(yesPre[i]) < yCut and xesPre[i] < zCut:
                     xes.append(xesPre[i])
@@ -562,7 +566,131 @@ class USRBIN():
         return ax;
 
 
+    
+    
+    def drawGeo_between(self, ax , yCut, zMin, zMax , factor = 1 ,linewidth = 0.5, alpha = 1):
+        
+        for j in range(len(self.Xs)):
+    
+            xes = []
+            yes = []        
+    
+            xesPre = np.array(self.Ys[j])/factor
+            yesPre = np.array(self.Xs[j])/factor
+            for i in range(len(xesPre)):
+                if abs(yesPre[i]) < yCut and xesPre[i] < zMax and xesPre[i] > zMin:
+                    xes.append(xesPre[i])
+                    yes.append(yesPre[i])
+                else:
+                    pass
+    
+            plt.plot(xes,yes, 'k-',  linewidth=linewidth, alpha = alpha)
+        return ax;
 
 
+    def compare_to(self, other):
+        """
+        Compares by plotting this usrbin to another of same binning format
 
+        Parameters
+        ----------
+        other : USRBIN
+            The USRBIN self is being compared to.
+
+        Returns
+        -------
+        None.
+
+        """
+        
+        label_self = "A"
+        label_other = "B"
+        ylabel = "Intensity"
+        
+        
+        gs = gridspec.GridSpec(8, 2)
+        fig = plt.figure()
+        
+        ax = plt.subplot(gs[0:5, 0])
+        
+        # Gets the centre bin of for each horizontal slice in steps of z
+        vals_ref = self.cube[int(self.cube.shape[0]/2), int(self.cube.shape[1]/2), 0:]
+        vals_other = other.cube[int(other.cube.shape[0]/2), int(other.cube.shape[1]/2), 0:]
+        
+        ax.plot(self.xcoordinates, vals_ref, label = label_self, linewidth = 3)
+        ax.plot(other.xcoordinates, vals_other, label = label_other, linewidth = 3)
+        
+        minval = max(0.01, min(vals_ref)*0.9, min(vals_other)*0.9)
+        maxval = max(max(vals_ref), max(vals_other))*1.1
+        
+        ax.set_ylim(minval,maxval)
+        ax.set_yscale("log")
+        plt.grid(linewidth = 0.3)
+        plt.legend(prop={'size': 12})
+        ax.set_ylabel(ylabel, fontsize = 14)
+        plt.title("Centre axis along z", fontsize = 18)
+        ax.tick_params(labelbottom=False)    
+        
+        #-----------------------------------------------------
+        
+    
+        ax = plt.subplot(gs[5:, 0])
+        
+        with np.errstate(divide='ignore', invalid='ignore'):
+            division = vals_other/vals_ref
+        division[np.isnan(division)] = 0
+        division[~np.isfinite(division)] = 0
+        
+        plt.plot(self.xcoordinates, division, label = "{}/{}".format(label_other, label_self))
+        plt.grid(linewidth = 0.3)
+        plt.ylabel("Ratio", fontsize = 18)
+        plt.xlabel("z [cm]", fontsize = 22)
+        ax.set_ylim(1/10,10)
+        
+        plt.axhline(y=1, color='k', linestyle='-')
+        
+        plt.legend(prop={'size': 16})
+        
+        
+        #-----------------------------------------------------
+        
+        ax = plt.subplot(gs[0:5, 1])
+        
+
+        integrated_ref  = self.depthdeposition
+        integrated_other  = other.depthdeposition
+        
+
+        ax.plot(self.xcoordinates, integrated_ref, label = "90", linewidth = 3)
+        ax.plot(other.xcoordinates, integrated_other, label = "270", linewidth = 3)
+
+        minval = max(0.01, min(integrated_ref)*0.9, min(integrated_other)*0.9)
+        maxval = max(max(integrated_ref), max(integrated_other))*1.1
+        
+
+        ax.set_yscale("log")
+        plt.grid(linewidth = 0.3)
+        plt.legend(prop={'size': 16})
+        ax.set_ylabel("Integrated Intensity", fontsize = 14)
+        ax.set_ylim(minval,maxval)
+        plt.title("Integrated", fontsize = 18)
+
+        ax.tick_params(labelbottom=False)    
+       
+        
+        #-----------------------------------------------------
+        
+        ax = plt.subplot(gs[5:, 1])
+        plt.plot(self.xcoordinates, integrated_other/integrated_ref, label = "{}/{}".format(label_other, label_self))
+        plt.grid(linewidth = 0.3)
+        plt.ylabel("Ratio", fontsize = 18)
+        plt.xlabel("z [cm]", fontsize = 22)
+        plt.axhline(y=1, color='k', linestyle='-')
+        plt.legend(prop={'size': 16})
+        ax.set_ylim(1/10,10)
+        
+        #plt.suptitle("Dose rate comparison at 1 meter from beam axis after 1h cool down", fontsize = 18)
+        xlength = 16
+        fig.set_size_inches(xlength, xlength/1.618)
+        plt.show()
 

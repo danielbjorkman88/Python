@@ -29,9 +29,9 @@ u, v = np.mgrid[0:2*np.pi:40j, 0:2*np.pi:40j]
 x1 = np.cos(u)*np.sin(v)
 y1 = np.sin(u)*np.sin(v)
 z1 = np.cos(v)
-ax.plot_wireframe(x1, y1, z1, color="0.5",linewidth=0.6) #Draw grid
+ax.plot_wireframe(x1, y1, z1, color="0.5",linewidth=0.2) #Draw grid
 #ax.plot_wireframe(x1, y1, z1, color="w")
-ax.plot_surface(x1, y1, z1, color="w", edgecolor="w", rcount = 500)
+ax.plot_surface(x1, y1, z1, rstride=1, cstride=1, color="w", edgecolor="w")
 
 
 

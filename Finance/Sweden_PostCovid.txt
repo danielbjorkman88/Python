@@ -1,0 +1,873 @@
+Comparing stocks between 2020-5-16 and 2021-7-7
+Nordea Olympia | 0
+Handelsbanken Sverige Selektiv (a1 Eur) | 0
+Enter Sverige Pro | 0
+Enter Select A | 0
+Cliens Sverige C | 0
+Indecap Guide Sverige C | 0
+Cliens Sverige B | 0
+Skandia Världsnaturfonden | 0
+Indecap Guide Sverige A | 0
+Cliens Sverige A | 0
+Nordic Equities Sweden | 0
+Handelsbanken Sverige Selektiv (a9 Eur) | 0
+Skandia Cancerfonden Inc | 0
+Skandia Cancerfonden Ul | 0
+Quesada Sverige | 0
+Humle Sverigefond | 0
+Aktiespararna Direktavkastning | 0
+öhman Sverige Hållbar A | 0
+öhman Sverige Hållbar B | 0
+Nordea Sverige Passiv Utd | 0
+Simplicity Sverige | 0
+Alfred Berg Hållbar Tillväxt Sverige A | 0
+Priornilsson Sverige Aktiv B | 0
+Skandia Världsnaturfonden Ul Acc | 0
+Lannebo Sverige Hållbar B Sek | 0
+Swedbank Humanfond | 0
+Catella Sverige Hållbart Beta B | 0
+öhman Etisk Index Sverige B | 0
+Alfa Aktiv | 0
+Seb Swedish Value Fund | 0
+Skandia Sverige Exponering | 0
+Skandia Sverige Exponering Ul | 0
+Catella Sverige Aktiv Hållbarhet | 0
+Seb Swedish Value Fund Utd | 0
+Agenta Svenska Aktier | 0
+Lannebo Sverige | 0
+Seb Stiftelsefond Sverige | 0
+Nordnet Superfonden Sverige | 0
+Swedbank Robur Ethica Sverige Mega | 0
+Aktiespararna Topp Sverige (index) | 0
+Spp Sverige Plus A | 0
+Spp Sverige Plus B | 0
+Aktie-ansvar Sverige A | 0
+Handelsbanken Astrazeneca Allemans | 0
+Ethos Aktiefond | 0
+Priornilsson Sverige Aktiv A | 0
+Enter Select Pro | 0
+Carnegie Spin-off A | 0
+Swedbank Robur Sweden High Dividend | 0
+C Worldwide Sweden 1a | 0
+C Worldwide Sweden 5b | 0
+C Worldwide Sweden 1a | 0
+Catella Sverige Hållbart Beta A | 0
+Enter Sverige A | 0
+Carnegie Småbolagsfond A | 0
+Lannebo Småbolag Insurance Inc | 0
+Spiltan Aktiefond Sverige | 0
+Lancelot Avalon | 0
+Strand Småbolagsfond | 0
+Humle Småbolagsfond | 0
+Simplicity Småbolag Sverige A | 0
+Simplicity Småbolag Sverige B | 0
+Enter Småbolagsfond B | 0
+Enter Småbolagsfond A | 0
+Seb Schweizfond | 0
+Länsförsäkringar Europa Aktiv B | 0
+Länsförsäkringar Europa Aktiv A | 0
+Danske Invest Sicav - Europe High Dividend A | 0
+Swedbank Robur Global High Dividend Sek | 0
+Sparinvest Sicav Procedo Sek R | 0
+Handelsbanken Kapitalförvaltning 75 (a1 Eur) | 0
+Handelsbanken Kapitalförvaltning 50 (a1 Eur) | 0
+Handelsbanken Kapitalförvaltning 25 (a1 Eur) | 0
+East Capital Multi-strategi A Sek | 0
+Plain Capital Lunatix | 0
+Handelsbanken Aktiv 50 (a1 Nok) | 0
+Seb Hållbarhetsfond Världen | 0
+Nordea Stratega 70 | 0
+Swedbank Robur Bas Action | 0
+öhman Etisk Index Sverige A | 0
+Kpa Etisk Blandfond 2 | 0
+Handelsbanken Multi Asset 75 (a1 Sek) | 0
+Avanza 75 | 0
+Spiltan Aktiefond Småland | 0
+Lannebo Sverige Flexibel Ul | 0
+Cliens Småbolag B | 0
+Xact Svenska Småbolag | 0
+Lannebo Småbolag | 0
+Handelsbanken Svenska Småbolag (b1 Sek) | 0
+Swedbank Robur Småbolagsfond Sverige | 0
+Didner & Gerge Småbolag | 0
+Seb Sverigefond Småbolag Institutional | 0
+Seb Sverige Småbolagsfond Utd | 0
+Seb Sverige Småbol C/r Utd | 0
+Seb Sverigefond Småbolag C/r | 0
+Seb Sverigefond Småbolag | 0
+Amf Aktiefond Småbolag | 0
+Nordea Småbolagsfond Sverige | 0
+Catella Småbolag | 0
+Länsförsäkringar Småbolag Sverige B | 0
+Länsförsäkringar Småbolag Sverige A | 0
+C Worldwide Sweden Small Cap 1a | 0
+C Worldwide Sweden Small Cap 1a | 0
+C Worldwide Sweden Small Cap 5b | 0
+öhman Sweden Micro Cap | 0
+Skandia Småbolag Sverige | 0
+Skandia Småbolag Sverige Ul | 0
+Lannebo Småbolag Eur | 0
+öhman Småbolagsfond A | 0
+öhman Småbolagsfond B | 0
+Handelsbanken Microcap Sverige | 0
+Cliens Småbolag A | 0
+Norron Sicav Active Rc Sek | 0
+Swedbank Robur Kapitalinvest | 0
+Nordea Inst Aktief Sverige Icke-utd | 0
+Quesada Global | 0
+Opm Global Quality Companies A | 0
+Opm Global Quality Companies B | 0
+Humle Fondselect | 0
+World Equity Replication Fund | 0
+Pacific Global Dynamic | 0
+Lancelot Camelot B | 0
+Vontobel Fund - Global Equity B Sek | 0
+Swedbank Robur Globalfond A | 0
+Navigera Tillväxt 1 | 0
+Indecap Guide Global A | 0
+Navigera Tillväxt 2 | 0
+Ikc Opportunities A | 0
+Tellus Globala Investmentbolag | 0
+Nordea 1 - Global Stable Equity Fund Bp Sek | 0
+Seb Dynamisk Aktiefond Utd | 0
+Spp Aktiefond Stabil A | 0
+Spp Aktiefond Stabil B | 0
+Nordea Institusjonella Aktiefonden Stabil Icke-utd | 0
+Nordea Institusjonella Aktiefonden Stabil | 0
+Nordea Institusjonella Aktiefonden Världen Icke-utd | 0
+Nordea Institutionella Aktiefonden Världen Utd | 0
+Carnegie Global I | 0
+Carnegie Global A | 0
+Navigera Global Change | 0
+Indecap Guide Global C | 0
+Avanza 100 | 0
+öhman Global Hållbar A | 0
+Skandia Global Exponering B | 0
+Skandia Världen | 0
+Handelsbanken Stiftelsefond Criteria (b1 Sek) | 0
+Lancelot Camelot A | 0
+Swedbank Robur Ethica Global | 0
+Spp Global Solutions A | 0
+Seb Global Chance/risk Fund D (sek) | 0
+Agenta Globala Aktier | 0
+Espiria Offensiv Ac | 0
+Spiltan Globalfond Investmentbolag | 0
+Handelsbanken Aktiv 100 (a1 Nok) | 0
+Handelsbanken Multi Asset 100 (a1 Eur) | 0
+Seb Stiftelsefond Utland | 0
+Macquarie Valueinvest Lux Global I Cap | 0
+Macquarie Valueinvest Lux Global I Cap | 0
+Macquarie Valueinvest Lux Global I Cap | 0
+Macquarie Valueinvest Lux Global A Dist | 0
+Macquarie Valueinvest Lux Global A Cap | 0
+Macquarie Valueinvest Lux Global A Dist | 0
+Macquarie Valueinvest Lux Global A Cap | 0
+Macquarie Valueinvest Lux Global A Dist | 0
+Macquarie Valueinvest Lux Global A Cap | 0
+Spp Mix 100 | 0
+Carnegie Global E | 0
+Swedbank Robur Småbolagsfond Global | 0
+Swedbank Robur Allemansfond Komplett | 0
+Swedbank Robur Aktiefond Pension | 0
+Ancoria/carneige Sverige | 0
+Seb Sverigefond | 0
+Swedbank Robur Sverigefond | 0
+Handelsbanken Sverige Index Criteria (b1 Sek) | 0
+Länsförsäkringar Sverige Aktiv B | 0
+Länsförsäkringar Sverige Aktiv A | 0
+Nordea Swedish Stars Utd | 0
+Nordea Sverige Passiv Icke-utd | 0
+Seb Sverige Expanderad Inst | 0
+Seb Sverige Expanderad Utd | 0
+Seb Sverige Expanderad Hnw | 0
+Handelsbanken Sverigefond (a1 Sek) | 0
+Nordea Swedish Stars Icke-utd | 0
+Seb Sverige Expanderad | 0
+Swedbank Robur Exportfond | 0
+Spiltan Aktiefond Investmentbolag | 0
+Swedbank Robur Ethica Sverige | 0
+Handelsbanken Sverige 100 Index Criteria A9 Sek | 0
+Handelsbanken Sverige Index Criteria (a1 Sek) | 0
+Cliens Sverige Fokus A | 0
+Cliens Sverige Fokus B | 0
+Lannebo Sverige Plus | 0
+Folksam Lo Västfonden | 0
+Handelsbanken Sverige Selektiv (a9) Sek | 0
+Handelsbanken Sverige Selektiv (b1) Sek | 0
+Handelsbanken Sverige Selektiv (a1) Sek | 0
+Spiltan Aktiefond Stabil | 0
+Carnegie Sverigefond Ul Sek1 | 0
+Nordea Institutionella Aktiefonden Sverige Utd | 0
+Spp Aktiefond Sverige A | 0
+Carnegie Sverigefond A | 0
+Amf Aktiefond Världen | 0
+Indecap Guide 2 C | 0
+Seb Aktiesparfond | 0
+Skandia Smart Offensiv | 0
+Skandia Smart Offensiv Ul | 0
+Kpa Etisk Aktiefond | 0
+Lärarfond 21-44 år | 0
+Swedbank Robur Talenten Aktiefond Mega | 0
+Swedbank Robur Bas Aktier | 0
+Länsförsäkringar Bekväm Fond Potential A | 0
+Godfond Sverige & Världen | 0
+Ica Banken Modig | 0
+Folksam Lo Sverige | 0
+Didner & Gerge Aktiefond | 0
+Amf Aktiefond Sverige | 0
+Swedbank Robur Sverigefond Mega | 0
+Swedbank Robur Access Sverige | 0
+Seb Sverige Indexfond Institutional | 0
+Seb Sverige Indexfond | 0
+Seb Sverige Indexfond Utd | 0
+Spp Aktiefond Sverige B | 0
+Avanza Zero | 0
+Nordea Alfa | 0
+Seb Hållbarhetsfond Sverige Index Utd | 0
+Länsförsäkringar Sverige Indexnära | 0
+Naventi Offensiv Flex | 0
+Consensus Lighthouse Asset B | 0
+Lärarfond 45-58 år | 0
+Nordkinn Fixed Income Macro Fund Usd G | 0
+Nordkinn Fixed Income Macro Fund Eur C | 0
+Opm Vega B | 0
+Plain Capital Ardenx | 0
+Brummer Multi-strategy 2xl | 0
+Seb Total Potential | 0
+Seb Total Expansiv | 0
+Seb Total Försiktig | 0
+Opm Vega A | 0
+Brummer Multi-strategy | 0
+Brummer Multi-strategy Euro | 0
+Nordkinn Fixed Income Macro Fund Nok B | 0
+Lynx | 0
+Aktie-ansvar Kvanthedge | 0
+Skandia Link Lynx Dynamic | 0
+Peak Global Macro (a) Sek | 0
+Handelsbanken Räntestrategi Criteria (a1 Sek) | 0
+Handelsbanken Räntestrategi (b1 Sek) | 0
+Handelsbanken Räntestrategi Plus (a1 Sek) | 0
+Handelsbanken Räntestrategi Plus (a7 Sek) | 0
+Handelsbanken Räntestrategi Plus (b1 Sek) | 0
+Carlsson Norén Macro Fund | 0
+Lynx Dynamic | 0
+Nordkinn Fixed Income Macro Fund Sek D | 0
+Nordkinn Fixed Income Macro Fund | 0
+Excalibur | 0
+Quesada Balanserad B | 0
+Avanza 50 | 0
+Ica Banken Måttlig | 0
+Exceed Select C | 0
+Indecap Guide Avkastningsfond A | 0
+Indecap Guide Avkastningsfond C | 0
+Nordnet Balanserad | 0
+Lannebo Komplett | 0
+Strand Förmögenhetsfond | 0
+Nowo Fund | 0
+Handelsbanken Nordiska Småbolag (b1 Sek) | 0
+Handelsbanken Nordiska Småbolag Ul | 0
+Handelsbanken Nordiska Småbolag (a1 Nok) | 0
+Swedbank Robur Småbolagsfond Norden | 0
+Handelsbanken Nordiska Småbolag (a1 Eur) | 0
+Nordea 1 - Nordic Equity Small Cap Fund Bp Sek | 0
+Consensus Småbolag A | 0
+Consensus Småbolag B | 0
+Bnp Paribas Funds Nordic Small Cap Classic Capitalisation | 0
+Fair Play | 0
+Seb Europafond | 0
+Catella Hedgefond A | 0
+Carve 1 | 0
+Länsförsäkringar Sparmål 2025 | 0
+Handelsbanken Pension 50 Aktiv (a1 Sek) | 0
+Länsförsäkringar Sparmål 2030 | 0
+Spp Generation 60-tal Inc | 0
+Nordea Generationsfond 60-tal | 0
+Swedbank Robur Transfer 60 | 0
+Handelsbanken Pension 60 Aktiv (a1 Sek) | 0
+Länsförsäkringar Sparmål 2035 | 0
+Länsförsäkringar Sparmål 2040 | 0
+Swedbank Robur Transfer 70 | 0
+Spp Generation 70-tal Inc | 0
+Nordea Generationsfond 70-tal | 0
+Handelsbanken Pension 70 Aktiv (a1 Sek) | 0
+Länsförsäkringar Sparmål 2045 | 0
+Swedbank Robur Transfer 80 | 0
+Nordea Generationsfond 80-tal | 0
+Spp Generation 80-tal Inc | 0
+Swedbank Robur Transfer 90 | 0
+Handelsbanken Pension 80 Aktiv (a1 Sek) | 0
+Nordea Generationsfond 90-tal | 0
+Länsförsäkringar Sparmål 2050 | 0
+Länsförsäkringar Sparmål 2055 | 0
+Handelsbanken Pension 90 Aktiv (a1 Sek) | 0
+Länsförsäkringar Sparmål 2060 | 0
+öhman Etisk Index Pacific | 0
+Skandia Världen Ul | 0
+Nordea Generationsfond 50-tal | 0
+Consensus Lighthouse Asset A | 0
+Spp Generation 50-tal Inc | 0
+Swedbank Robur Transfer 50 | 0
+Carve 2 | 0
+Atlant Stability | 0
+Sp Aktiv - Defensiv | 0
+Atlant Stability Offensiv | 0
+Pacific Precious A | 0
+Carneo Systematic Alpha A | 0
+Aktie-ansvar Multistrategi | 0
+Länsförsäkringar Multistrategi | 0
+Brummer & Partners Multi-strategy Utdelande | 0
+Pacific Multi Asset A | 0
+Pacific Precious B | 0
+Atlant Opportunity | 0
+Atlant Protect A | 0
+Peak Core Strategies (a) Sek | 0
+Peak Core Strategies (b) Sek | 0
+Atlant Multi-strategy | 0
+Swedbank Robur Dynamic | 0
+Spp Generation 40-tal Inc | 0
+Länsförsäkringar Sparmål 2015 | 0
+Länsförsäkringar Sparmål 2020 | 0
+Spp Mix 80 | 0
+Quesada Balanserad A | 0
+Spp Mix 50 | 0
+Hercules Fonden Utd B | 0
+Tellus Midas | 0
+Sophiahemmets Fond | 0
+Hercules Fonden Utd A | 0
+Svenska Läkaresällskapets Fond | 0
+Investerum Basic Value | 0
+Charlottes Fond | 0
+T.o Fonden | 0
+Plain Capital Bronx | 0
+Nordea Stratega 30 | 0
+Handelsbanken Multi Asset 25 (a1 Sek) | 0
+Calgus | 0
+Swedbank Robur Bas Solid | 0
+Skandia Smart Försiktig | 0
+Skandia Smart Försiktig Ul | 0
+Indecap Guide 1 C | 0
+Nordea Generationsfond Senior | 0
+Länsförsäkringar Bekväm Fond Stabil A | 0
+Spp Mix 20 | 0
+Naventi Defensiv Flex | 0
+Lärarfond 59+ | 0
+Länsförsäkringar Bekväm Fond Defensiv A | 0
+Quesada Försiktig A | 0
+Quesada Yield B | 0
+Ikc Taktisk Allokering 0-50 | 0
+Nordea Stratega 10 | 0
+Quesada Offensiv B | 0
+Quesada Offensiv A | 0
+Enter Preserve B | 0
+Sensor Sverige Select | 0
+Nordea Asset Allocation Fund Optima Sub-fund Sek | 0
+Länsförsäkringar Bekväm Fond Tillväxt A | 0
+Nordea Avtalspensionsfond Midi | 0
+Cliens Mixfond A | 0
+Cliens Mixfond B | 0
+Ikc Tre Euro | 0
+East Capital Offensiv | 0
+Nordnet Offensiv | 0
+Lannebo Mixfond | 0
+Cicero Hållbar Mix A | 0
+Dynamica 90 Global | 0
+Lannebo Mixfond Offensiv | 0
+Swedbank Robur Stiftelsefond Utd | 0
+Ikc - Lux 0 - 100 Ic | 0
+Dynamica 80 Sverige | 0
+Ikc Global Flexibel | 0
+Aktie-ansvar Saxxum Aktiv | 0
+Sef Coeli Total A Sek | 0
+Sef Coeli Total I Sek | 0
+Swedbank Robur Stiftelsefond | 0
+Fondnavigator 0-100 | 0
+Ikc Sverige Flexibel | 0
+Sef Placerum Dynamisk A | 0
+Sef Placerum Dynamisk I | 0
+Ikc 0-100 | 0
+Enter Preserve A | 0
+Cicero World 0-50 | 0
+Ica Banken Varlig | 0
+Nordnet Försiktig | 0
+Qqm Equity Hedge A | 0
+Amf Balansfond | 0
+Handelsbanken Multi Asset 50 (a1 Sek) | 0
+Nordea Stratega 50 | 0
+Skandia Smart Balanserad Ul | 0
+Skandia Smart Balanserad | 0
+Carnegie Strategifond G | 0
+Carnegie Strategifond A | 0
+Carnegie Strategi Ul Sek | 0
+Länsförsäkringar Mix A | 0
+Swedbank Robur Access Mix | 0
+Nordea 1 - Asset Allocation Fund - Futura Sub-fund N/a Sek | 0
+Seb Stiftelsefond Balanserad | 0
+Swedbank Robur Mixfond Pension | 0
+Navigera Balans 1 | 0
+Naventi Balanserad Flex | 0
+Länsförsäkringar Bekväm Fond Balans A | 0
+Seb Trygg Placeringsfond | 0
+Seb Trygghetsfond Ekorren | 0
+Navigera Balans 2 | 0
+Nordea Stabil | 0
+Nordea Donationsmedelsfond Icke-utd | 0
+Nordea Donationsmedelfond Utd | 0
+Catella Balanserad | 0
+Swedbank Robur Bas Mix | 0
+Carnegie Strategy 3 Sek | 0
+Handelsbanken Aktiv 30 (a1 Nok) | 0
+Fidelity Emea Skandia Link Acc | 0
+Peak Equity Alpha (b) Sek | 0
+Qqm Equity Hedge B | 0
+Peak Equity Alpha (a) Sek | 0
+Adrigo Hedge | 0
+Priornilsson Yield | 0
+Priornilsson Idea | 0
+Atlant Sharp | 0
+Aktie-ansvar Graal Hf | 0
+Gladiator | 0
+Origo Quest 1 A | 0
+Origo Quest 1 B | 0
+Origo Quest 1 C | 0
+Aktie-ansvar Graal Aktiehedge | 0
+Atlant Edge | 0
+Nordic Equities Select | 0
+Aktie-ansvar Graal Offensiv | 0
+Elementa | 0
+Alcur | 0
+Sentat Thyra Hedge A | 0
+Ram One | 0
+Dnb Fund - Asian Small Cap Retail A | 0
+Alfred Berg Bear | 0
+Alfred Berg Bull | 0
+Handelsbanken Aktiv 70 (a1 Nok) | 0
+Skandia Global Exponering A | 0
+East Capital Balkan Insurance Inc | 0
+Spp Global Plus B | 0
+Alfred Berg Ränteallokering Plus | 0
+Indecap Guide Företagsobligation A | 0
+Indecap Guide Företagsobligation C | 0
+Plain Capital Styx | 0
+Tundra Frontier Africa Fund A Sek | 0
+Swedbank Robur Access Asien | 0
+Handelsbanken Asien Tema (a1 Nok) | 0
+Alfred Berg Företagsobligationsfond Hållbar Andelsklass A | 0
+Skandia Asia Inc | 0
+Swedbank Robur Asienfond | 0
+Seb Asienfond Ex-japan | 0
+Länsförsäkringar Asienfond B | 0
+Carnegie Asia A | 0
+Länsförsäkringar Asienfond A | 0
+C Worldwide Asia 1a | 0
+C Worldwide Asia 1a | 0
+Handelsbanken Asien Tema (a1 Eur) | 0
+Bnp Paribas Funds Asia Ex-japan Equity Classic Capitalisation | 0
+Ikc Asien B | 0
+Skandia Asien Ul | 0
+Cliens Räntefond Kort | 0
+Cicero Nordic Corporate Bond A | 0
+Enter Cross Credit B | 0
+Nordea Institusjonella Företagsobligationsfonden Icke-utd | 0
+Nordea Institutionella Företagsobligationsfonden Utd | 0
+Simplicity Global Corporate Bond A | 0
+öhman Företagsobligationsfond A | 0
+öhman Företagsobligationsfond B | 0
+Simplicity Global Corporate Bond B | 0
+Enter Return B | 0
+Enter Return A | 0
+Nordea Stratega Fixed Income | 0
+öhman Frn Hållbar A | 0
+öhman Frn Hållbar B | 0
+öhman Frn Ul | 0
+Aktie-ansvar Avkastningsfond | 0
+Seb Corporate Bond Fund Sek C | 0
+Seb Corporate Bond Fund Sek D | 0
+Ikc Avkastningsfond | 0
+Lannebo Corporate Bond A | 0
+Nordea Swedish Bond Stars | 0
+Cicero Avkastningsfond A | 0
+öhman Företagsobligation Hållbar A | 0
+öhman Företagsobligation Hållbar B | 0
+Lannebo High Yield | 0
+Länsförsäkringar Hållbar Företagsobligation | 0
+Catella Credit Opportunity | 0
+Quesada Ränta | 0
+Enter Cross Credit A | 0
+Blackrock Pacific Index Ul | 0
+Catella Avkastningsfond | 0
+Amf Aktiefond Asien Stilla Havet | 0
+Wells Fargo (lux) Worldwide Fund - China Equity Fund A Sek Acc | 0
+Länsförsäkringar Tillväxtmarknad Aktiv B | 0
+Länsförsäkringar Tillväxtmarknad Aktiv A | 0
+Handelsbanken Tillväxtmarknad Tema (a1 Eur) | 0
+Nordea 1 - Emerging Markets Focus Equity Fund Bp Sek | 0
+Agenta Tillväxtmarknader | 0
+Skandia Tillväxtmarknadsfond | 0
+Skandia Tillväxtmarknadsfond Ul | 0
+Indecap Guide Tillväxtmarknadsfond C | 0
+Indecap Guide Tillväxtmarknadsfond A | 0
+Pacific Explorer Dynamic A | 0
+Blackrock Emerg Mkt Eq Index Ul | 0
+öhman Etisk Emerging Markets A | 0
+Jpmorgan Funds - Emerging Markets Small Cap Fund Ul | 0
+Handelsbanken Europa Selektiv (a1 Sek) | 0
+Handelsbanken Europa Selektiv (b1 Sek) | 0
+Handelsbanken Europa Selektiv (a1 Nok) | 0
+Handelsbanken Europa Selektiv (a9 Eur) | 0
+Handelsbanken Europa Selektiv (b1 Eur) | 0
+Handelsbanken Europa Selektiv (a1 Eur) | 0
+Lundmark & Co Aktiv Europa | 0
+Swedbank Robur Access Europa | 0
+Swedbank Robur Europafond | 0
+Handelsbanken Europa Index Criteria (b1 Sek) | 0
+Nordea 1 - European Small And Mid Cap Equity Fund Bp Sek | 0
+Seb Emerging Marketsfond | 0
+Spp Emerging Markets Plus A | 0
+Spp Emerging Markets Plus B | 0
+Simplicity Kina | 0
+Cicero China Index B | 0
+Cicero China Index A | 0
+Danske Invest Sicav - China A | 0
+Schroder China Opportunities Ul | 0
+Nordnet Superfonden Danmark | 0
+Swedbank Robur östeuropafond | 0
+East Capital östeuropa Insurance | 0
+East Capital östeuropa Ul | 0
+East Capital östeuropa | 0
+Seb östeuropafond | 0
+East Capital Balkan | 0
+East Capital New Europe | 0
+Nordea 1 - Emerging Stars Equity Fund Bi Sek | 0
+Nordea 1 - Emerging Stars Equity Fund Bp Sek | 0
+Nordea 1 - Emerging Stars Equity Fund Ai Sek | 0
+Handelsbanken Tillväxtmarknad Tema (b1 Sek) | 0
+Handelsbanken Tillväxtmarknad Tema (a1 Nok) | 0
+Länsförsäkringar Tillväxtmarknad Indexnära A | 0
+Swedbank Robur Global Emerging Markets | 0
+Nordea 1 - Stable Emerging Markets Equity Fund Bi Sek | 0
+Nordea 1 - Stable Emerging Markets Equity Fund Bp Sek | 0
+Spp Emerging Markets Sri | 0
+Safe Play | 0
+Agenta Alternativa Räntor | 0
+Carnegie Likviditetsfond B | 0
+Seb Inst Obligationsfond Sek | 0
+Ethos Räntefond | 0
+Skandia Kapitalmarknadsfond | 0
+Skandia Kapitalmarknadsfond Ul | 0
+Swedbank Robur Talenten Räntefond Mega | 0
+Alfred Berg Obligationsfond Plus Hållbar A | 0
+öhman Obligationsfond A | 0
+öhman Obligationsfond B | 0
+öhman Räntefond Kompass Hållbar A | 0
+Agenta Svenska Räntor | 0
+Nordea 1 - Swedish Bond Fund Bp Sek | 0
+Quesada Bond Opportunity A | 0
+Seb Inst Obligationsfond Sek Utd | 0
+Quesada Bond Opportunity B | 0
+Nordnet Räntefond Sverige | 0
+Carnegie Obligationsfond A | 0
+Skandia Realräntefond | 0
+Skandia Realräntefond Ul | 0
+Swedbank Robur Realräntefond | 0
+Handelsbanken Realränte (a1 Sek) | 0
+Handelsbanken Realränte (b1 Sek) | 0
+öhman Realräntefond A | 0
+öhman Realräntefond B | 0
+Nordea Sve Reaalikorko K Eur | 0
+Nordea Sverige Reaalikorko Kasvu | 0
+öhman Obligationsfond Sek B | 0
+öhman Obligationsfond Sek A | 0
+Swedbank Robur Obligationsfond A Sek | 0
+Nordea 1 - European High Yield Bond Fund Bp Sek | 0
+Handelsbanken Euro Ränta (a1 Sek) | 0
+Handelsbanken Euro Ränta (a7 Eur) | 0
+Handelsbanken Euro Ränta (a1 Eur) | 0
+Handelsbanken Euro Ränta (a1 Eur) | 0
+Skagen Tellus A | 0
+Skagen Avkastning | 0
+Ap7 Räntefond | 0
+Swedbank Robur Ethica Obligation | 0
+Swedbank Ethica Obligation Utd | 0
+Handelsbanken Långränta (b1 Sek) | 0
+Handelsbanken Långränta Criteria (a1 Sek) | 0
+Handelsbanken Ränteavkastning (a1 Sek) | 0
+Handelsbanken Ränteavkastning (b1 Sek) | 0
+Nordea International Fund Obligationinvest Sub-fund Sek | 0
+Nordea Institutionella Räntefonden Långa Placeringar, Sverige Icke-utd | 0
+Nordea Institutionella Räntefonden Långa Placeringar, Sverige Utd | 0
+Seb Obligationsfond Sek | 0
+Folksam Lo Obligation | 0
+Amf Räntefond Lång | 0
+Seb Obligationsfond Sek Institutional | 0
+Seb Obligationsfond Sek Utd | 0
+Navigera Aktie 2 | 0
+Nordea Obligationsfond Utd | 0
+Nordea Obligationsfond Icke-utd | 0
+Länsförsäkringar Lång Räntefond A | 0
+Nordea Private Banking Ränteportfölj Utd | 0
+Swedbank Robur Räntefond Flexibel | 0
+Swedbank Robur Räntefond Kort Plus | 0
+Handelsbanken Institutionell Kortränta Criteria (a2 Sek) | 0
+Handelsbanken Institutionell Kortränta Criteria (b1 Sek) | 0
+Seb Likviditetsfond Sek | 0
+Seb Likviditetsfond Sek Utd | 0
+öhman Kort Ränta A | 0
+Alfred Berg Korträntefond Hållbar | 0
+Skandia Alfred Berg Penningmarknadsfond | 0
+Alfred Berg Income Nok | 0
+Dnb High Yield (i) | 0
+Spiltan Räntefond Sverige | 0
+Handelsbanken Företagsobligation Investment Grade Criteria (a1 Sek) | 0
+Handelsbanken Företagsobligation Investment Grade Criteria (b5 Sek) | 0
+Handelsbanken Kortränta Criteria (a1 Sek) | 0
+Handelsbanken Kortränta Sek (b1 Sek) | 0
+Carnegie Corporate Bond 1 Sek Distribution | 0
+Carnegie Corporate Bond Ul Sek | 0
+Carnegie Corporate Bond 3 Sek | 0
+Spiltan Högräntefond | 0
+Swedbank Robur Företagsobligationsfond A | 0
+Simplicity Likviditet A | 0
+Lannebo Likviditet | 0
+Spp Frn Företagsobligationsfond A | 0
+Spp Frn Företagsobligationsfond B | 0
+Simplicity Företagsobligationer A | 0
+Simplicity Företagsobligationer B | 0
+Carnegie Likviditetsfond A | 0
+Handelsbanken Företagsobligation (a1 Sek) | 0
+Handelsbanken Företagsobligation (b5 Sek) | 0
+Carnegie Likviditetsfond A Ul | 0
+Amf Räntefond Kort | 0
+Skandia Penningmarknadsfond Ul | 0
+Länsförsäkringar Kort Räntefond | 0
+Nordea Bostadsobligationsfond Icke-utd | 0
+Nordea Bostadsobligationsfond Utd | 0
+Spp Grön Obligationsfond A | 0
+Seb Obligationsfond Flexibel Sek | 0
+Carnegie Corporate Bond 3 Nok Capitalisation | 0
+Handelsbanken Flexibel Ränta (a8 Sek | 0
+Handelsbanken Flexibel Ränta (b8 Sek) | 0
+Handelsbanken Flexibel Ränta (a1 Sek) | 0
+Amf Räntefond Mix | 0
+Swedbank Robur Bas Ränta | 0
+Länsförsäkringar Global Strategisk Ränta A | 0
+Skandia Link Nordea Europe High Yield Bond | 0
+Schroder Emerging Market Bond Ul | 0
+Jpmorgan Funds - Global Strategic Bond Fund Skandia Link | 0
+Handelsbanken Euro Corporate Bond (b7 Eur) | 0
+Handelsbanken Euro Corporate Bond (a1 Eur) | 0
+Handelsbanken Euro Corporate Bond (a7 Eur) | 0
+Handelsbanken Euro Obligation (a1 Sek) | 0
+Swedbank Robur Räntefond Kort | 0
+Seb Korträntefond Sek Institutional | 0
+Seb Korträntefond Sek Utd | 0
+Seb Korträntefond Sek | 0
+Spp Korträntefond | 0
+Skandia Korträntefond | 0
+Spp Obligationsfond | 0
+Handelsbanken Europa Index Criteria A1 Nok | 0
+Tundra Pakistan Fund D Eur | 0
+Tundra Pakistan Fund C Eur | 0
+Fidelity Malaysia Insurance Inc | 0
+Opm Listed Private Equity | 0
+Swedbank Robur Technology A Sek | 0
+Dnb Teknologi | 0
+Swedbank Robur Ny Teknik A | 0
+Skandia Time Global | 0
+Seb Teknologifond | 0
+Lannebo Vision | 0
+Dnb Fund Technology Retail A | 0
+Tundra Pakistan Fund F Eur | 0
+Dnb Fund Technology Retail A | 0
+Core Ny Teknik A | 0
+Skandia Time Global Ul | 0
+Tundra Vietnam A Sek | 0
+Tundra Vietnam C Eur | 0
+Tundra Vietnam D Usd | 0
+Handelsbanken Usa Index Criteria (a1 Sek) | 0
+Handelsbanken Usa Index Criteria (b9 Sek) | 0
+Handelsbanken Usa Index Criteria A1 Nok | 0
+Spp Aktiefond Usa | 0
+Handelsbanken Usa Index Criteria (a1 Sek) | 0
+öhman Global Growth | 0
+Tundra Pakistan Fund A Sek | 0
+Ikc Filippinerna B | 0
+Handelsbanken Hälsovård Tema (a1 Eur) | 0
+Jpmorgan Funds - Global Healthcare Fund Ul | 0
+Swedbank Robur Råvarufond | 0
+Ikc Global Infrastructure A | 0
+Ikc Global Infrastructure B | 0
+Länsförsäkringar Fastighetsfond A | 0
+Alfred Berg Fastighetsfond Norden A | 0
+Alfred Berg Fastighetsfond Norden B | 0
+Alfred Berg Fastighetsfond Norden C | 0
+Ikc Fastighetsfond A | 0
+Ikc Fastighetsfond B | 0
+Alfred Berg Fastigh Norden Skan | 0
+Nordea 1 - Global Real Estate Fund Bi Sek | 0
+Nordea 1 - Global Real Estate Fund Bp Sek | 0
+Swedbank Robur Fastighet A Sek | 0
+Priornilsson Realinvest A | 0
+Seb Fastighetsfond | 0
+Priornilsson Realinvest B | 0
+Handelsbanken Emea Tema (a1 Nok) | 0
+Handelsbanken Emea Tema (a1 Eur) | 0
+Ikc Filippinerna C | 0
+Handelsbanken Usa Index Criteria (a1 Sek) | 0
+Healthinvest Small & Microcap Fund Andelsklass A | 0
+Swedbank Robur Access Usa | 0
+Swedbank Robur Amerikafond | 0
+Fronteer Harvest B | 0
+Ap7 Aktiefond | 0
+Handelsbanken Global Tema (b1 Sek) | 0
+Handelsbanken Global Tema (a1 Nok) | 0
+Handelsbanken Global Tema (a1 Sek) | 0
+Folksam Lo Världen | 0
+Dnb Global Indeks A | 0
+Handelsbanken Global Tema (a1 Eur) | 0
+Länsförsäkringar Global Indexnära | 0
+Spp Aktiefond Global A | 0
+Spp Aktiefond Global B | 0
+Amf Aktiefond Global | 0
+Fronteer Harvest A | 0
+Länsförsäkringar Global Hållbar B | 0
+Handelsbanken Multi Asset 100 (a1 Nok) | 0
+Länsförsäkringar Global Hållbar A | 0
+Seb Global Fund Ic (sek) | 0
+Seb Hållbarhetsfond Global | 0
+Swedbank Robur Ethica Global Mega | 0
+Handelsbanken Multi Asset 100 | 0
+Navigera Aktie 1 | 0
+Seb Dynamisk Aktiefond Inst | 0
+Seb Dynamisk Aktiefond | 0
+Nordea Aktieallokering | 0
+Spp Global Plus A | 0
+Handelsbanken Europa Index Criteria (b1 Sek) | 0
+Swedbank Robur Access Global | 0
+Peab-fonden | 0
+Odin Global D | 0
+Odin Global A | 0
+Skandia Nordamerika Exponering | 0
+Skandia Usa | 0
+Skandia Usa Ul | 0
+öhman Etisk Index Usa B | 0
+öhman Etisk Index Usa A | 0
+Handelsbanken Usa Index Criteria (a1 Eur) | 0
+Seb Nordamerikafond | 0
+Länsförsäkringar Usa Aktiv B | 0
+Länsförsäkringar Usa Aktiv A | 0
+Skandia Nordamerika Expon Ul | 0
+Handelsbanken Amerika Tema (b1 Sek) | 0
+Handelsbanken Amerika Tema (a1 Nok) | 0
+Amf Aktiefond Nordamerika | 0
+Handelsbanken Amerika Tema (a1 Eur) | 0
+Morgan Stanley Invf Us Advante Ul | 0
+Danske Invest Usa Kl Sek | 0
+T.rowe Us Large Cap Value Ul | 0
+Seb Nordamerikafond Småbolag | 0
+Didner & Gerge Us Small And Microcap | 0
+Didner & Gerge Global | 0
+Odin Global B | 0
+Länsförsäkringar Usa Indexnära | 0
+Dnb Health Care | 0
+Seb Hållbarhetsfond Global Utd | 0
+Tundra Sustainable Frontier Fund E Nok | 0
+Tundra Sustainable Frontier Fund A Sek | 0
+Tundra Sustainable Frontier Fund F Eur | 0
+Tundra Sustainable Frontier Fund D Usd | 0
+Handelsbanken Kina Tema (a1 Sek) | 0
+Swedbank Robur Kinafond | 0
+Handelsbanken Kina Tema (a1 Eur) | 0
+Handelsbanken Kina Tema (a1 Nok) | 0
+Goldman Sachs India Equity Portfolio Other Currency Acc Sek | 0
+Carnegie Indienfond A | 0
+Fidelity Indonesia Insurance Inc | 0
+Danske Invest Sicav - Japan A | 0
+Handelsbanken Finland (a1 Eur) | 0
+Handelsbanken Japan Tema (a1 Nok) | 0
+Swedbank Robur Japanfond | 0
+Swedbank Robur Access Japan | 0
+Spp Aktiefond Japan | 0
+Länsförsäkringar Japan Indexnära | 0
+Skandia Japan Exponering | 0
+Seb Japanfond | 0
+öhman Etisk Index Japan | 0
+Skandia Japan Exponering Ul | 0
+Handelsbanken Japan Tema (a1 Eur) | 0
+Macquarie Valueinvest Lux Japan A Dist | 0
+Nordnet Superrahasto Suomi | 0
+Handelsbanken Finland (a1 Sek) | 0
+Lannebo Europa Småbolag A Eur | 0
+Spp Aktiefond Europa | 0
+Länsförsäkringar Europa Indexnära | 0
+Handelsbanken Europa Tema (a1 Nok) | 0
+Odin Europa D | 0
+Odin Europa B | 0
+Swedbank Robur Europafond Mega | 0
+Skandia Europa Exponeringul | 0
+Skandia Europa Exponering | 0
+öhman Etisk Index Europa | 0
+Handelsbanken Europa Index Criteria A1 Eur | 0
+Handelsbanken Europa Tema (a1 Eur) | 0
+Aktie-ansvar Europa | 0
+Schroder European Special Situations Ul | 0
+Amf Aktiefond Europa | 0
+Bnp Paribas Funds Europe Small Cap Classic Capitalisation | 0
+Swedbank Robur Småbolagsfond Europa A | 0
+Lannebo Europa Småbolag A Sek | 0
+Didner & Gerge Small & Microcap | 0
+Macquarie Valueinvest Lux Japan A Cap | 0
+Macquarie Valueinvest Lux Japan A Cap | 0
+Odin Europa A | 0
+Macquarie Valueinvest Lux Japan A Cap | 0
+Seb Wwf Nordenfond | 0
+Caprifol Nordiska Fonden | 0
+C Worldwide Nordic 5b | 0
+C Worldwide Nordic 5b | 0
+Skandia Link Skandia Nordenskandia Link Skandia Norden | 0
+Odin Norge A | 0
+Odin Norge B | 0
+Odin Norge D | 0
+Odin Norge C | 0
+Nordnet Superfondet Norge | 0
+Swedbank Robur Rysslandsfond | 0
+East Capital Russia Ul | 0
+East Capital Ryssland Ul | 0
+East Capital Ryssland | 0
+Ancoria/carneige Ryssland | 0
+Carnegie Rysslandsfond A | 0
+Alfred Berg Ryssland | 0
+Handelsbanken Hållbar Energi (a1 Sek) | 0
+Handelsbanken Hållbar Energi (a1 Nok) | 0
+Handelsbanken Hållbar Energi (a1 Eur) | 0
+Pacific Extraordinary Brands A | 0
+Skandia Link Blackrock World Gold Sek Ul | 0
+Proxypetroleum Energy A (sek) | 0
+Seb Läkemedelsfond | 0
+Macquarie Valueinvest Lux Japan A Dist | 0
+Swedbank Robur Medica | 0
+Seb Wwf Nordenfond | 0
+Skandia Idéer För Livet Ul | 0
+Nordea 1 - Global Climate And Environment Fund Bp Sek | 0
+Nordic Equities Strategy | 0
+Skandia Idéer För Livet | 0
+Handelsbanken Latinamerikafond Ul | 0
+Handelsbanken Latinamerika Tema (a1 Nok) | 0
+Macquarie Valueinvest Lux Japan A Dist | 0
+Handelsbanken Latinamerika Tema (a1 Eur) | 0
+Jp Morgan Latin America Eq Ul | 0
+Handelsbanken Norden A1 Sek | 0
+Handelsbanken Nordenfond A1 Nok | 0
+Handelsbanken Norden Selektiv (a1 Sek) | 0
+Handelsbanken Norden Selektiv (a9 Sek) | 0
+Handelsbanken Norden Selektiv (a1 Eur) | 0
+Handelsbanken Norden Selektiv (b1 Sek) | 0
+Handelsbanken Norden Selektiv (a9 Eur) | 0
+Skandia Norden | 0
+Simplicity Norden | 0
+Handelsbanken Nordenfond A1 Eur | 0
+Handelsbanken Norden Selektiv (b1 Eur) | 0
+Seb Nordenfond | 0
+Swedbank Robur Nordenfond | 0
+Handelsbanken Norden Selektiv (a1 Nok) | 0
+Handelsbanken Latinamerika Tema (b1 Sek) | 0
+Seb Nordenfond Utd | 0

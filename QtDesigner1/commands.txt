@@ -1,0 +1,4 @@
+designer.exe
+
+pyuic5 -x test1.ui
+
